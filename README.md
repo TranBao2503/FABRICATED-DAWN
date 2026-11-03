@@ -1,5 +1,7 @@
 # Fabricated Dawn — plugin và chuẩn bị dự án
 
+Game do nhóm 1 lớp thiết kế game 65CNTT làm
+
 Đã tạo hai phần đi cùng nhau:
 
 - **Fabricated Dawn Assistant:** plugin Codex để đọc tài liệu và hỗ trợ phát triển Unity.
