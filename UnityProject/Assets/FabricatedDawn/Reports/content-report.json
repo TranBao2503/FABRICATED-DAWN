@@ -1,0 +1,31 @@
+{
+    "unityVersion": "6000.6.6f1",
+    "chapterCount": 8,
+    "roomCount": 8,
+    "itemCount": 13,
+    "errors": [],
+    "warnings": [
+        "Placeholder backgrounds: ROOM_01",
+        "Placeholder backgrounds: KITCHEN_01",
+        "Placeholder backgrounds: HALL_01",
+        "Placeholder backgrounds: STAIRS_01",
+        "Placeholder backgrounds: BATH_01",
+        "Placeholder backgrounds: SHRINE_01",
+        "Placeholder backgrounds: STUDY_01",
+        "Placeholder backgrounds: SIDE_DOOR_01",
+        "Placeholder icon: ITEM_FAMILY_CHARM",
+        "Placeholder icon: ITEM_INCENSE",
+        "Placeholder icon: ITEM_MATCHES",
+        "Placeholder icon: ITEM_FLASHLIGHT",
+        "Placeholder icon: ITEM_BATTERY",
+        "Placeholder icon: ITEM_DOOR_TALISMAN",
+        "Placeholder icon: ITEM_COLORED_THREAD",
+        "Placeholder icon: ITEM_SMALL_BOWL",
+        "Placeholder icon: ITEM_TOY",
+        "Placeholder icon: ITEM_RENTAL_PAPERS",
+        "Placeholder icon: ITEM_MEDICAL_NOTES",
+        "Placeholder icon: ITEM_CASSETTE",
+        "Placeholder icon: ITEM_MEMORY_KNIFE",
+        "True Ending is pending narrative approval; keep route locked."
+    ]
+}

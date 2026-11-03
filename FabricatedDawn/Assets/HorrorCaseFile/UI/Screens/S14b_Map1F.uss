@@ -1,0 +1,77 @@
+
+
+.s14b-glow {
+    -unity-background-image-tint-color: rgba(255, 247, 230, 0.042);
+}
+
+.s14b-map {
+    background-color: #292624;
+}
+
+.s14-board--1f {
+    background-image: url("../../Art/Maps/Floor1_Lobby.png");
+}
+
+.s14b-door {
+    left: 300px;
+    top: 372px;
+}
+
+.s14b-door-label {
+    left: 334px;
+    top: 408px;
+}
+
+.s14b-chained {
+    position: absolute;
+    left: 140px;
+    top: 110px;
+    font-size: 20px;
+    color: var(--hcf-cream-50);
+    rotate: -3deg;
+}
+
+.s14b-down {
+    position: absolute;
+    left: 585px;
+    top: 495px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s14b-down__arrow,
+.s14b-down__label {
+    height: 17px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--hcf-cream-40);
+    -unity-text-align: middle-left;
+}
+
+.s14b-down__label {
+    margin-left: 12px;
+}
+
+.s14b-title {
+    height: 60px;
+    font-size: 64px;
+    color: rgba(236, 230, 218, 0.75);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s14b-title--first {
+    margin-top: 22px;
+}
+
+.s14b-body {
+    margin-top: 20px;
+    min-height: 72px;
+    font-size: 21px;
+    color: var(--hcf-cream-50);
+    white-space: normal;
+}
+
+.s14b-stats {
+    margin-top: 40px;
+}

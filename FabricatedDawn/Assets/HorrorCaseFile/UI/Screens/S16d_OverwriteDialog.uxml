@@ -1,0 +1,60 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S16_ConfirmDialog.uss" />
+    <Style src="S16b_QuitDialog.uss" />
+    <Style src="S16d_OverwriteDialog.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s16 s16b s16d">
+        <ui:VisualElement class="hcf-light-pool s16-pool-warm-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-warm-b" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-dark-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-dark-b" picking-mode="Ignore" />
+
+        <ui:VisualElement name="dim" class="hcf-abs s16-dim" />
+
+        <ui:VisualElement name="dialog" class="hcf-abs s16b-dialog">
+            <ui:VisualElement class="s16-dialog__accent" picking-mode="Ignore" />
+            <ui:VisualElement class="s16b-dialog__body">
+
+                <ui:Label name="overwrite-slot" text="OVERWRITE SLOT 02" class="hcf-mono s16b-kicker" />
+                <ui:Label text="WRITE OVER" class="hcf-display s16b-title__line s16b-title__line--first" />
+                <ui:Label text="THIS FILE?" class="hcf-display s16b-title__line" />
+
+                <ui:VisualElement name="file" class="s16d-file" picking-mode="Ignore">
+                    <ui:Label name="file-title" text="CHAPTER 02 — THE KENNELS" class="hcf-bs-700 s16d-file__title" />
+                    <ui:Label name="file-meta" text="02:58 played · saved 10 oct 19:02" class="hcf-mono s16d-file__meta" />
+                </ui:VisualElement>
+
+                <ui:Label text="this cannot be undone." class="hcf-typed s16b-body s16b-body--overwrite" />
+
+                <ui:VisualElement name="actions" class="s16b-actions s16b-actions--row s16d-actions">
+                    <ui:Button name="btn-overwrite-confirm" text="" class="hcf-btn hcf-btn--danger s16b-btn--danger s16b-btn--half">
+                        <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.2" cut-bottom="1.9" cut-left="2.2" />
+                        <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="OVERWRITE" class="hcf-btn__label s16b-btn__label" />
+                    </ui:Button>
+                    <ui:Button name="btn-overwrite-cancel" text="" class="hcf-btn hcf-btn--primary s16b-btn--half s16b-btn--next">
+                        <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.2" cut-bottom="1.9" cut-left="2.2" />
+                        <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="CANCEL" class="hcf-btn__label s16b-btn__label" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s16b-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="write" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="cancel" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

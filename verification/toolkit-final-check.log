@@ -1,0 +1,395 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 46692)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 46716)
+VBCSCompiler prewarm took 20.48 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-03T10:50:06.9259642Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 32452 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-03T10:50:06Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 32948, path: "F:/Unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              b725afeab504425cb35e7afd36ac9141
+  Correlation Id:          23c3a11947767e3d22444d497f84e778
+  External correlation Id: 2307814118990120159
+  Machine Id:              Tm1w8v2/uq1oy167gPDl/2mIRzE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.07s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-03T10:50:07.0022897Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968509563621-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.08s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn
+-executeMethod
+FabricatedDawn.Editor.ToolkitBootstrap.SetupProject
+-logFile
+C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\verification\toolkit-final-check.log
+Successfully changed project path to: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn
+C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/FabricatedDawn
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [46532]  Target information:
+
+Player connection [46532]  * "[IP] 192.168.1.11 [Port] 55504 [Flags] 2 [Guid] 3889570243 [EditorId] 3889570243 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LHKKNKB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [46532] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [46532] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-46528" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/FabricatedDawnUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/FabricatedDawn/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006138 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.835 seconds
+Domain Reload Profiling: 1571ms
+	BeginReloadAssembly (174ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (119ms)
+	LoadAllAssembliesAndSetupDomain (409ms)
+		LoadAssemblies (154ms)
+		TypeCache.Refresh (280ms)
+			TypeCache.ScanAssembly (264ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (836ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (147ms)
+			ProcessInitializeOnLoadMethodAttributes (327ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 43 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+  Built-in packages:
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.test-framework@1.8.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.test-framework@80f691d4262b)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+  Embedded packages:
+    com.4koq.fabricated-dawn@file:C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Packages\com.4koq.fabricated-dawn (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Packages\com.4koq.fabricated-dawn)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.02 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/FabricatedDawn
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 2s91ms
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others) [CacheMiss ee156ad26e8c46c399c706f86868975400000000000000000000000000000006]
+[205/220    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[212/220    0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others) [CacheWrite ee156ad26e8c46c399c706f86868975400000000000000000000000000000006]
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others) [CacheMiss df62ad2777d8f8bd28c81f61c8907eda00000000000000000000000000000006]
+[213/220    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/FabricatedDawn.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll, with 148 defines and 290 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[214/220    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Runtime.pdb
+[215/220    0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others)
+Packages\com.4koq.fabricated-dawn\Editor\ToolkitBootstrap.cs(111,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+
+Packages\com.4koq.fabricated-dawn\Editor\ToolkitBootstrap.cs(174,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others) [CacheWrite df62ad2777d8f8bd28c81f61c8907eda00000000000000000000000000000006]
+[216/220    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Runtime.dll
+[217/220    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/FabricatedDawn.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll, with 146 defines and 300 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[218/220    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Editor.pdb
+[219/220    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Editor.dll
+*** Tundra build success (2.04 seconds), 9 items updated, 220 evaluated
+Packages\com.4koq.fabricated-dawn\Editor\ToolkitBootstrap.cs(111,30): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Packages\com.4koq.fabricated-dawn\Editor\ToolkitBootstrap.cs(174,35): warning CS0618: 'Object.FindFirstObjectByType<T>()' is obsolete: 'FindFirstObjectByType has been deprecated because it relies on instance ID ordering. Use FindAnyObjectByType instead, which does not depend on ordering.'
+Total cache size 50334617
+Total cache size after purge 50334617, took 00:00:00.1011276
+AssetDatabase: script compilation time: 3.237146s
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.835 seconds
+Domain Reload Profiling: 1652ms
+	BeginReloadAssembly (412ms)
+		DisableScriptedObjects (54ms)
+		CreateAndSetChildDomain (91ms)
+	RebuildCommonClasses (12ms)
+	RebuildNativeTypeToScriptingClass (24ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (301ms)
+		LoadAssemblies (324ms)
+		TypeCache.Refresh (18ms)
+			TypeCache.ScanAssembly (12ms)
+		AnalyzeDomain (10ms)
+			BuildScriptInfoCaches (8ms)
+	FinalizeReload (837ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			BeforeProcessingInitializeOnLoad (167ms)
+			ProcessInitializeOnLoadAttributes (201ms)
+			ProcessInitializeOnLoadMethodAttributes (110ms)
+			AfterProcessingInitializeOnLoad (25ms)
+		AwakeInstancesAfterBackupRestoration (65ms)
+Starting new worker id: 0 with log in C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/FabricatedDawn/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=c73548e52922c9445a0dfffcfad25dee): Total: 5.430 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=1117 ms
+		Asset DB Callback time: managed=126 ms, native=28 ms
+		Scripting: domain reloads=1, domain reload time=896 ms, compile time=3245 ms, other=15 ms
+		Project Asset Count: scripts=194, non-scripts=102
+		Asset File Changes: new=0, changed=4, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 29.985ms
+	ApplyChangesToAssetFolders: 1.207ms
+	Scan: 52.773ms
+	Collect global state as custom dependencies: 16.399ms
+	OnSourceAssetsModified: 0.767ms
+	CategorizeScriptCompilationAssets: 7.715ms
+	ProcessAssetsWithTransientArtifactChanges: 6.952ms
+	CategorizeAssets: 3.390ms
+	CompileScripts: 3244.954ms
+	ImportOutOfDateAssets: 861.541ms (839.246ms without children)
+		UnloadImportedAssets: 1.317ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.088ms
+		ImportSchedulerStart: 20.884ms
+	PostProcessAllAssets: 128.294ms
+		VCAutoAddAssetPostprocess 1.380ms
+		PostProcessCallbackCreateDeferredMaterials 0.072ms
+		MonoPostProcessAllAssets: 125.813ms
+			AssetPostprocessor.OnPostprocessAllAssets 40.860ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 15.963ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 15.332ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 13.808ms
+			SyncVS.PostprocessSyncProject 5.271ms
+			AssetChangedListener.OnPostprocessAllAssets 3.064ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.582ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.748ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.144ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.118ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.854ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.668ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.569ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.478ms
+			AssetEvents.OnPostprocessAllAssets 0.460ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.449ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.412ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.385ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.372ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.240ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.205ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.203ms
+	PostAssetChangesProfiler: 0.556ms
+	UnloadStreamsBegin: 2.292ms
+	GenerateScriptTypeHashes: 0.505ms
+	GenerateScriptTypeSerializationHashes: 1.636ms
+	Untracked: 1032.321ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 2.227ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Fabricated Dawn
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 514 unused Assets / (0.6 MB). Loaded Objects now: 1237.
+Memory consumption went from 227.1 MB to 226.5 MB.
+Total: 8.736900 ms (FindLiveObjects: 0.233100 ms CreateObjectMapping: 0.024800 ms MarkObjects: 7.821700 ms  DeleteObjects: 0.473200 ms)
+
+Curl error 35: Recv failure: Connection was reset
+Importing 'GUID: 25b48dd36304cd54cab3a06663ca3939 - Path: Assets/FabricatedDawn/Data/Sandbox/ToolkitAdventure.asset' with importer (NativeFormatImporter)
+Imported 'GUID: 25b48dd36304cd54cab3a06663ca3939' -> (Import Result ID: '778172814706f81728db4986a3a48f48') in 0.007 seconds [static dependencies only]. Details - ImportResultOutputID=f245ee50e97ccce51ec72f8e2dfa4ece DependenciesID=680e19476000b65f0874d449d59bfa8f StaticDependenciesID=3226d505ed9f2c84bedaf82a5f4bd4ec 
+Asset Pipeline Refresh (id=ec527f8635d753640af2e3d26c41df19): Total: 0.045 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Opening scene 'Assets/FabricatedDawn/Scenes/ToolkitSandbox.unity'
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/FabricatedDawn/Scenes/ToolkitSandbox.unity'
+	Deserialize:            14.798 ms
+	Integration:            93.787 ms
+	Integration of assets:  5.107 ms
+	Thread Wait Time:       0.032 ms
+	Total Operation Time:   113.724 ms
+Unloading 32 unused Assets / (46.6 KB). Loaded Objects now: 1250.
+Memory consumption went from 264.5 MB to 264.5 MB.
+Total: 6.594600 ms (FindLiveObjects: 0.210200 ms CreateObjectMapping: 0.015600 ms MarkObjects: 6.156600 ms  DeleteObjects: 0.057200 ms)
+
+Importing 'GUID: 878f9fe9e8f71644f8e3b9569a0c0933 - Path: Assets/FabricatedDawn/Scenes/ToolkitSandbox.unity' with importer (DefaultImporter)
+Imported 'GUID: 878f9fe9e8f71644f8e3b9569a0c0933' -> (Import Result ID: '84a99fe6b64bbea256e8a46eb54770b5') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=4064298ca94871736ec01f344a11496e DependenciesID=fd28b65ce9ad8004f951e88f0e282c21 StaticDependenciesID=45db9367dd8d32c8a5e67c8213040cd3 
+Asset Pipeline Refresh (id=78bc136f0160ee54f9a8e9b367f6d33c): Total: 0.018 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 33dcdab76f008db4fb57b6d109775cde - Path: Assets/FabricatedDawn/Reports/toolkit-verification.json' with importer (TextScriptImporter)
+Imported 'GUID: 33dcdab76f008db4fb57b6d109775cde' -> (Import Result ID: 'f2f9bdec9b8f7d2b88a6bab28df9cf79') in 0.002 seconds [static dependencies only]. Details - ImportResultOutputID=9034ead277262223bff2ab02b8dc5c51 DependenciesID=db16730326deeb5dd0816cb61f2646a8 StaticDependenciesID=66c9f19b0f5ef79fc0a52e3c26e74791 
+Asset Pipeline Refresh (id=f91a5b9f654a49643b6be66adb247141): Total: 0.056 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+TOOLKIT_VERIFIED: 33 checks passed.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+FabricatedDawn.Editor.ToolkitBootstrap:Verify () (at ./Packages/com.4koq.fabricated-dawn/Editor/ToolkitBootstrap.cs:186)
+FabricatedDawn.Editor.ToolkitBootstrap:SetupProject () (at ./Packages/com.4koq.fabricated-dawn/Editor/ToolkitBootstrap.cs:30)
+
+(Filename: ./Packages/com.4koq.fabricated-dawn/Editor/ToolkitBootstrap.cs Line: 186)
+
+FABRICATED_DAWN_PROJECT_READY: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\FabricatedDawn\Assets\FabricatedDawn\Scenes\ToolkitSandbox.unity
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+FabricatedDawn.Editor.ToolkitBootstrap:SetupProject () (at ./Packages/com.4koq.fabricated-dawn/Editor/ToolkitBootstrap.cs:31)
+
+(Filename: ./Packages/com.4koq.fabricated-dawn/Editor/ToolkitBootstrap.cs Line: 31)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Admin-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Admin channel disconnected successfully.
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

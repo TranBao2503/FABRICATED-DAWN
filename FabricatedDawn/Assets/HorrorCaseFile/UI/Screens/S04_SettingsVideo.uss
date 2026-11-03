@@ -1,0 +1,286 @@
+
+
+.s04-pool-warm {
+    left: -20%;
+    top: -16.018519%;
+    width: 80%;
+    height: 67.962963%;
+
+    -unity-background-image-tint-color: #FFF7E6;
+    opacity: 0.04;
+}
+
+.s04-pool-dark {
+    left: 45.989583%;
+    top: 53.981481%;
+    width: 71.979167%;
+    height: 60%;
+    -unity-background-image-tint-color: #000000;
+    opacity: 0.5;
+}
+
+.s04-header {
+    left: 112px;
+    right: 112px;
+    top: 88px;
+}
+
+.s04-title {
+    height: 58px;
+    font-size: 64px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-left;
+}
+
+.s04-tabs {
+    margin-top: 26px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.s04-tab {
+    margin-left: 6px;
+}
+
+.s04-tab--first {
+    margin-left: 0;
+}
+
+.s04-unsaved {
+    margin-left: auto;
+    padding-bottom: 12px;
+    font-size: 18px;
+
+    color: rgba(236, 230, 218, 0.38);
+}
+
+.s04-options {
+    left: 112px;
+    top: 290px;
+    width: 1060px;
+}
+
+.s04-row {
+    height: 93px;
+    flex-direction: row;
+    align-items: center;
+    border-bottom-width: 1px;
+
+    border-bottom-color: rgba(236, 230, 218, 0.1);
+}
+
+.s04-row__label {
+    width: 340px;
+    font-size: 34px;
+    color: var(--hcf-cream-86);
+    -unity-text-align: middle-left;
+}
+
+.s04-row__switch {
+    margin-left: 28px;
+}
+
+.s04-row__control {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin-left: 28px;
+}
+
+.s04-row__plate {
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    right: -10px;
+    height: 82px;
+    display: none;
+}
+
+.s04-row.is-active .s04-row__plate {
+    display: flex;
+}
+
+.s04-row.is-active .s04-row__label,
+.s04-row.is-active .s04-value {
+    color: var(--hcf-ink);
+}
+
+.s04-row.is-active .hcf-slider .unity-base-slider__tracker {
+    background-color: rgba(21, 19, 18, 0.18);
+}
+
+.s04-row.is-active .hcf-slider .unity-base-slider__dragger {
+    background-color: var(--hcf-ink);
+}
+
+.s04-row.is-active .hcf-dropdown {
+    border-color: rgba(21, 19, 18, 0.3);
+}
+
+.s04-row.is-active .hcf-dropdown:hover {
+    border-color: rgba(21, 19, 18, 0.75);
+    background-color: rgba(21, 19, 18, 0.04);
+}
+
+.s04-row.is-active .hcf-dropdown .unity-base-popup-field__text {
+    color: var(--hcf-ink);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button {
+    border-color: rgba(21, 19, 18, 0.3);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button__text {
+    color: rgba(21, 19, 18, 0.87);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button:hover {
+    border-color: rgba(21, 19, 18, 0.75);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button:hover .unity-radio-button__text {
+    color: var(--hcf-ink);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button:checked {
+    border-width: 0;
+    background-color: var(--hcf-ink);
+}
+
+.s04-row.is-active .hcf-seg-group .unity-radio-button:checked .unity-radio-button__text {
+    -unity-font-definition: url("../../Fonts/BigShouldersDisplay-ExtraBold.ttf");
+    color: var(--hcf-cream);
+}
+
+.s04-value {
+    width: 70px;
+    margin-left: 28px;
+    font-size: 21px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-right;
+}
+
+.s04-row--toggles {
+    height: 92px;
+    border-bottom-width: 0;
+}
+
+.s04-toggle {
+    margin-left: 60px;
+}
+
+.s04-toggle--first {
+    margin-left: 0;
+}
+
+.s04-toggle .unity-toggle__text {
+    font-size: 32px;
+}
+
+.s04-badge {
+    margin-left: 18px;
+    padding: 3px 8px;
+    font-size: 16px;
+    letter-spacing: 2.88px;
+    color: var(--hcf-cream-24);
+    border-width: 1px;
+
+    border-color: rgba(236, 230, 218, 0.18);
+}
+
+.s04-preview-column {
+    right: 112px;
+    top: 300px;
+    width: 560px;
+}
+
+.s04-preview__shadow {
+    left: -32px;
+    top: -8px;
+    width: 624px;
+    height: 380px;
+    opacity: 0.5;
+    rotate: -1deg;
+}
+
+.s04-preview {
+    width: 560px;
+    height: 340px;
+
+    background-color: #0D0C0B;
+    border-width: 1px;
+    border-color: rgba(236, 230, 218, 0.1);
+    rotate: -1deg;
+}
+
+.s04-preview__hatch {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+}
+
+.s04-preview__veil {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    background-color: rgba(0, 0, 0, 0);
+
+    /* The two ends the brightness slider drives the veil between. Below the pivot it
+       sinks toward the ink, above it washes toward the cream; the alpha is animated in
+       code, only the hue lives here. */
+    --hcf-preview-ink: #0D0C0B;
+    --hcf-preview-lift: var(--hcf-cream);
+}
+
+.s04-note {
+    margin-top: 26px;
+    height: 68px;
+    font-size: 20px;
+    color: var(--hcf-cream-50);
+    white-space: normal;
+}
+
+.s04-specs {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top-width: 1px;
+    border-top-color: var(--hcf-cream-14);
+}
+
+.s04-specs__line {
+    height: 30px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: var(--hcf-cream-40);
+    -unity-text-align: middle-left;
+}
+
+.s04-actions {
+    left: 112px;
+    bottom: 44px;
+    flex-direction: row;
+}
+
+.s04-btn {
+    width: 230px;
+}
+
+.s04-btn--gap {
+    margin-left: 16px;
+}
+
+.s04-hints {
+    right: 112px;
+    bottom: 44px;
+}
+
+.s04-preview__hatch {
+    background-image: url("../../Art/BrightnessCalibration.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

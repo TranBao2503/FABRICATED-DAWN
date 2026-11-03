@@ -1,0 +1,268 @@
+
+
+.s01-pool-warm-a {
+    left: -20%;
+    top: -7.962963%;
+    width: 75.989583%;
+    height: 60%;
+    -unity-background-image-tint-color: #FFF7E6;
+    opacity: 0.045;
+}
+
+.s01-pool-warm-b {
+    left: 41.979167%;
+    top: 52.037037%;
+    width: 60%;
+    height: 52.037037%;
+    -unity-background-image-tint-color: #FFF7E6;
+    opacity: 0.035;
+}
+
+.s01-pool-dark-a {
+    left: 41.979167%;
+    top: -27.962963%;
+    width: 91.979167%;
+    height: 80%;
+    -unity-background-image-tint-color: #000000;
+    opacity: 0.4;
+}
+
+.s01-pool-dark-b {
+    left: -25.989583%;
+    top: 56.018519%;
+    width: 68.020833%;
+    height: 60%;
+    -unity-background-image-tint-color: #000000;
+    opacity: 0.45;
+}
+
+.s01-keyart-shadow {
+    left: 978px;
+    top: 128px;
+    width: 872px;
+    height: 638px;
+    rotate: -1.1deg;
+    opacity: 0.6;
+}
+
+.s01-keyart {
+    left: 1008px;
+    top: 132px;
+    width: 814px;
+    height: 602px;
+    rotate: -1.1deg;
+    background-color: #0D0C0B;
+    border-width: 1px;
+    border-color: rgba(236, 230, 218, 0.1);
+}
+
+.s01-keyart__hatch {
+    position: absolute;
+    left: 9px;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+}
+
+.s01-keyart__vignette {
+    left: 9px;
+    top: 9px;
+    right: 9px;
+    bottom: 9px;
+}
+
+.s01-tape-a {
+    left: 960px;
+    top: 112px;
+    width: 150px;
+    height: 38px;
+    rotate: -24deg;
+}
+
+.s01-tape-b {
+    left: 1746px;
+    top: 698px;
+    width: 150px;
+    height: 38px;
+    rotate: -24deg;
+}
+
+.s01-fig {
+    left: 1016px;
+    top: 760px;
+    font-size: 20px;
+    color: rgba(236, 230, 218, 0.46);
+    rotate: -0.6deg;
+}
+
+.s01-hole-a {
+    left: 44px;
+    top: 210px;
+}
+
+.s01-hole-b {
+    left: 44px;
+    top: 520px;
+}
+
+.s01-hole-c {
+    left: 44px;
+    top: 830px;
+}
+
+.s01-header {
+    left: 112px;
+    top: 104px;
+    width: 800px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 9px;
+}
+
+.s01-header__code {
+    font-size: 15px;
+    letter-spacing: 5.1px;
+    color: var(--hcf-cream-50);
+}
+
+.s01-header__date {
+    font-size: 18px;
+    color: var(--hcf-cream-40);
+}
+
+.s01-title {
+    left: 108px;
+    top: 172px;
+    width: 820px;
+    height: 250px;
+}
+
+.s01-title__layer {
+    position: absolute;
+}
+
+.s01-title__layer--shadow {
+    left: 4px;
+    top: 4px;
+    opacity: 0.62;
+}
+
+.s01-title__layer--main {
+    left: 0;
+    top: 0;
+}
+
+.s01-title__layer .s01-title__line {
+    font-size: 150px;
+    height: 120px;
+    letter-spacing: -1.8px;
+    -unity-text-align: middle-left;
+}
+
+.s01-title__layer--shadow .s01-title__line {
+    color: var(--hcf-rust-deep);
+}
+
+.s01-title__layer--main .s01-title__line {
+    color: var(--hcf-cream);
+}
+
+.s01-menu {
+    left: 112px;
+    top: 520px;
+    width: 700px;
+}
+
+.s01-menu-item {
+    position: relative;
+    height: 74px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    -unity-text-align: upper-left;
+}
+
+.s01-menu-item--second {
+    margin-top: 17px;
+}
+
+.s01-menu-item__plate {
+    left: -16px;
+    top: 4px;
+    width: 610px;
+    height: 66px;
+}
+
+.s01-menu-item__underline {
+    position: absolute;
+    display: none;
+    left: -6px;
+    bottom: -2px;
+    width: 520px;
+    height: 5px;
+    background-color: var(--hcf-rust);
+    rotate: -0.5deg;
+    opacity: 0.9;
+}
+
+.s01-menu-item.is-active .s01-menu-item__underline {
+    display: flex;
+}
+
+.s01-menu-item__row {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.s01-menu-item.is-active .s01-menu-item__row {
+    padding-left: 14px;
+}
+
+.s01-menu-item__index {
+    font-size: 19px;
+    margin-bottom: 9px;
+    color: rgba(236, 230, 218, 0.34);
+}
+
+.s01-menu-item.is-active .s01-menu-item__index {
+    color: rgba(26, 24, 23, 0.83);
+}
+
+.s01-menu-item__label {
+    margin-left: 22px;
+    font-size: 52px;
+    color: var(--hcf-cream-86);
+}
+
+.s01-menu-item.is-active .s01-menu-item__label {
+    -unity-font-definition: url("../../Fonts/BigShouldersDisplay-ExtraBold.ttf");
+    color: #161413;
+}
+
+.s01-menu-item__meta {
+    position: absolute;
+    left: 640px;
+    top: 25px;
+    font-size: 18px;
+    color: var(--hcf-cream-55);
+}
+
+.s01-version {
+    left: 112px;
+    bottom: 52px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: rgba(236, 230, 218, 0.34);
+}
+
+.s01-hints {
+    right: 112px;
+    bottom: 44px;
+}
+
+.s01-keyart__hatch {
+    background-image: url("../../Art/Backdrops/KeyArt_MainMenu.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

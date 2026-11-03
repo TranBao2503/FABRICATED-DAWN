@@ -1,0 +1,16 @@
+{
+    "name": "HorrorCaseFile.Demo",
+    "rootNamespace": "",
+    "references": [
+        "HorrorCaseFile.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

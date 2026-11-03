@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: ITEM_TOY
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: ITEM_TOY
+  displayName: "\u0110\u1ED3 ch\u01A1i (b\u1EA3n k\xFD \u1EE9c)"
+  origin: 1
+  pastOnly: 1
+  uses: 1
+  purpose: "D\u1EEF li\u1EC7u kh\u1EDFi t\u1EA1o; nh\xF3m thi\u1EBFt k\u1EBF c\u1EA7n b\u1ED5 sung \u0111i\u1EC1u ki\u1EC7n nh\u1EADn v\xE0 s\u1EED d\u1EE5ng."
+  icon: {fileID: 0}

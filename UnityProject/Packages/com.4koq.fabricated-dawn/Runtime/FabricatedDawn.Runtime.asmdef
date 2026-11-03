@@ -1,0 +1,6 @@
+{
+  "name": "FabricatedDawn.Runtime",
+  "rootNamespace": "FabricatedDawn",
+  "references": [],
+  "autoReferenced": true
+}

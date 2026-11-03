@@ -1,0 +1,10 @@
+<!--
+  The runtime assembly holds the four custom elements and the interaction layer.
+  The elements are instantiated from UXML by name, never from C#, so a build with
+  Managed Stripping enabled can drop them and the screens would come up without
+  their torn plates, dashed frames, meters and grain. Preserving the assembly
+  costs a few kilobytes and removes that failure mode.
+-->
+<linker>
+  <assembly fullname="HorrorCaseFile.Runtime" preserve="all" />
+</linker>

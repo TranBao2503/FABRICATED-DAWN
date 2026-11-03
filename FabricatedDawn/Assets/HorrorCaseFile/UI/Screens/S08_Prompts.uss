@@ -1,0 +1,206 @@
+
+
+.s08-gameplay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s08-vignette {
+    left: -24%;
+    top: -22%;
+    width: 152%;
+    height: 132%;
+    opacity: 0.88;
+}
+
+.s08-shade {
+    left: 34%;
+    top: 18%;
+    width: 56%;
+    height: 64%;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.6);
+}
+
+.s08-crosshair {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-50);
+}
+
+.s08-prompt {
+    flex-direction: row;
+    align-items: center;
+}
+
+.s08-prompt--pry {
+    left: 50%;
+    top: 50%;
+    translate: 50px -88px;
+}
+
+.s08-prompt--locked {
+    left: 50%;
+    top: 50%;
+    translate: 50px 48px;
+    opacity: 0.75;
+}
+
+.s08-prompt__body {
+    margin-left: 18px;
+}
+
+.s08-key {
+    width: 52px;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    -unity-text-align: middle-center;
+    --hcf-dash-color: var(--hcf-cream-28);
+}
+
+.s08-key--active {
+    border-width: 2px;
+    border-color: var(--hcf-cream);
+    color: var(--hcf-cream);
+}
+
+.s08-key__label {
+    color: var(--hcf-cream-28);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-prompt__title {
+    height: 40px;
+    font-size: 40px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-left;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-prompt__sub {
+    font-size: 17px;
+    color: var(--hcf-cream-55);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-prompt__sub--locked {
+    color: var(--hcf-rust-90);
+}
+
+.s08-strike {
+    align-self: flex-start;
+    height: 40px;
+}
+
+.s08-strike__title {
+    color: var(--hcf-cream-30);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-strike__bar {
+    left: -4px;
+    right: -4px;
+    top: 21px;
+    height: 3px;
+
+    background-color: rgba(168, 51, 42, 0.85);
+    rotate: -1deg;
+}
+
+.s08-hold {
+    left: 196px;
+    top: 470px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s08-hold__key {
+    height: 44px;
+    padding-left: 14px;
+    padding-right: 14px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-55);
+    font-size: 19px;
+    letter-spacing: 1.9px;
+    color: rgba(236, 230, 218, 0.85);
+    -unity-text-align: middle-center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-hold__body {
+    margin-left: 16px;
+    width: 180px;
+}
+
+.s08-hold__title {
+    margin-bottom: 8px;
+    height: 30px;
+    font-size: 30px;
+    color: rgba(236, 230, 218, 0.85);
+    -unity-text-align: middle-left;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-hold__track {
+    height: 5px;
+}
+
+.s08-hold__track .unity-progress-bar__background {
+    min-height: 0;
+
+    background-color: rgba(236, 230, 218, 0.2);
+}
+
+.s08-subtitles {
+    left: 0;
+    right: 0;
+    bottom: 96px;
+    align-items: center;
+}
+
+.s08-subtitles__speaker {
+    margin-bottom: 10px;
+    font-size: 15px;
+    letter-spacing: 4.5px;
+    color: var(--hcf-rust);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-subtitles__line {
+    max-width: 1180px;
+    font-size: 46px;
+    letter-spacing: 0.2px;
+
+    color: #F2ECE0;
+    -unity-text-align: upper-center;
+    white-space: normal;
+    text-shadow: 0px 2px 14px rgba(0, 0, 0, 0.95);
+}
+
+.s08-ambient {
+    left: 0;
+    right: 0;
+    bottom: 52px;
+    font-size: 17px;
+    color: rgba(236, 230, 218, 0.42);
+    -unity-text-align: upper-center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+}
+
+.s08-hints {
+    right: 112px;
+    bottom: 20px;
+}
+
+.s08-gameplay {
+    background-image: url("../../Art/Backdrops/Gameplay_Corridor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

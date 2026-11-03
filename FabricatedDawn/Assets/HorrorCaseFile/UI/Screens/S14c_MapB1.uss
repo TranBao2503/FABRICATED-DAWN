@@ -1,0 +1,95 @@
+
+
+.s14c {
+    background-color: #141110;
+}
+
+.s14c-glow {
+    left: 10%;
+    top: 13.981481%;
+    width: 80%;
+    height: 67.962963%;
+
+    -unity-background-image-tint-color: rgba(255, 247, 230, 0.03);
+}
+
+.s14c-map {
+    border-color: rgba(236, 230, 218, 0.1);
+    background-color: #232220;
+}
+
+.s14-board--b1 {
+    background-image: url("../../Art/Maps/Basement_Boiler.png");
+}
+
+.s14c-marker {
+    left: 881px;
+    top: 352px;
+}
+
+.s14c-marker-ring {
+    left: 864px;
+    top: 335px;
+}
+
+.s14c-marker-label {
+    left: 925px;
+    top: 343px;
+}
+
+.s14c-note {
+    position: absolute;
+    left: 150px;
+    top: 560px;
+    font-size: 21px;
+    color: var(--hcf-cream-40);
+    rotate: -4deg;
+}
+
+.s14c-title {
+    margin-top: 22px;
+    height: 60px;
+    font-size: 64px;
+    color: rgba(236, 230, 218, 0.75);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s14c-body {
+    margin-top: 20px;
+    min-height: 107px;
+    font-size: 21px;
+    color: var(--hcf-cream-50);
+    white-space: normal;
+}
+
+.s14c-stats {
+    margin-top: 40px;
+}
+
+.s14c-stat__value--rust {
+    color: var(--hcf-rust);
+}
+
+.s14c-tooltip {
+    margin-top: 34px;
+    padding: 22px 26px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-14);
+
+    background-color: rgba(6, 5, 5, 0.5);
+}
+
+.s14c-tooltip__caption {
+    margin-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 3.6px;
+    color: var(--hcf-cream-40);
+}
+
+.s14c-tooltip__text {
+    min-height: 68px;
+    font-size: 20px;
+    color: var(--hcf-cream-60);
+    white-space: normal;
+}

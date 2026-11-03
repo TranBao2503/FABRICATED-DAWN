@@ -1,0 +1,82 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S09_Objectives.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s09">
+
+        <ui:VisualElement name="gameplay-view" class="hcf-abs hcf-placeholder s09-gameplay" picking-mode="Ignore" />
+
+        <ui:VisualElement name="vignette" class="hcf-vignette s09-vignette" picking-mode="Ignore" />
+
+        <ui:VisualElement name="tracker" class="hcf-abs s09-tracker">
+
+            <ui:VisualElement name="tracker-head" class="hcf-rule s09-tracker__head" picking-mode="Ignore">
+                <ui:Label text="OBJECTIVES" class="hcf-mono s09-tracker__title" />
+                <ui:Label text="ch. 03" class="hcf-typed s09-tracker__chapter" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="objective-active" class="s09-active">
+                <ui:VisualElement class="s09-active__marker" />
+                <ui:VisualElement class="s09-active__body">
+                    <ui:Label text="FIND THE INTAKE LEDGER" name="objective-title" class="hcf-bs-800 s09-active__title" />
+                    <ui:VisualElement name="objective-steps" class="s09-list">
+
+                        <ui:VisualElement name="objective-item-01" class="s09-list__item s09-list__item--first">
+                            <ui:Toggle name="check-01" value="true" class="hcf-check s09-box">
+                                <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                            </ui:Toggle>
+                            <ui:Label text="reach the second landing" class="hcf-typed s09-list__label" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="objective-item-02" class="s09-list__item">
+                            <ui:Toggle name="check-02" class="hcf-check s09-box">
+                                <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                            </ui:Toggle>
+                            <ui:Label text="search the records office" class="hcf-typed s09-list__label" />
+                        </ui:VisualElement>
+
+                        <ui:VisualElement name="objective-item-03" class="s09-list__item">
+                            <ui:Toggle name="check-03" enabled="false" class="hcf-check s09-box">
+                                <hcf:HcfDashedFrame class="hcf-check__dash" dash="3" gap="3" />
+                            </ui:Toggle>
+                            <ui:Label text="— hidden until found —" class="hcf-typed s09-list__label s09-list__label--hidden" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="objective-completed" class="s09-completed">
+                <ui:Label text="COMPLETED" class="hcf-mono s09-completed__cap" />
+                <ui:VisualElement class="s09-strike">
+                    <ui:Label text="CUT THE YARD FLOODLIGHTS" class="hcf-bs-700 s09-strike__title" />
+                    <ui:VisualElement class="hcf-abs s09-strike__bar" picking-mode="Ignore" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="toast" class="hcf-abs s09-toast">
+            <ui:VisualElement name="toast-card" class="s09-toast__card">
+                <ui:VisualElement class="hcf-shadow s09-toast__shadow" picking-mode="Ignore" />
+                <hcf:HcfTornPlate class="s09-toast__plate" cut-top="5" cut-right="3" cut-bottom="4" cut-left="4" />
+                <ui:VisualElement class="s09-toast__content">
+                    <ui:Label text="OBJECTIVE UPDATED" class="hcf-mono s09-toast__kicker" />
+                    <ui:Label text="SEARCH THE RECORDS OFFICE" name="toast-title" class="hcf-bs-900 s09-toast__title" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="toast-hint" class="s09-toast__hint">
+                <ui:Label text="J" name="key-journal" class="hcf-keycap s09-hint-key" />
+                <ui:Label text="journal" class="hcf-mono s09-hint-label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s09-hints" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+
+    </ui:VisualElement>
+</ui:UXML>

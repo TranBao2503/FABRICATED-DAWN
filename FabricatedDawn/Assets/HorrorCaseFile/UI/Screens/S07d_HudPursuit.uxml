@@ -1,0 +1,102 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S07_Hud.uss" />
+    <Style src="S07d_HudPursuit.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s07 s07d">
+
+        <ui:VisualElement name="gameplay-view" class="hcf-abs hcf-placeholder s07-gameplay" picking-mode="Ignore" />
+
+        <ui:VisualElement name="vignette" class="hcf-vignette s07d-vignette" picking-mode="Ignore" />
+
+        <ui:VisualElement name="alert-frame" class="hcf-abs s07d-frame" picking-mode="Ignore" />
+
+        <ui:VisualElement name="alert" class="hcf-abs s07d-alert">
+            <ui:VisualElement name="alert-title" class="s07d-title">
+                <ui:Label text="RUN" class="hcf-display s07d-title__line s07d-title__line--shadow" />
+                <ui:Label text="RUN" class="hcf-display s07d-title__line s07d-title__line--main" />
+            </ui:VisualElement>
+            <ui:Label text="it has seen you — do not turn around" class="hcf-typed s07d-alert__note" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="vitals" class="hcf-abs s07-vitals">
+            <ui:VisualElement name="condition-row" class="s07-condition">
+                <ui:Label text="CONDITION" class="hcf-mono s07-condition__label" />
+                <ui:Label text="winded" name="condition-value" class="hcf-typed s07-condition__value s07d-condition__value" />
+            </ui:VisualElement>
+
+            <hcf:HcfSegmentedMeter name="meter-health" class="s07-health" segments="7" filled="5" accent-from="4" gap="4" />
+            <ui:VisualElement name="stamina-row" class="s07-stamina">
+                <ui:Label text="STAM" class="hcf-mono s07-stamina__label" />
+                <ui:VisualElement name="stamina-track" class="s07-stamina__track s07d-stamina__track">
+                    <ui:VisualElement name="stamina-fill" class="s07-stamina__fill s07d-stamina__fill" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="you cannot sprint much longer" name="stamina-note" class="hcf-typed s07d-stamina__note" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="gear" class="hcf-abs s07-gear">
+
+            <ui:VisualElement name="quick">
+                <ui:Label text="QUICK" class="hcf-mono s07-cap" />
+                <ui:VisualElement name="quick-slots" class="s07-quick__row">
+                    <ui:Button name="cell-01" text="" class="s07-slot s07-slot--first s07-slot--idle">
+                        <ui:VisualElement class="hcf-abs s07-slot__hatch" picking-mode="Ignore" />
+                        <ui:VisualElement name="art-01" class="hcf-abs s07-slot-art" picking-mode="Ignore" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="1" class="hcf-abs hcf-mono s07-slot__index" />
+                    </ui:Button>
+
+                    <ui:Button name="cell-02" text="" class="s07-slot">
+                        <hcf:HcfDashedFrame class="hcf-abs s07-slot__dash" line-width="1" dash="3" gap="3" picking-mode="Ignore" />
+                        <ui:VisualElement name="art-02" class="hcf-abs s07-slot-art" picking-mode="Ignore" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="2" class="hcf-abs hcf-mono s07-slot__index s07-slot__index--empty" />
+                    </ui:Button>
+                    <ui:Button name="cell-03" text="" class="s07-slot">
+                        <hcf:HcfDashedFrame class="hcf-abs s07-slot__dash" line-width="1" dash="3" gap="3" picking-mode="Ignore" />
+                        <ui:VisualElement name="art-03" class="hcf-abs s07-slot-art" picking-mode="Ignore" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="3" class="hcf-abs hcf-mono s07-slot__index s07-slot__index--empty" />
+                    </ui:Button>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="weapon" class="s07d-weapon">
+                <ui:Label text="WEAPON" class="hcf-mono s07-cap s07d-weapon__cap" />
+                <ui:VisualElement name="weapon-strike" class="s07d-strike">
+                    <ui:Label text="UNARMED" name="weapon-name" class="hcf-bs-900 s07d-strike__title" />
+                    <ui:VisualElement class="hcf-abs s07d-strike__bar" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:Label text="you dropped it in the stairwell" name="weapon-note" class="hcf-typed s07d-weapon__note" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s07-hints" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="I" />
+                <ui:Label text="inventory" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="J" />
+                <ui:Label text="journal" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="M" />
+                <ui:Label text="map" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="O" />
+                <ui:Label text="objectives" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="pause" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,36 @@
+
+
+.s16b-body--diff {
+    height: 107px;
+}
+
+.s16c-threat {
+    margin-top: 26px;
+    padding: 18px 20px;
+    border-width: 1px;
+    border-color: var(--hcf-rust-40);
+
+    background-color: rgba(168, 51, 42, 0.08);
+}
+
+.s16c-threat__row {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.s16c-threat__label {
+    height: 16px;
+    font-size: 14px;
+    letter-spacing: 2.5px;
+    color: var(--hcf-cream-50);
+    -unity-text-align: middle-left;
+}
+
+.s16c-threat__meter {
+    height: 8px;
+}
+
+.s16c-actions {
+    margin-top: 26px;
+}

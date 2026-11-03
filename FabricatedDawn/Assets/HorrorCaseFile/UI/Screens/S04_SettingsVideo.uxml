@@ -1,0 +1,146 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S04_SettingsVideo.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s04">
+
+        <ui:VisualElement class="hcf-light-pool s04-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s04-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s04-header">
+            <ui:Label class="hcf-bs-800 s04-title" text="SETTINGS" />
+            <ui:VisualElement name="tabs" class="hcf-rule s04-tabs" picking-mode="Ignore">
+                <ui:Button name="tab-video" text="" class="hcf-tab s04-tab s04-tab--first is-active">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="VIDEO" />
+                </ui:Button>
+                <ui:Button name="tab-audio" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="AUDIO" />
+                </ui:Button>
+                <ui:Button name="tab-controls" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="CONTROLS" />
+                </ui:Button>
+                <ui:Button name="tab-gameplay" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="GAMEPLAY" />
+                </ui:Button>
+                <ui:Label name="unsaved" class="hcf-typed s04-unsaved" text="unsaved changes" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="options" class="hcf-abs s04-options">
+
+            <ui:VisualElement name="row-resolution" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="RESOLUTION" />
+                <ui:DropdownField name="dropdown-resolution" class="hcf-dropdown s04-row__control" choices="1920 × 1080,2560 × 1440,3840 × 2160,1280 × 720" index="0">
+                    <ui:Label class="hcf-dropdown__caret" text="▼" picking-mode="Ignore" />
+                </ui:DropdownField>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-display-mode" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="DISPLAY MODE" />
+                <ui:RadioButtonGroup name="seg-display-mode" class="hcf-seg-group hcf-seg-group--cream s04-row__control" choices="FULLSCREEN,BORDERLESS,WINDOWED" value="0" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-brightness" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="BRIGHTNESS" />
+                <ui:Slider name="slider-brightness" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="38" fill="true" />
+                <ui:Label name="slider-brightness-value" class="hcf-mono s04-value" text="38" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-fov" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="FIELD OF VIEW" />
+                <ui:Slider name="slider-fov" class="hcf-slider s04-row__control" low-value="60" high-value="110" value="86" fill="true" />
+                <ui:Label name="slider-fov-value" class="hcf-mono s04-value" text="86" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-texture-quality" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="TEXTURE QUALITY" />
+                <ui:RadioButtonGroup name="seg-texture-quality" class="hcf-seg-group hcf-seg-group--cream s04-row__control" choices="LOW,MEDIUM,HIGH,ULTRA" value="2" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-film-grain" class="s04-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="FILM GRAIN" />
+                <ui:Toggle name="switch-film-grain" value="true" class="hcf-switch s04-row__switch">
+                    <ui:VisualElement class="hcf-switch__knob" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-toggles" class="s04-row s04-row--toggles">
+                <ui:Toggle name="check-vsync" text="V-SYNC" value="true" class="hcf-check s04-toggle s04-toggle--first">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-motion-blur" text="MOTION BLUR" class="hcf-check s04-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+
+                <ui:Toggle name="check-ray-tracing" text="RAY TRACING" enabled="false" class="hcf-check s04-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                    <hcf:HcfDashedFrame class="hcf-check__dash" dash="3" gap="3" />
+                    <ui:Label name="badge-unsupported" class="hcf-mono s04-badge" text="UNSUPPORTED" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="preview-column" class="hcf-abs s04-preview-column">
+            <ui:VisualElement class="hcf-shadow s04-preview__shadow" picking-mode="Ignore" />
+            <ui:VisualElement name="calibration-preview" class="s04-preview">
+                <ui:VisualElement class="hcf-placeholder s04-preview__hatch" picking-mode="Ignore">
+                </ui:VisualElement>
+
+                <ui:VisualElement name="calibration-veil" class="s04-preview__veil" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label class="hcf-typed s04-note" text="lower the brightness until the shape on the left is barely visible." />
+            <ui:VisualElement class="s04-specs">
+                <ui:Label name="specs-gpu" class="hcf-mono s04-specs__line" text="GPU · ATLAS 6000 SERIES" />
+                <ui:Label name="specs-vram" class="hcf-mono s04-specs__line" text="VRAM 6.0 GB · DRIVER 552.44" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="actions" class="hcf-abs s04-actions">
+            <ui:Button name="btn-apply" text="" class="hcf-btn hcf-btn--primary s04-btn">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="APPLY" />
+            </ui:Button>
+            <ui:Button name="btn-defaults" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="DEFAULTS" />
+            </ui:Button>
+            <ui:Button name="btn-back" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="BACK" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s04-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="TAB" />
+                <ui:Label text="next tab" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

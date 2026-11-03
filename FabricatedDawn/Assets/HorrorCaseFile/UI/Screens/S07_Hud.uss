@@ -1,0 +1,492 @@
+
+
+.s07-gameplay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s07-vignette {
+    left: -24%;
+    top: -22%;
+    width: 152%;
+    height: 132%;
+    opacity: 0.88;
+}
+
+.s07-crosshair {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 8px;
+    height: 8px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-50);
+}
+
+.s07-objective {
+    left: 72px;
+    top: 64px;
+    max-width: 520px;
+}
+
+.s07-objective__kicker {
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: var(--hcf-rust-90);
+}
+
+.s07-objective__title {
+    margin-top: 8px;
+    height: 35px;
+    font-size: 32px;
+    color: var(--hcf-cream-86);
+    -unity-text-align: middle-left;
+    white-space: nowrap;
+}
+
+.s07-vitals {
+    left: 72px;
+    bottom: 72px;
+    width: 440px;
+}
+
+.s07-condition {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 12px;
+}
+
+.s07-condition__label {
+    font-size: 14px;
+    letter-spacing: 3.9px;
+    color: var(--hcf-cream-50);
+}
+
+.s07-condition__value {
+    font-size: 18px;
+    color: var(--hcf-rust);
+}
+
+.s07-health {
+    height: 16px;
+    margin-bottom: 16px;
+}
+
+.s07-stamina {
+    flex-direction: row;
+    align-items: center;
+}
+
+.s07-stamina__label {
+    font-size: 14px;
+    letter-spacing: 3.1px;
+    color: var(--hcf-cream-40);
+}
+
+.s07-stamina__track {
+    flex-grow: 1;
+    margin-left: 14px;
+    height: 5px;
+    background-color: var(--hcf-cream-16);
+}
+
+.s07-stamina__fill {
+    width: 42%;
+    height: 100%;
+
+    background-color: rgba(236, 230, 218, 0.75);
+}
+
+.s07-gear {
+    right: 72px;
+    bottom: 72px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.s07-torch,
+.s07-ammo {
+    margin-left: 44px;
+}
+
+.s07-cap {
+    font-size: 14px;
+    letter-spacing: 3.6px;
+    color: var(--hcf-cream-45);
+}
+
+.s07-quick__row {
+    flex-direction: row;
+    margin-top: 9px;
+}
+
+.s07-slot {
+    width: 74px;
+    height: 74px;
+    margin: 0 0 0 9px;
+    padding: 0;
+    border-width: 0;
+    border-radius: 0;
+    min-width: 0;
+    min-height: 0;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.s07-slot--first {
+    margin-left: 0;
+}
+
+.s07-slot__dash {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    --hcf-dash-color: var(--hcf-cream-14);
+}
+
+.s07-slot--idle {
+    border-width: 1px;
+    border-color: var(--hcf-cream-30);
+
+    background-color: rgba(10, 9, 8, 0.5);
+}
+
+.s07-slot.is-active {
+    border-width: 2px;
+    border-color: var(--hcf-cream);
+    background-color: rgba(10, 9, 8, 0.5);
+}
+
+.s07-slot.is-active .s07-slot__dash {
+    display: none;
+}
+
+.s07-slot:hover,
+.s07-slot:active,
+.s07-slot:focus,
+.s07-slot:disabled {
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+}
+
+.s07-slot--idle:hover,
+.s07-slot--idle:active,
+.s07-slot--idle:focus {
+    border-color: var(--hcf-cream-30);
+    background-color: rgba(10, 9, 8, 0.5);
+}
+
+.s07-slot.is-active:hover,
+.s07-slot.is-active:active,
+.s07-slot.is-active:focus {
+    border-color: var(--hcf-cream);
+    background-color: rgba(10, 9, 8, 0.5);
+}
+
+.hcf-kbd .s07-slot:focus > .hcf-focus-ring {
+    display: none;
+}
+
+.hcf-kbd .s07-slot--idle:focus:enabled {
+    border-color: var(--hcf-rust);
+}
+
+.hcf-kbd .s07-slot:focus:enabled .s07-slot__dash {
+    --hcf-dash-color: var(--hcf-rust);
+}
+
+.hcf-kbd .s07-slot.is-active:focus:enabled {
+    border-color: var(--hcf-cream);
+}
+
+.s07-slot__hatch {
+    left: 7px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    background-image: url("../../Textures/HatchTile_Light.png");
+    background-repeat: repeat;
+
+    background-size: 14.2px 45.3px;
+    -unity-background-image-tint-color: var(--hcf-cream);
+    opacity: 0.14;
+}
+
+.s07-slot.is-active .s07-slot__hatch {
+    opacity: 0.2;
+}
+
+.s07-slot-art {
+    left: 7px;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    display: none;
+}
+
+.s07-slot-art--on {
+    display: flex;
+}
+
+.s07-slot--equipped .s07-slot__hatch {
+    display: none;
+}
+
+.s07-slot__index {
+    left: 5px;
+    bottom: 3px;
+    font-size: 13px;
+    color: var(--hcf-cream-60);
+}
+
+.s07-slot__index--empty {
+    color: var(--hcf-cream-24);
+}
+
+.s07-slot.is-active .s07-slot__index {
+    color: var(--hcf-cream);
+}
+
+.s07-slot__count {
+    right: 5px;
+    bottom: 3px;
+    font-size: 13px;
+    color: var(--hcf-rust);
+}
+
+.s07-torch {
+    align-items: flex-end;
+}
+
+.s07-torch__meter {
+    margin-top: 8px;
+    width: 71px;
+    height: 34px;
+}
+
+.s07-torch__note {
+    margin-top: 8px;
+    font-size: 17px;
+    color: var(--hcf-cream-50);
+}
+
+.s07-ammo {
+    align-items: flex-end;
+}
+
+.s07-ammo__cap {
+    margin-bottom: 2px;
+}
+
+.s07-ammo__row {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.s07-ammo__current {
+    height: 79px;
+    font-size: 96px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-left;
+}
+
+.s07-ammo__total {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    height: 40px;
+    font-size: 44px;
+    color: var(--hcf-cream-40);
+    -unity-text-align: middle-left;
+}
+
+.s07-gameplay {
+    background-image: url("../../Art/Backdrops/Gameplay_Corridor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s07-hints {
+    left: 0;
+    right: 0;
+    bottom: 32px;
+    justify-content: center;
+}
+
+.s07-notify {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s07-notify-item {
+    opacity: 0;
+    transition-property: opacity, translate;
+    transition-duration: 300ms, 300ms;
+    transition-timing-function: ease-out, ease-out;
+}
+
+.s07-notify-item.s07-notify-item--on {
+    opacity: 1;
+    translate: 0 0;
+}
+
+.s07-notify-stack {
+    right: 72px;
+    top: 64px;
+    align-items: flex-end;
+}
+
+.s07-notify-note {
+    translate: 18px 0;
+    flex-direction: row;
+    align-items: center;
+    padding: 14px 20px;
+
+    background-color: rgba(10, 9, 8, 0.72);
+    border-left-width: 4px;
+    border-left-color: var(--hcf-rust);
+}
+
+.s07-notify-note--next {
+    margin-top: 16px;
+}
+
+.s07-notify-note--cream {
+    border-left-color: var(--hcf-cream-50);
+}
+
+.s07-notify-note__icon {
+    width: 44px;
+    height: 44px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-30);
+}
+
+.s07-notify-note__hatch {
+    left: 6px;
+    top: 6px;
+    right: 6px;
+    bottom: 6px;
+    background-image: url("../../Textures/HatchTile_Light.png");
+    background-repeat: repeat;
+    background-size: 11.8px 37.7px;
+
+    -unity-background-image-tint-color: rgba(236, 230, 218, 0.2);
+}
+
+.s07-notify-note__body {
+    margin-left: 14px;
+}
+
+.s07-notify-note__kicker {
+    height: 16px;
+    font-size: 13px;
+    letter-spacing: 3.64px;
+    color: var(--hcf-cream-45);
+    -unity-text-align: middle-left;
+}
+
+.s07-notify-note__title {
+    margin-top: 4px;
+    height: 30px;
+    font-size: 30px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-left;
+}
+
+.s07-notify-autosave {
+    left: 0;
+    right: 0;
+    top: 64px;
+    translate: 0 -10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.s07-notify-autosave__dot {
+    width: 12px;
+    height: 12px;
+    background-color: var(--hcf-rust);
+}
+
+.s07-notify-autosave__label {
+    margin-left: 12px;
+    height: 18px;
+    font-size: 15px;
+    letter-spacing: 3px;
+    color: var(--hcf-cream-50);
+    -unity-text-align: middle-left;
+}
+
+.s07-notify-toast {
+    left: 0;
+    right: 0;
+    top: 250px;
+    translate: 0 -10px;
+    align-items: center;
+}
+
+.s09-toast__plate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s07-notify-toast__content {
+    padding: 16px 34px;
+    align-items: center;
+}
+
+.s07-notify-toast__kicker {
+    height: 16px;
+    font-size: 13px;
+    letter-spacing: 3.9px;
+    color: rgba(21, 19, 18, 0.55);
+    -unity-text-align: middle-center;
+}
+
+.s07-notify-toast__title {
+    margin-top: 6px;
+    height: 38px;
+    font-size: 38px;
+    color: var(--hcf-ink);
+    -unity-text-align: middle-center;
+}
+
+.s07-notify-chapter {
+    left: 0;
+    right: 0;
+    bottom: 230px;
+    translate: 0 10px;
+    align-items: center;
+}
+
+.s07-notify-chapter__kicker {
+    height: 18px;
+    font-size: 15px;
+    letter-spacing: 4.5px;
+    color: var(--hcf-rust-90);
+    -unity-text-align: middle-center;
+}
+
+.s07-notify-chapter__title {
+    margin-top: 10px;
+    height: 58px;
+    font-size: 64px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-center;
+}
+

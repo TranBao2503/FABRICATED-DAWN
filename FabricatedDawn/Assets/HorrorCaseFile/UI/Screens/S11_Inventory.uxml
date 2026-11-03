@@ -1,0 +1,265 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S11_Inventory.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s11">
+        <ui:VisualElement class="hcf-light-pool s11-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s11-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s11-header">
+            <ui:VisualElement class="hcf-rule s11-header-row" picking-mode="Ignore">
+                <ui:Label class="hcf-bs-800 s11-title" text="INVENTORY" />
+
+                <ui:Label name="inv-meta" class="hcf-typed s11-carry" text="carrying 10 of 24 · 3.6 kg" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="grid" class="hcf-abs s11-grid hcf-pick-on-click" picking-mode="Ignore">
+            <ui:Button name="cell-01" text="" class="s11-cell s11-cell--full is-active">
+                <ui:VisualElement class="s11-cell-art hcf-item--crowbar" />
+                <ui:Label class="hcf-mono s11-cell-count" text="×1" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-02" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--bandage" />
+                <ui:Label class="hcf-mono s11-cell-count" text="×3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · MEDICAL" />
+                <ui:Label class="s11-cell__data-title" text="BANDAGE" />
+                <ui:Label class="s11-cell__data-body" text="field dressing from the wall box by the stairs. the wrap is grey at the edges, but the roll underneath is still dry." />
+                <ui:Label class="s11-cell__data-condition" text="CLEAN" />
+                <ui:Label class="s11-cell__data-weight" text="0.2 KG" />
+                <ui:Label class="s11-cell__data-noise" text="0" />
+            </ui:Button>
+            <ui:Button name="cell-03" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--alcohol" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · MEDICAL" />
+                <ui:Label class="s11-cell__data-title" text="SURGICAL ALCOHOL" />
+                <ui:Label class="s11-cell__data-body" text="half a bottle, the cork pushed back in crooked. it burns going on, and the smell carries further down the corridor than you would like." />
+                <ui:Label class="s11-cell__data-condition" text="HALF FULL" />
+                <ui:Label class="s11-cell__data-weight" text="0.4 KG" />
+                <ui:Label class="s11-cell__data-noise" text="1" />
+            </ui:Button>
+            <ui:Button name="cell-04" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--cassette" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · EVIDENCE" />
+                <ui:Label class="s11-cell__data-title" text="CASSETTE TAPE" />
+                <ui:Label class="s11-cell__data-body" text="left in the recorder in the records office, rewound to the start. someone peeled the label off before you got there." />
+                <ui:Label class="s11-cell__data-condition" text="INTACT" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="1" />
+            </ui:Button>
+            <ui:Button name="cell-05" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--matches" />
+                <ui:Label class="hcf-mono s11-cell-count" text="×12" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · SUPPLY" />
+                <ui:Label class="s11-cell__data-title" text="MATCHES" />
+                <ui:Label class="s11-cell__data-body" text="twelve left in a damp box. they take on the second or third strike, and the light never lasts as long as you plan for." />
+                <ui:Label class="s11-cell__data-condition" text="DAMP" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="1" />
+            </ui:Button>
+            <ui:Button name="cell-06" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--battery" />
+                <ui:Label class="hcf-typed s11-cell-new" text="new" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · SUPPLY" />
+                <ui:Label class="s11-cell__data-title" text="BATTERY" />
+                <ui:Label class="s11-cell__data-body" text="taken out of the wall clock in the staff room. it still holds a charge - not much of one, and not for long." />
+                <ui:Label class="s11-cell__data-condition" text="WEAK" />
+                <ui:Label class="s11-cell__data-weight" text="0.3 KG" />
+                <ui:Label class="s11-cell__data-noise" text="0" />
+            </ui:Button>
+            <ui:Button name="cell-07" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--fuse" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · SUPPLY" />
+                <ui:Label class="s11-cell__data-title" text="FUSE" />
+                <ui:Label class="s11-cell__data-body" text="thirty amp, brass caps gone green with age. the filament inside is snapped - it fits the box on b1, it simply will not carry." />
+                <ui:Label class="s11-cell__data-condition" text="BLOWN" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="0" />
+            </ui:Button>
+
+            <ui:Button name="cell-08" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--brass-key" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · KEY" />
+                <ui:Label class="s11-cell__data-title" text="BRASS KEY" />
+                <ui:Label class="s11-cell__data-drop" text="no" />
+                <ui:Label class="s11-cell__data-body" text="records office. fits one door on 2f. the paper tag tore in half somewhere between the desk and your pocket." />
+                <ui:Label class="s11-cell__data-condition" text="IN USE" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="1" />
+            </ui:Button>
+            <ui:Button name="cell-09" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--service-fob" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · KEY" />
+                <ui:Label class="s11-cell__data-title" text="SERVICE FOB" />
+                <ui:Label class="s11-cell__data-drop" text="no" />
+                <ui:Label class="s11-cell__data-body" text="loading bay. opens the freight lift and nothing else you have found so far. the rubber is worn smooth on one side." />
+                <ui:Label class="s11-cell__data-condition" text="WORN" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="1" />
+            </ui:Button>
+            <ui:Button name="cell-10" text="" class="s11-cell s11-cell--full">
+                <ui:VisualElement class="s11-cell-art hcf-item--bent-pin" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="s11-cell__data-kicker" text="SELECTED · KEY" />
+                <ui:Label class="s11-cell__data-title" text="BENT PIN" />
+                <ui:Label class="s11-cell__data-drop" text="no" />
+                <ui:Label class="s11-cell__data-body" text="staff room. straightened out once already. it will turn a cheap lock, and after that it will not turn anything." />
+                <ui:Label class="s11-cell__data-condition" text="FRAGILE" />
+                <ui:Label class="s11-cell__data-weight" text="0.1 KG" />
+                <ui:Label class="s11-cell__data-noise" text="0" />
+            </ui:Button>
+            <ui:Button name="cell-11" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-12" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-13" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-14" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-15" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-16" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-17" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-18" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-19" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-20" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-21" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-22" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-23" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-24" text="" class="s11-cell s11-cell--empty">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="s11-cell-mark" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="detail" class="hcf-abs s11-detail">
+            <ui:Label name="detail-kicker" class="hcf-mono s11-detail-kicker" text="SELECTED · TOOL" />
+            <ui:Label name="detail-title" class="hcf-display s11-detail-title" text="BENT CROWBAR" />
+            <ui:Label name="detail-body" class="hcf-typed s11-detail-body" text="taken from the loading bay. the tip is chipped but it still bites into wood. heavy enough to swing once, maybe twice." />
+            <ui:VisualElement name="stats" class="s11-stats">
+                <ui:VisualElement class="s11-stat-row">
+                    <ui:Label class="hcf-mono s11-stat-key" text="CONDITION" />
+                    <ui:Label name="stat-condition" class="hcf-bs-700 s11-stat-value" text="WORN" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s11-stat-row">
+                    <ui:Label class="hcf-mono s11-stat-key" text="WEIGHT" />
+                    <ui:Label name="stat-weight" class="hcf-bs-700 s11-stat-value" text="2.1 KG" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s11-stat-row s11-stat-row--last">
+                    <ui:Label class="hcf-mono s11-stat-key" text="NOISE" />
+                    <hcf:HcfSegmentedMeter name="meter-noise" class="s11-noise" segments="5" filled="3" accent-from="0" gap="4" empty-line-width="1" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="actions" class="s11-actions">
+                <ui:Button name="btn-equip" text="" class="hcf-btn hcf-btn--primary s11-btn--flex">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="1.7" cut-bottom="1.9" cut-left="1.7" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11-btn__label" text="EQUIP" />
+                </ui:Button>
+                <ui:Button name="btn-examine" text="" class="hcf-btn hcf-btn--ghost s11-btn--flex s11-btn--next">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="1.7" cut-bottom="1.9" cut-left="1.7" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11-btn__label" text="EXAMINE" />
+                </ui:Button>
+                <ui:Button name="btn-combine" text="" class="hcf-btn hcf-btn--ghost s11-btn--flex s11-btn--next">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="1.7" cut-bottom="1.9" cut-left="1.7" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11-btn__label" text="COMBINE" />
+                </ui:Button>
+                <ui:Button name="btn-drop" text="" class="hcf-btn hcf-btn--danger s11-btn--drop s11-btn--next">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="1.5" cut-bottom="1.9" cut-left="1.5" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11-btn__label" text="DROP" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-hint-row hcf-abs s11-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="equip" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="E" />
+                <ui:Label text="empty state" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="I" />
+                <ui:Label text="close" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

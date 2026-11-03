@@ -1,0 +1,120 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S03_LoadSave.uss" />
+    <Style src="S03c_LoadEmpty.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s03 s03c">
+
+        <ui:VisualElement class="hcf-light-pool s03-pool-warm s03c-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s03-pool-dark s03c-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s03-header" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s03-header__title" text="LOAD GAME" />
+            <ui:Label class="hcf-mono s03-header__count s03c-header__count" text="6 SLOTS / 0 USED" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="slots" class="hcf-abs s03-slots s03c-slots">
+
+            <ui:Button name="menu-item-01" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="01" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="02" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="03" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="04" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-05" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="05" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-06" text="" enabled="false" class="hcf-menu-item s03-slot s03c-slot s03c-slot--last">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3" cut-left="6" />
+                <hcf:HcfDashedFrame class="s03c-slot__frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="06" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="detail" class="hcf-abs s03-detail s03c-detail">
+
+            <ui:VisualElement name="save-thumbnail" class="s03c-preview" picking-mode="Ignore">
+                <hcf:HcfDashedFrame class="s03c-preview__frame" line-width="1" dash="3" gap="3" />
+                <ui:Label class="hcf-mono s03c-preview__line" text="no preview" />
+                <ui:Label class="hcf-mono s03c-preview__line" text="600 × 300" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="empty-state" class="s03c-empty" picking-mode="Ignore">
+                <ui:Label class="hcf-display s03c-empty__line" text="NO FILES" />
+                <ui:Label class="hcf-display s03c-empty__line" text="ON RECORD" />
+                <ui:Label class="hcf-typed s03c-empty__body" text="nothing has been logged under this profile yet. start a new game and the first checkpoint will write itself here." />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="s03-actions s03c-actions">
+                <ui:Button name="btn-new-game" text="" class="hcf-btn hcf-btn--primary s03-btn">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.9" cut-bottom="1.9" cut-left="2.9" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label" text="NEW GAME" />
+                </ui:Button>
+                <ui:Button name="btn-load" text="" enabled="false" class="hcf-btn hcf-btn--ghost s03-btn s03-btn--gap">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.9" cut-bottom="1.9" cut-left="2.9" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label" text="LOAD" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label class="hcf-abs hcf-typed s03c-note" text="save data lives in your documents folder. deleting it cannot be undone." picking-mode="Ignore" />
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s03-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

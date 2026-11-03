@@ -1,0 +1,21 @@
+{
+  "name": "fabricated-dawn-assistant",
+  "version": "0.1.0",
+  "description": "Read-only document analysis and local Unity development workflows for Fabricated Dawn, with a companion Unity Editor toolkit.",
+  "skills": "./skills",
+  "requires_local_executor": true,
+  "interface": {
+    "displayName": "Fabricated Dawn Assistant",
+    "shortDescription": "Đọc tài liệu, hỗ trợ Unity",
+    "longDescription": "Đọc và tóm tắt tài liệu qua Google Drive đã kết nối; phân tích yêu cầu và điểm chưa chốt của Fabricated Dawn. Hỗ trợ C#, dữ liệu màn chơi, kiểm tra dự án Unity và cài bộ công cụ Unity Editor đi kèm khi được yêu cầu. Workflow đọc tài liệu không có thao tác ghi, sửa, chia sẻ hay xóa tài liệu. Các script local cần Node.js và Unity Editor; Google Docs cần Google Drive đã kết nối trong host. Đây là plugin gồm skills và script local, không có MCP server điều khiển Unity trực tiếp.",
+    "category": "Developer Tools",
+    "capabilities": [],
+    "logo": "./assets/dawn.svg",
+    "composerIcon": "./assets/dawn.svg",
+    "defaultPrompt": [
+      "Đọc tài liệu Fabricated Dawn và tóm tắt yêu cầu; không sửa tài liệu gốc.",
+      "Kiểm tra dự án Unity Fabricated Dawn và báo lỗi kèm bằng chứng.",
+      "Cài bộ công cụ Fabricated Dawn vào dự án Unity tôi chỉ định."
+    ]
+  }
+}

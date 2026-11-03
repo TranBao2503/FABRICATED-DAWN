@@ -1,0 +1,182 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S03_LoadSave.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s03">
+
+        <ui:VisualElement class="hcf-light-pool s03-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s03-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s03-header" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s03-header__title" text="LOAD GAME" />
+            <ui:Label class="hcf-mono s03-header__count" text="6 SLOTS / 4 USED" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="slots" class="hcf-abs s03-slots hcf-pick-on-click">
+
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s03-slot is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index" text="01" />
+                    <ui:VisualElement class="s03-slot__text">
+                        <ui:Label class="hcf-bs-700 s03-slot__title" text="CHAPTER 03 — NORTH WING" />
+                        <ui:Label class="hcf-mono s03-slot__meta" text="04:12 played · saved 11 oct 23:41 · survivor" />
+                    </ui:VisualElement>
+                    <ui:Label class="hcf-mono-bold s03-slot__tag" text="AUTOSAVE" />
+                </ui:VisualElement>
+
+                <ui:Label class="s03-slot__data-location" text="NORTH WING · 2F" />
+                <ui:VisualElement class="s03-slot__data-shot s03-shot--north-wing" picking-mode="Ignore" />
+                <ui:Label class="s03-slot__data-documents" text="12 / 31" />
+                <ui:Label class="s03-slot__data-deaths" text="7" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s03-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index" text="02" />
+                    <ui:VisualElement class="s03-slot__text">
+                        <ui:Label class="hcf-bs-700 s03-slot__title" text="CHAPTER 02 — THE KENNELS" />
+                        <ui:Label class="hcf-mono s03-slot__meta" text="02:58 played · saved 10 oct 19:02 · survivor" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label class="s03-slot__data-location" text="THE KENNELS · B1" />
+                <ui:VisualElement class="s03-slot__data-shot s03-shot--kennels" picking-mode="Ignore" />
+                <ui:Label class="s03-slot__data-documents" text="9 / 31" />
+                <ui:Label class="s03-slot__data-deaths" text="4" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s03-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index" text="03" />
+                    <ui:VisualElement class="s03-slot__text">
+                        <ui:Label class="hcf-bs-700 s03-slot__title" text="CHAPTER 01 — INTAKE" />
+                        <ui:Label class="hcf-mono s03-slot__meta" text="00:46 played · saved 09 oct 21:15 · observer" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label class="s03-slot__data-location" text="INTAKE HALL · 1F" />
+                <ui:VisualElement class="s03-slot__data-shot s03-shot--intake" picking-mode="Ignore" />
+                <ui:Label class="s03-slot__data-documents" text="3 / 31" />
+                <ui:Label class="s03-slot__data-deaths" text="1" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" class="hcf-menu-item s03-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index" text="04" />
+                    <ui:VisualElement class="s03-slot__text">
+                        <ui:Label class="hcf-bs-700 s03-slot__title" text="CHAPTER 01 — INTAKE" />
+                        <ui:Label class="hcf-mono s03-slot__meta" text="00:12 played · saved 09 oct 20:44 · nightmare" />
+                    </ui:VisualElement>
+                    <ui:Label class="hcf-typed s03-slot__flag" text="corrupt" />
+                </ui:VisualElement>
+                <ui:Label class="s03-slot__data-location" text="INTAKE HALL · 1F" />
+                <ui:VisualElement class="s03-slot__data-shot s03-shot--intake" picking-mode="Ignore" />
+                <ui:Label class="s03-slot__data-documents" text="1 / 31" />
+                <ui:Label class="s03-slot__data-deaths" text="0" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-05" text="" enabled="false" class="hcf-menu-item s03-slot">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="05" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-06" text="" enabled="false" class="hcf-menu-item s03-slot s03-slot--last">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s03-slot__plate" cut-top="4" cut-right="5" cut-bottom="3.5" cut-left="6" />
+                <ui:VisualElement class="s03-slot__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s03-slot__row">
+                    <ui:Label class="hcf-typed s03-slot__index s03-slot__index--dim" text="06" />
+                    <ui:Label class="hcf-typed s03-slot__empty" text="— empty slot —" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="detail" class="hcf-abs s03-detail">
+            <ui:VisualElement class="hcf-shadow s03-detail__shadow" picking-mode="Ignore" />
+            <ui:VisualElement name="save-thumbnail" class="s03-detail__shot">
+                <ui:VisualElement class="hcf-placeholder s03-detail__hatch" picking-mode="Ignore">
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-tape s03-detail__tape" picking-mode="Ignore" />
+
+            <ui:VisualElement class="s03-stats">
+                <ui:VisualElement class="s03-stat">
+                    <ui:Label class="hcf-mono s03-stat__key" text="LOCATION" />
+                    <ui:Label name="stat-location" class="hcf-bs-700 s03-stat__val" text="NORTH WING · 2F" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s03-stat">
+                    <ui:Label class="hcf-mono s03-stat__key" text="DOCUMENTS" />
+                    <ui:Label name="stat-documents" class="hcf-bs-700 s03-stat__val" text="12 / 31" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s03-stat">
+                    <ui:Label class="hcf-mono s03-stat__key" text="DEATHS" />
+                    <ui:Label name="stat-deaths" class="hcf-bs-700 s03-stat__val" text="7" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="s03-actions">
+                <ui:Button name="btn-load" text="" class="hcf-btn hcf-btn--primary s03-btn">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label" text="LOAD" />
+                </ui:Button>
+                <ui:Button name="btn-overwrite" text="" class="hcf-btn hcf-btn--ghost s03-btn s03-btn--gap">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label" text="OVERWRITE" />
+                </ui:Button>
+
+                <ui:Button name="btn-delete" text="" class="hcf-btn hcf-btn--danger s03-btn--gap s03-btn--delete">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="1.5" cut-bottom="1.9" cut-left="1.5" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label" text="DELETE" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s03-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↑" />
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↓" />
+                <ui:Label text="slot" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="load" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="S" />
+                <ui:Label text="save" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="DEL" />
+                <ui:Label text="delete" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

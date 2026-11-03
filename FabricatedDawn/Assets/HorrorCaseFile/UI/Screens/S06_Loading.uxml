@@ -1,0 +1,35 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S06_Loading.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s06">
+
+        <ui:VisualElement name="loading-art" class="hcf-abs hcf-placeholder s06-art" picking-mode="Ignore" />
+
+        <ui:VisualElement class="hcf-vignette s06-vignette" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-abs s06-fade" picking-mode="Ignore" />
+
+        <ui:VisualElement name="chapter" class="hcf-abs s06-chapter">
+            <ui:Label name="chapter-kicker" class="hcf-mono s06-chapter__kicker" text="CHAPTER THREE" />
+            <ui:VisualElement name="chapter-title" class="s06-title">
+                <ui:Label class="hcf-display s06-title__line s06-title__line--shadow" text="NORTH WING" />
+                <ui:Label class="hcf-display s06-title__line s06-title__line--main" text="NORTH WING" />
+            </ui:VisualElement>
+
+            <ui:Label class="s06-chapter__data-first-kicker" text="CHAPTER ONE" />
+            <ui:Label class="s06-chapter__data-first-title" text="INTAKE" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="progress" class="hcf-abs s06-progress">
+            <ui:ProgressBar name="progress-loading" class="hcf-progress s06-bar" low-value="0" high-value="100" value="64" picking-mode="Ignore" />
+            <ui:Label name="progress-loading-value" class="hcf-mono s06-progress__value" text="64%" />
+        </ui:VisualElement>
+
+        <ui:Label class="hcf-abs hcf-typed s06-tip" text="tip — a lit flashlight is seen from three rooms away. learn the layout in the dark instead." />
+        <ui:Label class="hcf-abs hcf-mono s06-warning" text="DO NOT TURN OFF THE POWER" />
+
+        <ui:Label name="skip-hint" class="hcf-abs hcf-mono s06-skip" text="PRESS ANY KEY TO SKIP" picking-mode="Ignore" />
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+    </ui:VisualElement>
+</ui:UXML>

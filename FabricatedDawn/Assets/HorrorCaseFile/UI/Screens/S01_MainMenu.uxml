@@ -1,0 +1,117 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S01_MainMenu.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s01">
+
+        <ui:VisualElement class="hcf-light-pool s01-pool-warm-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s01-pool-warm-b" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s01-pool-dark-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s01-pool-dark-b" picking-mode="Ignore" />
+
+        <ui:VisualElement class="hcf-anchor hcf-anchor--right" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-shadow s01-keyart-shadow" picking-mode="Ignore" />
+            <ui:VisualElement name="key-art" class="hcf-abs s01-keyart">
+                <ui:VisualElement class="hcf-placeholder s01-keyart__hatch" picking-mode="Ignore">
+                </ui:VisualElement>
+                <ui:VisualElement class="hcf-vignette s01-keyart__vignette" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-abs hcf-tape s01-tape-a" picking-mode="Ignore" />
+            <ui:VisualElement class="hcf-abs hcf-tape s01-tape-b" picking-mode="Ignore" />
+            <ui:Label class="hcf-abs hcf-typed s01-fig" text="fig. 04 — north wing, second landing" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hole s01-hole-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-abs hcf-hole s01-hole-b" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-abs hcf-hole s01-hole-c" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s01-header" picking-mode="Ignore">
+            <ui:Label class="hcf-mono s01-header__code" text="FILE 0448 / MAIN" />
+            <ui:Label class="hcf-typed s01-header__date" text="rec. 11 october" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="title" class="hcf-abs s01-title">
+            <ui:VisualElement class="s01-title__layer s01-title__layer--shadow" picking-mode="Ignore">
+                <ui:Label class="hcf-display s01-title__line" text="GAME" />
+                <ui:Label class="hcf-display s01-title__line" text="TITLE" />
+            </ui:VisualElement>
+            <ui:VisualElement class="s01-title__layer s01-title__layer--main">
+                <ui:Label class="hcf-display s01-title__line" text="GAME" />
+                <ui:Label class="hcf-display s01-title__line" text="TITLE" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="menu" class="hcf-abs s01-menu">
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s01-menu-item is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s01-menu-item__plate" cut-top="4" cut-right="4.9" cut-bottom="2.6" cut-left="8.5" />
+                <ui:VisualElement class="s01-menu-item__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s01-menu-item__row">
+                    <ui:Label class="hcf-typed s01-menu-item__index" text="01" />
+                    <ui:Label class="hcf-bs-700 s01-menu-item__label" text="CONTINUE" />
+                </ui:VisualElement>
+                <ui:Label class="hcf-typed s01-menu-item__meta" text="ch. 03 · 04:12" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s01-menu-item s01-menu-item--second">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s01-menu-item__plate" cut-top="4" cut-right="4.9" cut-bottom="2.6" cut-left="8.5" />
+                <ui:VisualElement class="s01-menu-item__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s01-menu-item__row">
+                    <ui:Label class="hcf-typed s01-menu-item__index" text="02" />
+                    <ui:Label class="hcf-bs-700 s01-menu-item__label" text="NEW GAME" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s01-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s01-menu-item__plate" cut-top="4" cut-right="4.9" cut-bottom="2.6" cut-left="8.5" />
+                <ui:VisualElement class="s01-menu-item__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s01-menu-item__row">
+                    <ui:Label class="hcf-typed s01-menu-item__index" text="03" />
+                    <ui:Label class="hcf-bs-700 s01-menu-item__label" text="LOAD GAME" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" class="hcf-menu-item s01-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s01-menu-item__plate" cut-top="4" cut-right="4.9" cut-bottom="2.6" cut-left="8.5" />
+                <ui:VisualElement class="s01-menu-item__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s01-menu-item__row">
+                    <ui:Label class="hcf-typed s01-menu-item__index" text="04" />
+                    <ui:Label class="hcf-bs-700 s01-menu-item__label" text="SETTINGS" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-05" text="" class="hcf-menu-item s01-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s01-menu-item__plate" cut-top="4" cut-right="4.9" cut-bottom="2.6" cut-left="8.5" />
+                <ui:VisualElement class="s01-menu-item__underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s01-menu-item__row">
+                    <ui:Label class="hcf-typed s01-menu-item__index" text="05" />
+                    <ui:Label class="hcf-bs-700 s01-menu-item__label" text="QUIT" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:Label class="hcf-abs hcf-mono s01-version" text="v0.9.4 — build 1182" />
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s01-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↑" />
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↓" />
+                <ui:Label text="move" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="select" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="quit" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

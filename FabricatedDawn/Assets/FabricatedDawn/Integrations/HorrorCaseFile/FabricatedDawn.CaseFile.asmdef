@@ -1,0 +1,6 @@
+{
+  "name": "FabricatedDawn.CaseFile",
+  "rootNamespace": "FabricatedDawn.CaseFile",
+  "references": ["FabricatedDawn.Runtime", "HorrorCaseFile.Runtime"],
+  "autoReferenced": true
+}

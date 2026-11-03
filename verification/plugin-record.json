@@ -1,0 +1,14 @@
+{
+  "plugin_id": "plugins_6ae89af08fcc8191835a0a977cd9b105",
+  "release_id": "pluginrel_6ae89af316008191ae348a503ab650c9",
+  "plugin_url": "https://chatgpt.com/plugins/plugins_6ae89af08fcc8191835a0a977cd9b105",
+  "version": "0.1.0",
+  "scope": "USER",
+  "discoverability": "PRIVATE",
+  "verified_saved_skills": ["document-reader", "unity-workflow"],
+  "installation_status": "Saved to account; select or add through the plugin link.",
+  "unity_version": "6000.6.6f1",
+  "unity_behavior_checks_passed": 16,
+  "unity_behavior_checks_failed": 0,
+  "source_google_document_modified": false
+}

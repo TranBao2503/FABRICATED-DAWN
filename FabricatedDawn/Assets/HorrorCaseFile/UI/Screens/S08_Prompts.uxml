@@ -1,0 +1,61 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S08_Prompts.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s08">
+
+        <ui:VisualElement name="gameplay-view" class="hcf-abs hcf-placeholder s08-gameplay" picking-mode="Ignore" />
+
+        <ui:VisualElement name="vignette" class="hcf-vignette s08-vignette" picking-mode="Ignore" />
+
+        <ui:VisualElement name="prompt-shade" class="hcf-light-pool s08-shade" picking-mode="Ignore" />
+
+        <ui:VisualElement name="crosshair" class="hcf-abs s08-crosshair" picking-mode="Ignore" />
+
+        <ui:VisualElement name="prompt-pry" class="hcf-abs s08-prompt s08-prompt--pry">
+            <ui:Label text="F" name="key-pry" class="hcf-mono s08-key s08-key--active" />
+            <ui:VisualElement class="s08-prompt__body">
+                <ui:Label text="PRY OPEN" class="hcf-bs-800 s08-prompt__title" />
+                <ui:Label text="the wood is soft with damp" class="hcf-typed s08-prompt__sub" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="prompt-locked" class="hcf-abs s08-prompt s08-prompt--locked">
+            <hcf:HcfDashedFrame name="key-locked" class="s08-key" line-width="2">
+                <ui:Label text="F" class="hcf-mono s08-key__label" />
+            </hcf:HcfDashedFrame>
+            <ui:VisualElement class="s08-prompt__body">
+                <ui:VisualElement class="s08-strike">
+                    <ui:Label text="UNLOCK DOOR" class="hcf-bs-800 s08-prompt__title s08-strike__title" />
+                    <ui:VisualElement class="hcf-abs s08-strike__bar" picking-mode="Ignore" />
+                </ui:VisualElement>
+                <ui:Label text="requires the brass key" class="hcf-typed s08-prompt__sub s08-prompt__sub--locked" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="prompt-hold" class="hcf-abs s08-hold">
+            <ui:Label text="HOLD E" name="key-hold" class="hcf-mono s08-hold__key" />
+            <ui:VisualElement class="s08-hold__body">
+                <ui:Label text="HIDE" class="hcf-bs-700 s08-hold__title" />
+
+                <ui:ProgressBar name="progress-hold" class="hcf-progress s08-hold__track" low-value="0" high-value="100" value="58" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="subtitles" class="hcf-abs s08-subtitles">
+            <ui:Label text="ORDERLY" name="subtitle-speaker" class="hcf-mono s08-subtitles__speaker" />
+            <ui:Label text="You shouldn't be up here. Visiting hours ended a long, long time ago." name="subtitle-line" class="hcf-bs-700 s08-subtitles__line" />
+        </ui:VisualElement>
+        <ui:Label text="[ a door closes somewhere below ]" name="subtitle-ambient" class="hcf-abs hcf-typed s08-ambient" />
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s08-hints" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+
+    </ui:VisualElement>
+</ui:UXML>

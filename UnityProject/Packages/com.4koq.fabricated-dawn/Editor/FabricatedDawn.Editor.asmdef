@@ -1,0 +1,7 @@
+{
+  "name": "FabricatedDawn.Editor",
+  "rootNamespace": "FabricatedDawn.Editor",
+  "references": ["FabricatedDawn.Runtime"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c1c86be4b7bb647a8f8887ee3c1c66, type: 3}
+  m_Name: M05
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ChapterDefinition
+  id: CHAPTER_05
+  number: 5
+  displayName: "Nh\u1EEFng ng\u01B0\u1EDDi ch\u01B0a \u0111i"
+  startingWorld: 1
+  objective: "Gi\u1EA3i \u0111\u1ED3 ch\u01A1i v\xE0 ng\u0103n t\u1EE7 ng\u01B0\u1EDDi ch\u1ED3ng."
+  completionCriteria: "\u0110\u1ED3 ch\u01A1i v\xE0 ng\u0103n t\u1EE7 ho\xE0n t\u1EA5t; \u0111\u1EE7 manh m\u1ED1i ch\xEDnh."
+  checkpoints:
+  - CP_M5_TOY
+  - CP_M5_DRAWER
+  - CP_M5_BEFORE_CHASE

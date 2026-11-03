@@ -1,0 +1,114 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S02_DifficultySelect.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s02">
+
+        <ui:VisualElement class="hcf-light-pool s02-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s02-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s02-header" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s02-header__title" text="SELECT DIFFICULTY" />
+            <ui:Label class="hcf-typed s02-header__note" text="this cannot be changed later" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="cards" class="hcf-abs s02-cards">
+
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s02-card s02-card--a">
+                <ui:VisualElement class="hcf-shadow s02-card__shadow" picking-mode="Ignore" />
+                <hcf:HcfTornPlate name="card-01-plate" class="hcf-menu-item__plate s02-card__plate" cut-top="5" cut-right="2.1" cut-bottom="5.2" cut-left="2.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s02-card__body">
+                    <ui:Label class="hcf-mono s02-card__kicker" text="01 — LIGHT" />
+                    <ui:Label class="hcf-bs-800 s02-card__name" text="OBSERVER" />
+                    <ui:Label class="hcf-typed s02-card__desc" text="for the story. enemies are slow to notice you and supplies are plentiful." />
+                    <ui:VisualElement class="s02-card__meter">
+                        <ui:VisualElement class="s02-card__meter-head">
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="THREAT" />
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="LOW" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s02-card__bars">
+                            <ui:VisualElement class="s02-bar s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s02-card s02-card--gap s02-card--b is-active">
+                <ui:VisualElement class="hcf-shadow s02-card__shadow" picking-mode="Ignore" />
+                <hcf:HcfTornPlate name="card-02-plate" class="hcf-menu-item__plate s02-card__plate" cut-top="5" cut-right="2.1" cut-bottom="5.2" cut-left="2.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s02-card__body">
+                    <ui:Label class="hcf-mono s02-card__kicker" text="02 — INTENDED" />
+                    <ui:Label class="hcf-bs-800 s02-card__name" text="SURVIVOR" />
+                    <ui:Label class="hcf-typed s02-card__desc" text="the way it was built. scarce resources, patient hunters, no hand-holding." />
+                    <ui:VisualElement class="s02-card__meter">
+                        <ui:VisualElement class="s02-card__meter-head">
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="THREAT" />
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="MODERATE" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s02-card__bars">
+                            <ui:VisualElement class="s02-bar s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--off" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s02-card s02-card--gap s02-card--c">
+                <ui:VisualElement class="hcf-shadow s02-card__shadow" picking-mode="Ignore" />
+                <hcf:HcfTornPlate name="card-03-plate" class="hcf-menu-item__plate s02-card__plate" cut-top="5" cut-right="2.1" cut-bottom="5.2" cut-left="2.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s02-card__body">
+                    <ui:Label class="hcf-mono s02-card__kicker" text="03 — PUNISHING" />
+                    <ui:Label class="hcf-bs-800 s02-card__name" text="NIGHTMARE" />
+                    <ui:Label class="hcf-typed s02-card__desc" text="one save slot. permanent wounds. they hear everything you do." />
+                    <ui:VisualElement class="s02-card__meter">
+                        <ui:VisualElement class="s02-card__meter-head">
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="THREAT" />
+                            <ui:Label class="hcf-mono s02-card__meter-key" text="SEVERE" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s02-card__bars">
+                            <ui:VisualElement class="s02-bar s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                            <ui:VisualElement class="s02-bar s02-bar--gap s02-bar--on" picking-mode="Ignore" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="stamp-selected" class="hcf-abs hcf-stamp s02-stamp">
+            <ui:Label class="hcf-stamp__label s02-stamp__label" text="SELECTED" />
+        </ui:VisualElement>
+
+        <ui:Label class="hcf-abs hcf-typed s02-note" text="permadeath applies on nightmare only." />
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s02-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="←" />
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="→" />
+                <ui:Label text="choose" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="begin" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

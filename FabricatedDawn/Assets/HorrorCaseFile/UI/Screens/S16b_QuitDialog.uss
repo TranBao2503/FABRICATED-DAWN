@@ -1,0 +1,95 @@
+
+
+.s16b-dialog {
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: 560px;
+
+    background-color: #1C1A18;
+    border-width: 1px;
+    border-color: rgba(236, 230, 218, 0.18);
+}
+
+.s16b-dialog__body {
+    padding: 39px 42px 38px;
+}
+
+.s16b-accent--cream {
+    background-color: var(--hcf-cream-60);
+}
+
+.s16b-kicker {
+    height: 16px;
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: var(--hcf-cream-50);
+    -unity-text-align: middle-left;
+}
+
+.s16b-title__line {
+    height: 53px;
+    font-size: 56px;
+    -unity-text-align: middle-left;
+}
+
+.s16b-title__line--first {
+    margin-top: 16px;
+}
+
+.s16b-body {
+    margin-top: 20px;
+    font-size: 21px;
+    color: var(--hcf-cream-60);
+    white-space: normal;
+}
+
+.s16b-actions {
+    margin-top: 38px;
+}
+
+.s16b-actions--row {
+    flex-direction: row;
+}
+
+.s16b-btn--half {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.s16b-btn--next {
+    margin-left: 12px;
+}
+
+.s16b-btn--stacked {
+    margin-top: 12px;
+}
+
+.s16b-btn__label {
+    font-size: 27px;
+    letter-spacing: 1.6px;
+}
+
+.s16b-btn--danger {
+    border-color: var(--hcf-rust-55);
+}
+
+.hcf-kbd .s16b-btn--danger:focus:enabled {
+    border-color: var(--hcf-rust);
+}
+
+.s16b-btn--danger .hcf-btn__label {
+
+    color: rgba(168, 51, 42, 0.95);
+}
+
+.s16b-btn--danger:active .hcf-btn__label {
+    color: var(--hcf-cream);
+}
+
+.s16b-hints {
+    left: 0;
+    right: 0;
+    bottom: 64px;
+    justify-content: center;
+}

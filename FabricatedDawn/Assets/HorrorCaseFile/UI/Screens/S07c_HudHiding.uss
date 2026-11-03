@@ -1,0 +1,141 @@
+
+
+.s07c {
+    background-color: #0A0908;
+}
+
+.s07c-gameplay {
+    background-image: url("../../Art/Backdrops/Hiding_Locker.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.s07c-slats {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.s07c-slat {
+    height: 44px;
+    margin-top: 12px;
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+.s07c-vignette {
+    left: -8%;
+    top: -4%;
+    width: 120%;
+    height: 104%;
+    opacity: 0.92;
+}
+
+.s07c-breath {
+    left: 50%;
+    top: 322px;
+    translate: -50% 0;
+    align-items: center;
+}
+
+.s07c-breath__kicker {
+    font-size: 15px;
+    letter-spacing: 5.1px;
+    color: var(--hcf-rust-90);
+}
+
+.s07c-breath__bar {
+    margin-top: 20px;
+    width: 520px;
+    height: 8px;
+}
+
+.s07c-breath__bar .unity-progress-bar__progress {
+    background-color: var(--hcf-cream);
+}
+
+.s07c-breath__hint {
+    margin-top: 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s07c-breath__key {
+    height: 34px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 14px;
+    border-color: var(--hcf-cream-40);
+    font-size: 17px;
+    letter-spacing: 2.7px;
+    color: var(--hcf-cream-50);
+}
+
+.s07c-breath__time {
+    font-size: 17px;
+    letter-spacing: 2.7px;
+    color: var(--hcf-cream-50);
+}
+
+.s07c-prox {
+    left: 50%;
+    top: 600px;
+    translate: -50% 0;
+    width: 900px;
+    align-items: center;
+}
+
+.s07c-prox__cue {
+    font-size: 22px;
+    color: var(--hcf-cream-55);
+}
+
+.s07c-prox__meter {
+    margin-top: 22px;
+    width: 337px;
+    height: 10px;
+}
+
+.s07c-prox__label {
+    margin-top: 12px;
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s07c-condition__label {
+    margin-bottom: 12px;
+    color: var(--hcf-cream-40);
+}
+
+.s07c-stamina__label {
+    color: var(--hcf-cream-35);
+}
+
+.s07c-stamina__track {
+    background-color: var(--hcf-cream-14);
+}
+
+.s07c-stamina__fill {
+    width: 26%;
+    background-color: var(--hcf-cream-60);
+}
+
+.s07c-hint {
+    right: 72px;
+    bottom: 72px;
+    letter-spacing: 2.1px;
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s07c-hint__key {
+    height: 34px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 14px;
+    color: rgba(236, 230, 218, 0.42);
+}

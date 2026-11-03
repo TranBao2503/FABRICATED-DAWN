@@ -1,0 +1,113 @@
+
+
+.s01b {
+    background-color: #0C0A0A;
+}
+
+.s01b-pool {
+    left: 18.317708%;
+    top: 18.638889%;
+    width: 63.359375%;
+    height: 54.722222%;
+    -unity-background-image-tint-color: #FFF7E6;
+    opacity: 0.035;
+}
+
+.s01b-title {
+    left: 50%;
+    top: 275px;
+    translate: -50% 0;
+    width: 1080px;
+    height: 110px;
+}
+
+.s01b-title__line {
+    position: absolute;
+    left: 0;
+    width: 1080px;
+    height: 103.8px;
+    font-size: 118px;
+    letter-spacing: -1.2px;
+    -unity-text-align: middle-center;
+}
+
+.s01b-title__line--shadow {
+    top: 4px;
+    color: var(--hcf-rust-deep);
+    opacity: 0.6;
+}
+
+.s01b-title__line--main {
+    top: 0;
+    color: var(--hcf-cream);
+}
+
+.s01b-advisory {
+    left: 50%;
+    top: 431px;
+    translate: -50% 0;
+    width: 1000px;
+    padding-top: 30px;
+    border-top-width: 2px;
+    border-top-color: rgba(236, 230, 218, 0.2);
+}
+
+.s01b-advisory__body {
+    height: 88.8px;
+    font-size: 24px;
+    color: rgba(236, 230, 218, 0.66);
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.s01b-advisory__note {
+    margin-top: 26px;
+    height: 39.6px;
+    font-size: 22px;
+    color: var(--hcf-cream-50);
+    -unity-text-align: middle-center;
+}
+
+.s01b-advisory__tips {
+    margin-top: 34px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.s01b-advisory__tip {
+    font-size: 16px;
+    letter-spacing: 3.5px;
+    color: var(--hcf-cream-40);
+}
+
+.s01b-advisory__tip--second {
+    margin-left: 44px;
+}
+
+.s01b-continue {
+    left: 0;
+    right: 0;
+    bottom: 104px;
+    justify-content: center;
+    font-size: 17px;
+    letter-spacing: 2.7px;
+    color: var(--hcf-cream-55);
+}
+
+.s01b-continue .hcf-keycap {
+    height: 34px;
+    padding-left: 14px;
+    padding-right: 14px;
+    margin-right: 14px;
+    border-color: var(--hcf-cream-35);
+    font-size: 16px;
+    color: var(--hcf-cream-55);
+}
+
+.s01b-build {
+    left: 112px;
+    bottom: 52px;
+    font-size: 15px;
+    letter-spacing: 2.1px;
+    color: var(--hcf-cream-26);
+}

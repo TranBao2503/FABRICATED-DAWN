@@ -1,0 +1,164 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S04_SettingsVideo.uss" />
+    <Style src="S05c_SettingsGameplay.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s04 s05c">
+
+        <ui:VisualElement class="hcf-light-pool s04-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s04-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s04-header">
+            <ui:Label class="hcf-bs-800 s04-title" text="SETTINGS" />
+            <ui:VisualElement name="tabs" class="hcf-rule s04-tabs" picking-mode="Ignore">
+                <ui:Button name="tab-video" text="" class="hcf-tab s04-tab s04-tab--first">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="VIDEO" />
+                </ui:Button>
+                <ui:Button name="tab-audio" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="AUDIO" />
+                </ui:Button>
+                <ui:Button name="tab-controls" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="CONTROLS" />
+                </ui:Button>
+                <ui:Button name="tab-gameplay" text="" class="hcf-tab s04-tab is-active">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="GAMEPLAY" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="options" class="hcf-abs s04-options s05c-options">
+
+            <ui:Label class="hcf-mono s05c-section s05c-section--guidance" text="GUIDANCE" />
+
+            <ui:VisualElement name="row-objective-marker" class="s04-row s05c-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="OBJECTIVE MARKER" />
+                <ui:RadioButtonGroup name="seg-objective-marker" class="hcf-seg-group hcf-seg-group--cream s04-row__control" choices="ALWAYS,ON UPDATE,NEVER" value="1" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-interaction-prompts" class="s04-row s05c-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="INTERACTION PROMPTS" />
+                <ui:RadioButtonGroup name="seg-interaction-prompts" class="hcf-seg-group hcf-seg-group--cream s04-row__control" choices="FULL,ICON ONLY,OFF" value="0" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-autosave" class="s04-row s05c-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="AUTOSAVE" />
+                <ui:DropdownField name="dropdown-autosave" class="hcf-dropdown s04-row__control" choices="EVERY CHECKPOINT,EVERY ROOM,ON QUIT ONLY,OFF" index="0">
+                    <ui:Label class="hcf-dropdown__caret" text="▼" picking-mode="Ignore" />
+                </ui:DropdownField>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-puzzle-hints" class="s04-row s05c-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="PUZZLE HINTS" />
+                <ui:Slider name="slider-puzzle-hints" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="30" fill="true" />
+                <ui:Label name="slider-puzzle-hints-value" class="hcf-mono s04-value s05c-value--hints" text="AFTER 5 MIN" />
+            </ui:VisualElement>
+
+            <ui:Label class="hcf-mono s05c-section s05c-section--accessibility" text="ACCESSIBILITY" />
+
+            <ui:VisualElement name="row-subtitle-size" class="s04-row s05c-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="SUBTITLE SIZE" />
+                <ui:RadioButtonGroup name="seg-subtitle-size" class="hcf-seg-group hcf-seg-group--cream s04-row__control" choices="SMALL,MEDIUM,LARGE" value="1" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-toggles-one" class="s04-row s05c-row s05c-row--toggles">
+                <ui:Toggle name="check-skip-chase-qtes" text="SKIP CHASE QTES" value="true" class="hcf-check s05c-toggle s05c-toggle--first">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-reduce-camera-shake" text="REDUCE CAMERA SHAKE" class="hcf-check s05c-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-toggles-two" class="s04-row s05c-row s05c-row--toggles">
+                <ui:Toggle name="check-hold-instead-of-tap" text="HOLD INSTEAD OF TAP" value="true" class="hcf-check s05c-toggle s05c-toggle--first">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-high-contrast-hud" text="HIGH-CONTRAST HUD" class="hcf-check s05c-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="warnings-column" class="hcf-abs s05c-side">
+            <ui:Label class="hcf-mono s05c-section" text="CONTENT WARNINGS" />
+
+            <ui:VisualElement class="hcf-shadow s05c-warnings__shadow" picking-mode="Ignore" />
+            <ui:VisualElement name="content-warnings" class="s05c-warnings">
+
+                <hcf:HcfTornPlate class="s05c-warnings__paper" fill="#E6DFD0" cut-top="6" cut-right="2.2" cut-bottom="8.6" cut-left="2.2" />
+                <ui:VisualElement class="s05c-warnings__body">
+                    <ui:Label class="hcf-display s05c-warnings__title" text="FILTER WHAT" />
+                    <ui:Label class="hcf-display s05c-warnings__title" text="YOU'D RATHER NOT SEE" />
+                    <ui:Label class="hcf-typed s05c-warnings__text" text="disabled scenes are replaced with a text summary. this does not change the ending." />
+
+                    <ui:VisualElement name="warning-list" class="s05c-warnings__list">
+                        <ui:Toggle name="check-graphic-injury" text="graphic injury" value="true" class="hcf-check s05c-warn s05c-warn--first">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-animal-harm" text="animal harm" class="hcf-check s05c-warn">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-confined-spaces" text="confined spaces" class="hcf-check s05c-warn">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-sudden-loud-audio" text="sudden loud audio" value="true" class="hcf-check s05c-warn">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="tooltip" class="s05c-tooltip">
+                <ui:Label class="hcf-mono s05c-tooltip__title" text="TOOLTIP" />
+                <ui:Label class="hcf-typed s05c-tooltip__text" text="nothing in this menu is judged. play it the way you can finish it." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="actions" class="hcf-abs s04-actions">
+            <ui:Button name="btn-apply" text="" class="hcf-btn hcf-btn--primary s04-btn">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="APPLY" />
+            </ui:Button>
+            <ui:Button name="btn-defaults" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="DEFAULTS" />
+            </ui:Button>
+            <ui:Button name="btn-back" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="BACK" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s04-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="TAB" />
+                <ui:Label text="next tab" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

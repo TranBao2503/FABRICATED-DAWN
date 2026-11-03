@@ -1,0 +1,279 @@
+
+
+.s10-frozen {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../Textures/HatchTile_Dark.png");
+    background-repeat: repeat;
+    background-size: 80px 80px;
+}
+
+.s10-scrim {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgba(8, 7, 7, 0.72);
+}
+
+.s10-scrim-ramp {
+    left: -120px;
+    top: 50%;
+    width: 2160px;
+    height: 1920px;
+    translate: 0 -50%;
+    rotate: 90deg;
+    background-image: url("../../Textures/Gradient_Vertical.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    -unity-background-image-tint-color: #080707;
+    opacity: 0.86;
+}
+
+.s10-hole {
+    left: 44px;
+}
+
+.s10-hole--top {
+    top: 300px;
+}
+
+.s10-hole--bottom {
+    top: 600px;
+}
+
+.s10-header {
+    left: 112px;
+    top: 150px;
+    width: 760px;
+    padding-bottom: 9px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.s10-file {
+    font-size: 15px;
+    letter-spacing: 5.1px;
+    color: var(--hcf-cream-50);
+}
+
+.s10-elapsed {
+    font-size: 18px;
+    color: var(--hcf-cream-40);
+}
+
+.s10-title {
+    left: 108px;
+    top: 218px;
+    width: 760px;
+    height: 130px;
+}
+
+.s10-title-line {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 117px;
+    font-size: 136px;
+    letter-spacing: -1.6px;
+    -unity-text-align: middle-left;
+}
+
+.s10-title-line--shadow {
+    left: 4px;
+    top: 4px;
+    color: var(--hcf-rust-deep);
+    opacity: 0.6;
+}
+
+.s10-menu {
+    left: 112px;
+    top: 430px;
+    width: 660px;
+    align-items: stretch;
+}
+
+.s10-menu-item {
+    height: 72px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.s10-menu-item--first {
+    margin-top: 2px;
+}
+
+.s10-menu-item--gap {
+    margin-top: 13px;
+}
+
+.s10-menu-plate {
+    left: -16px;
+    top: 3px;
+    width: 560px;
+    height: 64px;
+}
+
+.s10-menu-underline {
+    position: absolute;
+    display: none;
+    left: -6px;
+    bottom: -1px;
+    width: 470px;
+    height: 5px;
+    background-color: var(--hcf-rust);
+    rotate: -0.5deg;
+}
+
+.s10-menu-item.is-active .s10-menu-underline {
+    display: flex;
+}
+
+.s10-menu-row {
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.s10-menu-item.is-active .s10-menu-row {
+    padding-left: 14px;
+}
+
+.s10-menu-index {
+    font-size: 19px;
+    margin-bottom: 6px;
+
+    color: rgba(236, 230, 218, 0.34);
+}
+
+.s10-menu-item.is-active .s10-menu-index {
+    color: rgba(26, 24, 23, 0.83);
+}
+
+.s10-menu-label {
+    margin-left: 22px;
+    font-size: 50px;
+    color: var(--hcf-cream-86);
+}
+
+.s10-menu-item--danger .s10-menu-label {
+    color: var(--hcf-rust-90);
+}
+
+.s10-menu-item.is-active .s10-menu-label {
+    -unity-font-definition: url("../../Fonts/BigShouldersDisplay-ExtraBold.ttf");
+
+    color: #161413;
+}
+
+.s10-menu-item--danger.is-active .s10-menu-label {
+    color: var(--hcf-rust-deep);
+}
+
+.s10-side {
+    right: 112px;
+    top: 220px;
+    width: 600px;
+    align-items: stretch;
+}
+
+.s10-still {
+    width: 602px;
+    height: 378px;
+    rotate: 1.2deg;
+}
+
+.s10-still-shadow {
+    left: -32px;
+    top: -8px;
+    right: -32px;
+    bottom: -32px;
+}
+
+.s10-still-card {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: #0D0C0B;
+    border-width: 1px;
+
+    border-color: rgba(236, 230, 218, 0.1);
+}
+
+.s10-still-art {
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+}
+
+.s10-tape {
+    position: absolute;
+    left: -30px;
+    top: -16px;
+    width: 130px;
+    height: 34px;
+    rotate: -22deg;
+}
+
+.s10-meta {
+    margin-top: 36px;
+    padding-top: 22px;
+    border-top-width: 2px;
+
+    border-top-color: rgba(236, 230, 218, 0.2);
+    align-items: stretch;
+}
+
+.s10-meta-row {
+    height: 46px;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.s10-meta-key {
+    font-size: 17px;
+    letter-spacing: 2.7px;
+    margin-top: 14px;
+
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s10-meta-value {
+    font-size: 30px;
+    color: var(--hcf-cream);
+}
+
+.s10-note {
+    margin-top: 26px;
+    font-size: 20px;
+    color: var(--hcf-cream-45);
+    white-space: normal;
+}
+
+.s10-hints {
+    right: 112px;
+    bottom: 44px;
+}
+
+.s10-frozen {
+    background-image: url("../../Art/Backdrops/Gameplay_Corridor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s10-still-art {
+    background-image: url("../../Art/SaveShots/Checkpoint_Records.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

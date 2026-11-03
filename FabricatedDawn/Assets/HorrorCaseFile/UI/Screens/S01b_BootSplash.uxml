@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S01b_BootSplash.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s01b">
+
+        <ui:VisualElement class="hcf-light-pool s01b-pool" picking-mode="Ignore" />
+
+        <ui:VisualElement name="title" class="hcf-abs s01b-title">
+            <ui:Label text="ADVISORY" class="hcf-display s01b-title__line s01b-title__line--shadow" />
+            <ui:Label text="ADVISORY" class="hcf-display s01b-title__line s01b-title__line--main" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="advisory" class="hcf-abs s01b-advisory">
+            <ui:Label class="hcf-typed s01b-advisory__body" text="this game contains sustained darkness, sudden loud audio and depictions of graphic injury. it is not recommended for players sensitive to flashing light." />
+            <ui:Label class="hcf-typed s01b-advisory__note" text="these can be reduced in settings › gameplay at any time." />
+            <ui:VisualElement class="s01b-advisory__tips">
+                <ui:Label class="hcf-mono s01b-advisory__tip" text="HEADPHONES RECOMMENDED" />
+                <ui:Label class="hcf-mono s01b-advisory__tip s01b-advisory__tip--second" text="PLAY IN A DARK ROOM" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s01b-continue">
+            <ui:Label class="hcf-keycap" text="ANY KEY" />
+            <ui:Label text="continue" />
+        </ui:VisualElement>
+
+        <ui:Label class="hcf-abs hcf-mono s01b-build" text="v0.9.4 — BUILD 1182" />
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

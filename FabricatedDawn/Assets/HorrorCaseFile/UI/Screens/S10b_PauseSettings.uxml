@@ -1,0 +1,400 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S10_PauseMenu.uss" />
+
+    <Style src="S05_SettingsControls.uss" />
+    <Style src="S10b_PauseSettings.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s10 s10b">
+
+        <ui:VisualElement name="frozen-view" class="hcf-abs s10-frozen" picking-mode="Ignore" />
+        <ui:VisualElement name="scrim" class="hcf-abs s10-scrim" picking-mode="Ignore" />
+        <ui:VisualElement name="scrim-ramp" class="hcf-abs s10-scrim-ramp" picking-mode="Ignore" />
+
+        <ui:VisualElement class="hcf-abs hcf-hole s10-hole s10-hole--top" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-abs hcf-hole s10-hole s10-hole--bottom" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s10-header s10b-header" picking-mode="Ignore">
+            <ui:Label class="hcf-mono s10-file" text="FILE 0448 / SUSPENDED" />
+            <ui:Label class="hcf-typed s10-elapsed" text="04:12 elapsed" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="title" class="hcf-abs s10-title">
+            <ui:Label class="hcf-display s10-title-line s10-title-line--shadow" text="PAUSED" />
+            <ui:Label class="hcf-display s10-title-line" text="PAUSED" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="menu" class="hcf-abs s10-menu s10b-menu">
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s10-menu-item s10-menu-item--first">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="01" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="RESUME" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s10-menu-item s10-menu-item--gap">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="02" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="SAVE GAME" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s10-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="03" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="JOURNAL" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" class="hcf-menu-item s10-menu-item is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="04" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="SETTINGS" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-05" text="" class="hcf-menu-item s10-menu-item s10-menu-item--danger">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="05" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="ABANDON CHAPTER" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="settings-panel" class="hcf-abs s10b-panel">
+            <ui:VisualElement class="s10b-panel-accent" picking-mode="Ignore" />
+
+            <ui:VisualElement name="panel-head" class="hcf-abs s10b-panel-head">
+                <ui:VisualElement class="s10b-panel-title-row">
+                    <ui:Label class="hcf-bs-800 s10b-panel-title" text="SETTINGS" />
+                    <ui:Label class="hcf-typed s10b-panel-note" text="changes apply immediately in game" />
+                </ui:VisualElement>
+                <ui:VisualElement name="tabs" class="hcf-rule s10b-tabs">
+                    <ui:Button name="tab-video" text="" class="hcf-tab s10b-tab s10b-tab--first is-active">
+                        <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.2" cut-bottom="0" cut-left="0" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-tab__label s10b-tab__label" text="VIDEO" />
+                    </ui:Button>
+                    <ui:Button name="tab-audio" text="" class="hcf-tab s10b-tab">
+                        <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.2" cut-bottom="0" cut-left="0" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-tab__label s10b-tab__label" text="AUDIO" />
+                    </ui:Button>
+                    <ui:Button name="tab-controls" text="" class="hcf-tab s10b-tab">
+                        <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.6" cut-bottom="0" cut-left="0" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-tab__label s10b-tab__label" text="CONTROLS" />
+                    </ui:Button>
+                    <ui:Button name="tab-gameplay" text="" class="hcf-tab s10b-tab">
+                        <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.6" cut-bottom="0" cut-left="0" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-tab__label s10b-tab__label" text="GAMEPLAY" />
+                    </ui:Button>
+                    <ui:Label name="tabs-note" class="hcf-mono s10b-tabs-note" text="RESOLUTION LOCKED IN GAME" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="options" class="hcf-abs s10b-options">
+                <ui:VisualElement name="row-brightness" class="s10b-row">
+                    <ui:Label class="hcf-bs-700 s10b-row__label" text="BRIGHTNESS" />
+                    <ui:Slider name="slider-brightness" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="38" fill="true" />
+                    <ui:Label name="slider-brightness-value" class="hcf-mono s10b-value" text="38" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="row-fov" class="s10b-row">
+                    <ui:Label class="hcf-bs-700 s10b-row__label" text="FIELD OF VIEW" />
+                    <ui:Slider name="slider-fov" class="hcf-slider s10b-row__control" low-value="60" high-value="110" value="86" fill="true" />
+                    <ui:Label name="slider-fov-value" class="hcf-mono s10b-value" text="86" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="row-texture-quality" class="s10b-row">
+                    <ui:Label class="hcf-bs-700 s10b-row__label" text="TEXTURE QUALITY" />
+                    <ui:RadioButtonGroup name="seg-texture-quality" class="hcf-seg-group hcf-seg-group--cream s10b-row__control s10b-seg" choices="LOW,MEDIUM,HIGH,ULTRA" value="2" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="row-toggles" class="s10b-row s10b-row--toggles">
+                    <ui:Toggle name="check-vsync" text="V-SYNC" value="true" class="hcf-check s10b-toggle s10b-toggle--first">
+                        <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                    </ui:Toggle>
+                    <ui:Toggle name="check-motion-blur" text="MOTION BLUR" class="hcf-check s10b-toggle">
+                        <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                    </ui:Toggle>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="options-audio" class="hcf-abs s10b-options s10b-options--off">
+                <ui:ScrollView class="hcf-scroll s10b-scroll" mode="Vertical">
+                    <ui:VisualElement name="row-master" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="MASTER" />
+                        <ui:Slider name="slider-master" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="78" fill="true" />
+                        <ui:Label name="slider-master-value" class="hcf-mono s10b-value" text="78" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-music" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="MUSIC" />
+                        <ui:Slider name="slider-music" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="44" fill="true" />
+                        <ui:Label name="slider-music-value" class="hcf-mono s10b-value" text="44" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-effects" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="EFFECTS" />
+                        <ui:Slider name="slider-effects" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="86" fill="true" />
+                        <ui:Label name="slider-effects-value" class="hcf-mono s10b-value" text="86" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-voice" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="VOICE" />
+                        <ui:Slider name="slider-voice" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="92" fill="true" />
+                        <ui:Label name="slider-voice-value" class="hcf-mono s10b-value" text="92" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-ambience" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="AMBIENCE" />
+                        <ui:Slider name="slider-ambience" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="70" fill="true" />
+                        <ui:Label name="slider-ambience-value" class="hcf-mono s10b-value" text="70" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-device" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="DEVICE" />
+                        <ui:DropdownField name="dropdown-device" class="hcf-dropdown s10b-row__control" choices="SYSTEM DEFAULT,HEADPHONES,SPEAKERS,DIGITAL OUTPUT" index="0">
+                            <ui:Label class="hcf-dropdown__caret" text="▼" picking-mode="Ignore" />
+                        </ui:DropdownField>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-mix" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="MIX" />
+                        <ui:RadioButtonGroup name="seg-mix" class="hcf-seg-group hcf-seg-group--cream s10b-row__control s10b-seg" choices="HEADPHONES,STEREO,5.1,7.1" value="0" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-toggles-audio" class="s10b-row s10b-row--toggles">
+                        <ui:Toggle name="check-subtitles" text="SUBTITLES" value="true" class="hcf-check s10b-toggle s10b-toggle--first">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-sound-cues" text="SOUND CUES" value="true" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-mute-unfocused" text="MUTE WHEN UNFOCUSED" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="options-controls" class="hcf-abs s10b-options s10b-options--off">
+                <ui:ScrollView class="hcf-scroll s10b-scroll" mode="Vertical">
+
+                    <ui:Button name="bind-move" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="MOVE FORWARD" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first" text="W" />
+
+                            <ui:Label class="hcf-keycap s05-key s05-key--empty hcf-glyph" text="↑">
+                                <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                            </ui:Label>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-sprint" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="SPRINT" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first s05-key--wide" text="SHIFT" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-crouch" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="CROUCH" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first" text="C" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-lean" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="LEAN" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first" text="Q" />
+                            <ui:Label class="hcf-keycap s05-key" text="E" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-interact" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="INTERACT" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first" text="F" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-flashlight" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="FLASHLIGHT" />
+                        <ui:VisualElement class="s05-keys">
+                            <ui:Label class="hcf-keycap s05-key s05-key--first" text="L" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:Button name="bind-holster" text="" class="hcf-menu-item s05-bind s10b-bind">
+                        <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label class="hcf-bs-700 s05-bind__label" text="HOLSTER" />
+                        <ui:VisualElement class="s05-keys s05-keys--conflict">
+                            <ui:Label class="hcf-typed s05-conflict" text="already bound to “lean”" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--conflict" text="Q" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="s05-listen">
+                            <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                            <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                        </ui:VisualElement>
+                    </ui:Button>
+
+                    <ui:VisualElement name="row-sensitivity" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="SENSITIVITY" />
+
+                        <ui:Slider name="slider-sensitivity" class="hcf-slider s10b-row__control" low-value="0" high-value="5" value="2.4" fill="true" />
+                        <ui:Label name="slider-sensitivity-value" class="hcf-mono s10b-value" text="2.4" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-toggles-controls" class="s10b-row s10b-row--toggles">
+                        <ui:Toggle name="check-hold-to-crouch" text="HOLD TO CROUCH" value="true" class="hcf-check s10b-toggle s10b-toggle--first">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-invert-y" text="INVERT Y AXIS" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-toggle-sprint" text="TOGGLE SPRINT" value="true" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="options-gameplay" class="hcf-abs s10b-options s10b-options--off">
+                <ui:ScrollView class="hcf-scroll s10b-scroll" mode="Vertical">
+                    <ui:VisualElement name="row-objective-marker" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="OBJECTIVE MARKER" />
+                        <ui:RadioButtonGroup name="seg-objective-marker" class="hcf-seg-group hcf-seg-group--cream s10b-row__control s10b-seg" choices="ALWAYS,ON UPDATE,NEVER" value="1" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-interaction-prompts" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="INTERACTION PROMPTS" />
+                        <ui:RadioButtonGroup name="seg-interaction-prompts" class="hcf-seg-group hcf-seg-group--cream s10b-row__control s10b-seg" choices="FULL,ICON ONLY,OFF" value="0" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-autosave" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="AUTOSAVE" />
+                        <ui:DropdownField name="dropdown-autosave" class="hcf-dropdown s10b-row__control" choices="EVERY CHECKPOINT,EVERY ROOM,ON QUIT ONLY,OFF" index="0">
+                            <ui:Label class="hcf-dropdown__caret" text="▼" picking-mode="Ignore" />
+                        </ui:DropdownField>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-puzzle-hints" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="PUZZLE HINTS" />
+                        <ui:Slider name="slider-puzzle-hints" class="hcf-slider s10b-row__control" low-value="0" high-value="100" value="30" fill="true" />
+                        <ui:Label name="slider-puzzle-hints-value" class="hcf-mono s10b-value s10b-value--hints" text="AFTER 5 MIN" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-subtitle-size" class="s10b-row">
+                        <ui:Label class="hcf-bs-700 s10b-row__label" text="SUBTITLE SIZE" />
+                        <ui:RadioButtonGroup name="seg-subtitle-size" class="hcf-seg-group hcf-seg-group--cream s10b-row__control s10b-seg" choices="SMALL,MEDIUM,LARGE" value="1" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-toggles-gameplay-one" class="s10b-row s10b-row--toggles">
+                        <ui:Toggle name="check-skip-chase-qtes" text="SKIP CHASE QTES" value="true" class="hcf-check s10b-toggle s10b-toggle--first">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-reduce-camera-shake" text="REDUCE CAMERA SHAKE" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="row-toggles-gameplay-two" class="s10b-row s10b-row--toggles">
+                        <ui:Toggle name="check-hold-instead-of-tap" text="HOLD INSTEAD OF TAP" value="true" class="hcf-check s10b-toggle s10b-toggle--first">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                        <ui:Toggle name="check-high-contrast-hud" text="HIGH-CONTRAST HUD" class="hcf-check s10b-toggle">
+                            <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                        </ui:Toggle>
+                    </ui:VisualElement>
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="actions" class="hcf-abs s10b-actions">
+                <ui:Button name="btn-apply" text="" class="hcf-btn hcf-btn--primary s10b-btn">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.1" cut-bottom="1.8" cut-left="2.1" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s10b-btn__label" text="APPLY" />
+                </ui:Button>
+                <ui:Button name="btn-defaults" text="" class="hcf-btn hcf-btn--ghost s10b-btn s10b-btn--gap">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.1" cut-bottom="1.8" cut-left="2.1" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s10b-btn__label" text="DEFAULTS" />
+                </ui:Button>
+                <ui:Button name="btn-back" text="" class="hcf-btn hcf-btn--ghost s10b-btn s10b-btn--gap">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.1" cut-bottom="1.8" cut-left="2.1" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s10b-btn__label" text="BACK" />
+                </ui:Button>
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hcf-hint-row hcf-abs s10b-hints">
+                <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                    <ui:Label class="hcf-keycap" text="TAB" />
+                    <ui:Label text="next tab" />
+                </ui:VisualElement>
+                <ui:VisualElement class="hcf-hint-item s10b-hint-item">
+                    <ui:Label class="hcf-keycap" text="ESC" />
+                    <ui:Label text="back to pause" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+    </ui:VisualElement>
+</ui:UXML>

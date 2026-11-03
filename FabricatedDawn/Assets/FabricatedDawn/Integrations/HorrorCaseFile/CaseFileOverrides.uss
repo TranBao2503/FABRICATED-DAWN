@@ -1,0 +1,45 @@
+.fd-ui .s01-title__line { font-size: 146px; }
+.fd-ui .s01-menu-item__label { font-size: 42px; }
+.fd-ui .s01-fig { font-size: 19px; white-space: normal; width: 760px; }
+.fd-ui .s01-header__date { font-size: 21px; }
+.fd-ui .s01-menu-item__meta { display: none; }
+.fd-ui .s01-menu-item:disabled .s01-menu-item__label { color: #aaa092; }
+.fd-ui .s07-objective { max-width: 1100px; }
+.fd-ui .s07-objective__title { font-size: 30px; height: auto; white-space: normal; max-width: 1100px; }
+.fd-ui .s11-title { font-size: 52px; height: 68px; }
+.fd-ui .s11-detail-title { font-size: 48px; height: auto; min-height: 70px; white-space: normal; }
+.fd-ui .s13-head__title { font-size: 48px; height: 68px; }
+.fd-ui .s13-page__title { font-size: 38px; height: auto; white-space: normal; }
+.fd-ui .s10-title-line { font-size: 126px; }
+.fd-ui .s10-menu-label { font-size: 39px; }
+.fd-ui .s10-meta-value { font-size: 24px; }
+.fd-nav { position: absolute; right: 60px; top: 54px; flex-direction: row; }
+.fd-nav-button { background-color: #e6dfd0; color: #151312; border-width: 1px; border-color: #d2c6ad; border-radius: 0; margin: 0 0 0 16px; padding: 12px 26px; font-size: 24px; min-height: 52px; }
+.fd-nav-button:hover { background-color: #bca186; }
+.fd-room { position: absolute; left: 0; top: 0; right: 0; bottom: 0; }
+.fd-floor { position: absolute; left: 0; right: 0; top: 72%; bottom: 0; background-color: rgba(10, 9, 8, .48); border-top-width: 4px; border-top-color: rgba(236, 230, 218, .2); }
+.fd-hotspot { position: absolute; white-space: normal; -unity-text-align: middle-center; font-size: 29px; border-width: 2px; border-color: #afa58b; border-radius: 0; color: #ece6da; background-color: rgba(18, 15, 13, .66); margin: 0; padding: 15px; }
+.fd-hotspot:hover { border-color: #ece6da; background-color: rgba(69, 44, 29, .9); color: #ece6da; }
+.fd-cabinet { background-color: #493727; border-color: #8b7050; }
+.fd-note { background-color: #dfd3b9; color: #191612; }
+.fd-friend { background-color: #3c4b43; border-radius: 80px 80px 0 0; }
+.fd-key { background-color: #9c7e40; color: #151312; }
+.fd-quick-tray { position: absolute; left: 72px; right: 72px; bottom: 86px; }
+.fd-caption { font-size: 19px; color: #e6dfd0; margin-bottom: 12px; }
+.fd-row { flex-direction: row; }
+.fd-quick { font-size: 24px; border-radius: 0; padding: 14px 24px; margin: 0 14px 0 0; border-width: 1px; border-color: #6b6253; background-color: rgba(13, 11, 9, .8); color: #e6dfd0; }
+.fd-quick.is-selected { background-color: #e6dfd0; color: #151312; }
+.fd-feedback { position: absolute; left: 72px; right: 72px; bottom: 32px; font-size: 23px; white-space: normal; color: #ece6da; }
+.fd-room-note { position: absolute; right: 72px; bottom: 185px; font-size: 16px; color: #d8c5a6; }
+.fd-inventory-grid { flex-direction: row; flex-wrap: wrap; }
+.fd-item { width: 196px; height: 190px; margin-right: 16px; margin-bottom: 16px; padding: 12px; }
+.fd-item-image { height: 95px; width: 100%; -unity-background-scale-mode: scale-to-fit; }
+.fd-item-name { color: #ece6da; font-size: 22px; white-space: normal; -unity-text-align: middle-center; flex-grow: 1; }
+.fd-document-button { min-height: 82px; padding: 18px 24px; margin-bottom: 14px; font-size: 27px; border-radius: 0; background-color: #e6dfd0; color: #151312; white-space: normal; -unity-text-align: middle-left; }
+.fd-empty { margin-top: 25px; font-size: 27px; color: #b2a998; white-space: normal; }
+.fd-journal-body { color: #29221b; font-size: 26px; white-space: normal; margin-top: 15px; }
+.fd-overlay { position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgba(6, 5, 4, .88); justify-content: center; align-items: center; }
+.fd-card { width: 1000px; max-height: 880px; padding: 48px; background-color: #27211b; border-width: 2px; border-color: #a8987b; }
+.fd-dialogue-title { color: #e6dfd0; font-size: 40px; white-space: normal; margin-bottom: 28px; }
+.fd-dialogue-body { color: #d7cdb9; font-size: 29px; white-space: normal; margin-bottom: 34px; }
+.fd-preview-label { position: absolute; left: 0; top: 0; right: 0; bottom: 0; color: #ece6da; -unity-text-align: middle-center; white-space: normal; font-size: 42px; }

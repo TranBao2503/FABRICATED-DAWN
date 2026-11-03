@@ -1,0 +1,201 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S13_Journal.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s13">
+
+        <ui:VisualElement class="hcf-light-pool s13-glow" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s13-shade" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s13-head" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s13-head__title" text="DOCUMENTS" />
+            <ui:Label class="hcf-mono s13-head__count" text="12 / 31 FOUND" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="doc-list" class="hcf-abs s13-list hcf-pick-on-click">
+
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s13-doc is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s13-doc__plate" cut-top="4" cut-right="4.7" cut-bottom="3.8" cut-left="4.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="07" />
+                <ui:VisualElement class="s13-doc__text">
+                    <ui:Label class="hcf-bs-700 s13-doc__title" text="INTAKE NOTE — E.V." />
+                    <ui:Label class="hcf-mono s13-doc__meta" text="records office · 11 oct" />
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s13-doc">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s13-doc__plate" cut-top="4" cut-right="4.7" cut-bottom="3.8" cut-left="4.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="08" />
+                <ui:VisualElement class="s13-doc__text">
+                    <ui:Label class="hcf-bs-700 s13-doc__title" text="NIGHT ROTA" />
+                    <ui:Label class="hcf-mono s13-doc__meta" text="staff room · 11 oct" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s13-doc__new" />
+
+                <ui:VisualElement class="s13-doc__data">
+                    <ui:Label class="s13-doc__data-file" text="FILE 0451" />
+                    <ui:Label class="s13-doc__data-date" text="11 OCT" />
+                    <ui:Label class="s13-doc__data-sign" text="— staff room noticeboard" />
+                    <ui:Label class="s13-doc__data-stamp" text="POSTED 08 OCT" />
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="week of 08 oct. four names on the night list, two of them crossed out in a different pen. nobody wrote a replacement." />
+                        <ui:Label class="s13-doc__data-para" text="the third name is mine. i did not put it there." />
+                        <ui:Label class="s13-doc__data-para" text="whoever keeps this rota: the 02:00 round was moved to 03:40 and nobody signed off on the change." />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="second sheet is the same week, printed again. this copy has five names." />
+                        <ui:Label class="s13-doc__data-para" text="the fifth is dated for tomorrow." />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s13-doc">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s13-doc__plate" cut-top="4" cut-right="4.7" cut-bottom="3.8" cut-left="4.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="09" />
+                <ui:VisualElement class="s13-doc__text">
+                    <ui:Label class="hcf-bs-700 s13-doc__title" text="TORN REQUISITION" />
+                    <ui:Label class="hcf-mono s13-doc__meta" text="loading bay · 10 oct" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="s13-doc__data">
+                    <ui:Label class="s13-doc__data-file" text="FILE 0463" />
+                    <ui:Label class="s13-doc__data-date" text="10 OCT" />
+                    <ui:Label class="s13-doc__data-sign" text="— loading bay, bin three" />
+                    <ui:Label class="s13-doc__data-stamp" text="UNFILED" />
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="requisition slip, torn across the middle. what is left asks for forty litres of surgical alcohol and a case of lamp oil." />
+                        <ui:Label class="s13-doc__data-para" text="the ward it names was closed in spring." />
+                        <ui:Label class="s13-doc__data-para" text="the signature is a scrawl. the counter-signature is the same scrawl." />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="the missing half turned up in the boiler room, wedged under a pipe." />
+                        <ui:Label class="s13-doc__data-para" text="it lists the delivery date as 12 oct and the receiving officer as this file." />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" class="hcf-menu-item s13-doc">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s13-doc__plate" cut-top="4" cut-right="4.7" cut-bottom="3.8" cut-left="4.7" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="10" />
+                <ui:VisualElement class="s13-doc__text">
+                    <ui:Label class="hcf-bs-700 s13-doc__title" text="WARD PHOTOGRAPH" />
+                    <ui:Label class="hcf-mono s13-doc__meta" text="north wing · 10 oct" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="s13-doc__data">
+                    <ui:Label class="s13-doc__data-file" text="FILE 0470" />
+                    <ui:Label class="s13-doc__data-date" text="10 OCT" />
+                    <ui:Label class="s13-doc__data-sign" text="— north wing, ward office" />
+                    <ui:Label class="s13-doc__data-stamp" text="DO NOT COPY" />
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="group photograph, north wing staff, no year on the back. eleven people, ten faces." />
+                        <ui:Label class="s13-doc__data-para" text="the figure at the end of the row is turned away and out of focus, in a photograph where nothing else is." />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s13-doc__data-sheet">
+                        <ui:Label class="s13-doc__data-para" text="held to the light, the back of the print has been written on and rubbed out." />
+                        <ui:Label class="s13-doc__data-para" text="what comes through is a room number and the word again." />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:Button>
+
+            <ui:Button name="menu-item-05" text="" enabled="false" class="hcf-menu-item s13-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="11" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-06" text="" enabled="false" class="hcf-menu-item s13-doc s13-doc--last">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="12" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="journal-page" class="hcf-abs s13-page">
+            <ui:VisualElement class="hcf-shadow s13-page__shadow" picking-mode="Ignore" />
+            <hcf:HcfTornPlate class="s13-page__plate" fill="#E6DFD0" cut-top="8" cut-right="2.6" cut-bottom="9.6" cut-left="2.6" />
+
+            <ui:VisualElement class="s13-page__body">
+                <ui:VisualElement class="s13-page__head">
+                    <ui:VisualElement picking-mode="Ignore">
+                        <ui:Label name="page-form" class="hcf-mono s13-page__form" text="FORM 12-B — PATIENT INTAKE" />
+                        <ui:Label name="page-title-1" class="hcf-bs-900 s13-page__title s13-page__title--first" text="INTAKE NOTE" />
+                        <ui:Label name="page-title-2" class="hcf-bs-900 s13-page__title" text="— E.V." />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s13-page__meta">
+                        <ui:Label class="hcf-mono s13-page__meta-line" text="FILE 0448" />
+                        <ui:Label class="hcf-mono s13-page__meta-line" text="11 OCT" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:ScrollView name="page-scroll" class="hcf-scroll s13-scroll" mode="Vertical">
+
+                    <ui:VisualElement name="journal-page-1">
+                        <ui:Label class="hcf-typed s13-page__para s13-page__para--first" text="admitted at night, no escort, no paperwork from the referring ward. he answered every question with the same three words until the duty nurse stopped writing them down." />
+
+                        <ui:VisualElement class="s13-page__para-block">
+                            <ui:VisualElement class="s13-page__para-row">
+                                <ui:Label class="hcf-typed s13-page__para-part" text="the room he was given is" />
+                                <ui:VisualElement class="hcf-redaction s13-page__redaction" picking-mode="Ignore" />
+                                <ui:Label class="hcf-typed s13-page__para-part" text="and has not been" />
+                            </ui:VisualElement>
+                            <ui:VisualElement class="s13-page__para-row">
+                                <ui:Label class="hcf-typed s13-page__para-part" text="opened since." />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+
+                        <ui:Label class="hcf-typed s13-page__para s13-page__para--last" text="whoever files this next: do not go up alone, and do not take the service stair. it does not come back down where you left it." />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="journal-page-2" class="s13-page-2">
+                        <ui:Label class="hcf-typed s13-page__para s13-page-2__lead" text="second sheet, same hand. he stopped answering at 04:10 and the lights on that floor went out with him." />
+                        <ui:Label class="hcf-typed s13-page__para" text="i went up. the door was warm. i did not open it." />
+                        <ui:Label class="hcf-typed s13-page__para" text="i am leaving this file open. if the room is logged empty again, do not correct it." />
+                    </ui:VisualElement>
+
+                </ui:ScrollView>
+            </ui:VisualElement>
+
+            <ui:Label class="hcf-typed s13-page__sign" text="— m. reyes, night duty" />
+
+            <ui:VisualElement class="hcf-stamp s13-page__stamp">
+                <ui:Label class="hcf-stamp__label s13-page__stamp-label" text="SEALED 12 OCT" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="s13-page__foot">
+                <ui:Label name="journal-page-num" class="hcf-mono s13-page__foot-item" text="PAGE 1 OF 2" />
+                <ui:Label class="hcf-mono s13-page__foot-item" text="SCROLL TO READ" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s13-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↑" />
+                <ui:Label class="hcf-keycap hcf-keycap--square hcf-glyph" text="↓" />
+                <ui:Label text="document" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="SPACE" />
+                <ui:Label text="next page" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="E" />
+                <ui:Label text="empty state" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="close" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,70 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S07_Hud.uss" />
+    <Style src="S07c_HudHiding.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s07 s07c">
+
+        <ui:VisualElement name="gameplay-view" class="hcf-abs s07-gameplay s07c-gameplay" picking-mode="Ignore" />
+
+        <ui:VisualElement name="slats" class="hcf-abs s07c-slats" picking-mode="Ignore">
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+            <ui:VisualElement class="s07c-slat" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="vignette" class="hcf-vignette s07c-vignette" picking-mode="Ignore" />
+
+        <ui:VisualElement name="breath" class="hcf-abs s07c-breath">
+            <ui:Label text="HOLD YOUR BREATH" class="hcf-mono s07c-breath__kicker" />
+
+            <ui:ProgressBar name="progress-breath" class="hcf-progress s07c-breath__bar" low-value="0" high-value="100" value="34" />
+            <ui:VisualElement name="breath-hint" class="s07c-breath__hint">
+                <ui:Label text="HOLD SPACE" class="hcf-keycap s07c-breath__key" />
+                <ui:Label text="4.1s" name="progress-breath-value" class="hcf-mono s07c-breath__time" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="proximity" class="hcf-abs s07c-prox">
+            <ui:Label text="[ footsteps, close — two rooms and closing ]" class="hcf-typed s07c-prox__cue" />
+            <hcf:HcfSegmentedMeter name="meter-proximity" class="s07c-prox__meter" segments="6" filled="4" accent-from="0" gap="5" />
+            <ui:Label text="PROXIMITY" class="hcf-mono s07c-prox__label" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="vitals" class="hcf-abs s07-vitals">
+            <ui:Label text="CONDITION" class="hcf-mono s07-condition__label s07c-condition__label" />
+            <hcf:HcfSegmentedMeter name="meter-health" class="s07-health" segments="7" filled="4" gap="4" />
+            <ui:VisualElement name="stamina-row" class="s07-stamina">
+                <ui:Label text="STAM" class="hcf-mono s07-stamina__label s07c-stamina__label" />
+                <ui:VisualElement name="stamina-track" class="s07-stamina__track s07c-stamina__track">
+                    <ui:VisualElement name="stamina-fill" class="s07-stamina__fill s07c-stamina__fill" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hint-leave" class="hcf-abs hcf-hint-row s07c-hint" picking-mode="Ignore">
+            <ui:Label text="E" class="hcf-keycap s07c-hint__key" />
+            <ui:Label text="leave the locker" />
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+
+    </ui:VisualElement>
+</ui:UXML>

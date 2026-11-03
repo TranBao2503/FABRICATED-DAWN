@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S15_GameOver.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s15">
+        <ui:VisualElement name="red-pool" class="hcf-light-pool s15-red-pool" picking-mode="Ignore" />
+
+        <ui:VisualElement name="title" class="hcf-abs s15-title">
+            <ui:Label text="CASE CLOSED" class="hcf-display s15-title__line s15-title__line--shadow" />
+            <ui:Label text="CASE CLOSED" class="hcf-display s15-title__line s15-title__line--main" />
+        </ui:VisualElement>
+        <ui:Label text="file 0448 — subject did not leave the north wing." class="hcf-abs hcf-typed s15-subtitle" />
+
+        <ui:VisualElement name="menu" class="hcf-abs s15-menu">
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s15-menu-item s15-menu-item--retry is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s15-menu-item__plate" cut-top="4" cut-right="4.6" cut-bottom="2.6" cut-left="4.6" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label text="RETRY CHECKPOINT" class="hcf-bs-700 s15-menu-item__label" />
+            </ui:Button>
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s15-menu-item s15-menu-item--load">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s15-menu-item__plate" cut-top="4" cut-right="4.6" cut-bottom="2.6" cut-left="4.6" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label text="LOAD SAVE" class="hcf-bs-700 s15-menu-item__label" />
+            </ui:Button>
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s15-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s15-menu-item__plate" cut-top="4" cut-right="4.6" cut-bottom="2.6" cut-left="4.6" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label text="MAIN MENU" class="hcf-bs-700 s15-menu-item__label" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="stats" class="hcf-abs s15-stats">
+            <ui:Label text="SURVIVED 04:12 · CHAPTER 03 · DEATHS 8" class="hcf-mono s15-stats__line" />
+            <ui:Label text="LAST CHECKPOINT — RECORDS OFFICE" class="hcf-mono s15-stats__line" />
+        </ui:VisualElement>
+        <ui:Label text="they will not remember you were here." class="hcf-abs hcf-typed s15-flavour" />
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,78 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S13_Journal.uss" />
+    <Style src="S13b_JournalEmpty.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s13 s13b">
+
+        <ui:VisualElement class="hcf-light-pool s13-glow s13b-glow" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s13-shade" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s13-head" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s13-head__title" text="DOCUMENTS" />
+            <ui:Label class="hcf-mono s13-head__count s13b-head__count" text="0 / 31 FOUND" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="doc-list" class="hcf-abs s13-list">
+
+            <ui:Button name="menu-item-01" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="01" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-02" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="02" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-03" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="03" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-04" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="04" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-05" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="05" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+            <ui:Button name="menu-item-06" text="" enabled="false" class="hcf-menu-item s13-doc s13b-doc s13-doc--last">
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s13-doc__num" text="06" />
+                <ui:Label class="hcf-typed s13-doc__missing" text="— not yet found —" />
+            </ui:Button>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="empty-file" class="hcf-abs s13b-empty" picking-mode="Ignore">
+            <hcf:HcfDashedFrame class="s13b-empty__frame" line-width="1" dash="4" gap="4" />
+            <ui:Label class="hcf-mono s13b-empty__kicker" text="NO DOCUMENT SELECTED" />
+            <ui:Label class="hcf-display s13b-empty__line s13b-empty__line--first" text="NOTHING" />
+            <ui:Label class="hcf-display s13b-empty__line" text="RECOVERED YET" />
+            <ui:Label class="hcf-typed s13b-empty__body" text="notes, forms and photographs you pick up are filed here and can be re-read at any time." />
+            <ui:VisualElement class="hcf-stamp s13b-stamp">
+                <ui:Label class="hcf-stamp__label s13b-stamp__label" text="FILE EMPTY" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s13-hints">
+
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="close" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+
+    </ui:VisualElement>
+</ui:UXML>

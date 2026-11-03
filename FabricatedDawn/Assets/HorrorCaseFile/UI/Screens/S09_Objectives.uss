@@ -1,0 +1,252 @@
+
+
+.s09-gameplay {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s09-vignette {
+    left: -614px;
+    top: -238px;
+    width: 2918px;
+    height: 1426px;
+    opacity: 0.9;
+}
+
+.s09-tracker {
+    right: 96px;
+    top: 96px;
+    width: 600px;
+}
+
+.s09-tracker__head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    border-bottom-color: var(--hcf-cream-28);
+}
+
+.s09-tracker__title {
+    font-size: 15px;
+    letter-spacing: 4.5px;
+    color: var(--hcf-cream-60);
+}
+
+.s09-tracker__chapter {
+    font-size: 17px;
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s09-active {
+    margin-top: 26px;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.s09-active__marker {
+    width: 13px;
+    height: 13px;
+    margin-top: 12px;
+    margin-right: 15px;
+    background-color: var(--hcf-rust);
+}
+
+.s09-active__body {
+    flex-grow: 1;
+}
+
+.s09-active__title {
+    height: 40px;
+    font-size: 38px;
+
+    color: #F2ECE0;
+    -unity-text-align: middle-left;
+}
+
+.s09-list {
+    margin-top: 16px;
+}
+
+.s09-list__item {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.s09-list__item--first {
+    margin-top: 0;
+}
+
+.s09-box {
+    width: 22px;
+    height: 22px;
+}
+
+.s09-box .unity-toggle__input {
+    height: 22px;
+}
+
+.s09-box .unity-toggle__checkmark,
+.s09-box .hcf-check__mark,
+.s09-box .hcf-check__dash {
+    width: 22px;
+    height: 22px;
+}
+
+.s09-box .unity-toggle__checkmark {
+    border-color: var(--hcf-cream-45);
+}
+
+.s09-box:checked .unity-toggle__input #unity-checkmark {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: var(--hcf-cream-45);
+}
+
+.s09-box:hover .unity-toggle__checkmark {
+    border-color: var(--hcf-cream-70);
+}
+
+.s09-box:checked:hover:enabled .unity-toggle__input #unity-checkmark {
+    border-color: var(--hcf-cream-70);
+}
+
+.hcf-kbd .s09-box:focus:enabled .unity-toggle__input #unity-checkmark {
+    border-color: var(--hcf-rust);
+}
+
+.s09-box .hcf-check__mark {
+    font-size: 17px;
+    color: var(--hcf-rust);
+}
+
+.s09-box:disabled .unity-toggle__input #unity-checkmark {
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.s09-box:disabled .hcf-check__dash {
+    --hcf-dash-color: rgba(236, 230, 218, 0.2);
+}
+
+.s09-list__label {
+    margin-left: 14px;
+    font-size: 21px;
+
+    color: rgba(236, 230, 218, 0.78);
+}
+
+.s09-list__label--hidden {
+    color: var(--hcf-cream-30);
+}
+
+.s09-completed {
+    margin-top: 34px;
+    padding-top: 20px;
+    border-top-width: 1px;
+    border-top-color: var(--hcf-cream-14);
+}
+
+.s09-completed__cap {
+    margin-bottom: 14px;
+    font-size: 14px;
+    letter-spacing: 3.9px;
+    color: rgba(236, 230, 218, 0.34);
+}
+
+.s09-strike {
+    align-self: flex-start;
+    height: 36px;
+}
+
+.s09-strike__title {
+    height: 36px;
+    font-size: 30px;
+    color: var(--hcf-cream-30);
+    -unity-text-align: middle-left;
+}
+
+.s09-strike__bar {
+    left: -4px;
+    right: -4px;
+    top: 19px;
+    height: 2px;
+    background-color: var(--hcf-cream-35);
+    rotate: -0.6deg;
+}
+
+.s09-toast {
+    left: 96px;
+    bottom: 120px;
+    width: 660px;
+}
+
+.s09-toast__card {
+    height: 109px;
+}
+
+.s09-toast__shadow {
+    left: -20px;
+    top: -2px;
+    right: -20px;
+    bottom: -32px;
+    opacity: 0.5;
+}
+
+.s09-toast__plate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s09-toast__content {
+    padding: 22px 28px;
+}
+
+.s09-toast__kicker {
+    height: 17px;
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: rgba(21, 19, 18, 0.79);
+    -unity-text-align: middle-left;
+}
+
+.s09-toast__title {
+    margin-top: 8px;
+    height: 40px;
+    font-size: 40px;
+    color: var(--hcf-ink);
+    -unity-text-align: middle-left;
+}
+
+.s09-toast__hint {
+    margin-top: 16px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s09-hint-key {
+    letter-spacing: 1.8px;
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s09-hint-label {
+    margin-left: 10px;
+    font-size: 15px;
+    letter-spacing: 1.8px;
+    color: rgba(236, 230, 218, 0.42);
+}
+
+.s09-hints {
+    right: 112px;
+    bottom: 44px;
+}
+
+.s09-gameplay {
+    background-image: url("../../Art/Backdrops/Gameplay_Corridor.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}

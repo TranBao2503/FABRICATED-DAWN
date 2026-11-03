@@ -1,0 +1,84 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S14_Map.uss" />
+    <Style src="S14c_MapB1.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s14 s14c">
+
+        <ui:VisualElement class="hcf-light-pool s14c-glow" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s14-head" picking-mode="Ignore">
+            <ui:Label class="hcf-bs-800 s14-head__title" text="FLOORPLAN" />
+            <ui:VisualElement class="s14-floors">
+                <ui:Button name="tab-b1" text="" class="s14-floor s14-floor--first is-active">
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s14-floor__label" text="B1" />
+                </ui:Button>
+                <ui:Button name="tab-1f" text="" class="s14-floor">
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s14-floor__label" text="1F" />
+                </ui:Button>
+                <ui:Button name="tab-2f" text="" class="s14-floor">
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s14-floor__label" text="2F" />
+                </ui:Button>
+
+                <ui:Button name="tab-3f" text="" enabled="false" class="s14-floor">
+                    <hcf:HcfDashedFrame class="s14-floor__frame" line-width="1" dash="4" gap="4" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s14-floor__label" text="3F" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="map-viewport" class="hcf-abs s14-map s14c-map">
+
+            <ui:VisualElement name="map-board" class="s14-board s14-board--b1">
+
+                <ui:VisualElement class="s14-marker s14c-marker" picking-mode="Ignore" />
+                <ui:VisualElement class="s14-marker-ring s14c-marker-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-typed s14-marker-label s14c-marker-label" text="you are here" />
+
+                <ui:Label class="hcf-typed s14c-note" text="the map does not fill in without light" />
+
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="floor-panel" class="hcf-abs s14-legend">
+            <ui:Label class="hcf-mono s14-legend__caption" text="THIS FLOOR" />
+            <ui:Label class="hcf-bs-900 s14c-title" text="BASEMENT" />
+            <ui:Label class="hcf-typed s14c-body" text="no power down here. rooms are only drawn where the torch actually reached — which is not far." />
+
+            <ui:VisualElement class="s14-stats s14c-stats">
+                <ui:VisualElement class="s14-stat">
+                    <ui:Label class="hcf-mono s14-stat__label" text="EXPLORED" />
+                    <ui:Label name="stat-explored" class="hcf-bs-700 s14-stat__value" text="8%" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s14-stat">
+                    <ui:Label class="hcf-mono s14-stat__label" text="LIGHTING" />
+                    <ui:Label name="stat-lighting" class="hcf-bs-700 s14-stat__value s14c-stat__value--rust" text="NONE" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="tooltip" class="s14c-tooltip">
+                <ui:Label class="hcf-mono s14c-tooltip__caption" text="TOOLTIP" />
+                <ui:Label class="hcf-typed s14c-tooltip__text" text="restoring the boiler room power reveals this floor permanently." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s14-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap hcf-keycap--square" text="Q" />
+                <ui:Label class="hcf-keycap hcf-keycap--square" text="E" />
+                <ui:Label text="floor" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="M" />
+                <ui:Label text="close" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+
+    </ui:VisualElement>
+</ui:UXML>

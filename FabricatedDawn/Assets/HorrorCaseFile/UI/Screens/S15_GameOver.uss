@@ -1,0 +1,119 @@
+
+
+.s15 {
+
+    background-color: #0C0A0A;
+}
+
+.s15-red-pool {
+    left: 14%;
+    top: 10.324074%;
+    width: 72%;
+    height: 63.361111%;
+
+    -unity-background-image-tint-color: rgba(168, 51, 42, 0.1);
+}
+
+.s15 .hcf-scanline-layer {
+    opacity: 0.12;
+}
+
+.s15-title {
+    left: 50%;
+    translate: -50% 0;
+    top: 262px;
+    width: 1300px;
+    height: 200px;
+}
+
+.s15-title__line {
+    position: absolute;
+    left: 0;
+    width: 1300px;
+    height: 180.6px;
+    font-size: 210px;
+    letter-spacing: -4.2px;
+    -unity-text-align: middle-center;
+}
+
+.s15-title__line--shadow {
+    top: 5px;
+    color: var(--hcf-rust-deep);
+    opacity: 0.6;
+}
+
+.s15-title__line--main {
+    top: 0;
+    color: var(--hcf-cream);
+}
+
+.s15-subtitle {
+    left: 50%;
+    translate: -50% 0;
+    top: 488px;
+    width: 1300px;
+    font-size: 24px;
+    color: var(--hcf-cream-50);
+    -unity-text-align: upper-center;
+}
+
+.s15-menu {
+    left: 50%;
+    translate: -50% 0;
+    top: 600px;
+    width: 760px;
+    height: 236px;
+}
+
+.s15-menu-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 72px;
+}
+
+.s15-menu-item--retry {
+    margin-top: 2px;
+}
+
+.s15-menu-item--load {
+    margin-top: 18px;
+}
+
+.s15-menu-item__plate {
+    left: 0;
+    right: 0;
+    top: 3px;
+    height: 66px;
+}
+
+.s15-menu-item__label {
+    font-size: 44px;
+    letter-spacing: 2.6px;
+    color: var(--hcf-cream-80);
+}
+
+.s15-menu-item.is-active .s15-menu-item__label {
+    -unity-font-definition: url("../../Fonts/BigShouldersDisplay-Black.ttf");
+    color: var(--hcf-ink);
+}
+
+.s15-stats {
+    left: 112px;
+    bottom: 44px;
+}
+
+.s15-stats__line {
+    height: 32.3px;
+    font-size: 17px;
+    letter-spacing: 2.4px;
+    color: rgba(236, 230, 218, 0.34);
+    -unity-text-align: middle-left;
+}
+
+.s15-flavour {
+    right: 112px;
+    bottom: 56px;
+    font-size: 20px;
+    color: var(--hcf-cream-40);
+}

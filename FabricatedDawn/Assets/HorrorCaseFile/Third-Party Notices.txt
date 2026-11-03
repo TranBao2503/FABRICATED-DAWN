@@ -1,0 +1,78 @@
+==============================================================================
+1. BIG SHOULDERS DISPLAY
+==============================================================================
+
+Component:          Big Shoulders Display (font family), version 2.002
+Copyright:          Copyright 2019 The Big Shoulders Project Authors
+                    (https://github.com/xotypeco/big_shoulders)
+Foundry:            XO Type Co (http://xotype.co)
+Designer:           Patric King (http://houseofpretty.com)
+License:            SIL Open Font License, Version 1.1
+License text:       Assets/HorrorCaseFile/Fonts/Licenses/OFL-BigShouldersDisplay.txt
+License online:     https://scripts.sil.org/OFL
+Reserved Font Name: none declared by this release
+Modified:           no
+
+Files included in this package:
+  Assets/HorrorCaseFile/Fonts/BigShouldersDisplay-Bold.ttf
+  Assets/HorrorCaseFile/Fonts/BigShouldersDisplay-ExtraBold.ttf
+  Assets/HorrorCaseFile/Fonts/BigShouldersDisplay-Black.ttf
+
+License notice as declared inside the font files (name table, name ID 13):
+  "This Font Software is licensed under the SIL Open Font License, Version 1.1.
+   This license is available with a FAQ at: https://scripts.sil.org/OFL"
+
+==============================================================================
+2. COURIER PRIME
+==============================================================================
+
+Component:          Courier Prime (font family), version 3.018
+Copyright:          Copyright 2015 The Courier Prime Project Authors
+                    (https://github.com/quoteunquoteapps/CourierPrime).
+Foundry:            Quote-Unquote Apps (http://quoteunquoteapps.com)
+Designer:           Alan Dague-Greene, Quote-Unquote Apps
+License:            SIL Open Font License, Version 1.1
+License text:       Assets/HorrorCaseFile/Fonts/Licenses/OFL-CourierPrime.txt
+License online:     http://scripts.sil.org/OFL
+Reserved Font Name: none declared by this release
+Modified:           no
+
+Files included in this package:
+  Assets/HorrorCaseFile/Fonts/CourierPrime-Regular.ttf
+  Assets/HorrorCaseFile/Fonts/CourierPrime-Bold.ttf
+
+License notice as declared inside the font files (name table, name ID 13):
+  "This Font Software is licensed under the SIL Open Font License, Version 1.1.
+   This license is available with a FAQ at: http://scripts.sil.org/OFL"
+
+
+==============================================================================
+3. SPECIAL ELITE
+==============================================================================
+
+Component:          Special Elite (font family), version 1.001
+Copyright:          Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic
+                    (AOETI). All rights reserved.
+Foundry / designer: Astigmatic (AOETI) (http://www.astigmatic.com/)
+Trademark:          "Special Elite is a trademark of Astigmatic (AOETI)."
+License:            Apache License, Version 2.0
+License text:       Assets/HorrorCaseFile/Fonts/Licenses/LICENSE-SpecialElite-Apache.txt
+License online:     http://www.apache.org/licenses/LICENSE-2.0
+Modified:           no
+
+Files included in this package:
+  Assets/HorrorCaseFile/Fonts/SpecialElite-Regular.ttf
+
+Copyright notice as declared inside the font file (name table, name ID 0).
+The wording is the font's own; only the line breaks below are ours:
+  "Copyright (c) 2010 by Brian J. Bonislawsky DBA Astigmatic (AOETI).
+   All rights reserved. Available under the Apache 2.0 licence.
+   http://www.apache.org/licenses/LICENSE-2.0.html"
+
+License notice as declared inside the font file (name table, name ID 13):
+  "Licensed under the Apache License, Version 2.0"
+
+No NOTICE file was distributed with this font, so there is no NOTICE text to
+propagate under section 4(d) of the Apache License. The copyright and trademark
+statements above are reproduced from the font's own name table, which is the
+attribution notice carried by the work itself.

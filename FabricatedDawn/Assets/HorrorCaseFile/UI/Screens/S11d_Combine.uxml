@@ -1,0 +1,120 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S11_Inventory.uss" />
+    <Style src="S11d_Combine.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s11 s11d">
+        <ui:VisualElement class="hcf-light-pool s11d-pool" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s11-header">
+            <ui:VisualElement class="hcf-rule s11-header-row" picking-mode="Ignore">
+                <ui:Label class="hcf-bs-800 s11-title" text="COMBINE" />
+                <ui:Label name="combine-hint" class="hcf-typed s11-carry" text="pick a second item" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="carrying" class="hcf-abs s11d-carry">
+            <ui:Label class="hcf-mono s11d-carry-label" text="CARRYING" />
+            <ui:VisualElement name="grid" class="s11d-grid hcf-pick-on-click" picking-mode="Ignore">
+                <ui:Button name="cell-01" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full s11d-cell--rust is-active">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--alcohol" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="SURGICAL ALCOHOL" />
+                    <ui:Label class="s11d-cell__data-pair" text="BANDAGE" />
+                    <ui:Label class="s11d-cell__data-result" text="DRESSED BANDAGE" />
+                    <ui:Label class="s11d-cell__data-result-body" text="stops the bleeding and disinfects the wound. uses both items - you will not get the alcohol back." />
+                </ui:Button>
+                <ui:Button name="cell-02" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--crowbar" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="BENT CROWBAR" />
+                </ui:Button>
+                <ui:Button name="cell-03" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--cassette" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="CASSETTE TAPE" />
+                </ui:Button>
+                <ui:Button name="cell-04" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--matches" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="MATCHES" />
+                </ui:Button>
+                <ui:Button name="cell-05" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--battery" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="BATTERY" />
+                </ui:Button>
+                <ui:Button name="cell-06" text="" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--fuse" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="FUSE" />
+                </ui:Button>
+                <ui:Button name="cell-07" text="" enabled="false" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--brass-key" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="BRASS KEY" />
+                </ui:Button>
+                <ui:Button name="cell-08" text="" enabled="false" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--service-fob" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="SERVICE FOB" />
+                </ui:Button>
+                <ui:Button name="cell-09" text="" enabled="false" class="s11-cell s11-cell--full s11d-cell s11d-cell--full">
+                    <ui:VisualElement class="s11-cell-art s11d-cell-art hcf-item--bent-pin" picking-mode="Ignore" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="s11-cell__data-title" text="BENT PIN" />
+                </ui:Button>
+            </ui:VisualElement>
+            <ui:Label class="hcf-typed s11d-carry-note" text="dimmed items are keys - they are never used up." />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="formula" class="hcf-abs s11d-formula" picking-mode="Ignore">
+            <ui:VisualElement name="slot-first" class="s11d-slot">
+                <ui:VisualElement name="art-first" class="s11d-slot-art hcf-item--bandage" picking-mode="Ignore" />
+
+                <ui:Label class="s11d-slot__data-title" text="BANDAGE" />
+            </ui:VisualElement>
+            <ui:Label class="hcf-bs-900 s11d-op s11d-gap" text="+" />
+            <ui:VisualElement name="slot-second" class="s11d-slot s11d-slot--rust s11d-gap">
+                <ui:VisualElement name="art-second" class="s11d-slot-art" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:Label class="hcf-bs-900 s11d-op s11d-gap" text="=" />
+            <ui:VisualElement name="slot-result" class="s11d-slot-result s11d-gap">
+                <hcf:HcfTornPlate class="s11d-result-plate" cut-top="6" cut-right="2.5" cut-bottom="7.5" cut-left="2.5" />
+                <ui:VisualElement name="art-result" class="s11d-slot-art s11d-result-art hcf-item--dressed-bandage" picking-mode="Ignore" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="result" class="hcf-abs s11d-result">
+            <ui:Label name="result-kicker" class="hcf-mono s11-detail-kicker" text="RESULT" />
+            <ui:Label name="result-title" class="hcf-display s11-detail-title s11d-result-title" text="DRESSED BANDAGE" />
+            <ui:Label name="result-body" class="hcf-typed s11-detail-body s11d-result-body" text="stops bleeding and disinfects the wound. uses both items — you will not get the alcohol back." />
+            <ui:VisualElement name="actions" class="s11d-actions">
+                <ui:Button name="btn-combine" text="" class="hcf-btn hcf-btn--primary s11d-btn">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.6" cut-bottom="2" cut-left="2.6" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11d-btn__label" text="COMBINE" />
+                </ui:Button>
+                <ui:Button name="btn-cancel" text="" class="hcf-btn hcf-btn--ghost s11d-btn s11d-btn--next">
+                    <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.6" cut-bottom="2" cut-left="2.6" />
+                    <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-btn__label s11d-btn__label" text="CANCEL" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-hint-row hcf-abs s11-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="combine" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: ITEM_SANDBOX_KEY
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: ITEM_SANDBOX_KEY
+  displayName: "Ch\xECa kh\xF3a t\u1EE7"
+  origin: 0
+  pastOnly: 0
+  uses: 1
+  purpose: "M\u1EDF t\u1EE7 g\u1ED7 trong c\u1EA3nh th\u1EED."
+  icon: {fileID: 0}

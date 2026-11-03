@@ -1,0 +1,159 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S04_SettingsVideo.uss" />
+    <Style src="S05b_SettingsAudio.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s04 s05b">
+
+        <ui:VisualElement class="hcf-light-pool s04-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s04-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s04-header">
+            <ui:Label class="hcf-bs-800 s04-title" text="SETTINGS" />
+            <ui:VisualElement name="tabs" class="hcf-rule s04-tabs" picking-mode="Ignore">
+                <ui:Button name="tab-video" text="" class="hcf-tab s04-tab s04-tab--first">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="VIDEO" />
+                </ui:Button>
+                <ui:Button name="tab-audio" text="" class="hcf-tab s04-tab is-active">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="AUDIO" />
+                </ui:Button>
+                <ui:Button name="tab-controls" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="CONTROLS" />
+                </ui:Button>
+                <ui:Button name="tab-gameplay" text="" class="hcf-tab s04-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="GAMEPLAY" />
+                </ui:Button>
+                <ui:Label name="note" class="hcf-typed s05b-note" text="headphones recommended" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="options" class="hcf-abs s04-options s05b-options">
+
+            <ui:Label class="hcf-mono s05b-section s05b-section--levels" text="LEVELS" />
+
+            <ui:VisualElement name="row-master" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="MASTER" />
+                <ui:Slider name="slider-master" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="78" fill="true" />
+                <ui:Label name="slider-master-value" class="hcf-mono s04-value" text="78" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-music" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="MUSIC" />
+                <ui:Slider name="slider-music" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="44" fill="true" />
+                <ui:Label name="slider-music-value" class="hcf-mono s04-value" text="44" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-effects" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="EFFECTS" />
+                <ui:Slider name="slider-effects" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="86" fill="true" />
+                <ui:Label name="slider-effects-value" class="hcf-mono s04-value" text="86" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-voice" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="VOICE" />
+                <ui:Slider name="slider-voice" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="92" fill="true" />
+                <ui:Label name="slider-voice-value" class="hcf-mono s04-value" text="92" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-ambience" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="AMBIENCE" />
+                <ui:Slider name="slider-ambience" class="hcf-slider s04-row__control" low-value="0" high-value="100" value="70" fill="true" />
+                <ui:Label name="slider-ambience-value" class="hcf-mono s04-value" text="70" />
+            </ui:VisualElement>
+
+            <ui:Label class="hcf-mono s05b-section s05b-section--output" text="OUTPUT" />
+
+            <ui:VisualElement name="row-device" class="s04-row s05b-row">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="DEVICE" />
+                <ui:DropdownField name="dropdown-device" class="hcf-dropdown s04-row__control" choices="SYSTEM DEFAULT,HEADPHONES,SPEAKERS,DIGITAL OUTPUT" index="0">
+                    <ui:Label class="hcf-dropdown__caret" text="▼" picking-mode="Ignore" />
+                </ui:DropdownField>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="row-mix" class="s04-row s05b-row s05b-row--flush">
+                <hcf:HcfTornPlate class="s04-row__plate" cut-top="4" cut-right="4.3" cut-bottom="3.3" cut-left="5.4" />
+                <ui:Label class="hcf-bs-700 s04-row__label" text="MIX" />
+
+                <ui:RadioButtonGroup name="seg-mix" class="hcf-seg-group hcf-seg-group--cream s04-row__control" value="0">
+                    <ui:RadioButton text="HEADPHONES" />
+                    <ui:RadioButton text="STEREO" />
+                    <ui:RadioButton text="5.1" />
+                    <ui:RadioButton text="7.1" enabled="false">
+                        <hcf:HcfDashedFrame class="s05b-seg__dash" dash="3" gap="3" />
+                    </ui:RadioButton>
+                </ui:RadioButtonGroup>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="playback-column" class="hcf-abs s05b-side">
+            <ui:Label class="hcf-mono s05b-section" text="PLAYBACK" />
+
+            <ui:VisualElement name="toggles" class="s05b-toggles">
+                <ui:Toggle name="check-subtitles" text="SUBTITLES" value="true" class="hcf-check s05b-toggle s05b-toggle--first">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-sound-cues" text="SOUND CUES" value="true" class="hcf-check s05b-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-mute-unfocused" text="MUTE WHEN UNFOCUSED" class="hcf-check s05b-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+
+            <ui:Label class="hcf-typed s05b-outro" text="sound is how you survive here. do not play this on speakers." />
+
+            <ui:VisualElement name="tooltip" class="s05b-tooltip">
+                <ui:Label class="hcf-mono s05b-tooltip__title" text="MIX NOTES" />
+                <ui:Label class="hcf-typed s05b-tooltip__body" text="headphone output disables the surround mix. levels are applied on apply, not live - the demo shows the control, not the audio engine." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="actions" class="hcf-abs s04-actions">
+            <ui:Button name="btn-apply" text="" class="hcf-btn hcf-btn--primary s04-btn">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="APPLY" />
+            </ui:Button>
+            <ui:Button name="btn-defaults" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="DEFAULTS" />
+            </ui:Button>
+            <ui:Button name="btn-back" text="" class="hcf-btn hcf-btn--ghost s04-btn s04-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="BACK" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s04-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="TAB" />
+                <ui:Label text="next tab" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

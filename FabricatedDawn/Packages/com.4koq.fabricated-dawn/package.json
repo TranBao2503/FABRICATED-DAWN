@@ -1,0 +1,13 @@
+{
+  "name": "com.4koq.fabricated-dawn",
+  "version": "0.2.0",
+  "displayName": "Fabricated Dawn Toolkit",
+  "description": "Editor scaffolding, content validation and a story-state prototype for the Fabricated Dawn 2D point-and-click game.",
+  "unity": "6000.0",
+  "author": { "name": "4KoQ" },
+  "dependencies": {
+    "com.unity.modules.imgui": "1.0.0",
+    "com.unity.modules.jsonserialize": "1.0.0",
+    "com.unity.modules.uielements": "1.0.0"
+  }
+}

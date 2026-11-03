@@ -1,0 +1,190 @@
+
+
+.s05c-section {
+    height: 16px;
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: var(--hcf-cream-40);
+    -unity-text-align: middle-left;
+}
+
+.s05c-section--guidance {
+    margin-bottom: 10px;
+}
+
+.s05c-section--accessibility {
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.s05c-options {
+    top: 286px;
+}
+
+.s05c-row {
+    height: 77px;
+}
+
+.s05c-row.is-active {
+    height: 76px;
+    border-bottom-width: 0;
+}
+
+.s05c-row--toggles {
+    height: 76px;
+    border-bottom-width: 0;
+}
+
+.s05c-value--hints {
+    width: 160px;
+    font-size: 19px;
+    letter-spacing: 1.52px;
+}
+
+.s05c-toggle {
+    margin-left: 60px;
+}
+
+.s05c-toggle--first {
+    margin-left: 0;
+}
+
+.s05c-toggle .unity-toggle__text {
+    font-size: 32px;
+}
+
+.s05c-side {
+    right: 112px;
+    top: 300px;
+    width: 560px;
+}
+
+.s05c-warnings__shadow {
+    left: -32px;
+    top: 30px;
+    width: 624px;
+    height: 470px;
+    opacity: 0.5;
+    rotate: -0.6deg;
+}
+
+.s05c-warnings {
+    margin-top: 22px;
+    rotate: -0.6deg;
+}
+
+.s05c-warnings__paper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* Paper, not the cream every plate gets from .hcf-torn-plate in the theme. That base rule
+       outranks the fill attribute on the element, so the warning sheet has to name its color here. */
+    --hcf-plate-fill: var(--hcf-paper);
+}
+
+.s05c-warnings__body {
+    padding: 34px 36px 40px;
+}
+
+.s05c-warnings__title {
+    height: 39px;
+    font-size: 40px;
+    color: var(--hcf-ink);
+    -unity-text-align: middle-left;
+}
+
+.s05c-warnings__text {
+    margin-top: 18px;
+    height: 68px;
+    font-size: 20px;
+    color: rgba(21, 19, 18, 0.75);
+    white-space: normal;
+}
+
+.s05c-warnings__list {
+    margin-top: 26px;
+}
+
+.s05c-warn {
+    height: 28px;
+    margin-top: 18px;
+}
+
+.s05c-warn--first {
+    margin-top: 0;
+}
+
+.s05c-warn .unity-toggle__input {
+    height: 28px;
+}
+
+.s05c-warn .unity-toggle__checkmark {
+    width: 28px;
+    height: 28px;
+    border-color: rgba(21, 19, 18, 0.45);
+}
+
+.s05c-warn:checked .unity-toggle__input #unity-checkmark {
+    border-color: rgba(21, 19, 18, 0.45);
+}
+
+.s05c-warn:hover .unity-toggle__checkmark {
+    border-color: rgba(21, 19, 18, 0.8);
+}
+
+.s05c-warn:checked:hover:enabled .unity-toggle__input #unity-checkmark {
+    border-color: rgba(21, 19, 18, 0.8);
+}
+
+.hcf-kbd .s05c-warn:focus:enabled .unity-toggle__input #unity-checkmark {
+    border-color: var(--hcf-rust);
+}
+
+.hcf-kbd .s05c-warn:focus:checked:enabled .unity-toggle__input #unity-checkmark {
+    background-color: var(--hcf-rust);
+    border-color: rgba(21, 19, 18, 0.9);
+}
+
+.s05c-warn .hcf-check__mark {
+    width: 28px;
+    height: 28px;
+    font-size: 20px;
+}
+
+.s05c-warn .unity-toggle__text {
+    margin-left: 16px;
+    -unity-font-definition: url("../../Fonts/SpecialElite-Regular.ttf");
+    font-size: 22px;
+    color: rgba(21, 19, 18, 0.6);
+}
+
+.s05c-warn:checked .unity-toggle__text {
+    color: rgba(21, 19, 18, 0.82);
+}
+
+.s05c-tooltip {
+    margin-top: 34px;
+    padding: 24px 26px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-14);
+
+    background-color: rgba(10, 9, 8, 0.4);
+}
+
+.s05c-tooltip__title {
+    height: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    letter-spacing: 3.64px;
+    color: var(--hcf-cream-40);
+    -unity-text-align: middle-left;
+}
+
+.s05c-tooltip__text {
+    height: 68px;
+    font-size: 20px;
+    color: var(--hcf-cream-60);
+    white-space: normal;
+}

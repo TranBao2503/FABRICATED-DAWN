@@ -1,0 +1,65 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S12_Examine.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s12">
+        <ui:VisualElement class="hcf-light-pool s12-pool" picking-mode="Ignore" />
+
+        <ui:Label name="header" class="hcf-abs hcf-rule hcf-mono s12-header" text="EXAMINE / ITEM 07" />
+
+        <ui:VisualElement name="item-viewport" class="hcf-abs s12-frame">
+            <ui:VisualElement class="s12-art-clip" picking-mode="Ignore">
+                <ui:VisualElement name="item-art" class="hcf-placeholder s12-art" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement class="s12-corner s12-corner--tl" picking-mode="Ignore" />
+            <ui:VisualElement class="s12-corner s12-corner--tr" picking-mode="Ignore" />
+            <ui:VisualElement class="s12-corner s12-corner--bl" picking-mode="Ignore" />
+            <ui:VisualElement class="s12-corner s12-corner--br" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="anno-01" class="hcf-abs s12-anno s12-anno--01">
+            <ui:Label class="hcf-mono s12-anno-index" text="01" />
+            <ui:Label class="hcf-typed s12-anno-text" text="initials scratched into the handle: e.v." />
+        </ui:VisualElement>
+        <ui:VisualElement class="hcf-abs s12-leader s12-leader--01" />
+
+        <ui:VisualElement name="anno-02" class="hcf-abs s12-anno s12-anno--02">
+            <ui:Label class="hcf-mono s12-anno-index" text="02" />
+            <ui:Label class="hcf-typed s12-anno-text" text="dried rust — or something close to it" />
+        </ui:VisualElement>
+        <ui:VisualElement class="hcf-abs s12-leader s12-leader--02" />
+
+        <ui:VisualElement name="field-note" class="hcf-abs s12-note">
+            <ui:VisualElement class="hcf-shadow s12-note-shadow" picking-mode="Ignore" />
+            <hcf:HcfTornPlate class="s12-note-plate" fill="#E6DFD0" cut-top="6" cut-right="2.6" cut-bottom="8.6" cut-left="2.6" />
+            <ui:VisualElement class="s12-note-content">
+                <ui:Label class="hcf-mono s12-note-kicker" text="FIELD NOTE" />
+                <ui:Label class="hcf-bs-900 s12-note-title" text="BENT CROWBAR" />
+                <ui:Label class="hcf-typed s12-note-body" text="someone worked this handle smooth. the initials are cut deep, over and over, like a man with time and nothing to do with it." />
+                <ui:VisualElement class="s12-note-foot">
+                    <ui:Label class="hcf-mono s12-note-foot-item" text="FOUND — LOADING BAY" />
+                    <ui:Label class="hcf-mono s12-note-foot-item" text="11 OCT" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-stamp s12-stamp">
+                <ui:Label class="hcf-stamp__label s12-stamp__label" text="LOGGED" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-hint-row hcf-abs s12-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="DRAG" />
+                <ui:Label text="rotate" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="SCROLL" />
+                <ui:Label text="zoom" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

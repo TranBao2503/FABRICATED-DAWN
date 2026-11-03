@@ -1,0 +1,133 @@
+
+
+.s06-art {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s06-vignette {
+    left: -24.010417%;
+    top: -30%;
+    width: 160%;
+    height: 140%;
+    -unity-background-image-tint-color: #000000;
+    opacity: 0.9;
+}
+
+.s06-fade {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 57.962963%;
+    background-image: url("../../Textures/Gradient_Vertical.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    -unity-background-image-tint-color: #090808;
+    opacity: 0.96;
+}
+
+.s06-chapter {
+    left: 112px;
+    bottom: 214px;
+    width: 1100px;
+}
+
+.s06-chapter__kicker {
+    height: 17px;
+    font-size: 15px;
+    letter-spacing: 4.8px;
+    color: var(--hcf-cream-45);
+    -unity-text-align: middle-left;
+}
+
+.s06-title {
+    margin-top: 14px;
+    height: 120px;
+}
+
+.s06-title__line {
+    position: absolute;
+    height: 107px;
+    font-size: 124px;
+    -unity-text-align: middle-left;
+}
+
+.s06-title__line--shadow {
+    left: 3px;
+    top: 3px;
+    color: var(--hcf-rust-deep);
+    opacity: 0.5;
+}
+
+.s06-title__line--main {
+    left: 0;
+    top: 0;
+}
+
+.s06-progress {
+    left: 112px;
+    right: 112px;
+    bottom: 132px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s06-bar {
+    flex-grow: 1;
+    height: 6px;
+}
+
+.s06-bar .unity-progress-bar__background {
+    min-height: 0;
+}
+
+.s06-progress__value {
+    margin-left: 28px;
+    font-size: 18px;
+    letter-spacing: 2.88px;
+    color: var(--hcf-cream-60);
+}
+
+.s06-tip {
+    left: 112px;
+    bottom: 56px;
+    max-width: 900px;
+    height: 67px;
+    font-size: 21px;
+    color: var(--hcf-cream-55);
+    white-space: normal;
+}
+
+.s06-warning {
+    right: 112px;
+    bottom: 56px;
+    font-size: 16px;
+    letter-spacing: 2.24px;
+    color: var(--hcf-cream-32);
+}
+
+.s06-skip {
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    height: 18px;
+    font-size: 15px;
+    letter-spacing: 3.6px;
+    color: var(--hcf-cream);
+    -unity-text-align: middle-center;
+    opacity: 0;
+}
+
+.s06-art {
+    background-image: url("../../Art/Backdrops/Loading_Ward.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s06-chapter__data-first-kicker,
+.s06-chapter__data-first-title {
+    display: none;
+}

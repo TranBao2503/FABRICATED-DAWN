@@ -1,0 +1,310 @@
+
+
+.s13-glow {
+    left: -24.010417%;
+    top: -12.037037%;
+    width: 80%;
+    height: 67.962963%;
+
+    -unity-background-image-tint-color: rgba(255, 247, 230, 0.04);
+}
+
+.s13-shade {
+    left: 48.020833%;
+    top: 52.037037%;
+    width: 75.989583%;
+    height: 63.981481%;
+    -unity-background-image-tint-color: rgba(0, 0, 0, 0.5);
+}
+
+.s13-head {
+    position: absolute;
+    left: 112px;
+    top: 88px;
+    width: 780px;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 9px;
+}
+
+.s13-head__title {
+    font-size: 60px;
+    height: 54px;
+    color: var(--hcf-cream);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s13-head__count {
+    font-size: 17px;
+    letter-spacing: 3.4px;
+    color: var(--hcf-cream-45);
+}
+
+.s13-list {
+    position: absolute;
+    left: 112px;
+    top: 250px;
+    width: 780px;
+}
+
+.s13-doc {
+    height: 89px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 26px;
+    padding-right: 26px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(236, 230, 218, 0.1);
+}
+
+.s13-doc.is-active {
+    height: 96px;
+    margin-bottom: 8px;
+    border-bottom-width: 0;
+}
+
+.s13-doc__plate {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s13-doc__num {
+    font-size: 19px;
+    color: rgba(236, 230, 218, 0.34);
+}
+
+.s13-doc.is-active .s13-doc__num {
+    color: rgba(21, 19, 18, 0.79);
+}
+
+.s13-doc__text {
+    margin-left: 24px;
+}
+
+.s13-doc__title {
+    font-size: 38px;
+    height: 38px;
+    color: rgba(236, 230, 218, 0.84);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s13-doc.is-active .s13-doc__title {
+    -unity-font-definition: url("../../Fonts/BigShouldersDisplay-Black.ttf");
+    color: var(--hcf-ink);
+}
+
+.s13-doc__meta {
+    margin-top: 4px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: var(--hcf-cream-40);
+}
+
+.s13-doc.is-active .s13-doc__meta {
+    color: rgba(21, 19, 18, 0.83);
+}
+
+.s13-doc__new {
+    margin-left: auto;
+    width: 12px;
+    height: 12px;
+    background-color: var(--hcf-rust);
+}
+
+.s13-doc__missing {
+    margin-left: 24px;
+    font-size: 24px;
+    color: var(--hcf-cream-45);
+}
+
+.s13-doc__data {
+    display: none;
+}
+
+.s13-doc:disabled {
+    opacity: 0.4;
+}
+
+.s13-doc--last {
+    height: 88px;
+    border-bottom-width: 0;
+}
+
+.s13-page {
+    position: absolute;
+    right: 96px;
+    top: 120px;
+    width: 880px;
+    height: 962px;
+    rotate: -0.7deg;
+}
+
+.s13-page__shadow {
+    left: -32px;
+    top: -5px;
+    right: -32px;
+    bottom: -32px;
+}
+
+.s13-page__plate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* Paper, not the cream every plate gets from .hcf-torn-plate in the theme. That base rule
+       outranks the fill attribute on the element, so the page has to name its color here. */
+    --hcf-plate-fill: var(--hcf-paper);
+}
+
+.s13-page__body {
+    padding: 56px 60px;
+}
+
+.s13-page__head {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 18px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(21, 19, 18, 0.25);
+}
+
+.s13-page__form {
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: rgba(21, 19, 18, 0.5);
+}
+
+.s13-page__title {
+    font-size: 56px;
+    height: 52px;
+    color: var(--hcf-ink);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s13-page__title--first {
+    margin-top: 10px;
+}
+
+.s13-page__meta {
+    align-items: flex-end;
+}
+
+.s13-page__meta-line {
+    height: 27px;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    color: rgba(21, 19, 18, 0.55);
+    -unity-text-align: middle-right;
+}
+
+.s13-scroll {
+    height: 580px;
+}
+
+.s13-page__para {
+    margin-top: 26px;
+    font-size: 23px;
+    color: rgba(21, 19, 18, 0.82);
+    white-space: normal;
+}
+
+.s13-page__para--first {
+    margin-top: 30px;
+    min-height: 124px;
+}
+
+.s13-page__para--last {
+    min-height: 83px;
+}
+
+.s13-page-2 {
+    display: none;
+}
+
+.s13-page-2__lead {
+    margin-top: 30px;
+}
+
+.s13-page__para-block {
+    margin-top: 26px;
+}
+
+.s13-page__para-row {
+    height: 41px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s13-page__para-part {
+    font-size: 23px;
+    color: rgba(21, 19, 18, 0.82);
+    white-space: nowrap;
+    -unity-text-align: middle-left;
+}
+
+.s13-page__redaction {
+    width: 248px;
+    height: 29px;
+    margin-left: 6px;
+    margin-right: 6px;
+    background-color: var(--hcf-ink);
+}
+
+.s13-page__sign {
+    position: absolute;
+    left: 60px;
+    bottom: 120px;
+    font-size: 24px;
+    color: rgba(21, 19, 18, 0.6);
+    rotate: -1.4deg;
+}
+
+.s13-page__stamp {
+    position: absolute;
+    right: 58px;
+    bottom: 96px;
+    padding: 10px 18px;
+    border-color: var(--hcf-rust-55);
+    rotate: -8deg;
+}
+
+.s13-page__stamp-label {
+    font-size: 22px;
+    letter-spacing: 4px;
+
+    color: rgba(168, 51, 42, 0.68);
+}
+
+.s13-page__foot {
+    position: absolute;
+    left: 60px;
+    right: 60px;
+    bottom: 56px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.s13-page__foot-item {
+    font-size: 15px;
+    letter-spacing: 2.1px;
+    color: rgba(21, 19, 18, 0.45);
+}
+
+#journal-page:hover .s13-page__foot-item {
+    color: rgba(21, 19, 18, 0.75);
+}
+
+.s13-hints {
+    position: absolute;
+    left: 112px;
+    bottom: 44px;
+}

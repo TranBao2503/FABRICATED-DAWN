@@ -1,0 +1,115 @@
+
+
+.s07d-vignette {
+    left: -18%;
+    top: -14%;
+    width: 140%;
+    height: 120%;
+    opacity: 0.92;
+}
+
+.s07d-frame {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-width: 14px;
+
+    border-color: rgba(168, 51, 42, 0.28);
+}
+
+.s07d-alert {
+    left: 0;
+    right: 0;
+    top: 120px;
+    align-items: center;
+}
+
+.s07d-title {
+    width: 100%;
+    height: 70px;
+}
+
+.s07d-title__line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 66.6px;
+    font-size: 74px;
+    letter-spacing: 1.5px;
+    -unity-text-align: middle-center;
+}
+
+.s07d-title__line--shadow {
+    top: 3px;
+    color: var(--hcf-rust-deep);
+    opacity: 0.75;
+}
+
+.s07d-title__line--main {
+    top: 0;
+    color: var(--hcf-cream);
+}
+
+.s07d-alert__note {
+    margin-top: 14px;
+    font-size: 20px;
+    color: var(--hcf-cream-60);
+}
+
+.s07d-condition__value {
+    font-size: 19px;
+    color: var(--hcf-cream-60);
+}
+
+.s07d-stamina__track {
+    height: 8px;
+}
+
+.s07d-stamina__fill {
+    width: 8%;
+    background-color: var(--hcf-rust);
+}
+
+.s07d-stamina__note {
+    margin-top: 10px;
+    font-size: 17px;
+    color: var(--hcf-rust-lit);
+}
+
+.s07d-weapon {
+    margin-left: 44px;
+    align-items: flex-end;
+}
+
+.s07d-weapon__cap {
+    margin-bottom: 6px;
+}
+
+.s07d-strike {
+    align-self: flex-end;
+    height: 50.4px;
+}
+
+.s07d-strike__title {
+    height: 50.4px;
+    font-size: 56px;
+    color: var(--hcf-cream-28);
+    -unity-text-align: middle-left;
+}
+
+.s07d-strike__bar {
+    left: -6px;
+    right: -6px;
+    top: 25.2px;
+    height: 3px;
+
+    background-color: rgba(168, 51, 42, 0.8);
+    rotate: -1.5deg;
+}
+
+.s07d-weapon__note {
+    margin-top: 8px;
+    font-size: 17px;
+    color: var(--hcf-cream-50);
+}

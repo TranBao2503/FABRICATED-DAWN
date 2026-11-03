@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: ITEM_DOOR_TALISMAN
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: ITEM_DOOR_TALISMAN
+  displayName: "B\xF9a tr\u1EA5n c\u1EEDa"
+  origin: 0
+  pastOnly: 0
+  uses: 1
+  purpose: "D\u1EEF li\u1EC7u kh\u1EDFi t\u1EA1o; nh\xF3m thi\u1EBFt k\u1EBF c\u1EA7n b\u1ED5 sung \u0111i\u1EC1u ki\u1EC7n nh\u1EADn v\xE0 s\u1EED d\u1EE5ng."
+  icon: {fileID: 0}

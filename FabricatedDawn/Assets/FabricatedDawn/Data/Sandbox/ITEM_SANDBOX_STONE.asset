@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: ITEM_SANDBOX_STONE
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: ITEM_SANDBOX_STONE
+  displayName: "C\u1EE5c ch\u1EB7n gi\u1EA5y"
+  origin: 0
+  pastOnly: 0
+  uses: 1
+  purpose: "V\u1EADt ph\u1EA9m th\u1EED ph\u1EA3n h\u1ED3i khi d\xF9ng sai m\u1EE5c ti\xEAu."
+  icon: {fileID: 0}

@@ -1,0 +1,386 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S05_SettingsControls.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s05">
+
+        <ui:VisualElement class="hcf-light-pool s05-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s05-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s05-header">
+            <ui:Label class="hcf-bs-800 s05-title" text="SETTINGS" />
+            <ui:VisualElement name="tabs" class="hcf-rule s05-tabs" picking-mode="Ignore">
+                <ui:Button name="tab-video" text="" class="hcf-tab s05-tab s05-tab--first">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="VIDEO" />
+                </ui:Button>
+                <ui:Button name="tab-audio" text="" class="hcf-tab s05-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="AUDIO" />
+                </ui:Button>
+                <ui:Button name="tab-controls" text="" class="hcf-tab s05-tab is-active">
+
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.9" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="CONTROLS" />
+                </ui:Button>
+                <ui:Button name="tab-gameplay" text="" class="hcf-tab s05-tab">
+                    <hcf:HcfTornPlate class="hcf-tab__plate" cut-top="3" cut-right="1.4" cut-bottom="0" cut-left="0" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-tab__label" text="GAMEPLAY" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="bindings" class="hcf-abs s05-bindings">
+            <ui:ScrollView name="bindings-scroll" class="hcf-scroll s05-scroll" mode="Vertical" vertical-scroller-visibility="AlwaysVisible">
+
+                <ui:Label class="hcf-mono s05-section" text="MOVEMENT" />
+
+                <ui:Button name="bind-move" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="MOVE FORWARD" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="W" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty hcf-glyph" text="↑">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-move-back" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="MOVE BACK" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="S" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty hcf-glyph" text="↓">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-move-left" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="STRAFE LEFT" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="A" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty hcf-glyph" text="←">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-move-right" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="STRAFE RIGHT" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="D" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty hcf-glyph" text="→">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-sprint" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="SPRINT" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first s05-key--wide" text="SHIFT" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-walk" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="WALK" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="ALT" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-crouch" text="" class="hcf-menu-item s05-bind is-listening">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="CROUCH" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="C" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-lean" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="LEAN" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="Q" />
+                        <ui:Label class="hcf-keycap s05-key" text="E" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Label class="hcf-mono s05-section s05-section--gap" text="INTERACTION" />
+
+                <ui:Button name="bind-interact" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="INTERACT" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="F" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty s05-key--wide" text="ENTER">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-examine" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="EXAMINE" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="R" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-flashlight" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="FLASHLIGHT" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="L" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-holster" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="HOLSTER" />
+                    <ui:VisualElement class="s05-keys s05-keys--conflict">
+                        <ui:Label class="hcf-typed s05-conflict" text="already bound to “lean”" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--conflict" text="Q" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-heal" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="USE BANDAGE" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="H" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Label class="hcf-mono s05-section s05-section--gap" text="CASE FILE" />
+
+                <ui:Button name="bind-inventory" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="INVENTORY" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="I" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--empty" text="TAB">
+                            <hcf:HcfDashedFrame class="s05-key__dash" dash="3" gap="3" />
+                        </ui:Label>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-journal" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="JOURNAL" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="J" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-map" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="MAP" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="M" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Label class="hcf-mono s05-section s05-section--gap" text="SYSTEM" />
+
+                <ui:Button name="bind-pause" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="PAUSE" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="ESC" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-quicksave" text="" class="hcf-menu-item s05-bind">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="QUICK SAVE" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="F5" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+
+                <ui:Button name="bind-quickload" text="" class="hcf-menu-item s05-bind s05-bind--last">
+                    <hcf:HcfTornPlate class="s05-bind__plate" cut-top="4" cut-right="3.3" cut-bottom="3" cut-left="4.1" />
+                    <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                    <ui:Label class="hcf-bs-700 s05-bind__label" text="QUICK LOAD" />
+                    <ui:VisualElement class="s05-keys">
+                        <ui:Label class="hcf-keycap s05-key s05-key--first" text="F9" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="s05-listen">
+                        <ui:Label class="hcf-typed s05-listen__hint" text="press any key…" />
+                        <ui:Label class="hcf-keycap s05-key s05-key--listen hcf-glyph" text="■" />
+                    </ui:VisualElement>
+                </ui:Button>
+            </ui:ScrollView>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="mouse-column" class="hcf-abs s05-mouse">
+            <ui:Label class="hcf-mono s05-section s05-section--mouse" text="MOUSE" />
+
+            <ui:VisualElement name="row-sensitivity" class="s05-sens">
+                <ui:VisualElement class="s05-sens__head">
+                    <ui:Label class="hcf-bs-700 s05-sens__label" text="SENSITIVITY" />
+                    <ui:Label name="slider-sensitivity-value" class="hcf-mono s05-sens__value" text="2.4" />
+                </ui:VisualElement>
+
+                <ui:Slider name="slider-sensitivity" class="hcf-slider" low-value="0" high-value="5" value="2.4" fill="true" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="toggles">
+                <ui:Toggle name="check-hold-to-crouch" text="HOLD TO CROUCH" value="true" class="hcf-check s05-toggle s05-toggle--first">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-invert-y" text="INVERT Y AXIS" class="hcf-check s05-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+                <ui:Toggle name="check-toggle-sprint" text="TOGGLE SPRINT" value="true" class="hcf-check s05-toggle">
+                    <ui:Label class="hcf-check__mark" text="x" picking-mode="Ignore" />
+                </ui:Toggle>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="tooltip" class="s05-tooltip">
+                <ui:Label class="hcf-mono s05-tooltip__title" text="TOOLTIP" />
+                <ui:Label class="hcf-typed s05-tooltip__text" text="holding crouch keeps you silent on debris. tapping it is faster but they may hear." />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="actions" class="hcf-abs s05-actions">
+            <ui:Button name="btn-apply" text="" class="hcf-btn hcf-btn--primary s05-btn">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="APPLY" />
+            </ui:Button>
+
+            <ui:Button name="btn-reset-bindings" text="" class="hcf-btn hcf-btn--ghost s05-btn s05-btn--wide">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.8" cut-bottom="1.9" cut-left="2.8" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="RESET BINDINGS" />
+            </ui:Button>
+            <ui:Button name="btn-back" text="" class="hcf-btn hcf-btn--ghost s05-btn s05-btn--gap">
+                <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="2.3" cut-bottom="1.9" cut-left="2.3" />
+                <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:Label class="hcf-btn__label" text="BACK" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-abs hcf-hint-row s05-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="rebind" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="DEL" />
+                <ui:Label text="clear" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="back" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

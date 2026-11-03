@@ -1,0 +1,115 @@
+
+
+.s07b-vignette {
+    left: -14%;
+    top: -10%;
+    width: 132%;
+    height: 112%;
+    opacity: 0.94;
+}
+
+.s07b-rim {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.s07b-rim__pool {
+    width: 222%;
+    height: 200%;
+
+    -unity-background-image-tint-color: rgba(120, 26, 20, 0.42);
+}
+
+.s07b-rim__pool--tl {
+    left: -111%;
+    top: -100%;
+}
+
+.s07b-rim__pool--tr {
+    right: -111%;
+    top: -100%;
+}
+
+.s07b-rim__pool--bl {
+    left: -111%;
+    bottom: -100%;
+}
+
+.s07b-rim__pool--br {
+    right: -111%;
+    bottom: -100%;
+}
+
+.s07b-crosshair {
+    border-color: var(--hcf-cream-35);
+}
+
+.s07b-objective__title {
+    color: var(--hcf-cream-70);
+}
+
+.s07b-condition__value {
+    font-size: 20px;
+    color: var(--hcf-rust-lit);
+}
+
+.s07b-stamina__fill {
+    width: 12%;
+    background-color: var(--hcf-rust);
+}
+
+.s07b-bandage {
+    margin-top: 18px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.s07b-bandage__key {
+    width: 42px;
+    height: 42px;
+    border-width: 2px;
+    border-color: var(--hcf-rust);
+    font-size: 19px;
+    color: var(--hcf-rust-lit);
+    -unity-text-align: middle-center;
+}
+
+.s07b-bandage__note {
+    margin-left: 14px;
+    font-size: 20px;
+    color: var(--hcf-cream-70);
+}
+
+.s07b-torch {
+    margin-left: 0;
+}
+
+.s07b-torch__meter {
+    flex-direction: row;
+}
+
+.s07b-torch__dead {
+    width: 11px;
+    height: 100%;
+}
+
+.s07b-torch__cells {
+    margin-left: 4px;
+    width: 56px;
+    height: 100%;
+}
+
+.s07b-torch__note {
+    color: var(--hcf-rust-lit);
+}
+
+.s07b-ammo__current {
+    color: var(--hcf-rust);
+}
+
+.s07b-ammo__note {
+    font-size: 17px;
+    color: var(--hcf-cream-50);
+}

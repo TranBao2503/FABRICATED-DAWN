@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "com.4koq.fabricated-dawn": {
+      "version": "file:com.4koq.fabricated-dawn",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.modules.imgui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      }
+    },
+    "com.unity.modules.imgui": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    },
+    "com.unity.modules.jsonserialize": {
+      "version": "1.0.0",
+      "depth": 0,
+      "source": "builtin",
+      "dependencies": {}
+    }
+  }
+}

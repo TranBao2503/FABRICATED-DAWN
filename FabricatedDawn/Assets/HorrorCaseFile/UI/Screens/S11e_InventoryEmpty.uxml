@@ -1,0 +1,135 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S11_Inventory.uss" />
+    <Style src="S11e_InventoryEmpty.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s11 s11e">
+        <ui:VisualElement class="hcf-light-pool s11-pool-warm s11e-pool-warm" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s11-pool-dark" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs s11-header">
+            <ui:VisualElement class="hcf-rule s11-header-row" picking-mode="Ignore">
+                <ui:Label class="hcf-bs-800 s11-title" text="INVENTORY" />
+                <ui:Label name="inv-meta" class="hcf-typed s11-carry s11e-carry" text="carrying nothing · 0.0 kg" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="grid" class="hcf-abs s11-grid" picking-mode="Ignore">
+            <ui:Button name="cell-01" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-02" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-03" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-04" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-05" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-06" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-07" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-08" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-09" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-10" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-11" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-12" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-13" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-14" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-15" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-16" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-17" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-18" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-19" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-20" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-21" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-22" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-23" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+            <ui:Button name="cell-24" text="" enabled="false" class="s11-cell s11-cell--empty s11e-cell">
+                <hcf:HcfDashedFrame class="s11-cell-frame" line-width="1" dash="3" gap="3" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="empty-state" class="hcf-abs s11e-empty">
+            <ui:Label class="hcf-display s11e-empty__title" text="YOUR HANDS" />
+            <ui:Label class="hcf-display s11e-empty__title" text="ARE EMPTY" />
+            <ui:Label class="hcf-typed s11e-empty__body" text="search drawers, lockers and bodies. anything you can carry will appear here — you can hold twenty-four things and no more." />
+            <ui:VisualElement class="s11e-empty__hint">
+                <ui:Label class="hcf-keycap s11e-keycap" text="F" />
+                <ui:Label class="hcf-mono s11e-empty__hint-label" text="pick up what you find" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-hint-row hcf-abs s11-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="I" />
+                <ui:Label text="close" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

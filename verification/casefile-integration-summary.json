@@ -1,0 +1,23 @@
+{
+  "asset": "Horror GUI Kit - Case File UI Toolkit",
+  "scene": "Assets/FabricatedDawn/Scenes/ToolkitCaseFile.unity",
+  "automaticChecksPassed": 39,
+  "automaticChecksFailed": 0,
+  "manuallyVerified": [
+    "Main menu starts toolkit session",
+    "HUD pickup removes key from scene",
+    "Inventory shows live item and kit key icon",
+    "Inventory equip selects item and returns to HUD",
+    "Using key opens cabinet and consumes key",
+    "Reading note opens dialog and records clue",
+    "Journal displays acquired clue text in kit template",
+    "Unlocked door changes room",
+    "Pause save shows success",
+    "Pause load restores saved hallway"
+  ],
+  "vendorFilesUnmodified": 125,
+  "limitations": [
+    "Settings, map, loading, examine and ending templates not connected",
+    "Room backgrounds and gameplay content remain placeholders"
+  ]
+}

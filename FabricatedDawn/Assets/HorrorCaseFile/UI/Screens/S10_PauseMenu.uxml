@@ -1,0 +1,110 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S10_PauseMenu.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s10">
+
+        <ui:VisualElement name="frozen-view" class="hcf-abs s10-frozen" picking-mode="Ignore" />
+        <ui:VisualElement name="scrim" class="hcf-abs s10-scrim" picking-mode="Ignore" />
+        <ui:VisualElement name="scrim-ramp" class="hcf-abs s10-scrim-ramp" picking-mode="Ignore" />
+
+        <ui:VisualElement class="hcf-abs hcf-hole s10-hole s10-hole--top" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-abs hcf-hole s10-hole s10-hole--bottom" picking-mode="Ignore" />
+
+        <ui:VisualElement name="header" class="hcf-abs hcf-rule s10-header" picking-mode="Ignore">
+            <ui:Label class="hcf-mono s10-file" text="FILE 0448 / SUSPENDED" />
+            <ui:Label class="hcf-typed s10-elapsed" text="04:12 elapsed" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="title" class="hcf-abs s10-title">
+            <ui:Label class="hcf-display s10-title-line s10-title-line--shadow" text="PAUSED" />
+            <ui:Label class="hcf-display s10-title-line" text="PAUSED" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="menu" class="hcf-abs s10-menu">
+            <ui:Button name="menu-item-01" text="" class="hcf-menu-item s10-menu-item s10-menu-item--first is-active">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="01" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="RESUME" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-02" text="" class="hcf-menu-item s10-menu-item s10-menu-item--gap">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="02" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="SAVE GAME" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-03" text="" class="hcf-menu-item s10-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="03" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="JOURNAL" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-04" text="" class="hcf-menu-item s10-menu-item">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="04" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="SETTINGS" />
+                </ui:VisualElement>
+            </ui:Button>
+            <ui:Button name="menu-item-05" text="" class="hcf-menu-item s10-menu-item s10-menu-item--danger">
+                <hcf:HcfTornPlate class="hcf-menu-item__plate s10-menu-plate" cut-top="4" cut-right="4.5" cut-bottom="2.6" cut-left="7.8" />
+                <ui:VisualElement class="s10-menu-underline" picking-mode="Ignore" />
+                <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-menu-row">
+                    <ui:Label class="hcf-typed s10-menu-index" text="05" />
+                    <ui:Label class="hcf-bs-700 s10-menu-label" text="ABANDON CHAPTER" />
+                </ui:VisualElement>
+            </ui:Button>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="side" class="hcf-abs s10-side">
+            <ui:VisualElement name="checkpoint-still" class="s10-still">
+                <ui:VisualElement class="hcf-shadow s10-still-shadow" picking-mode="Ignore" />
+                <ui:VisualElement class="s10-still-card">
+                    <ui:VisualElement class="hcf-placeholder s10-still-art" picking-mode="Ignore">
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-tape s10-tape" picking-mode="Ignore" />
+            <ui:VisualElement name="meta" class="s10-meta">
+                <ui:VisualElement class="s10-meta-row">
+                    <ui:Label class="hcf-mono s10-meta-key" text="LOCATION" />
+                    <ui:Label class="hcf-bs-700 s10-meta-value" text="RECORDS OFFICE" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s10-meta-row">
+                    <ui:Label class="hcf-mono s10-meta-key" text="DIFFICULTY" />
+                    <ui:Label class="hcf-bs-700 s10-meta-value" text="SURVIVOR" />
+                </ui:VisualElement>
+                <ui:VisualElement class="s10-meta-row">
+                    <ui:Label class="hcf-mono s10-meta-key" text="LAST SAVE" />
+                    <ui:Label class="hcf-bs-700 s10-meta-value" text="11 MIN AGO" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label class="hcf-typed s10-note" text="the game does not pause during a pursuit." />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="hcf-hint-row hcf-abs s10-hints">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="ENTER" />
+                <ui:Label text="select" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="resume" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+    </ui:VisualElement>
+</ui:UXML>

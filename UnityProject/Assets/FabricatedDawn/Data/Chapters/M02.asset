@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c1c86be4b7bb647a8f8887ee3c1c66, type: 3}
+  m_Name: M02
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ChapterDefinition
+  id: CHAPTER_02
+  number: 2
+  displayName: "Ng\u01B0\u1EDDi th\u1EE9 n\u0103m"
+  startingWorld: 0
+  objective: "Tr\u1EA3i qua V\u1ED7 Vai Ma v\xE0 t\xECm t\u1EDBi ph\xF2ng th\u1EDD."
+  completionCriteria: "Ch\u1EA1m vai ng\u01B0\u1EDDi th\u1EE9 n\u0103m; s\u1ED1ng s\xF3t t\u1EDBi ph\xF2ng th\u1EDD."
+  checkpoints:
+  - CP_M2_SHRINE

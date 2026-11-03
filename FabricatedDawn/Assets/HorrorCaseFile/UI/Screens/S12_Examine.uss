@@ -1,0 +1,253 @@
+
+
+.s12 {
+
+    background-color: #131110;
+}
+
+.s12-pool {
+    left: -7.395833%;
+    top: 0.740741%;
+    width: 98.75%;
+    height: 90.555556%;
+
+    -unity-background-image-tint-color: rgba(255, 247, 230, 0.09);
+}
+
+.s12-header {
+    left: 112px;
+    top: 88px;
+    width: 700px;
+    padding-bottom: 9px;
+    font-size: 15px;
+    letter-spacing: 5.1px;
+    color: var(--hcf-cream-50);
+}
+
+.s12-frame {
+    left: 392px;
+    top: 264px;
+    width: 514px;
+    height: 514px;
+    border-width: 1px;
+    border-color: var(--hcf-cream-14);
+}
+
+.s12-frame:hover {
+    border-color: var(--hcf-cream-40);
+}
+
+.s12-art-clip {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.s12-art {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../Textures/HatchTile_Light.png");
+
+    background-size: 23.6px 75.5px;
+    -unity-background-image-tint-color: var(--hcf-cream-14);
+}
+
+.s12-corner {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+}
+
+.s12-corner--tl {
+    left: -9px;
+    top: -9px;
+    border-top-width: 2px;
+    border-left-width: 2px;
+    border-top-color: var(--hcf-rust);
+    border-left-color: var(--hcf-rust);
+}
+
+.s12-corner--tr {
+    right: -9px;
+    top: -9px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-top-color: var(--hcf-rust);
+    border-right-color: var(--hcf-rust);
+}
+
+.s12-corner--bl {
+    left: -9px;
+    bottom: -9px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-bottom-color: var(--hcf-rust);
+    border-left-color: var(--hcf-rust);
+}
+
+.s12-corner--br {
+    right: -9px;
+    bottom: -9px;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-bottom-color: var(--hcf-rust);
+    border-right-color: var(--hcf-rust);
+}
+
+.s12-anno {
+    left: 150px;
+    width: 220px;
+    align-items: stretch;
+}
+
+.s12-anno--01 {
+    top: 330px;
+}
+
+.s12-anno--02 {
+    top: 560px;
+}
+
+.s12-anno-index {
+    font-size: 15px;
+    letter-spacing: 3.6px;
+    color: var(--hcf-rust);
+    -unity-text-align: upper-right;
+}
+
+.s12-anno-text {
+    margin-top: 6px;
+    font-size: 20px;
+    color: rgba(236, 230, 218, 0.62);
+    white-space: normal;
+    -unity-text-align: upper-right;
+}
+
+.s12-leader {
+    left: 370px;
+    width: 24px;
+    height: 1px;
+
+    background-color: rgba(168, 51, 42, 0.7);
+}
+
+.s12-leader--01 {
+    top: 352px;
+}
+
+.s12-leader--02 {
+    top: 582px;
+}
+
+.s12-note {
+    right: 112px;
+    top: 264px;
+    width: 644px;
+    height: 429px;
+    rotate: 0.8deg;
+}
+
+.s12-note-shadow {
+    left: -32px;
+    top: -8px;
+    right: -32px;
+    bottom: -32px;
+}
+
+.s12-note-plate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* Paper, not the cream every plate gets from .hcf-torn-plate in the theme. That base rule
+       outranks the fill attribute on the element, so the note has to name its color here. */
+    --hcf-plate-fill: var(--hcf-paper);
+}
+
+.s12-note-content {
+    padding: 40px 42px 116px 42px;
+    align-items: stretch;
+}
+
+.s12-note-kicker {
+    font-size: 14px;
+    letter-spacing: 4.2px;
+    color: rgba(21, 19, 18, 0.5);
+}
+
+.s12-note-title {
+    margin-top: 14px;
+    height: 55px;
+    font-size: 58px;
+    color: var(--hcf-ink);
+    -unity-text-align: middle-left;
+}
+
+.s12-note-body {
+    margin-top: 20px;
+    min-height: 107px;
+    font-size: 21px;
+    color: rgba(21, 19, 18, 0.78);
+    white-space: normal;
+}
+
+.s12-note-foot {
+    margin-top: 26px;
+    padding-top: 18px;
+    border-top-width: 1px;
+    border-top-color: rgba(21, 19, 18, 0.2);
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.s12-note-foot-item {
+    font-size: 15px;
+    letter-spacing: 2.1px;
+    color: rgba(21, 19, 18, 0.55);
+}
+
+.s12-stamp {
+    position: absolute;
+    left: 42px;
+    bottom: 28px;
+    rotate: -6deg;
+    border-width: 2px;
+    border-color: var(--hcf-rust-55);
+    padding: 6px 12px;
+}
+
+.s12-stamp__label {
+    font-size: 15px;
+    letter-spacing: 2.4px;
+
+    color: rgba(168, 51, 42, 0.7);
+}
+
+.s12-hints {
+    left: 0;
+    right: 0;
+    bottom: 56px;
+    justify-content: center;
+}
+
+.s12-hints .hcf-hint-item {
+    margin-left: 34px;
+}
+
+.s12-hints .hcf-hint-item--first {
+    margin-left: 0;
+}
+
+.s12-art {
+    background-image: url("../../Art/Icons/Crowbar.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}

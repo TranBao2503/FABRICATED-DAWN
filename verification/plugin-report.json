@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "skillCount": 2,
+  "jsonCount": 5,
+  "fileCount": 39,
+  "checks": [
+    "Portable and compatibility manifests",
+    "Skill frontmatter and references",
+    "JSON and assembly definitions",
+    "Unity source/template parity",
+    "Read-only project inspect",
+    "Installer preserves project manifest",
+    "Installer rejects overwrite",
+    "Batch rejects unknown commands",
+    "Batch respects editor lock"
+  ]
+}

@@ -1,0 +1,338 @@
+VBCSCompilerPreWarmer: watching VBCSCompiler (PID 26448)
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 32884)
+VBCSCompiler prewarm took 19.30 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/staging' branch; Version is '6000.6.6f1 (d20c9ac777da) revision 13765786'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin" at "2026-11-02T14:11:37.1077724Z"
+OS: 'Windows 11  (10.0.26300) Core' Language: 'en' Physical Memory: 32452 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-11-02T14:11:37Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 14908, path: "F:/Unity/Unity Hub/UnityLicensingClient_V1/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              1a57147209644f50b18a884dcde35f7d
+  Correlation Id:          4c094a57b05302ac6219e8528c2aaacd
+  External correlation Id: 2715435017317042075
+  Machine Id:              Tm1w8v2/uq1oy167gPDl/2mIRzE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Admin" (connect: 0.00s, validation: 0.00s, handshake: 0.11s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Admin-notifications" at "2026-11-02T14:11:37.222261Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 18968509563621-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.12s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Unity.exe
+-batchmode
+-nographics
+-quit
+-projectPath
+C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject
+-executeMethod
+FabricatedDawn.Editor.Batch.Verify
+-logFile
+C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\verification\unity-final.log
+Successfully changed project path to: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject
+C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/UnityProject
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [25292]  Target information:
+
+Player connection [25292]  * "[IP] 192.168.1.11 [Port] 55504 [Flags] 2 [Guid] 2958457942 [EditorId] 2958457942 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-LHKKNKB) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [25292] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25292] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-41408" after 0.3 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/UnityProjectUnity Data Store running and initialised
+[Physics::Module] Selected backend (deferred post-plugins).
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Initialize engine version: 6000.6.6f1 (d20c9ac777da)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/UnityProject/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56408
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002345 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:False
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.987 seconds
+Domain Reload Profiling: 1637ms
+	BeginReloadAssembly (152ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (5ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (403ms)
+		LoadAssemblies (129ms)
+		TypeCache.Refresh (252ms)
+			TypeCache.ScanAssembly (236ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (989ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (158ms)
+			ProcessInitializeOnLoadAttributes (200ms)
+			ProcessInitializeOnLoadMethodAttributes (315ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 3 packages:
+  Built-in packages:
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject\Library\PackageCache\com.unity.modules.jsonserialize)
+  Embedded packages:
+    com.4koq.fabricated-dawn@file:C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject\Packages\com.4koq.fabricated-dawn (location: C:\Users\Admin\Documents\ChatGPT\Fabricated dawn\UnityProject\Packages\com.4koq.fabricated-dawn)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.00 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.6f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/UnityProject
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s346ms
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others) [CacheMiss 77f1179d8c568be7534b54a5ae54e9f000000000000000000000000000000006]
+[173/182    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[174/182    0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll (+2 others) [CacheWrite 77f1179d8c568be7534b54a5ae54e9f000000000000000000000000000000006]
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others) [CacheMiss 244195f61c376ee1ee1f584a1ae8021d00000000000000000000000000000006]
+[175/182    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/FabricatedDawn.Runtime.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Runtime.dll, with 148 defines and 253 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[176/182    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Runtime.pdb
+[177/182    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Runtime.dll
+[178/182    0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others)
+[           0s] Csc Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll (+2 others) [CacheWrite 244195f61c376ee1ee1f584a1ae8021d00000000000000000000000000000006]
+[179/182    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/FabricatedDawn.Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/FabricatedDawn.Editor.dll, with 146 defines and 296 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[180/182    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Editor.pdb
+[181/182    0s] CopyFiles Library/ScriptAssemblies/FabricatedDawn.Editor.dll
+*** Tundra build success (1.30 seconds), 9 items updated, 182 evaluated
+Total cache size 48580836
+Total cache size after purge 48580836, took 00:00:00.0804792
+AssetDatabase: script compilation time: 2.153685s
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.764 seconds
+Domain Reload Profiling: 1289ms
+	BeginReloadAssembly (281ms)
+		DisableScriptedObjects (39ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (10ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (129ms)
+		TypeCache.Refresh (6ms)
+		AnalyzeDomain (4ms)
+	FinalizeReload (767ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (116ms)
+			ProcessInitializeOnLoadMethodAttributes (112ms)
+			AfterProcessingInitializeOnLoad (17ms)
+		AwakeInstancesAfterBackupRestoration (80ms)
+Starting new worker id: 0 with log in C:/Users/Admin/Documents/ChatGPT/Fabricated dawn/UnityProject/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=0aef77a6afcaba14681eaf6461ad55dc): Total: 3.799 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=955 ms
+		Asset DB Callback time: managed=93 ms, native=9 ms
+		Scripting: domain reloads=1, domain reload time=569 ms, compile time=2160 ms, other=11 ms
+		Project Asset Count: scripts=47, non-scripts=34
+		Asset File Changes: new=0, changed=3, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 8.975ms
+	ApplyChangesToAssetFolders: 0.550ms
+	Scan: 25.740ms
+	Collect global state as custom dependencies: 12.643ms
+	OnSourceAssetsModified: 0.895ms
+	CategorizeScriptCompilationAssets: 0.089ms
+	ProcessAssetsWithTransientArtifactChanges: 0.954ms
+	CategorizeAssets: 2.355ms
+	CompileScripts: 2159.725ms
+	ImportOutOfDateAssets: 785.269ms (767.227ms without children)
+		UnloadImportedAssets: 1.407ms
+		ImportSchedulerStart: 16.593ms
+	PostProcessAllAssets: 95.549ms
+		VCAutoAddAssetPostprocess 1.474ms
+		PostProcessCallbackCreateDeferredMaterials 0.068ms
+		MonoPostProcessAllAssets: 93.090ms
+			AssetPostprocessor.OnPostprocessAllAssets 19.033ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 17.204ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 13.879ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 11.369ms
+			SyncVS.PostprocessSyncProject 3.193ms
+			AssetChangedListener.OnPostprocessAllAssets 2.584ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 2.199ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 1.472ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.241ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 1.136ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.766ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.757ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.375ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.372ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.323ms
+			AssetEvents.OnPostprocessAllAssets 0.316ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.272ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.267ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.227ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.215ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.193ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.175ms
+	PostAssetChangesProfiler: 0.666ms
+	UnloadStreamsBegin: 1.831ms
+	Untracked: 668.261ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 2.833ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-UnityProject
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (0.5 MB). Loaded Objects now: 746.
+Memory consumption went from 220.7 MB to 220.2 MB.
+Total: 7.237900 ms (FindLiveObjects: 0.168500 ms CreateObjectMapping: 0.009300 ms MarkObjects: 6.577300 ms  DeleteObjects: 0.296800 ms)
+
+Unloading 31 Unused Serialized files (Serialized files now loaded: 0)
+Curl error 35: Recv failure: Connection was reset
+Unloading 30 unused Assets / (Unknown). Loaded Objects now: 748.
+Memory consumption went from 220.8 MB to 221.0 MB.
+Total: 7.306600 ms (FindLiveObjects: 0.207600 ms CreateObjectMapping: 0.012000 ms MarkObjects: 6.885100 ms  DeleteObjects: 0.047500 ms)
+
+Importing 'GUID: 26f4c8991f8b96f408ade90a78be6745 - Path: Assets/FabricatedDawn/Scenes/M4_DeveloperPrototype.unity' with importer (DefaultImporter)
+Imported 'GUID: 26f4c8991f8b96f408ade90a78be6745' -> (Import Result ID: '305cbee0fe266b0dc5b9cf5c728cb147') in 0.006 seconds [static dependencies only]. Details - ImportResultOutputID=07f9ff66fbcb3220cf04a4098dc62bea DependenciesID=c0d250eb79a1049d54ff8a6e94594ec9 StaticDependenciesID=dc3399bb86fed7a81722c6351dbcad3e 
+Asset Pipeline Refresh (id=04a6e9d02cb08d7428c7c50709575bf5): Total: 0.043 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Importing 'GUID: 9989eea41f1bcc447b635723ed846d6d - Path: Assets/FabricatedDawn/Reports/content-report.json' with importer (TextScriptImporter)
+Imported 'GUID: 9989eea41f1bcc447b635723ed846d6d' -> (Import Result ID: '74517cca4934c3055b7a28be8f99eb7f') in 0.014 seconds [static dependencies only]. Details - ImportResultOutputID=94c09c2b17fd062e056a6ea40948d0c0 DependenciesID=194e36c1b935eef201b3fafda35bebd3 StaticDependenciesID=8b4b5cffeb7684ad4d6b773789481769 
+Asset Pipeline Refresh (id=137c1fb5df957eb4c81df033ab8d36ae): Total: 0.058 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Fabricated Dawn content validation passed (placeholder warnings are expected).
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+FabricatedDawn.Editor.Batch:Validate () (at ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs:177)
+FabricatedDawn.Editor.Batch:Scaffold () (at ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs:168)
+FabricatedDawn.Editor.Batch:Verify () (at ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs:182)
+
+(Filename: ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs Line: 177)
+
+Importing 'GUID: 9d9ec0864f8e70f4c9e054acaf75a807 - Path: Assets/FabricatedDawn/Reports/verification-report.json' with importer (TextScriptImporter)
+Imported 'GUID: 9d9ec0864f8e70f4c9e054acaf75a807' -> (Import Result ID: 'a0b866a36e22ec4ee4f4698189366312') in 0.021 seconds [static dependencies only]. Details - ImportResultOutputID=e4301b22688eb0d5013cc60355d1aabb DependenciesID=80c21013d02876dc7e37cef54c8bd1b7 StaticDependenciesID=d64e66178b07d87ba154bd06271838b5 
+Asset Pipeline Refresh (id=e233ccdd5f83f2045b182d9353b4aebf): Total: 0.057 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+FABRICATED_DAWN_VERIFIED: 16 checks passed; scaffolding is idempotent.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+FabricatedDawn.Editor.Batch:Verify () (at ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs:189)
+
+(Filename: ./Packages/com.4koq.fabricated-dawn/Editor/Verification.cs Line: 189)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Admin-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Admin channel disconnected successfully.
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

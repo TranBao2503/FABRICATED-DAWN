@@ -1,0 +1,53 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S16_ConfirmDialog.uss" />
+    <ui:VisualElement name="screen" class="hcf-screen s16">
+
+        <ui:VisualElement class="hcf-light-pool s16-pool-warm-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-warm-b" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-dark-a" picking-mode="Ignore" />
+        <ui:VisualElement class="hcf-light-pool s16-pool-dark-b" picking-mode="Ignore" />
+
+        <ui:VisualElement name="dim" class="hcf-abs s16-dim" />
+
+        <ui:VisualElement name="dialog-shadow" class="hcf-shadow s16-dialog-shadow" picking-mode="Ignore" />
+        <ui:VisualElement name="dialog" class="hcf-abs s16-dialog">
+            <ui:VisualElement name="dialog-accent" class="s16-dialog__accent" />
+            <ui:VisualElement name="dialog-body" class="s16-dialog__body">
+                <ui:Label text="CONFIRM" class="hcf-mono s16-kicker" />
+                <ui:Label text="ABANDON" class="hcf-display s16-title__line s16-title__line--first" />
+                <ui:Label text="THIS CHAPTER?" class="hcf-display s16-title__line" />
+                <ui:Label text="everything since the last save — eleven minutes — will be lost. the chapter restarts from intake." class="hcf-typed s16-body" />
+
+                <ui:VisualElement name="actions" class="s16-actions">
+                    <ui:Button name="btn-keep" text="" class="hcf-btn hcf-btn--primary s16-btn">
+                        <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="4.4" cut-bottom="2.1" cut-left="4.4" />
+                        <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="KEEP PLAYING" class="hcf-btn__label s16-btn__label" />
+                    </ui:Button>
+
+                    <ui:Button name="btn-abandon" text="" class="hcf-btn hcf-btn--danger s16-btn s16-btn--second">
+                        <hcf:HcfTornPlate class="hcf-btn__plate" cut-top="3" cut-right="4.4" cut-bottom="2.1" cut-left="4.4" />
+                        <hcf:HcfDashedFrame class="hcf-btn__dash" dash="3" gap="3" />
+                        <ui:VisualElement class="hcf-focus-ring" picking-mode="Ignore" />
+                        <ui:Label text="ABANDON" class="hcf-btn__label s16-btn__label" />
+                    </ui:Button>
+                </ui:VisualElement>
+
+                <ui:VisualElement name="hints" class="hcf-hint-row s16-hints">
+                    <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                        <ui:Label text="ENTER" class="hcf-keycap" />
+                        <ui:Label text="confirm" />
+                    </ui:VisualElement>
+                    <ui:VisualElement class="hcf-hint-item">
+                        <ui:Label text="ESC" class="hcf-keycap" />
+                        <ui:Label text="cancel" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="true" />
+    </ui:VisualElement>
+</ui:UXML>

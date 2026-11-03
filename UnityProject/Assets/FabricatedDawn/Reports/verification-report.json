@@ -1,0 +1,22 @@
+{
+    "unityVersion": "6000.6.6f1",
+    "passed": [
+        "M4 door is gated and does not mutate early",
+        "M4 switches once and preserves sanctuary and clues",
+        "Door cannot trigger in another chapter",
+        "Past space blocks ordinary outside exits",
+        "M6 dream is required; broken sanctuary cannot reset",
+        "Sanctuary cannot break at M4",
+        "Wrong item target never consumes resources",
+        "Memory knife only affects the two adult spirits in past space",
+        "Checkpoints restore every state field without aliases",
+        "Malformed and future checkpoints fail without changing current state",
+        "One-shot events do not repeat",
+        "Death retry restores charm charges and is not a Bad Ending",
+        "Good Ending requires prior evidence and child relationship",
+        "True Ending stays locked until narrative approval AND friend evidence",
+        "Escape drops memory objects but retains physical items and journal",
+        "Validator catches duplicate IDs and invalid destinations"
+    ],
+    "failed": []
+}

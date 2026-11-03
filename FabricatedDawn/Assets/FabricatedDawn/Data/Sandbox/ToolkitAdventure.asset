@@ -1,0 +1,250 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bac395c83864d4da9f8adfe51dcc60, type: 3}
+  m_Name: ToolkitAdventure
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.AdventureDefinition
+  contentId: fabricated-dawn-toolkit-sandbox-v1
+  startRoomId: ROOM_01
+  initialObjective: "T\xECm c\xE1ch m\u1EDF t\u1EE7 g\u1ED7. Manh m\u1ED1i b\xEAn trong s\u1EBD gi\xFAp m\u1EDF l\u1ED1i ra h\xE0nh lang."
+  objectiveUpdates:
+  - afterPuzzle: PUZZLE_CABINET_OPEN
+    text: "T\u1EE7 \u0111\xE3 m\u1EDF. \u0110\u1ECDc t\u1EDD gi\u1EA5y b\xEAn trong."
+  - afterPuzzle: PUZZLE_NOTE_READ
+    text: "L\u1ED1i h\xE0nh lang \u0111\xE3 m\u1EDF. Ra ngo\xE0i v\xE0 ki\u1EC3m tra b\u1EA3ng tin."
+  completedObjective: "Ho\xE0n t\u1EA5t c\u1EA3nh th\u1EED. B\u1EA1n c\xF3 th\u1EC3 quay l\u1EA1i ho\u1EB7c t\u1EA3i checkpoint."
+  completionPuzzleId: PUZZLE_SANDBOX_DONE
+  items:
+  - {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+  - {fileID: 11400000, guid: 51b43950eca2c254aa54b71b65102d86, type: 2}
+  rooms:
+  - id: ROOM_01
+    title: "Ph\xF2ng tr\u1ECD"
+    subtitle: "01 / PH\xD2NG TH\u1EEC T\u01AF\u01A0NG T\xC1C"
+    description: "Khung c\u1EA3nh c\u1EA5u h\xECnh b\u1EB1ng asset, thay h\xECnh n\u1EC1n sau m\xE0 gi\u1EEF ID t\u01B0\u01A1ng t\xE1c."
+    placeholderColor: {r: 0.25, g: 0.3, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: HP_FRIEND
+      label: "B\u1EA1n c\xF9ng ph\xF2ng\nN\xF3i chuy\u1EC7n"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.055
+        y: 0.3
+        width: 0.17
+        height: 0.43
+      visualClass: friend
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: DIALOGUE_SANDBOX_FRIEND
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\u1EA1n c\xF9ng ph\xF2ng \u0111ang n\xF3i chuy\u1EC7n."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_KEY
+      label: "Ch\xECa kh\xF3a\nNh\u1EB7t"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.29
+        y: 0.6
+        width: 0.15
+        height: 0.14
+      visualClass: key
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 nh\u1EB7t ch\xECa kh\xF3a t\u1EE7. Ch\u1ECDn ch\xECa trong t\xFAi r\u1ED3i nh\u1EA5n v\xE0o t\u1EE7."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_STONE
+      label: "Ch\u1EB7n gi\u1EA5y\nNh\u1EB7t"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.38
+        width: 0.13
+        height: 0.12
+      visualClass: stone
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 51b43950eca2c254aa54b71b65102d86, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 nh\u1EB7t c\u1EE5c ch\u1EB7n gi\u1EA5y."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_CABINET
+      label: "T\u1EE7 g\u1ED7\n\u0110ang kh\xF3a"
+      kind: 2
+      bounds:
+        serializedVersion: 2
+        x: 0.59
+        y: 0.23
+        width: 0.21
+        height: 0.51
+      visualClass: cabinet
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: PUZZLE_CABINET_OPEN
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+      consumeItem: 1
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PUZZLE_CABINET_OPEN
+      unlocksRoom: 
+      response: "T\u1EE7 \u0111\xE3 m\u1EDF. C\xF3 m\u1ED9t t\u1EDD gi\u1EA5y b\xEAn trong."
+      lockedResponse: 
+      checkpointAfter: 1
+    - id: HP_NOTE
+      label: "T\u1EE7 \u0111\xE3 m\u1EDF\n\u0110\u1ECDc t\u1EDD gi\u1EA5y"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.59
+        y: 0.23
+        width: 0.21
+        height: 0.51
+      visualClass: note
+      requiredPuzzle: 
+      visibleAfterPuzzle: PUZZLE_CABINET_OPEN
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: CLUE_SANDBOX_NOTE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PUZZLE_NOTE_READ
+      unlocksRoom: HALL_01
+      response: "\u0110\xE3 ghi t\u1EDD gi\u1EA5y v\xE0o s\u1ED5. L\u1ED1i ra h\xE0nh lang \u0111\xE3 m\u1EDF."
+      lockedResponse: 
+      checkpointAfter: 1
+    - id: HP_EXIT
+      label: "C\u1EEDa ph\xF2ng\nRa h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.85
+        y: 0.18
+        width: 0.12
+        height: 0.61
+      visualClass: door
+      requiredPuzzle: PUZZLE_NOTE_READ
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: HALL_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\u1EA1n \u0111\xE3 ra h\xE0nh lang."
+      lockedResponse: "C\u1EA7n ki\u1EC3m tra manh m\u1ED1i trong t\u1EE7 tr\u01B0\u1EDBc khi r\u1EDDi ph\xF2ng."
+      checkpointAfter: 0
+  - id: HALL_01
+    title: "H\xE0nh lang"
+    subtitle: "02 / TH\u1EEC CHUY\u1EC2N C\u1EA2NH V\xC0 GI\u1EEE TI\u1EBEN \u0110\u1ED8"
+    description: 
+    placeholderColor: {r: 0.19, g: 0.26, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: HP_RETURN
+      label: "C\u1EEDa ph\xF2ng\nQuay l\u1EA1i"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.07
+        y: 0.18
+        width: 0.18
+        height: 0.61
+      visualClass: door
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: ROOM_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 quay l\u1EA1i ph\xF2ng. Ti\u1EBFn \u0111\u1ED9 t\u01B0\u01A1ng t\xE1c \u0111\u01B0\u1EE3c gi\u1EEF nguy\xEAn."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_SIGN
+      label: "B\u1EA3ng tin\nKi\u1EC3m tra"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.49
+        y: 0.25
+        width: 0.29
+        height: 0.32
+      visualClass: sign
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: CLUE_SANDBOX_SIGN
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PUZZLE_SANDBOX_DONE
+      unlocksRoom: 
+      response: "Ho\xE0n th\xE0nh c\u1EA3nh th\u1EED toolkit. B\u1EA1n c\xF3 th\u1EC3 quay l\u1EA1i ho\u1EB7c t\u1EA3i checkpoint."
+      lockedResponse: 
+      checkpointAfter: 1
+  clues:
+  - id: CLUE_SANDBOX_NOTE
+    title: "T\u1EDD gi\u1EA5y trong t\u1EE7"
+    body: "N\u1ED8I DUNG TH\u1EEC H\u1EC6 TH\u1ED0NG\n\nCh\xECa kh\xF3a \u0111\xE3 m\u1EDF t\u1EE7. Vi\u1EC7c \u0111\u1ECDc t\u1EDD gi\u1EA5y n\xE0y \u0111\u01B0\u1EE3c ghi v\xE0o s\u1ED5 v\xE0 m\u1EDF quy\u1EC1n \u0111i ra h\xE0nh lang.\n\nTrong game ch\xEDnh th\u1EE9c, \u0111i\u1EC1u ki\u1EC7n n\xE0y s\u1EBD \u0111\u01B0\u1EE3c thay b\u1EB1ng chu\u1ED7i manh m\u1ED1i do nh\xF3m thi\u1EBFt k\u1EBF duy\u1EC7t."
+  - id: CLUE_SANDBOX_SIGN
+    title: "B\u1EA3ng tin h\xE0nh lang"
+    body: "B\u1EA1n \u0111\xE3 ho\xE0n th\xE0nh v\xF2ng ch\u01A1i m\u1EABu: nh\u1EB7t \u2192 ch\u1ECDn \u2192 d\xF9ng \u2192 \u0111\u1ECDc \u2192 m\u1EDF l\u1ED1i \u2192 chuy\u1EC3n c\u1EA3nh.\n\nH\xE3y quay l\u1EA1i c\u0103n ph\xF2ng \u0111\u1EC3 ki\u1EC3m tra: \u0111\u1ED3 \u0111\xE3 nh\u1EB7t kh\xF4ng xu\u1EA5t hi\u1EC7n l\u1EA1i, t\u1EE7 v\u1EABn m\u1EDF v\xE0 c\xE1c manh m\u1ED1i v\u1EABn c\xF2n trong s\u1ED5."
+  dialogues:
+  - id: DIALOGUE_SANDBOX_FRIEND
+    speaker: "B\u1EA1n c\xF9ng ph\xF2ng \xB7 tho\u1EA1i th\u1EED"
+    lines:
+    - "Th\u1EED ki\u1EC3m tra m\u1EB7t b\xE0n xem c\xF3 ch\xECa kh\xF3a kh\xF4ng."
+    - "Nh\u1EB7t \u0111\u01B0\u1EE3c r\u1ED3i th\xEC ch\u1ECDn ch\xECa trong t\xFAi \u0111\u1ED3, sau \u0111\xF3 nh\u1EA5n v\xE0o chi\u1EBFc t\u1EE7."
+    - "M\xECnh ch\u1EC9 l\xE0 nh\xE2n v\u1EADt th\u1EED h\u1ED9i tho\u1EA1i. T\xEAn v\xE0 l\u1EDDi tho\u1EA1i ch\xEDnh th\u1EE9c s\u1EBD do nh\xF3m ch\u1ED1t sau."

@@ -1,0 +1,6 @@
+{
+  "name": "FabricatedDawn.CaseFile.Editor",
+  "references": ["FabricatedDawn.CaseFile", "FabricatedDawn.Runtime", "FabricatedDawn.Editor"],
+  "includePlatforms": ["Editor"],
+  "autoReferenced": true
+}

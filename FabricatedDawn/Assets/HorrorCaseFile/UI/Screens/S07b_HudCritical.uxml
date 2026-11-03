@@ -1,0 +1,94 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:hcf="HorrorCaseFile.UI">
+    <Style src="../HorrorCaseFile.uss" />
+    <Style src="S07_Hud.uss" />
+    <Style src="S07b_HudCritical.uss" />
+
+    <ui:VisualElement name="screen" class="hcf-screen s07 s07b">
+
+        <ui:VisualElement name="gameplay-view" class="hcf-abs hcf-placeholder s07-gameplay" picking-mode="Ignore" />
+
+        <ui:VisualElement name="vignette" class="hcf-vignette s07b-vignette" picking-mode="Ignore" />
+
+        <ui:VisualElement name="red-rim" class="hcf-abs s07b-rim" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-light-pool s07b-rim__pool s07b-rim__pool--tl" picking-mode="Ignore" />
+            <ui:VisualElement class="hcf-light-pool s07b-rim__pool s07b-rim__pool--tr" picking-mode="Ignore" />
+            <ui:VisualElement class="hcf-light-pool s07b-rim__pool s07b-rim__pool--bl" picking-mode="Ignore" />
+            <ui:VisualElement class="hcf-light-pool s07b-rim__pool s07b-rim__pool--br" picking-mode="Ignore" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="crosshair" class="hcf-abs s07-crosshair s07b-crosshair" picking-mode="Ignore" />
+
+        <ui:VisualElement name="objective" class="hcf-abs s07-objective">
+            <ui:Label text="OBJECTIVE" class="hcf-mono s07-objective__kicker" />
+            <ui:Label text="FIND SOMEWHERE TO STOP THE BLEEDING" name="objective-title" class="hcf-bs-700 s07-objective__title s07b-objective__title" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="vitals" class="hcf-abs s07-vitals">
+            <ui:VisualElement name="condition-row" class="s07-condition">
+                <ui:Label text="CONDITION" class="hcf-mono s07-condition__label" />
+                <ui:Label text="critical — bleeding out" name="condition-value" class="hcf-typed s07-condition__value s07b-condition__value" />
+            </ui:VisualElement>
+
+            <hcf:HcfSegmentedMeter name="meter-health" class="s07-health" segments="7" filled="1" accent-from="0" gap="4" />
+            <ui:VisualElement name="stamina-row" class="s07-stamina">
+                <ui:Label text="STAM" class="hcf-mono s07-stamina__label" />
+                <ui:VisualElement name="stamina-track" class="s07-stamina__track">
+                    <ui:VisualElement name="stamina-fill" class="s07-stamina__fill s07b-stamina__fill" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="bandage-row" class="s07b-bandage">
+                <ui:Label text="2" class="hcf-mono s07b-bandage__key" />
+                <ui:Label text="use bandage — you have one left" class="hcf-typed s07b-bandage__note" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:VisualElement name="gear" class="hcf-abs s07-gear">
+
+            <ui:VisualElement name="torch" class="s07-torch s07b-torch">
+                <ui:Label text="TORCH" class="hcf-mono s07-cap" />
+
+                <ui:VisualElement name="torch-meter" class="s07-torch__meter s07b-torch__meter">
+                    <hcf:HcfSegmentedMeter name="meter-torch-dead" class="s07b-torch__dead" segments="1" filled="0" gap="4" />
+                    <hcf:HcfSegmentedMeter name="meter-torch" class="s07b-torch__cells" segments="4" filled="0" gap="4" />
+                </ui:VisualElement>
+                <ui:Label text="dead — no cells" name="torch-note" class="hcf-typed s07-torch__note s07b-torch__note" />
+            </ui:VisualElement>
+
+            <ui:VisualElement name="ammo" class="s07-ammo">
+                <ui:Label text="REVOLVER" class="hcf-mono s07-cap s07-ammo__cap" />
+                <ui:VisualElement name="ammo-row" class="s07-ammo__row">
+                    <ui:Label text="00" name="ammo-current" class="hcf-bs-900 s07-ammo__current s07b-ammo__current" />
+                    <ui:Label text="/ 00" name="ammo-total" class="hcf-bs-700 s07-ammo__total" />
+                </ui:VisualElement>
+                <ui:Label text="empty" name="ammo-note" class="hcf-typed s07b-ammo__note" />
+            </ui:VisualElement>
+
+        </ui:VisualElement>
+
+        <ui:VisualElement name="hints" class="hcf-abs hcf-hint-row s07-hints" picking-mode="Ignore">
+            <ui:VisualElement class="hcf-hint-item hcf-hint-item--first">
+                <ui:Label class="hcf-keycap" text="I" />
+                <ui:Label text="inventory" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="J" />
+                <ui:Label text="journal" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="M" />
+                <ui:Label text="map" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="O" />
+                <ui:Label text="objectives" />
+            </ui:VisualElement>
+            <ui:VisualElement class="hcf-hint-item">
+                <ui:Label class="hcf-keycap" text="ESC" />
+                <ui:Label text="pause" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <hcf:HcfGrainOverlay name="grain" grain="55" scanlines="false" />
+
+    </ui:VisualElement>
+</ui:UXML>
