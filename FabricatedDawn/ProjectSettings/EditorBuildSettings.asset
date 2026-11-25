@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/FabricatedDawn/Scenes/ChapterOne.unity
+    guid: 34de2730528812e46bfec7853f69f42b
+  - enabled: 1
+    path: Assets/FabricatedDawn/Scenes/StoryDemo.unity
+    guid: bf03deca1d4464240ac708a2974609bf
+  - enabled: 1
     path: Assets/FabricatedDawn/Scenes/ToolkitCaseFile.unity
     guid: bbc58baab3ada6b4bb9de88b6e684fe0
   - enabled: 1

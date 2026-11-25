@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 namespace FabricatedDawn.CaseFile
 {
-    public enum CaseFileScreen { MainMenu, Hud, Inventory, Journal, Pause }
+    public enum CaseFileScreen { MainMenu, Hud, Inventory, Journal, Pause, Ending }
 
     [RequireComponent(typeof(UIDocument))]
     public sealed class CaseFileAdventureUI : MonoBehaviour
@@ -31,7 +31,7 @@ namespace FabricatedDawn.CaseFile
         {
             if (!Application.isPlaying || content == null) return;
             session = new AdventureSession(content);
-            saves = new CheckpointStore(Path.Combine(Application.persistentDataPath, "toolkit-checkpoint.json"), content.contentId);
+            saves = new CheckpointStore(Path.Combine(Application.persistentDataPath, content.isStoryDemo ? Uri.EscapeDataString(content.contentId) + "-checkpoint.json" : "toolkit-checkpoint.json"), content.contentId);
             bodyFont = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
             root = GetComponent<UIDocument>().rootVisualElement;
             root.Clear(); root.style.backgroundColor = new Color(.025f, .02f, .02f); root.focusable = true;
@@ -49,7 +49,8 @@ namespace FabricatedDawn.CaseFile
 
         public void Show(CaseFileScreen page)
         {
-            CloseOverlay(); SetPaused(page == CaseFileScreen.Pause);
+            if (session.Story.State.ending != StoryEnding.None && page != CaseFileScreen.MainMenu) page = CaseFileScreen.Ending;
+            CloseOverlay(); SetPaused(page == CaseFileScreen.Pause || page == CaseFileScreen.Ending);
             CurrentScreen = page; canvas?.RemoveFromHierarchy();
             canvas = new VisualElement { name = "fd-casefile-canvas" };
             canvas.style.position = Position.Absolute; canvas.style.width = 1920; canvas.style.height = 1080;
@@ -69,6 +70,7 @@ namespace FabricatedDawn.CaseFile
                 case CaseFileScreen.Inventory: BuildInventory(); break;
                 case CaseFileScreen.Journal: BuildJournal(); break;
                 case CaseFileScreen.Pause: BuildPause(); break;
+                case CaseFileScreen.Ending: BuildEnding(); break;
             }
             HcfScreenInteractions.Wire(screen);
             Fit(); root.schedule.Execute(() => root.Focus());
@@ -98,6 +100,7 @@ namespace FabricatedDawn.CaseFile
 
         private void OnKey(KeyDownEvent evt)
         {
+            if (CurrentScreen == CaseFileScreen.Ending) return;
             if (evt.keyCode == KeyCode.Escape)
             {
                 if (overlay != null && session.ActiveDialogue == null) CloseOverlay();
@@ -117,9 +120,9 @@ namespace FabricatedDawn.CaseFile
             var lines = screen.Query<Label>(className: "s01-title__line").ToList();
             for (int i = 0; i < lines.Count; i++) lines[i].text = i % 2 == 0 ? "FABRICATED" : "DAWN";
             SetClass("s01-header__code", "FABRICATED DAWN / 4KOQ");
-            SetClass("s01-header__date", "Bản thử hệ thống");
+            SetClass("s01-header__date", content.isStoryDemo ? "Demo cốt truyện · Hà Nội 2004" : "Bản thử hệ thống");
             SetClass("s01-fig", "Hình minh họa đi kèm gói UI · chưa phải bối cảnh chính thức");
-            SetClass("s01-version", "TOOLKIT 0.2 / CASE FILE UI");
+            SetClass("s01-version", content.isStoryDemo ? content.contentId.StartsWith("fabricated-dawn-chapter-one") ? "MÀN 1 · NHỮNG NGÀY Ở TRỌ / DEMO 8 MÀN" : "PROLOGUE / DEMO 8 MÀN / ĐANG PHÁT TRIỂN" : "TOOLKIT 0.2 / CASE FILE UI");
             HideClass("s01-menu-item__meta"); HideClass("s01-hints");
             Menu(1, "TIẾP TỤC", () => { if (Load()) Show(CaseFileScreen.Hud); });
             screen.Q<Button>("menu-item-01").SetEnabled(saves.Exists);
@@ -129,8 +132,8 @@ namespace FabricatedDawn.CaseFile
                 screen.Q<Button>("menu-item-02").AddToClassList("is-active");
             }
             Menu(2, "BẮT ĐẦU", () => { session = new AdventureSession(content); Show(CaseFileScreen.Hud); });
-            Menu(3, "HƯỚNG DẪN", () => Message("Cách chơi", "Nhấn đồ vật để tương tác. Chọn vật phẩm trong túi rồi nhấn mục tiêu.\n\nTAB: túi đồ. ESC: tạm dừng. Checkpoint lưu toàn bộ tiến độ.\n\nĐây là cảnh thử toolkit, chưa phải Màn 1 chính thức."));
-            Menu(4, "VỀ BẢN THỬ", () => Message("Fabricated Dawn", "Giao diện sử dụng Horror GUI Kit – Case File UI Toolkit.\n\nInventory, manh mối, tương tác và checkpoint được nối với hệ thống của Fabricated Dawn. Nội dung và hình phòng vẫn là dữ liệu thử."));
+            Menu(3, "HƯỚNG DẪN", () => Message("Cách chơi", content.isStoryDemo ? "Khám phá nhà, nhặt đồ và đọc manh mối. Học đường tới phòng thờ trước khi chơi Vỗ Vai Ma.\n\nTrong đoạn thoát thân, chọn sai đường dẫn tới BAD END. Tới phòng thờ là mốc hoàn thành Màn 2. Demo dự kiến đi hết tám màn, kết thúc thường ở Màn 8.\n\nTAB: túi đồ. ESC: tạm dừng. Có thể tải checkpoint để thử lại. Màn 1: quan sát đồ vật, chọn chìa trong túi để mở tủ. Các tiếng động có phụ đề; một số hình và âm thanh đang được bổ sung." : "Nhấn đồ vật để tương tác. Chọn vật phẩm trong túi rồi nhấn mục tiêu.\n\nTAB: túi đồ. ESC: tạm dừng. Checkpoint lưu toàn bộ tiến độ.\n\nĐây là cảnh thử toolkit, chưa phải Màn 1 chính thức."));
+            Menu(4, "VỀ BẢN THỬ", () => Message("Fabricated Dawn", "Giao diện sử dụng Horror GUI Kit – Case File UI Toolkit.\n\nInventory, manh mối, tương tác và checkpoint được nối với hệ thống của Fabricated Dawn. Màn 1 được dựng theo mục 5.2 của tài liệu. Hội thoại triển khai và hình sinh bổ sung đang chờ nhóm duyệt."));
             Hide("menu-item-05");
         }
 
@@ -147,6 +150,15 @@ namespace FabricatedDawn.CaseFile
             var background = session.Story.State.world == WorldPhase.Present ? session.CurrentRoom.presentBackground : session.CurrentRoom.pastBackground;
             if (background != null) stage.style.backgroundImage = new StyleBackground(background);
             var floor = new VisualElement(); floor.AddToClassList("fd-floor"); stage.Add(floor);
+            foreach (var actor in session.CurrentRoom.hotspots)
+            {
+                if (!session.IsVisible(actor) || actor.artwork == null || actor.artworkBounds.width <= 0) continue;
+                var image = new VisualElement { pickingMode = PickingMode.Ignore };
+                image.AddToClassList("fd-scene-image"); image.style.backgroundImage = new StyleBackground(actor.artwork);
+                image.style.left = Length.Percent(actor.artworkBounds.x * 100); image.style.top = Length.Percent(actor.artworkBounds.y * 100);
+                image.style.width = Length.Percent(actor.artworkBounds.width * 100); image.style.height = Length.Percent(actor.artworkBounds.height * 100);
+                stage.Add(image);
+            }
             foreach (var h in session.CurrentRoom.hotspots)
             {
                 if (!session.IsVisible(h)) continue;
@@ -154,20 +166,66 @@ namespace FabricatedDawn.CaseFile
                 button.AddToClassList("fd-hotspot"); button.AddToClassList("fd-" + h.visualClass);
                 button.style.left = Length.Percent(h.bounds.x * 100); button.style.top = Length.Percent(h.bounds.y * 100);
                 button.style.width = Length.Percent(h.bounds.width * 100); button.style.height = Length.Percent(h.bounds.height * 100);
+                var artwork = h.artwork;
+                if (artwork == null && h.kind == InteractionKind.Pickup && h.item != null) artwork = h.item.icon;
+                if (h.artworkBounds.width > 0)
+                {
+                    artwork = null; button.text = "";
+                    Text(button, h.label, "fd-scene-label");
+                }
+                if (h.sceneHotspot)
+                {
+                    button.tooltip = h.label;
+                    if (h.kind == InteractionKind.Travel)
+                    {
+                        button.text = "";
+                        Text(button, h.label, "fd-exit-label");
+                        button.AddToClassList("fd-scene-travel");
+                    }
+                    button.AddToClassList("fd-scene-hotspot");
+                    if (h.kind != InteractionKind.Travel) button.AddToClassList("fd-scene-object");
+                    if (artwork != null)
+                    {
+                        button.text = "";
+                        AddArtwork(button, artwork, "fd-scene-image");
+                        Text(button, h.label, "fd-scene-label");
+                    }
+                }
+                else if (artwork != null)
+                {
+                    button.text = "";
+                    button.AddToClassList("fd-hotspot-with-art");
+                    AddArtwork(button, artwork, "fd-hotspot-image");
+                    Text(button, h.label, "fd-hotspot-caption");
+                }
                 Vietnamese(button); stage.Add(button);
             }
+            if (!string.IsNullOrWhiteSpace(session.CurrentRoom.narration))
+            {
+                var narration = Text(stage, session.CurrentRoom.narration, "fd-room-narration");
+                narration.pickingMode = PickingMode.Ignore;
+                narration.EnableInClassList("fd-title-card", session.CurrentRoom.isTitleCard);
+            }
+            floor.style.display = session.CurrentRoom.isTitleCard || background != null ? DisplayStyle.None : DisplayStyle.Flex;
             Navigation();
-            var tray = new VisualElement(); tray.AddToClassList("fd-quick-tray"); screen.Add(tray);
+            var tray = new VisualElement { pickingMode = PickingMode.Ignore }; tray.AddToClassList("fd-quick-tray"); screen.Add(tray);
             Text(tray, session.SelectedItemId == null ? "VẬT PHẨM" : "ĐANG CHỌN: " + content.Item(session.SelectedItemId)?.displayName, "fd-caption");
-            var row = new VisualElement(); row.AddToClassList("fd-row"); tray.Add(row);
+            var row = new VisualElement { pickingMode = PickingMode.Ignore }; row.AddToClassList("fd-row"); tray.Add(row);
             foreach (var entry in session.Story.State.inventory)
             {
                 var local = entry; var definition = content.Item(entry.id);
                 var button = Button(row, definition.displayName, () => { session.SelectItem(local.id); Show(CaseFileScreen.Hud); }, "fd-quick");
+                if (definition.icon != null)
+                {
+                    button.text = "";
+                    button.AddToClassList("fd-quick-with-art");
+                    AddArtwork(button, definition.icon, "fd-quick-image");
+                    Text(button, definition.displayName, "fd-quick-name");
+                }
                 button.EnableInClassList("is-selected", session.SelectedItemId == entry.id);
             }
             Text(screen, feedback, "fd-feedback");
-            Text(screen, "CẢNH THỬ TOOLKIT · HÌNH TẠM", "fd-room-note");
+            Text(screen, content.isStoryDemo ? session.CurrentRoom.subtitle + (background == null ? " · NỀN TẠM" : "") : "CẢNH THỬ TOOLKIT · ASSET VAULT", "fd-room-note");
         }
 
         public void Interact(string id)
@@ -179,7 +237,7 @@ namespace FabricatedDawn.CaseFile
             if (session.ActiveDialogue != null) Dialogue();
             else if (!string.IsNullOrEmpty(result.clueId))
             {
-                var clue = content.Clue(result.clueId); Message(clue.title, clue.body);
+                var clue = content.Clue(result.clueId); Message(clue.title, clue.body, result.examinedArtwork);
             }
         }
 
@@ -215,6 +273,17 @@ namespace FabricatedDawn.CaseFile
             Set("detail-kicker", item == null ? "CHƯA CHỌN VẬT PHẨM" : "VẬT PHẨM ĐANG XEM");
             Set("detail-title", item?.displayName ?? "Túi trống");
             Set("detail-body", item?.purpose ?? "Hãy khám phá căn phòng để tìm vật phẩm.");
+            var preview = screen.Q<VisualElement>("fd-item-preview");
+            if (preview == null)
+            {
+                preview = new VisualElement { name = "fd-item-preview", pickingMode = PickingMode.Ignore };
+                preview.AddToClassList("fd-detail-image");
+                var body = screen.Q<Label>("detail-body");
+                body.parent.Insert(body.parent.IndexOf(body), preview);
+            }
+            preview.style.backgroundImage = item != null && item.icon != null
+                ? new StyleBackground(item.icon) : new StyleBackground(StyleKeyword.None);
+            preview.style.display = item != null && item.icon != null ? DisplayStyle.Flex : DisplayStyle.None;
             screen.Q<Button>("btn-equip").SetEnabled(item != null);
             screen.Q<Button>("btn-examine").SetEnabled(item != null);
             screen.Query<Button>(className: "fd-item").ForEach(b => b.EnableInClassList("is-active", b.name == "fd-item-" + inspectedItem));
@@ -247,6 +316,21 @@ namespace FabricatedDawn.CaseFile
             var page = screen.Q<ScrollView>("page-scroll"); page.Clear();
             Text(page, clue.body, "fd-journal-body");
             screen.Query<Label>(className: "s13-page__foot-item").ForEach(l => { if (l.name != "journal-page-num") l.text = "CUỘN ĐỂ ĐỌC"; });
+        }
+
+        private void BuildEnding()
+        {
+            screen.Clear();
+            var card = new VisualElement(); card.AddToClassList("fd-ending-card"); screen.Add(card);
+            bool failed = session.Story.State.ending == StoryEnding.Bad;
+            Text(card, failed ? "BAD END" : "KẾT THÚC THƯỜNG", "fd-ending-title");
+            Text(card, session.CurrentRoom.title, "fd-dialogue-title");
+            Text(card, session.CurrentRoom.description, "fd-dialogue-body");
+            Text(card, "FABRICATED DAWN · DEMO 8 MÀN", "fd-caption");
+            var retry = Button(card, "THỬ LẠI TỪ CHECKPOINT", () => { if (Load()) Show(CaseFileScreen.Hud); }, "fd-nav-button");
+            retry.SetEnabled(saves.Exists);
+            Button(card, "CHƠI LẠI TỪ ĐẦU", () => { session = new AdventureSession(content); feedback = "Bắt đầu hành trình của Nam."; Show(CaseFileScreen.Hud); }, "fd-nav-button");
+            Button(card, "VỀ MENU CHÍNH", () => Show(CaseFileScreen.MainMenu), "fd-nav-button");
         }
 
         private void BuildPause()
@@ -304,12 +388,12 @@ namespace FabricatedDawn.CaseFile
             var card = Card(dialogue.speaker);
             Text(card, dialogue.lines[session.DialogueLine], "fd-dialogue-body");
             Button(card, session.DialogueLine + 1 == dialogue.lines.Length ? "Kết thúc" : "Tiếp tục", () =>
-            { session.AdvanceDialogue(); CloseOverlay(); if (session.ActiveDialogue != null) Dialogue(); }, "fd-nav-button");
+            { session.AdvanceDialogue(); CloseOverlay(); if (session.ActiveDialogue != null) Dialogue(); else Show(CaseFileScreen.Hud); }, "fd-nav-button");
         }
 
-        private void Message(string title, string body)
+        private void Message(string title, string body, Sprite artwork = null)
         {
-            var card = Card(title); Text(card, body, "fd-dialogue-body");
+            var card = Card(title); if (artwork != null) AddArtwork(card, artwork, "fd-detail-image"); Text(card, body, "fd-dialogue-body");
             Button(card, "Đóng", CloseOverlay, "fd-nav-button");
         }
 
@@ -346,8 +430,15 @@ namespace FabricatedDawn.CaseFile
         private void Set(string name, string value) { var l = screen.Q<Label>(name); if (l != null) { l.text = value; Vietnamese(l); } }
         private void SetClass(string cls, string value) => screen.Query<Label>(className: cls).ForEach(l => { l.text = value; Vietnamese(l); });
         private void Vietnamese(VisualElement e) => e.style.unityFontDefinition = FontDefinition.FromFont(bodyFont);
+        private void AddArtwork(VisualElement parent, Sprite sprite, string cls)
+        {
+            var image = new VisualElement { pickingMode = PickingMode.Ignore };
+            image.AddToClassList(cls);
+            image.style.backgroundImage = new StyleBackground(sprite);
+            parent.Add(image);
+        }
         private Label Text(VisualElement parent, string text, string cls)
-        { var l = new Label(text); l.AddToClassList(cls); Vietnamese(l); parent.Add(l); return l; }
+        { var l = new Label(text) { pickingMode = PickingMode.Ignore }; l.AddToClassList(cls); Vietnamese(l); parent.Add(l); return l; }
         private Button Button(VisualElement parent, string text, Action action, string cls)
         { var b = new Button(action) { text = text }; b.AddToClassList(cls); Vietnamese(b); parent.Add(b); return b; }
         private void Menu(int index, string text, Action action)

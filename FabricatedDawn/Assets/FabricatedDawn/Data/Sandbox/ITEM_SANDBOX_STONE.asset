@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ITEM_SANDBOX_STONE
   m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
   id: ITEM_SANDBOX_STONE
-  displayName: "C\u1EE5c ch\u1EB7n gi\u1EA5y"
+  displayName: "Hộp thiếc chặn giấy"
   origin: 0
   pastOnly: 0
   uses: 1
   purpose: "V\u1EADt ph\u1EA9m th\u1EED ph\u1EA3n h\u1ED3i khi d\xF9ng sai m\u1EE5c ti\xEAu."
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: c63a18d875584eb6a44c06111bf50d6f, type: 3}

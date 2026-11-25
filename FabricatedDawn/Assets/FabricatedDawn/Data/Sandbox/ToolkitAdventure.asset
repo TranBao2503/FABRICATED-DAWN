@@ -64,9 +64,9 @@ MonoBehaviour:
       bounds:
         serializedVersion: 2
         x: 0.29
-        y: 0.6
+        y: 0.55
         width: 0.15
-        height: 0.14
+        height: 0.21
       visualClass: key
       requiredPuzzle: 
       visibleAfterPuzzle: 
@@ -83,14 +83,14 @@ MonoBehaviour:
       lockedResponse: 
       checkpointAfter: 0
     - id: HP_STONE
-      label: "Ch\u1EB7n gi\u1EA5y\nNh\u1EB7t"
+      label: "Hộp thiếc\nNhặt"
       kind: 1
       bounds:
         serializedVersion: 2
         x: 0.3
-        y: 0.38
-        width: 0.13
-        height: 0.12
+        y: 0.3
+        width: 0.15
+        height: 0.21
       visualClass: stone
       requiredPuzzle: 
       visibleAfterPuzzle: 
@@ -103,7 +103,7 @@ MonoBehaviour:
       destinationRoom: 
       solvesPuzzle: 
       unlocksRoom: 
-      response: "\u0110\xE3 nh\u1EB7t c\u1EE5c ch\u1EB7n gi\u1EA5y."
+      response: "Đã nhặt hộp thiếc chặn giấy."
       lockedResponse: 
       checkpointAfter: 0
     - id: HP_CABINET
@@ -116,6 +116,7 @@ MonoBehaviour:
         width: 0.21
         height: 0.51
       visualClass: cabinet
+      artwork: {fileID: 21300000, guid: 8d2fc2445b7749aea21b4fcf3e947a38, type: 3}
       requiredPuzzle: 
       visibleAfterPuzzle: 
       hiddenAfterPuzzle: PUZZLE_CABINET_OPEN
@@ -140,6 +141,7 @@ MonoBehaviour:
         width: 0.21
         height: 0.51
       visualClass: note
+      artwork: {fileID: 21300000, guid: 978da5661c164da68e22d0b2cbb9f3d6, type: 3}
       requiredPuzzle: 
       visibleAfterPuzzle: PUZZLE_CABINET_OPEN
       hiddenAfterPuzzle: 

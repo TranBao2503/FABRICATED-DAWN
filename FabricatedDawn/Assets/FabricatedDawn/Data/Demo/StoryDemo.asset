@@ -1,0 +1,1133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bac395c83864d4da9f8adfe51dcc60, type: 3}
+  m_Name: StoryDemo
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.AdventureDefinition
+  contentId: fabricated-dawn-eight-chapter-demo-v2
+  startRoomId: PROLOGUE_STREET
+  isStoryDemo: 1
+  plannedChapterCount: 8
+  initiallyUnlockedRooms:
+  - PROLOGUE_STREET
+  - PROLOGUE_ALLEY
+  - PROLOGUE_ENTRY
+  - PROLOGUE_TITLE
+  - ROOM_01
+  - HALL_01
+  - DEMO_LIVING
+  - DEMO_SHRINE
+  - DEMO_BATHROOM
+  - DEMO_CHASE_STAIRS
+  - DEMO_CHASE_HALL
+  - DEMO_BAD
+  - DEMO_M2_SHRINE
+  initialObjective: "Prologue \xB7 C\xF9ng nh\xF3m b\u1EA1n tr\u1EDF v\u1EC1 nh\xE0 tr\u1ECD."
+  objectiveUpdates:
+  - afterPuzzle: PROLOGUE_DOG_SEEN
+    text: "Theo c\xE1c b\u1EA1n v\xE0o ng\xE1ch. Con ch\xF3 v\u1EABn s\u1EE7a ph\xEDa sau."
+  - afterPuzzle: PROLOGUE_GROUP_TALKED
+    text: "C\xF9ng nh\xF3m tr\u1EDF v\u1EC1 c\u0103n nh\xE0 \u1EDF cu\u1ED1i ng\xE1ch."
+  - afterPuzzle: PROLOGUE_DOOR_SEEN
+    text: "B\u01B0\u1EDBc qua c\u1EEDa nh\xE0."
+  - afterPuzzle: PROLOGUE_DONE
+    text: "M\xE0n 1 \xB7 T\xECm ch\xECa kh\xF3a, m\u1EDF t\u1EE7 v\xE0 \u0111\u1ECDc l\u1EDDi nh\u1EAFn tr\u01B0\u1EDBc khi ra kh\u1ECFi ph\xF2ng."
+  - afterPuzzle: PUZZLE_CABINET_OPEN
+    text: "\u0110\u1ECDc l\u1EDDi nh\u1EAFn trong t\u1EE7."
+  - afterPuzzle: PUZZLE_NOTE_READ
+    text: "Xu\u1ED1ng ph\xF2ng kh\xE1ch, ki\u1EC3m tra m\xE2m c\u01A1m r\u1ED3i t\xECm \u0111\u01B0\u1EDDng t\u1EDBi ph\xF2ng th\u1EDD."
+  - afterPuzzle: DEMO_BOWL
+    text: "Tr\u1EDF l\u1EA1i h\xE0nh lang t\u1EA7ng 2 v\xE0 quan s\xE1t ph\xF2ng th\u1EDD."
+  - afterPuzzle: DEMO_ROUTE
+    text: "\u0110\xE3 thu\u1ED9c \u0111\u01B0\u1EDDng tr\xFA \u1EA9n. Xu\u1ED1ng ph\xF2ng kh\xE1ch n\xF3i chuy\u1EC7n v\u1EDBi c\xE1c b\u1EA1n."
+  - afterPuzzle: DEMO_GAME_START
+    text: "\u0110i l\u1EA7n l\u01B0\u1EE3t qua b\u1ED1n g\xF3c ph\xF2ng theo lu\u1EADt V\u1ED7 Vai Ma."
+  - afterPuzzle: DEMO_CORNER_4
+    text: "C\xF3 ng\u01B0\u1EDDi \u1EDF g\xF3c tr\u1ED1ng! Ch\u1EA1y ra c\u1EA7u thang v\xE0 t\xECm t\u1EDBi ph\xF2ng th\u1EDD."
+  - afterPuzzle: DEMO_M2_COMPLETE
+    text: "M\xE0n 2 ho\xE0n t\u1EA5t. Ti\u1EBFp theo l\xE0 M\xE0n 3 \u2014 Chuy\u1EC7n nh\xE0 ch\u1EE7 c\u0169 (\u0111ang ph\xE1t tri\u1EC3n)."
+  completedObjective: "Ho\xE0n t\u1EA5t demo Fabricated Dawn."
+  completionPuzzleId: 
+  items:
+  - {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+  - {fileID: 11400000, guid: 51b43950eca2c254aa54b71b65102d86, type: 2}
+  rooms:
+  - id: PROLOGUE_STREET
+    title: "\u0110\u1EA7u ng\xF5"
+    subtitle: "PROLOGUE \xB7 H\xC0 N\u1ED8I, N\u0102M 2004"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: "T\xF4i l\xE0 Nam, sinh vi\xEAn n\u0103m nh\u1EA5t \u0110\u1EA1i h\u1ECDc Th\u1EE7y L\u1EE3i.\n\nT\xF4i v\xE0 ba ng\u01B0\u1EDDi b\u1EA1n \u0111\xE3 \u1EDF c\u0103n nh\xE0 n\xE0y \u0111\u01B0\u1EE3c m\u1ED9t th\u1EDDi gian. Chi\u1EC1u h\xF4m \u0111\xF3, ch\xFAng t\xF4i tr\u1EDF v\u1EC1 nh\u01B0 m\u1ECDi ng\xE0y."
+    isTitleCard: 0
+    placeholderColor: {r: 0.29, g: 0.28, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: PROLOGUE_DOG
+      label: "Ch\xF3 \u0111\u1EA7u ng\xF5\n[NH\xC2N V\u1EACT T\u1EA0M]"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.3
+        width: 0.23
+        height: 0.29
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: PROLOGUE_DOG_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PROLOGUE_DOG_SEEN
+      unlocksRoom: 
+      response: "[Ch\xF3 s\u1EE7a] C\u1EA3 nh\xF3m \u0111i ti\u1EBFp v\xE0o ng\xE1ch."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: PROLOGUE_STREET_NEXT
+      label: "Theo c\xE1c b\u1EA1n v\xE0o ng\xE1ch \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.6
+        y: 0.69
+        width: 0.34
+        height: 0.12
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: PROLOGUE_DOG_SEEN
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: PROLOGUE_ALLEY
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ti\u1EBFp t\u1EE5c c\xE2u chuy\u1EC7n."
+      lockedResponse: "H\xE3y quan s\xE1t ho\u1EB7c n\xF3i chuy\u1EC7n v\u1EDBi nh\xF3m tr\u01B0\u1EDBc khi \u0111i ti\u1EBFp."
+      checkpointAfter: 1
+  - id: PROLOGUE_ALLEY
+    title: "Ng\xE1ch cu\u1ED1i khu t\u1EADp th\u1EC3"
+    subtitle: "PROLOGUE \xB7 \u0110\u01AF\u1EDCNG V\u1EC0 NH\xC0"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: "Ti\u1EBFng xe ngo\xE0i ph\u1ED1 nh\u1ECF d\u1EA7n sau l\u01B0ng.\n\nTr\u01B0\u1EDBc m\u1EB7t l\xE0 ng\xE1ch d\u1EABn t\u1EDBi c\u0103n nh\xE0 nh\xF3m \u0111ang thu\xEA. Bia, B\u0103ng v\xE0 B\u1EA3o v\u1EEBa \u0111i v\u1EEBa n\xF3i chuy\u1EC7n."
+    isTitleCard: 0
+    placeholderColor: {r: 0.25, g: 0.27, b: 0.26, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: PROLOGUE_GROUP
+      label: "Bia \xB7 B\u0103ng \xB7 B\u1EA3o\n[NH\xC2N V\u1EACT T\u1EA0M]\nN\xF3i chuy\u1EC7n"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.26
+        width: 0.23
+        height: 0.37
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: PROLOGUE_GROUP_DIALOGUE
+      destinationRoom: 
+      solvesPuzzle: PROLOGUE_GROUP_TALKED
+      unlocksRoom: 
+      response: "C\u1EA3 nh\xF3m ti\u1EBFp t\u1EE5c \u0111i v\u1EC1 ph\xEDa c\u0103n nh\xE0."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: PROLOGUE_ALLEY_NEXT
+      label: "\u0110i t\u1EDBi c\u1EEDa nh\xE0 \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.6
+        y: 0.69
+        width: 0.34
+        height: 0.12
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: PROLOGUE_GROUP_TALKED
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: PROLOGUE_ENTRY
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ti\u1EBFp t\u1EE5c c\xE2u chuy\u1EC7n."
+      lockedResponse: "H\xE3y quan s\xE1t ho\u1EB7c n\xF3i chuy\u1EC7n v\u1EDBi nh\xF3m tr\u01B0\u1EDBc khi \u0111i ti\u1EBFp."
+      checkpointAfter: 1
+  - id: PROLOGUE_ENTRY
+    title: "Tr\u01B0\u1EDBc c\u1EEDa nh\xE0 tr\u1ECD"
+    subtitle: "PROLOGUE \xB7 C\u0102N NH\xC0 QUEN THU\u1ED8C"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: "[Ti\u1EBFng qu\u1EA1t \u0111i\u1EC7n v\u1ECDng t\u1EEB trong nh\xE0]\n\nC\xE1nh c\u1EEDa quen thu\u1ED9c \u1EDF cu\u1ED1i ng\xE1ch. Nam \u0111\u01B0a tay \u0111\u1EA9y c\u1EEDa. M\u1ED9t bu\u1ED5i t\u1ED1i b\xECnh th\u01B0\u1EDDng n\u1EEFa, c\u1EADu ngh\u0129 v\u1EADy."
+    isTitleCard: 0
+    placeholderColor: {r: 0.24, g: 0.21, b: 0.18, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: PROLOGUE_DOOR
+      label: "C\u1EEDa nh\xE0\n[H\xCCNH T\u1EA0M]\nM\u1EDF c\u1EEDa"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.23
+        width: 0.23
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PROLOGUE_DOOR_SEEN
+      unlocksRoom: 
+      response: "C\u1EEDa m\u1EDF. Ti\u1EBFng qu\u1EA1t v\xE0 ti\u1EBFng tr\xF2 chuy\u1EC7n trong nh\xE0 nghe r\xF5 h\u01A1n."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: PROLOGUE_ENTRY_NEXT
+      label: "B\u01B0\u1EDBc v\xE0o nh\xE0 \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.6
+        y: 0.69
+        width: 0.34
+        height: 0.12
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: PROLOGUE_DOOR_SEEN
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: PROLOGUE_TITLE
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ti\u1EBFp t\u1EE5c c\xE2u chuy\u1EC7n."
+      lockedResponse: "H\xE3y quan s\xE1t ho\u1EB7c n\xF3i chuy\u1EC7n v\u1EDBi nh\xF3m tr\u01B0\u1EDBc khi \u0111i ti\u1EBFp."
+      checkpointAfter: 1
+  - id: PROLOGUE_TITLE
+    title: Fabricated Dawn
+    subtitle: "PROLOGUE \xB7 K\u1EBET TH\xDAC PH\u1EA6N M\u1EDE \u0110\u1EA6U"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: 'FABRICATED
+
+      DAWN'
+    isTitleCard: 1
+    placeholderColor: {r: 0.055, g: 0.045, b: 0.04, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: PROLOGUE_BEGIN_CHAPTER_1
+      label: "M\xE0n 1 \u2014 Nh\u1EEFng ng\xE0y \u1EDF tr\u1ECD \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.6
+        y: 0.69
+        width: 0.34
+        height: 0.12
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: ROOM_01
+      solvesPuzzle: PROLOGUE_DONE
+      unlocksRoom: 
+      response: "Ti\u1EBFp t\u1EE5c c\xE2u chuy\u1EC7n."
+      lockedResponse: "H\xE3y quan s\xE1t ho\u1EB7c n\xF3i chuy\u1EC7n v\u1EDBi nh\xF3m tr\u01B0\u1EDBc khi \u0111i ti\u1EBFp."
+      checkpointAfter: 1
+  - id: ROOM_01
+    title: "Ph\xF2ng ng\u1EE7 c\u1EE7a nh\xF3m"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: "Khung c\u1EA3nh c\u1EA5u h\xECnh b\u1EB1ng asset, thay h\xECnh n\u1EC1n sau m\xE0 gi\u1EEF ID t\u01B0\u01A1ng t\xE1c."
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.25, g: 0.3, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: HP_FRIEND
+      label: "B\u1EA1n c\xF9ng ph\xF2ng\nN\xF3i chuy\u1EC7n"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.055
+        y: 0.3
+        width: 0.17
+        height: 0.43
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: DIALOGUE_SANDBOX_FRIEND
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\u1EA1n c\xF9ng ph\xF2ng \u0111ang n\xF3i chuy\u1EC7n."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_KEY
+      label: "Ch\xECa kh\xF3a\nNh\u1EB7t"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.29
+        y: 0.55
+        width: 0.15
+        height: 0.21
+      visualClass: key
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 nh\u1EB7t ch\xECa kh\xF3a t\u1EE7. Ch\u1ECDn ch\xECa trong t\xFAi r\u1ED3i nh\u1EA5n v\xE0o t\u1EE7."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_STONE
+      label: "H\u1ED9p thi\u1EBFc\nNh\u1EB7t"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.3
+        width: 0.15
+        height: 0.21
+      visualClass: stone
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 51b43950eca2c254aa54b71b65102d86, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 nh\u1EB7t h\u1ED9p thi\u1EBFc ch\u1EB7n gi\u1EA5y."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_CABINET
+      label: "T\u1EE7 g\u1ED7\n\u0110ang kh\xF3a"
+      kind: 2
+      bounds:
+        serializedVersion: 2
+        x: 0.59
+        y: 0.23
+        width: 0.21
+        height: 0.51
+      visualClass: cabinet
+      artwork: {fileID: 21300000, guid: 8d2fc2445b7749aea21b4fcf3e947a38, type: 3}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: PUZZLE_CABINET_OPEN
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 353c1933d5c060143badf39bc655a182, type: 2}
+      consumeItem: 1
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PUZZLE_CABINET_OPEN
+      unlocksRoom: 
+      response: "T\u1EE7 \u0111\xE3 m\u1EDF. C\xF3 m\u1ED9t t\u1EDD gi\u1EA5y b\xEAn trong."
+      lockedResponse: 
+      checkpointAfter: 1
+    - id: HP_NOTE
+      label: "T\u1EE7 \u0111\xE3 m\u1EDF\n\u0110\u1ECDc t\u1EDD gi\u1EA5y"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.59
+        y: 0.23
+        width: 0.21
+        height: 0.51
+      visualClass: note
+      artwork: {fileID: 21300000, guid: 978da5661c164da68e22d0b2cbb9f3d6, type: 3}
+      requiredPuzzle: 
+      visibleAfterPuzzle: PUZZLE_CABINET_OPEN
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: CLUE_SANDBOX_NOTE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: PUZZLE_NOTE_READ
+      unlocksRoom: HALL_01
+      response: "\u0110\xE3 ghi t\u1EDD gi\u1EA5y v\xE0o s\u1ED5. L\u1ED1i ra h\xE0nh lang \u0111\xE3 m\u1EDF."
+      lockedResponse: 
+      checkpointAfter: 1
+    - id: HP_EXIT
+      label: "C\u1EEDa ph\xF2ng\nRa h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.85
+        y: 0.18
+        width: 0.12
+        height: 0.61
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: PUZZLE_NOTE_READ
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: HALL_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\u1EA1n \u0111\xE3 ra h\xE0nh lang."
+      lockedResponse: "C\u1EA7n ki\u1EC3m tra manh m\u1ED1i trong t\u1EE7 tr\u01B0\u1EDBc khi r\u1EDDi ph\xF2ng."
+      checkpointAfter: 0
+  - id: HALL_01
+    title: "H\xE0nh lang t\u1EA7ng 2"
+    subtitle: "M\xC0N 1 \xB7 H\u1ECCC \u0110\u01AF\u1EDCNG \u0110I"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.19, g: 0.26, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: HP_RETURN
+      label: "C\u1EEDa ph\xF2ng\nQuay l\u1EA1i"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.07
+        y: 0.18
+        width: 0.18
+        height: 0.61
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: ROOM_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 quay l\u1EA1i ph\xF2ng. Ti\u1EBFn \u0111\u1ED9 t\u01B0\u01A1ng t\xE1c \u0111\u01B0\u1EE3c gi\u1EEF nguy\xEAn."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: HP_SIGN
+      label: "S\u01A1 \u0111\u1ED3 nh\xE0\nGhi nh\u1EDB \u0111\u01B0\u1EDDng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.29
+        y: 0.2
+        width: 0.18
+        height: 0.22
+      visualClass: sign
+      artwork: {fileID: 21300000, guid: 4fadc6ec433a4d0aad098ddfde398b79, type: 3}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: CLUE_SANDBOX_SIGN
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ph\xF2ng th\u1EDD \u1EDF cu\u1ED1i h\xE0nh lang t\u1EA7ng 2. Ph\xF2ng kh\xE1ch n\u1EB1m d\u01B0\u1EDBi c\u1EA7u thang."
+      lockedResponse: 
+      checkpointAfter: 1
+    - id: DEMO_HALL_DOWN
+      label: "C\u1EA7u thang\nXu\u1ED1ng ph\xF2ng kh\xE1ch"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.29
+        y: 0.47
+        width: 0.18
+        height: 0.25
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_LIVING
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+    - id: DEMO_HALL_SHRINE
+      label: "Cu\u1ED1i h\xE0nh lang\nPh\xF2ng th\u1EDD"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.8
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_SHRINE
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+    - id: DEMO_HALL_WC
+      label: "Nh\xE0 v\u1EC7 sinh"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.51
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BATHROOM
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_LIVING
+    title: "Ph\xF2ng kh\xE1ch"
+    subtitle: "M\xC0N 1 \xB7 B\u1ED0N NG\u01AF\u1EDCI, N\u0102M CHI\u1EBEC B\xC1T"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.29, g: 0.25, b: 0.2, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: DEMO_BOWL_HOTSPOT
+      label: "M\xE2m c\u01A1m\nChi\u1EBFc b\xE1t nh\u1ECF"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.27
+        width: 0.23
+        height: 0.4
+      visualClass: note
+      artwork: {fileID: 21300000, guid: 23e631446d334897b1d645727f018eb5, type: 3}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: DEMO_GAME_START
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: DEMO_BOWL_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_BOWL
+      unlocksRoom: 
+      response: "\u0110\xE3 ghi manh m\u1ED1i v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_LIVING_UP
+      label: "C\u1EA7u thang\nL\xEAn t\u1EA7ng 2"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.79
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: DEMO_GAME_START
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: HALL_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+    - id: DEMO_GAME_BEGIN
+      label: "C\xE1c b\u1EA1n\nCh\u01A1i V\u1ED7 Vai Ma"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.05
+        y: 0.27
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: DEMO_ROUTE
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: DEMO_GAME_START
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: DEMO_GAME_DIALOGUE
+      destinationRoom: 
+      solvesPuzzle: DEMO_GAME_START
+      unlocksRoom: 
+      response: "\u0110\xE8n t\u1EAFt. B\u1ED1n ng\u01B0\u1EDDi \u0111\u1EE9ng v\xE0o b\u1ED1n g\xF3c."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_CORNER_HOTSPOT_1
+      label: "G\xF3c 1\n\u0110i t\u1EDBi Bia"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.05
+        y: 0.3
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: DEMO_GAME_START
+      hiddenAfterPuzzle: DEMO_CORNER_1
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_1
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_CORNER_HOTSPOT_2
+      label: "G\xF3c 2\n\u0110i t\u1EDBi B\u0103ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.28
+        y: 0.3
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: DEMO_CORNER_1
+      hiddenAfterPuzzle: DEMO_CORNER_2
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_2
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_CORNER_HOTSPOT_3
+      label: "G\xF3c 3\n\u0110i t\u1EDBi B\u1EA3o"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.51
+        y: 0.3
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: DEMO_CORNER_2
+      hiddenAfterPuzzle: DEMO_CORNER_3
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_3
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_CORNER_HOTSPOT_4
+      label: "G\xF3c tr\u1ED1ng\n\u0110\u01B0a tay ch\u1EA1m vai"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.74
+        y: 0.3
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: DEMO_CORNER_3
+      hiddenAfterPuzzle: DEMO_CORNER_4
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_4
+      unlocksRoom: 
+      response: "Nam ch\u1EA1m v\xE0o m\u1ED9t b\u1EDD vai l\u1EA1nh ng\u1EAFt. B\u1EADt \u0111\xE8n: v\u1EABn ch\u1EC9 c\xF3 b\u1ED1n ng\u01B0\u1EDDi. Ngo\xE0i c\u1EEDa vang ti\u1EBFng ru v\xE0 ti\u1EBFng d\xE9p k\xE9o l\xEA."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_RUN
+      label: "C\xF3 ng\u01B0\u1EDDi th\u1EE9 n\u0103m!\nCh\u1EA1y ra c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: DEMO_CORNER_4
+      visibleAfterPuzzle: DEMO_CORNER_4
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_CHASE_STAIRS
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_SHRINE
+    title: "Ph\xF2ng th\u1EDD"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EACN BI\u1EBET \u0110\u01AF\u1EDCNG TR\xDA \u1EA8N"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.26, g: 0.2, b: 0.17, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: DEMO_SHRINE_INSPECT
+      label: "B\xE0n th\u1EDD\nQuan s\xE1t k\xFD hi\u1EC7u"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.27
+        width: 0.23
+        height: 0.4
+      visualClass: note
+      artwork: {fileID: 21300000, guid: 3c04f2272fc14eafa160ff8a57951536, type: 3}
+      requiredPuzzle: DEMO_BOWL
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: DEMO_SHRINE_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_ROUTE
+      unlocksRoom: 
+      response: "\u0110\xE3 ghi manh m\u1ED1i v\xE0o s\u1ED5."
+      lockedResponse: "C\xE1c b\u1EA1n \u0111ang ch\u1EDD \u0103n c\u01A1m \u1EDF t\u1EA7ng d\u01B0\u1EDBi. H\xE3y xu\u1ED1ng ph\xF2ng kh\xE1ch tr\u01B0\u1EDBc."
+      checkpointAfter: 1
+    - id: DEMO_SHRINE_BACK
+      label: "C\u1EEDa ph\xF2ng\nRa h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: HALL_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_BATHROOM
+    title: "Nh\xE0 v\u1EC7 sinh"
+    subtitle: "M\xC0N 1 \xB7 B\xD3NG TRONG G\u01AF\u01A0NG"
+    chapter: 0
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.18, g: 0.25, b: 0.25, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: DEMO_MIRROR
+      label: "G\u01B0\u01A1ng\nR\u1EEDa m\u1EB7t"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.42
+        y: 0.27
+        width: 0.23
+        height: 0.4
+      visualClass: note
+      artwork: {fileID: 21300000, guid: a3a6199f2e26460aafd7c2c3803618f5, type: 3}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: DEMO_MIRROR_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_MIRROR_SEEN
+      unlocksRoom: 
+      response: "\u0110\xE3 ghi manh m\u1ED1i v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+    - id: DEMO_WC_BACK
+      label: "C\u1EEDa\nRa h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: HALL_01
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_CHASE_STAIRS
+    title: "C\u1EA7u thang trong b\xF3ng t\u1ED1i"
+    subtitle: "M\xC0N 2 \xB7 CH\u1ECCN SAI \u0110\u01AF\u1EDCNG = BAD END"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.13, g: 0.12, b: 0.14, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: DEMO_ESCAPE_UP
+      label: "L\xEAn t\u1EA7ng 2\nT\xECm ph\xF2ng th\u1EDD"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_CHASE_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+    - id: DEMO_ESCAPE_DOWN
+      label: "Xu\u1ED1ng t\u1EA7ng 1\nCh\u1EA1y ra ng\xF5"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+    - id: DEMO_ESCAPE_HIDE
+      label: "N\u1EA5p d\u01B0\u1EDBi c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.73
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_CHASE_HALL
+    title: "H\xE0nh lang t\u1EA7ng 2"
+    subtitle: "M\xC0N 2 \xB7 TI\u1EBENG D\xC9P \u0110ANG T\u1EDAI G\u1EA6N"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.12, g: 0.16, b: 0.17, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots:
+    - id: DEMO_ESCAPE_SHRINE
+      label: "Ch\u1EA1y h\u1EBFt h\xE0nh lang\nV\xE0o ph\xF2ng th\u1EDD"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.7
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_M2_SHRINE
+      solvesPuzzle: DEMO_M2_COMPLETE
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 1
+    - id: DEMO_ESCAPE_BED
+      label: "V\u1EC1 ph\xF2ng ng\u1EE7\nKh\xF3a c\u1EEDa l\u1EA1i"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      requiredPuzzle: 
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+  - id: DEMO_BAD
+    title: "Kh\xF4ng k\u1ECBp t\u1EDBi n\u01A1i tr\xFA \u1EA9n"
+    subtitle: BAD END
+    chapter: 0
+    ending: 1
+    description: "Nam ch\u1ECDn sai \u0111\u01B0\u1EDDng. Ti\u1EBFng d\xE9p d\u1EEBng ngay sau l\u01B0ng. Khi ngo\u1EA3nh l\u1EA1i, ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF \u0111\xE3 \u1EDF s\xE1t b\xEAn.\n\n\u0110\xEAm \u0111\u1EA7u ti\xEAn kh\xE9p l\u1EA1i t\u1EA1i \u0111\xE2y. Th\u1EED l\u1EA1i t\u1EEB checkpoint v\xE0 nh\u1EDB \u0111\u01B0\u1EDDng t\u1EDBi ph\xF2ng th\u1EDD."
+    narration: 
+    isTitleCard: 0
+    placeholderColor: {r: 0.12, g: 0.02, b: 0.02, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots: []
+  - id: DEMO_M2_SHRINE
+    title: "Ph\xF2ng th\u1EDD \xB7 Qua \u0111\xEAm \u0111\u1EA7u ti\xEAn"
+    subtitle: "M\xC0N 2 HO\xC0N T\u1EA4T \xB7 TI\u1EBEP THEO L\xC0 M\xC0N 3"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: "Nam ch\u1EA1y qua ng\u01B0\u1EE1ng ph\xF2ng th\u1EDD. Ba ng\u01B0\u1EDDi b\u1EA1n theo v\xE0o. Ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF d\u1EEBng ngo\xE0i c\u1EEDa.\n\nS\xE1ng mai, c\u1EA3 nh\xF3m s\u1EBD t\xECm hi\u1EC3u chuy\u1EC7n nh\xE0 ch\u1EE7 c\u0169.\n\nM\xE0n 3\u20138 \u0111ang \u0111\u01B0\u1EE3c ph\xE1t tri\u1EC3n. K\u1EBFt th\xFAc th\u01B0\u1EDDng s\u1EBD n\u1EB1m \u1EDF M\xE0n 8."
+    isTitleCard: 0
+    placeholderColor: {r: 0.24, g: 0.18, b: 0.12, a: 1}
+    presentBackground: {fileID: 0}
+    pastBackground: {fileID: 0}
+    hotspots: []
+  clues:
+  - id: CLUE_SANDBOX_NOTE
+    title: "T\u1EDD gi\u1EA5y trong t\u1EE7"
+    body: "H\xE0 N\u1ED9i, n\u0103m 2004. Nam \u1EDF c\xF9ng Bia, B\u0103ng v\xE0 B\u1EA3o trong c\u0103n nh\xE0 b\xE0 h\u1ECD h\xE0ng cho thu\xEA.\n\nL\u1EDDi nh\u1EAFn c\u1EE7a Bia: Xu\u1ED1ng \u0103n c\u01A1m nh\xE9. Ph\xF2ng kh\xE1ch \u1EDF t\u1EA7ng d\u01B0\u1EDBi. Ph\xF2ng th\u1EDD cu\u1ED1i h\xE0nh lang t\u1EA7ng n\xE0y, nh\u1EDB gi\u1EEF y\xEAn t\u0129nh."
+  - id: CLUE_SANDBOX_SIGN
+    title: "B\u1EA3ng tin h\xE0nh lang"
+    body: "Ph\xF2ng ng\u1EE7 \u2192 h\xE0nh lang t\u1EA7ng 2 \u2192 c\u1EA7u thang \u2192 ph\xF2ng kh\xE1ch.\n\nT\u1EEB c\u1EA7u thang l\xEAn t\u1EA7ng 2, \u0111i h\u1EBFt h\xE0nh lang l\xE0 ph\xF2ng th\u1EDD. K\xFD hi\u1EC7u d\xF2ng h\u1ECD tr\xEAn c\u1EEDa ph\xF2ng th\u1EDD gi\u1ED1ng v\u1EADt h\u1ED9 th\xE2n c\u1EE7a Nam."
+  - id: DEMO_BOWL_CLUE
+    title: "Chi\u1EBFc b\xE1t th\u1EE9 n\u0103m"
+    body: "B\u1ED1n ng\u01B0\u1EDDi \u0103n c\u01A1m nh\u01B0ng tr\xEAn m\xE2m c\xF3 n\u0103m chi\u1EBFc b\xE1t. Chi\u1EBFc b\xE1t nh\u1ECF c\xF3 hoa v\u0103n tr\u1EBB con. Ch\u01B0a ai nh\u1EADn \u0111\xE3 \u0111\u1EB7t n\xF3 l\xEAn m\xE2m."
+  - id: DEMO_MIRROR_CLUE
+    title: "B\xF3ng trong g\u01B0\u01A1ng"
+    body: "Nam v\u1EEBa r\u1EEDa m\u1EB7t th\xEC th\u1EA5y b\xF3ng m\u1ED9t ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF ph\xEDa sau. Quay l\u1EA1i kh\xF4ng c\xF3 ai. D\u01B0\u1EDBi m\xE9p g\u01B0\u01A1ng c\xF3 m\u1ED9t d\u1EA5u b\xE0n tay nh\u1ECF."
+  - id: DEMO_SHRINE_CLUE
+    title: "K\xFD hi\u1EC7u d\xF2ng h\u1ECD"
+    body: "K\xFD hi\u1EC7u tr\xEAn \u0111\u1ED3 th\u1EDD gi\u1ED1ng v\u1EADt h\u1ED9 th\xE2n c\u1EE7a Nam. C\u0103n ph\xF2ng y\xEAn t\u0129nh kh\xE1c th\u01B0\u1EDDng. Nam ghi nh\u1EDB \u0111\u01B0\u1EDDng t\u1EEB ph\xF2ng kh\xE1ch l\xEAn \u0111\xE2y."
+  - id: PROLOGUE_DOG_CLUE
+    title: "Ti\u1EBFng ch\xF3 \u0111\u1EA7u ng\xF5"
+    body: "[Ch\xF3 s\u1EE7a li\xEAn h\u1ED3i]\n\nC\u1EA3 nh\xF3m v\u1EEBa \u0111i ngang \u0111\u1EA7u ng\xF5 th\xEC con ch\xF3 b\u1EADt d\u1EADy s\u1EE7a. Nam ngo\xE1i nh\xECn, nh\u01B0ng kh\xF4ng r\xF5 n\xF3 \u0111ang nh\xECn ai. Bia g\u1ECDi m\u1ECDi ng\u01B0\u1EDDi \u0111i ti\u1EBFp."
+  dialogues:
+  - id: DIALOGUE_SANDBOX_FRIEND
+    speaker: Bia
+    lines:
+    - "M\u1EA5y \u0111\u1EE9a xu\u1ED1ng ph\xF2ng kh\xE1ch r\u1ED3i. T\xECm ch\xECa m\u1EDF t\u1EE7 l\u1EA5y l\u1EDDi nh\u1EAFn \u0111i."
+    - "B\xE0 d\u1EB7n ph\xF2ng th\u1EDD \u1EDF cu\u1ED1i h\xE0nh lang, \u0111\u1EEBng b\xE0y \u0111\u1ED3 ch\u1EAFn c\u1EEDa nh\xE9."
+  - id: DEMO_GAME_DIALOGUE
+    speaker: "Bia \xB7 B\u0103ng \xB7 B\u1EA3o"
+    lines:
+    - "B\u1ED1n \u0111\u1EE9a th\u1EED V\u1ED7 Vai Ma nh\xE9? M\u1ED7i ng\u01B0\u1EDDi \u0111\u1EE9ng m\u1ED9t g\xF3c, t\u1EAFt \u0111\xE8n r\u1ED3i l\u1EA7n l\u01B0\u1EE3t \u0111i v\u1ED7 vai ng\u01B0\u1EDDi k\u1EBF ti\u1EBFp."
+    - "\u0110\u1EBFn g\xF3c \u0111\xE3 tr\u1ED1ng th\xEC d\u1EEBng. C\xF3 b\u1ED1n ng\u01B0\u1EDDi th\xF4i, l\xE0m sao c\xF2n ng\u01B0\u1EDDi \u1EDF \u0111\xF3 \u0111\u01B0\u1EE3c..."
+    - "N\u1EBFu c\xF3 chuy\u1EC7n, \u0111\u1EEBng ch\u1EA1y ra ng\xF5. Nh\u1EDB \u0111\u01B0\u1EDDng l\xEAn ph\xF2ng th\u1EDD t\u1EA7ng 2. Khi b\u1ECB truy \u0111u\u1ED5i, ch\u1ECDn sai h\u01B0\u1EDBng c\xF3 th\u1EC3 ch\u1EBFt."
+  - id: PROLOGUE_GROUP_DIALOGUE
+    speaker: "Bia \xB7 B\u0103ng \xB7 B\u1EA3o"
+    lines:
+    - "Bia: L\u1EA7n n\xE0o \u0111i qua \u0111\xE2y n\xF3 c\u0169ng s\u1EE7a. Th\xF4i v\u1EC1 \u0111i, \u0111\u1EE9ng \u0111\xE2y n\u1EEFa tr\u1EDDi t\u1ED1i m\u1EA5t."
+    - "B\u1EA3o: Nh\xE0 b\xE0 h\u1ECD h\xE0ng c\u1EE7a Nam cho thu\xEA r\u1EBB th\u1EBF n\xE0y l\xE0 may r\u1ED3i. \u1EDE m\u1ED9t th\u1EDDi gian c\u0169ng quen."
+    - "Nam: B\xE0 nh\u1EDD m\xECnh tr\xF4ng nh\xE0 h\u1ED9. C\xF3 ph\xF2ng th\u1EDD ri\xEAng, b\xE0 d\u1EB7n \u0111\u1EEBng b\xE0y \u0111\u1ED3 ch\u1EAFn l\u1ED1i."
+    - "B\u0103ng: V\u1EC1 c\xF2n \u0103n c\u01A1m. H\xF4m nay \u0111\u1EBFn l\u01B0\u1EE3t ai r\u1EEDa b\xE1t \u1EA5y nh\u1EC9?"

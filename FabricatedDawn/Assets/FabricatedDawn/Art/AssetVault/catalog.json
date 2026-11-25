@@ -1,0 +1,1858 @@
+{
+  "sourceFile": "Fabricated_Dawn_Asset_Vault_V2_Standalone.html",
+  "items": [
+    {
+      "id": "fd-001",
+      "name": "Dao gây án",
+      "category": "story",
+      "tags": "Hung khí · Màn 7–8 Dao gây án GDD chính M7–M8",
+      "status": "GDD chính",
+      "chapter": "M7–M8",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-001_dao-gay-an/01_goc-chinh.png",
+          "width": 1236,
+          "height": 1245,
+          "hasTransparency": true,
+          "sha256": "8076161e69a67431e533e251b9ed10c3969e2761058f6ca7b570e47b141e1580"
+        }
+      ]
+    },
+    {
+      "id": "fd-002",
+      "name": "Băng cassette",
+      "category": "story",
+      "tags": "Ghi âm · Màn 7 Băng cassette GDD chính M5–M7",
+      "status": "GDD chính",
+      "chapter": "M5–M7",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-002_bang-cassette/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "54e28648bb06d72d9f15cf661884a927fcb80e191934329c555c56ea8dc64baf"
+        }
+      ]
+    },
+    {
+      "id": "fd-003",
+      "name": "Thỏ bông của bé",
+      "category": "story",
+      "tags": "Vong nhi · Màn 5 Thỏ bông của bé GDD chính: đồ chơi; hình dáng đề xuất M5–M8",
+      "status": "GDD chính: đồ chơi; hình dáng đề xuất",
+      "chapter": "M5–M8",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-003_tho-bong-cua-be/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "2e28b7cde3c7a9fc855d308d679adc9207656c2377a35e9321c6e6b116e4413e"
+        }
+      ]
+    },
+    {
+      "id": "fd-004",
+      "name": "Bát sứ của bé",
+      "category": "story",
+      "tags": "Bát ăn · Màn 1,5 Bát sứ của bé GDD chính M1,M5,M8",
+      "status": "GDD chính",
+      "chapter": "M1,M5,M8",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-004_bat-su-cua-be/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "0d057e1a9af8dbefa3546d43eeb7a3d6f905ad42fe5aa12fad74a6c30c4b1bd4"
+        }
+      ]
+    },
+    {
+      "id": "fd-005",
+      "name": "Ảnh gia đình",
+      "category": "story",
+      "tags": "Ảnh có khung · Màn 5–7 Ảnh gia đình GDD chính M5–M7",
+      "status": "GDD chính",
+      "chapter": "M5–M7",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-005_anh-gia-dinh/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "7968788dfff603cd9167da340fc4e93cf5f240b9bc631b07c087e6faac27ea55"
+        }
+      ]
+    },
+    {
+      "id": "fd-006",
+      "name": "Tranh bé vẽ",
+      "category": "story",
+      "tags": "Hình vẽ · Màn 5–7 Tranh bé vẽ GDD chính M5–M7",
+      "status": "GDD chính",
+      "chapter": "M5–M7",
+      "description": "Bức tranh bé vẽ xuất hiện trong truyện. Phiên bản puzzle ghép 6 mảnh là asset riêng với thiết kế tương ứng.",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-006_tranh-be-ve/01_goc-chinh.png",
+          "width": 409,
+          "height": 398,
+          "hasTransparency": true,
+          "sha256": "d23ad6f30a65e3dc0798f07ca92dd0f19a995da13d1ba0fca38affb2b45493b2"
+        }
+      ]
+    },
+    {
+      "id": "fd-007",
+      "name": "Bóng bay đỏ",
+      "category": "story",
+      "tags": "Vong nhi · Màn 1,5 Bóng bay đỏ GDD chính M1,M5",
+      "status": "GDD chính",
+      "chapter": "M1,M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-007_bong-bay-do/01_goc-chinh.png",
+          "width": 235,
+          "height": 412,
+          "hasTransparency": true,
+          "sha256": "6b35dce3f49a65f9909292c422c71b8e5d503dfde5aaa0c9becb14d83c510681"
+        }
+      ]
+    },
+    {
+      "id": "fd-008",
+      "name": "Máy phát cassette",
+      "category": "story",
+      "tags": "Ghi âm · Màn 7 Máy phát cassette GDD: thiết bị để phát băng M7",
+      "status": "GDD: thiết bị để phát băng",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-008_may-phat-cassette/01_goc-chinh.png",
+          "width": 401,
+          "height": 312,
+          "hasTransparency": true,
+          "sha256": "b0adbcd3ef443ffe20e7908ba45cfdf6864c0c705c895604e73f0fb2646d2bac"
+        }
+      ]
+    },
+    {
+      "id": "fd-009",
+      "name": "Hộp đựng băng cassette",
+      "category": "story",
+      "tags": "Hộp nhựa · Màn 7 Hộp đựng băng cassette Mở rộng M5–M7",
+      "status": "Mở rộng",
+      "chapter": "M5–M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-009_hop-dung-bang-cassette/01_goc-chinh.png",
+          "width": 406,
+          "height": 283,
+          "hasTransparency": true,
+          "sha256": "746d680f9bc747eb2d91e316d275b8783347dcb7e5c091ec684e4f78b629ee79"
+        }
+      ]
+    },
+    {
+      "id": "fd-010",
+      "name": "Phong bì thư",
+      "category": "story",
+      "tags": "Manh mối · Màn 3,7 Phong bì thư GDD: thư chưa gửi M5–M7",
+      "status": "GDD: thư chưa gửi",
+      "chapter": "M5–M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-010_phong-bi-thu/01_goc-chinh.png",
+          "width": 400,
+          "height": 340,
+          "hasTransparency": true,
+          "sha256": "a3df1e82e67f705a259246518bfeccd61247bff18662483a4d7aeb5998149dfd"
+        }
+      ]
+    },
+    {
+      "id": "fd-011",
+      "name": "Hồ sơ bệnh án",
+      "category": "story",
+      "tags": "Chứng cứ · Màn 7 Hồ sơ bệnh án GDD chính M7",
+      "status": "GDD chính",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-011_ho-so-benh-an/01_goc-chinh.png",
+          "width": 365,
+          "height": 396,
+          "hasTransparency": true,
+          "sha256": "a7c5f4dc95436828283a99fb9510b96a2e1d360d7829aad46703cf695ed4c830"
+        }
+      ]
+    },
+    {
+      "id": "fd-012",
+      "name": "Đơn thuốc",
+      "category": "story",
+      "tags": "Chứng cứ · Màn 7 Đơn thuốc GDD chính M7",
+      "status": "GDD chính",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-012_don-thuoc/01_goc-chinh.png",
+          "width": 325,
+          "height": 402,
+          "hasTransparency": true,
+          "sha256": "42b75b0f5fbea64596d10e6217ac0a5ff7c2683e8fe7a402b911cc04094ff656"
+        }
+      ]
+    },
+    {
+      "id": "fd-013",
+      "name": "Lọ thuốc",
+      "category": "story",
+      "tags": "Chứng cứ · Màn 7 Lọ thuốc GDD chính M7",
+      "status": "GDD chính",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-013_lo-thuoc/01_goc-chinh.png",
+          "width": 204,
+          "height": 397,
+          "hasTransparency": true,
+          "sha256": "6cf25065154254585bd454c80922b2e3d39f38c69a2a58a34649e4211a7452a3"
+        }
+      ]
+    },
+    {
+      "id": "fd-014",
+      "name": "Vỉ thuốc",
+      "category": "story",
+      "tags": "Chứng cứ · Màn 7 Vỉ thuốc GDD chính M7",
+      "status": "GDD chính",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-014_vi-thuoc/01_goc-chinh.png",
+          "width": 387,
+          "height": 392,
+          "hasTransparency": true,
+          "sha256": "3dfe1351dc03c204a4814424f2599d831dd26eefa0871939ada940d8a027295a"
+        }
+      ]
+    },
+    {
+      "id": "fd-015",
+      "name": "Mặt dây chuyền ảnh bé",
+      "category": "story",
+      "tags": "Kỷ vật · Đề xuất Mặt dây chuyền ảnh bé [Đề xuất] M5–M8",
+      "status": "[Đề xuất]",
+      "chapter": "M5–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Story/fd-015_mat-day-chuyen-anh-be/01_goc-chinh.png",
+          "width": 400,
+          "height": 393,
+          "hasTransparency": true,
+          "sha256": "38deefd75cf891948aeeb2af6481017d530a6bea25e1d54fdfa9dcc7026e2c9b"
+        }
+      ]
+    },
+    {
+      "id": "fd-016",
+      "name": "Đèn pin",
+      "category": "items",
+      "tags": "Soi sáng · Màn 1–8 Đèn pin GDD chính M1–M8",
+      "status": "GDD chính",
+      "chapter": "M1–M8",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-016_den-pin/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "e3479f1459b3c525999ce77e0bcf4b2e4f820428e37774dfbbf6af984ceb1b7e"
+        }
+      ]
+    },
+    {
+      "id": "fd-017",
+      "name": "Pin đèn pin",
+      "category": "items",
+      "tags": "Nguồn điện · Màn 1–8 Pin đèn pin GDD chính M1–M8",
+      "status": "GDD chính",
+      "chapter": "M1–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-017_pin-den-pin/01_goc-chinh.png",
+          "width": 362,
+          "height": 472,
+          "hasTransparency": true,
+          "sha256": "7db3022d7ed9a462ba5dad50f7aca7dd46e95f8dedebbb9482f02efb3a175138"
+        }
+      ]
+    },
+    {
+      "id": "fd-018",
+      "name": "Hộp diêm",
+      "category": "items",
+      "tags": "Thắp sáng · Màn 3–6 Hộp diêm GDD chính M3–M6",
+      "status": "GDD chính",
+      "chapter": "M3–M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-018_hop-diem/01_goc-chinh.png",
+          "width": 396,
+          "height": 305,
+          "hasTransparency": true,
+          "sha256": "eb7f33c12909bd54940921d1d0f3cd85c6da0b3a71acb9d5ef65424f5d402e05"
+        }
+      ]
+    },
+    {
+      "id": "fd-019",
+      "name": "Bó nhang",
+      "category": "items",
+      "tags": "Đồ thờ · Màn 3–6 Bó nhang GDD chính M3–M6",
+      "status": "GDD chính",
+      "chapter": "M3–M6",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-019_bo-nhang/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "a25aec46cc8e40ce941e1f913056c346abd5e09b626653f9ca51180ac780427c"
+        }
+      ]
+    },
+    {
+      "id": "fd-020",
+      "name": "Bùa giấy trấn cửa",
+      "category": "items",
+      "tags": "Đề xuất · Màn 3–8 Bùa giấy trấn cửa [Đề xuất] M3–M8",
+      "status": "[Đề xuất]",
+      "chapter": "M3–M8",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-020_bua-giay-tran-cua/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "a16cc46b5287a7f1a61b52ade71a0b59898dab47183ac8af4789fbeb37dd9dd6"
+        }
+      ]
+    },
+    {
+      "id": "fd-021",
+      "name": "Túi vật hộ thân",
+      "category": "items",
+      "tags": "Đề xuất · Gia tiên Túi vật hộ thân [Đề xuất] M1–M8",
+      "status": "[Đề xuất]",
+      "chapter": "M1–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-021_tui-vat-ho-than/01_goc-chinh.png",
+          "width": 403,
+          "height": 395,
+          "hasTransparency": true,
+          "sha256": "58d0b3261841eb9ef1dfe104be532a3521d7f3b8cf7a2f83b859a31a2777a14f"
+        }
+      ]
+    },
+    {
+      "id": "fd-022",
+      "name": "Chìa khóa nhà",
+      "category": "items",
+      "tags": "Cửa khóa Chìa khóa nhà GDD: mở cửa/khóa M1–M5",
+      "status": "GDD: mở cửa/khóa",
+      "chapter": "M1–M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-022_chia-khoa-nha/01_goc-chinh.png",
+          "width": 322,
+          "height": 395,
+          "hasTransparency": true,
+          "sha256": "deee19f7728fbeabf96a56c351713166849f8523f6f3b2f4bce1541790d9a1a9"
+        }
+      ]
+    },
+    {
+      "id": "fd-023",
+      "name": "Cuộn chỉ đỏ",
+      "category": "items",
+      "tags": "Giải đố · Đề xuất Cuộn chỉ đỏ Mở rộng M6",
+      "status": "Mở rộng",
+      "chapter": "M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-023_cuon-chi-do/01_goc-chinh.png",
+          "width": 376,
+          "height": 400,
+          "hasTransparency": true,
+          "sha256": "a2dffb981a0d2a074651d93cde8a32c496d208ed749139c3401541b9e3451b6d"
+        }
+      ]
+    },
+    {
+      "id": "fd-024",
+      "name": "Bút chì",
+      "category": "items",
+      "tags": "Dùng với cassette Bút chì GDD: giải câu đố cassette M7",
+      "status": "GDD: giải câu đố cassette",
+      "chapter": "M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-024_but-chi/01_goc-chinh.png",
+          "width": 378,
+          "height": 445,
+          "hasTransparency": true,
+          "sha256": "0bded886cf09182011ede6ee1ea239c4d3ccfe21ecf0c723fab56e227360dcfd"
+        }
+      ]
+    },
+    {
+      "id": "fd-025",
+      "name": "Bật lửa",
+      "category": "items",
+      "tags": "Đồ sinh hoạt · Mở rộng Bật lửa Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-025_bat-lua/01_goc-chinh.png",
+          "width": 212,
+          "height": 399,
+          "hasTransparency": true,
+          "sha256": "fb5665f86c728815aae7aeed2d6e94a39ac099f3db46b9ecf4a5e2a157911901"
+        }
+      ]
+    },
+    {
+      "id": "fd-026",
+      "name": "Mặt dây chuyền bùa gỗ",
+      "category": "items",
+      "tags": "Đề xuất · Gia tiên Mặt dây chuyền bùa gỗ [Đề xuất] đồ hộ thân M1–M8",
+      "status": "[Đề xuất] đồ hộ thân",
+      "chapter": "M1–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-026_mat-day-chuyen-bua-go/01_goc-chinh.png",
+          "width": 352,
+          "height": 394,
+          "hasTransparency": true,
+          "sha256": "c1cee6c18cf6f17c659056779e61840b3fed1bc78e1d49d6a8e363a33d362495"
+        }
+      ]
+    },
+    {
+      "id": "fd-027",
+      "name": "Băng vải",
+      "category": "items",
+      "tags": "Đạo cụ Băng vải Mở rộng M5–M8",
+      "status": "Mở rộng",
+      "chapter": "M5–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-027_bang-vai/01_goc-chinh.png",
+          "width": 393,
+          "height": 328,
+          "hasTransparency": true,
+          "sha256": "e70dce37d5b88bf085cd40df392c0255401f19cffbe470137aec69ef66d516c8"
+        }
+      ]
+    },
+    {
+      "id": "fd-028",
+      "name": "Dây thừng",
+      "category": "items",
+      "tags": "Đạo cụ Dây thừng Mở rộng M4–M8",
+      "status": "Mở rộng",
+      "chapter": "M4–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Items/fd-028_day-thung/01_goc-chinh.png",
+          "width": 398,
+          "height": 263,
+          "hasTransparency": true,
+          "sha256": "6a457e3a1c91f9bee056a4883170a82323625f03c0f09c1a3a896b53a37c966b"
+        }
+      ]
+    },
+    {
+      "id": "fd-029",
+      "name": "Ba lô sinh viên",
+      "category": "student",
+      "tags": "Đồ sinh viên · Màn 1–3 Ba lô sinh viên Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-029_ba-lo-sinh-vien/01_goc-chinh.png",
+          "width": 1253,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "99dbc0425f55cbe3b6becb01c415bcf5fd64b262bc6fa0951cff099547a33191"
+        }
+      ]
+    },
+    {
+      "id": "fd-030",
+      "name": "Sổ tay xanh",
+      "category": "student",
+      "tags": "Ghi chép · Màn 1–3 Sổ tay xanh Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Ảnh AI độc lập",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-030_so-tay-xanh/01_goc-chinh.png",
+          "width": 1254,
+          "height": 1254,
+          "hasTransparency": true,
+          "sha256": "249731a4fe07ba23b00e0a44dd46e0b808d403edce420e903f9e55b5ac46ca03"
+        }
+      ]
+    },
+    {
+      "id": "fd-031",
+      "name": "Bộ giáo trình",
+      "category": "student",
+      "tags": "Học tập · Màn 1–3 Bộ giáo trình Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-031_bo-giao-trinh/01_goc-chinh.png",
+          "width": 404,
+          "height": 376,
+          "hasTransparency": true,
+          "sha256": "5d368d3be7c19be8ff2dbc8b70be3abe930649d5b1a94a5642d9fe56252d4edb"
+        }
+      ]
+    },
+    {
+      "id": "fd-032",
+      "name": "Túi đeo chéo",
+      "category": "student",
+      "tags": "Sinh hoạt · Màn 1–3 Túi đeo chéo Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-032_tui-deo-cheo/01_goc-chinh.png",
+          "width": 377,
+          "height": 400,
+          "hasTransparency": true,
+          "sha256": "f19270ed161dab920ea9e4eea876de90e43b6e479ff9fe066c9831c4f1770ec9"
+        }
+      ]
+    },
+    {
+      "id": "fd-033",
+      "name": "Cốc sứ hoa",
+      "category": "student",
+      "tags": "Bát đĩa · Màn 1–3 Cốc sứ hoa Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-033_coc-su-hoa/01_goc-chinh.png",
+          "width": 399,
+          "height": 361,
+          "hasTransparency": true,
+          "sha256": "8ee569710439781ef5fd26a9d48504fc5957167e3e816a46ca42a08d7df5f15a"
+        }
+      ]
+    },
+    {
+      "id": "fd-034",
+      "name": "Cốc thủy tinh",
+      "category": "student",
+      "tags": "Đồ sinh hoạt Cốc thủy tinh Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-034_coc-thuy-tinh/01_goc-chinh.png",
+          "width": 281,
+          "height": 399,
+          "hasTransparency": true,
+          "sha256": "d5a83e3b8b7bb3e20b3ed16bb3e726271e929238f94631fe58d479b8503ede2b"
+        }
+      ]
+    },
+    {
+      "id": "fd-035",
+      "name": "Đĩa sứ hoa văn",
+      "category": "student",
+      "tags": "Bát đĩa Đĩa sứ hoa văn Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-035_dia-su-hoa-van/01_goc-chinh.png",
+          "width": 400,
+          "height": 305,
+          "hasTransparency": true,
+          "sha256": "201bc0282e13b19d8935153542b2f775592eef066eef60fce04cbb97637214a8"
+        }
+      ]
+    },
+    {
+      "id": "fd-036",
+      "name": "Cặp lồng nhôm",
+      "category": "student",
+      "tags": "Đồ ăn Cặp lồng nhôm Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-036_cap-long-nhom/01_goc-chinh.png",
+          "width": 286,
+          "height": 401,
+          "hasTransparency": true,
+          "sha256": "1c88b4cb5f4121bfc6d2c3a710a404d9c2b1bb12488ac6e33cf6a6e940c3307c"
+        }
+      ]
+    },
+    {
+      "id": "fd-037",
+      "name": "Ấm đun nước",
+      "category": "student",
+      "tags": "Đồ bếp Ấm đun nước Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-037_am-dun-nuoc/01_goc-chinh.png",
+          "width": 404,
+          "height": 365,
+          "hasTransparency": true,
+          "sha256": "7e5da0e2d9f3e3340bb4347bd034e71ea65167155f3b9032ced62b490c8c4a82"
+        }
+      ]
+    },
+    {
+      "id": "fd-038",
+      "name": "Phích nước",
+      "category": "student",
+      "tags": "Đồ bếp Phích nước Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-038_phich-nuoc/01_goc-chinh.png",
+          "width": 199,
+          "height": 405,
+          "hasTransparency": true,
+          "sha256": "8e115460520bf546ac0499c46bd19115811bb39bd5537dbc3e46212bfb4df2b6"
+        }
+      ]
+    },
+    {
+      "id": "fd-039",
+      "name": "Quạt điện",
+      "category": "student",
+      "tags": "Thiết bị · Màn 1–3 Quạt điện GDD bối cảnh M1–M3",
+      "status": "GDD bối cảnh",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-039_quat-dien/01_goc-chinh.png",
+          "width": 310,
+          "height": 403,
+          "hasTransparency": true,
+          "sha256": "9560f7d85061a39fa6d38c53e85f338ea6da1e715a51a01f048fd22472cb74fb"
+        }
+      ]
+    },
+    {
+      "id": "fd-040",
+      "name": "Đèn học",
+      "category": "student",
+      "tags": "Thiết bị · Màn 1–3 Đèn học Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-040_den-hoc/01_goc-chinh.png",
+          "width": 306,
+          "height": 401,
+          "hasTransparency": true,
+          "sha256": "982002cf8146ed80e0cdf9b8c024700f1ca1c0234980c033b829e02a996bf0f7"
+        }
+      ]
+    },
+    {
+      "id": "fd-041",
+      "name": "Đồng hồ báo thức",
+      "category": "student",
+      "tags": "Sinh hoạt Đồng hồ báo thức Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-041_dong-ho-bao-thuc/01_goc-chinh.png",
+          "width": 317,
+          "height": 404,
+          "hasTransparency": true,
+          "sha256": "e72be4ff1eb9b638f6e325fa9a932737937aac344b8017dbce6549d85cb4dd82"
+        }
+      ]
+    },
+    {
+      "id": "fd-042",
+      "name": "Đĩa mềm 3.5 inch",
+      "category": "student",
+      "tags": "Máy tính · Trước 2004 Đĩa mềm 3.5 inch Mở rộng (trước 2004) M1–M3",
+      "status": "Mở rộng (trước 2004)",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-042_dia-mem-3-5-inch/01_goc-chinh.png",
+          "width": 397,
+          "height": 391,
+          "hasTransparency": true,
+          "sha256": "73504e95e0e6ea8d62cf7dc14ce7c4d359dad3f573dd7563eb7a4d26e2e3ab9b"
+        }
+      ]
+    },
+    {
+      "id": "fd-043",
+      "name": "Đĩa CD",
+      "category": "student",
+      "tags": "Đĩa quang · Trước 2004 Đĩa CD Mở rộng (trước 2004) M1–M3",
+      "status": "Mở rộng (trước 2004)",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-043_dia-cd/01_goc-chinh.png",
+          "width": 401,
+          "height": 354,
+          "hasTransparency": true,
+          "sha256": "53fbc54858a977937ece02eb5d20ef3fdfe6773648f88f6abfb692ef0f69fe79"
+        }
+      ]
+    },
+    {
+      "id": "fd-044",
+      "name": "Mì gói",
+      "category": "student",
+      "tags": "Đồ ăn · Mẫu nhãn cần thay Mì gói Mở rộng, có nhãn hiệu cần đổi nếu phát hành M1–M3",
+      "status": "Mở rộng, có nhãn hiệu cần đổi nếu phát hành",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-044_mi-goi/01_goc-chinh.png",
+          "width": 404,
+          "height": 324,
+          "hasTransparency": true,
+          "sha256": "850be66abf923e58b887fc54ffdb3463cc37e34227e7bc92e899b768bc24f4d0"
+        }
+      ]
+    },
+    {
+      "id": "fd-045",
+      "name": "Hộp nhựa đựng đồ",
+      "category": "student",
+      "tags": "Sinh hoạt Hộp nhựa đựng đồ Mở rộng M1–M3",
+      "status": "Mở rộng",
+      "chapter": "M1–M3",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Student/fd-045_hop-nhua-dung-do/01_goc-chinh.png",
+          "width": 403,
+          "height": 261,
+          "hasTransparency": true,
+          "sha256": "c3e35fcd72eb92e47ab4f2d0177db821cc2e17b36c2cf2c9542707c733ce2345"
+        }
+      ]
+    },
+    {
+      "id": "fd-046",
+      "name": "Ổ khóa số",
+      "category": "puzzle",
+      "tags": "Đoán mã · Màn 5,7 Ổ khóa số GDD: mật mã tủ M3,M5,M7",
+      "status": "GDD: mật mã tủ",
+      "chapter": "M3,M5,M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-046_o-khoa-so/01_goc-chinh.png",
+          "width": 272,
+          "height": 399,
+          "hasTransparency": true,
+          "sha256": "f35a180c4931d2bfae1f3d5c929cb05d50e8d7a477d01bd2ed9da7b13b342be6"
+        }
+      ]
+    },
+    {
+      "id": "fd-047",
+      "name": "Hộp thiếc hoa",
+      "category": "puzzle",
+      "tags": "Vật chứa · Giải đố Hộp thiếc hoa Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-047_hop-thiec-hoa/01_goc-chinh.png",
+          "width": 406,
+          "height": 284,
+          "hasTransparency": true,
+          "sha256": "86b091020ebeebd15e5d4cd18e21639dded8d5462743a93e6573d00ab3684fe1"
+        }
+      ]
+    },
+    {
+      "id": "fd-048",
+      "name": "Hộp gỗ có chốt",
+      "category": "puzzle",
+      "tags": "Mở khóa · Giải đố Hộp gỗ có chốt Mở rộng M5,M7",
+      "status": "Mở rộng",
+      "chapter": "M5,M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-048_hop-go-co-chot/01_goc-chinh.png",
+          "width": 403,
+          "height": 361,
+          "hasTransparency": true,
+          "sha256": "3c7d15781cab8078692ad7d0a916fc7d30f093dd36f00db3e32a1c84f84218fd"
+        }
+      ]
+    },
+    {
+      "id": "fd-049",
+      "name": "Chuông nhỏ",
+      "category": "puzzle",
+      "tags": "Âm thanh · Màn 6 Chuông nhỏ Mở rộng M6",
+      "status": "Mở rộng",
+      "chapter": "M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-049_chuong-nho/01_goc-chinh.png",
+          "width": 287,
+          "height": 401,
+          "hasTransparency": true,
+          "sha256": "638df912612fa5af1c029f0dd3b78ad26ef5486421b852571868a24e2bfd9881"
+        }
+      ]
+    },
+    {
+      "id": "fd-050",
+      "name": "Lư hương",
+      "category": "puzzle",
+      "tags": "Phòng thờ · Màn 6 Lư hương Đồ thờ/GDD bối cảnh M2,M6",
+      "status": "Đồ thờ/GDD bối cảnh",
+      "chapter": "M2,M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-050_lu-huong/01_goc-chinh.png",
+          "width": 400,
+          "height": 306,
+          "hasTransparency": true,
+          "sha256": "8e26f4296968b06789b59039cf3ff0e2582296db8bfc0cecab3d958d38d0fcd9"
+        }
+      ]
+    },
+    {
+      "id": "fd-051",
+      "name": "Ngựa đồ chơi",
+      "category": "puzzle",
+      "tags": "Đồ chơi bé gái Ngựa đồ chơi Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-051_ngua-do-choi/01_goc-chinh.png",
+          "width": 403,
+          "height": 337,
+          "hasTransparency": true,
+          "sha256": "703d45b47efaa909dd1b8a4438691dfe5acfbad4d926221cd2e1e80f00a5f3df"
+        }
+      ]
+    },
+    {
+      "id": "fd-052",
+      "name": "Trống đồ chơi",
+      "category": "puzzle",
+      "tags": "Đồ chơi · Nhịp điệu Trống đồ chơi Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-052_trong-do-choi/01_goc-chinh.png",
+          "width": 328,
+          "height": 398,
+          "hasTransparency": true,
+          "sha256": "9a300a3a9e25b59d56922ebeaf01a28d84249b6328094995216d4a50e3a70b60"
+        }
+      ]
+    },
+    {
+      "id": "fd-053",
+      "name": "Viên bi thủy tinh",
+      "category": "puzzle",
+      "tags": "Đồ chơi · Mê cung Viên bi thủy tinh Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-053_vien-bi-thuy-tinh/01_goc-chinh.png",
+          "width": 380,
+          "height": 370,
+          "hasTransparency": true,
+          "sha256": "75b9890f6dca8cd324e832c1fd86bd2b7800b78ca33d49ea586ffbe116736efb"
+        }
+      ]
+    },
+    {
+      "id": "fd-054",
+      "name": "Thuyền giấy",
+      "category": "puzzle",
+      "tags": "Đồ chơi · Gấp giấy Thuyền giấy Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-054_thuyen-giay/01_goc-chinh.png",
+          "width": 403,
+          "height": 221,
+          "hasTransparency": true,
+          "sha256": "3a0927d4fc357b723dc80ad51dd2139940c0cfa38f81d380781a1c8cdc849223"
+        }
+      ]
+    },
+    {
+      "id": "fd-055",
+      "name": "Dây nhảy",
+      "category": "puzzle",
+      "tags": "Đồ chơi · Trước 2004 Dây nhảy Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-055_day-nhay/01_goc-chinh.png",
+          "width": 396,
+          "height": 403,
+          "hasTransparency": true,
+          "sha256": "542f18b7cd0ac4a088499681e68e4323456a2590a94e8207815864904d56eeff"
+        }
+      ]
+    },
+    {
+      "id": "fd-056",
+      "name": "Lịch xé năm 2003",
+      "category": "puzzle",
+      "tags": "Ngày tháng · Giải mật mã Lịch xé năm 2003 Mở rộng: ngày tháng giả định M3–M7",
+      "status": "Mở rộng: ngày tháng giả định",
+      "chapter": "M3–M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-056_lich-xe-nam-2003/01_goc-chinh.png",
+          "width": 350,
+          "height": 403,
+          "hasTransparency": true,
+          "sha256": "e90d8af45a49e231028ca4dbd3d3cab2077eb8744627f81911bf92c9496e7eaf"
+        }
+      ]
+    },
+    {
+      "id": "fd-057",
+      "name": "Cuộn phim ảnh",
+      "category": "puzzle",
+      "tags": "Ảnh chụp · Giải đố Cuộn phim ảnh Mở rộng M3–M7",
+      "status": "Mở rộng",
+      "chapter": "M3–M7",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-057_cuon-phim-anh/01_goc-chinh.png",
+          "width": 409,
+          "height": 171,
+          "hasTransparency": true,
+          "sha256": "fd57349aa7d6c060731663b9b8aff9268faff9dfbf9b4ebafb8e40972122a0da"
+        }
+      ]
+    },
+    {
+      "id": "fd-058",
+      "name": "Giấy ký hiệu giả tưởng",
+      "category": "puzzle",
+      "tags": "Đề xuất · Câu đố Giấy ký hiệu giả tưởng [Đề xuất] biểu tượng giả tưởng M6",
+      "status": "[Đề xuất] biểu tượng giả tưởng",
+      "chapter": "M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-058_giay-ky-hieu-gia-tuong/01_goc-chinh.png",
+          "width": 353,
+          "height": 399,
+          "hasTransparency": true,
+          "sha256": "bc2baa68695fe44c6d2421ef27cc2636c23e3843bd1803d713fe8fda9e9d1893"
+        }
+      ]
+    },
+    {
+      "id": "fd-059",
+      "name": "Chuỗi hạt gỗ",
+      "category": "puzzle",
+      "tags": "Đồ thờ · Giải đố Chuỗi hạt gỗ Mở rộng M6",
+      "status": "Mở rộng",
+      "chapter": "M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-059_chuoi-hat-go/01_goc-chinh.png",
+          "width": 400,
+          "height": 345,
+          "hasTransparency": true,
+          "sha256": "5ec9fd8f6ab875f634dc9a68140ffdf15f6ac57cb329eea94e5b290c33d5a1da"
+        }
+      ]
+    },
+    {
+      "id": "fd-060",
+      "name": "Con quay",
+      "category": "puzzle",
+      "tags": "Đồ chơi dân gian Con quay Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-060_con-quay/01_goc-chinh.png",
+          "width": 385,
+          "height": 393,
+          "hasTransparency": true,
+          "sha256": "a6644b26b47f302901482ca8ab80edf5968046a32d3c393a313320816a9965a5"
+        }
+      ]
+    },
+    {
+      "id": "fd-061",
+      "name": "Chong chóng giấy",
+      "category": "puzzle",
+      "tags": "Đồ chơi dân gian Chong chóng giấy Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-061_chong-chong-giay/01_goc-chinh.png",
+          "width": 351,
+          "height": 403,
+          "hasTransparency": true,
+          "sha256": "4506282b307e1e0f12baed7695d3af08eb4ae5b576ad907fd40a48a30e5c500d"
+        }
+      ]
+    },
+    {
+      "id": "fd-062",
+      "name": "Hộp nhạc",
+      "category": "puzzle",
+      "tags": "Ghi nhớ âm thanh Hộp nhạc Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-062_hop-nhac/01_goc-chinh.png",
+          "width": 393,
+          "height": 400,
+          "hasTransparency": true,
+          "sha256": "e7b6b4142c8f504bfe3040821a8ce1da78bdccc33b586da2e8e28d88bb098114"
+        }
+      ]
+    },
+    {
+      "id": "fd-063",
+      "name": "Hộp cúc áo",
+      "category": "puzzle",
+      "tags": "Match-3 · Xếp cúc Hộp cúc áo Mở rộng: ghép 3 M5",
+      "status": "Mở rộng: ghép 3",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-063_hop-cuc-ao/01_goc-chinh.png",
+          "width": 396,
+          "height": 301,
+          "hasTransparency": true,
+          "sha256": "ec40d8f6bdb10ff772e9b6486255b51633fa1a1da5f4359641f801509918b345"
+        }
+      ]
+    },
+    {
+      "id": "fd-064",
+      "name": "Hộp ghép ô",
+      "category": "puzzle",
+      "tags": "Sliding puzzle Hộp ghép ô Mở rộng: xếp hình M5",
+      "status": "Mở rộng: xếp hình",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Puzzle/fd-064_hop-ghep-o/01_goc-chinh.png",
+          "width": 401,
+          "height": 302,
+          "hasTransparency": true,
+          "sha256": "56d255f1acd16276bc537178735370847628ad4e9862fe1b529a1cb086c3cbca"
+        }
+      ]
+    },
+    {
+      "id": "fd-065",
+      "name": "Gương cầm tay nứt",
+      "category": "horror",
+      "tags": "Gương dị thường · Màn 5 Gương cầm tay nứt Mở rộng M1,M5",
+      "status": "Mở rộng",
+      "chapter": "M1,M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Horror/fd-065_guong-cam-tay-nut/01_goc-chinh.png",
+          "width": 237,
+          "height": 431,
+          "hasTransparency": true,
+          "sha256": "4c0b0922e862a275f96d3259e9526132595eaeb4251a5ab1c2a3a7da75fb995d"
+        }
+      ]
+    },
+    {
+      "id": "fd-066",
+      "name": "Dấu bàn tay đỏ",
+      "category": "horror",
+      "tags": "Decal kinh dị · Màn 6 Dấu bàn tay đỏ Mở rộng M1,M6",
+      "status": "Mở rộng",
+      "chapter": "M1,M6",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Horror/fd-066_dau-ban-tay-do/01_goc-chinh.png",
+          "width": 298,
+          "height": 408,
+          "hasTransparency": true,
+          "sha256": "e4db6be5f4a24083aece7fbcf677c6d48e91c0bad99f1c9c3696fca7ad1e9de8"
+        }
+      ]
+    },
+    {
+      "id": "fd-067",
+      "name": "Bóng người phụ nữ",
+      "category": "horror",
+      "tags": "Lệ quỷ · Overlay Bóng người phụ nữ GDD: dấu hiệu lệ quỷ M1–M8",
+      "status": "GDD: dấu hiệu lệ quỷ",
+      "chapter": "M1–M8",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Horror/fd-067_bong-nguoi-phu-nu/01_goc-chinh.png",
+          "width": 159,
+          "height": 434,
+          "hasTransparency": true,
+          "sha256": "b1fc533d7cb9cce37d66679d95f7011f0deb7b0cfe04a629b1df2589f654812d"
+        }
+      ]
+    },
+    {
+      "id": "fd-068",
+      "name": "Đầu búp bê nứt",
+      "category": "horror",
+      "tags": "Đạo cụ kinh dị · Màn 5 Đầu búp bê nứt Mở rộng M5",
+      "status": "Mở rộng",
+      "chapter": "M5",
+      "origin": "Tách từ bảng AI",
+      "images": [
+        {
+          "label": "Góc chính",
+          "path": "Horror/fd-068_dau-bup-be-nut/01_goc-chinh.png",
+          "width": 392,
+          "height": 354,
+          "hasTransparency": true,
+          "sha256": "6bf95f7b44a71d7d517453a5c40de11b5aaa79c46060ca76c50422429225b4df"
+        }
+      ]
+    },
+    {
+      "id": "fd-069",
+      "name": "Dấu chân trẻ con ướt",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M1,M5",
+      "description": "Dấu chân nhỏ in trên nền nhà, dạng decal phủ lên cảnh.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-069_dau-chan-tre-con-uot/01_artwork-chinh.png",
+          "width": 164,
+          "height": 330,
+          "hasTransparency": true,
+          "sha256": "d65f0083b14f27d01c5ddc8af4122bb97a4dc9d518e2e58456f51a99a44ee860"
+        }
+      ]
+    },
+    {
+      "id": "fd-070",
+      "name": "Dấu bàn tay trên kính",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M1,M6",
+      "description": "Vết bàn tay ẩm mờ chỉ hiện khi gương bị hơi nước phủ.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-070_dau-ban-tay-tren-kinh/01_artwork-chinh.png",
+          "width": 303,
+          "height": 351,
+          "hasTransparency": true,
+          "sha256": "68fcc4c60405171a0a23a394e8b1404efd88053c55dc1b9f9ade0ea757934444"
+        }
+      ]
+    },
+    {
+      "id": "fd-071",
+      "name": "Chốt cửa vướng tóc đen",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M4,M6",
+      "description": "Chốt cửa cũ bị một búi tóc đen quấn ngang.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-071_chot-cua-vuong-toc-den/01_artwork-chinh.png",
+          "width": 309,
+          "height": 358,
+          "hasTransparency": true,
+          "sha256": "c7673d987a1104c37a4ddf838d6f1dfe49b95d2a594c832ee514008efaa95397"
+        }
+      ]
+    },
+    {
+      "id": "fd-072",
+      "name": "Nơ vải của bé gái",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M5",
+      "description": "Nơ hoa bị rách, dùng để dẫn đến món đồ chơi bị giấu.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-072_no-vai-cua-be-gai/01_artwork-chinh.png",
+          "width": 305,
+          "height": 353,
+          "hasTransparency": true,
+          "sha256": "354d2b3c5c2c11edefcba0bc43fc6b914e2671ed35c639696567daa209d88049"
+        }
+      ]
+    },
+    {
+      "id": "fd-073",
+      "name": "Mảnh gương phản chiếu vong nam",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M5,M7",
+      "description": "Mảnh gương có bóng áo vest không lộ mặt, khác gương cầm tay.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-073_manh-guong-phan-chieu-vong-nam/01_artwork-chinh.png",
+          "width": 344,
+          "height": 353,
+          "hasTransparency": true,
+          "sha256": "23809e32be76c121cd68bfa01cef55f57c06f030d9a2bfaf71c3e50072a43b73"
+        }
+      ]
+    },
+    {
+      "id": "fd-074",
+      "name": "Tranh gia đình bị bôi xóa",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M5,M7",
+      "description": "Một bức vẽ có một người bị tô đen, là clue riêng của ký ức.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-074_tranh-gia-dinh-bi-boi-xoa/01_artwork-chinh.png",
+          "width": 358,
+          "height": 342,
+          "hasTransparency": true,
+          "sha256": "7dc99f3a34b4f0176287a0e3a1b0b25f340b214c34f4380c0e2ebfbbc955fc96"
+        }
+      ]
+    },
+    {
+      "id": "fd-075",
+      "name": "Mắt cửa có bóng người",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M4,M6",
+      "description": "Mắt cửa đồng có bóng người thấp thoáng ở bên kia.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-075_mat-cua-co-bong-nguoi/01_artwork-chinh.png",
+          "width": 336,
+          "height": 256,
+          "hasTransparency": true,
+          "sha256": "b7b2575b8467180031823157366ff38ed087c85d5e79da9102bb7bf42e48ba35"
+        }
+      ]
+    },
+    {
+      "id": "fd-076",
+      "name": "Mảnh giấy bị bôi mực",
+      "category": "horror",
+      "tags": "kinh dị; overlay; hù dọa; câu chuyện",
+      "status": "Đề xuất mới",
+      "chapter": "M3,M7",
+      "description": "Mẩu giấy học trò bị gạch xóa, có dấu vết hoa viết tay.",
+      "origin": "Ảnh AI vẽ tay, PNG cắt riêng",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-076_manh-giay-bi-boi-muc/01_artwork-chinh.png",
+          "width": 354,
+          "height": 341,
+          "hasTransparency": true,
+          "sha256": "c9cac878a04b5cd1079744d89088505114b39718bb64ea4aaf61946dd2944e32"
+        }
+      ]
+    },
+    {
+      "id": "fd-077",
+      "name": "Vết cào dài trên cửa",
+      "category": "horror",
+      "tags": "vết bẩn; tường; cửa; overlay",
+      "status": "Minigame đề xuất",
+      "chapter": "M1,M4,M6",
+      "description": "Decal vệt cào trên gỗ, không kèm cửa.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-077_vet-cao-dai-tren-cua/01_artwork-chinh.png",
+          "width": 650,
+          "height": 800,
+          "hasTransparency": true,
+          "sha256": "8b6c61fb820ea014328dfe788ee513a7bd214edbb5e4eeed2f4a4b4b36ecfd1f"
+        }
+      ]
+    },
+    {
+      "id": "fd-078",
+      "name": "Vệt ẩm đen chảy trên tường",
+      "category": "horror",
+      "tags": "vết bẩn; tường; cửa; overlay",
+      "status": "Minigame đề xuất",
+      "chapter": "M1,M4,M6",
+      "description": "Overlay vệt ẩm và nước chảy, không kèm tường.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Horror/fd-078_vet-am-den-chay-tren-tuong/01_artwork-chinh.png",
+          "width": 650,
+          "height": 800,
+          "hasTransparency": true,
+          "sha256": "cb09acd1e40896385c866c723ea4f0bd3e20fa128d1a59b691f26e6163d2d3ad"
+        }
+      ]
+    },
+    {
+      "id": "fd-079",
+      "name": "Tranh vẽ bị xé — Ghép 6 mảnh",
+      "category": "puzzle",
+      "tags": "tranh trẻ con; ghép hình; kéo thả; xếp mảnh giấy",
+      "status": "Minigame đề xuất",
+      "chapter": "M5",
+      "description": "Sáu mảnh giấy rách có nội dung liên tục; ghép thành bức tranh để lộ vị trí đồ chơi hoặc manh mối vong nhi.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "18d5cc49d51addfdd164e7c1924dcdcb774a58cad702f31283fc642ea4ba0b43"
+        },
+        {
+          "label": "Mảnh 1/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/02_manh-1-6.png",
+          "width": 337,
+          "height": 377,
+          "hasTransparency": true,
+          "sha256": "149c8922e616aaa7123bdf560948c1a63a394bdbe8e46c83b8d9ad5fd5916726"
+        },
+        {
+          "label": "Mảnh 2/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/03_manh-2-6.png",
+          "width": 359,
+          "height": 377,
+          "hasTransparency": true,
+          "sha256": "e2df81d75cd3d1892e906e7af0e435a76d6ec7a0185b217159bbded4b048d8f5"
+        },
+        {
+          "label": "Mảnh 3/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/04_manh-3-6.png",
+          "width": 339,
+          "height": 377,
+          "hasTransparency": true,
+          "sha256": "06a348868f6a0a80a15ca0d6a397c4701f9580c54ebec98d4c83c8031290923b"
+        },
+        {
+          "label": "Mảnh 4/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/05_manh-4-6.png",
+          "width": 337,
+          "height": 376,
+          "hasTransparency": true,
+          "sha256": "16fe4d6e1e105d0cab2bd1887a9b4f50da9c9e537379f59ec1d275b36b1cc5c9"
+        },
+        {
+          "label": "Mảnh 5/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/06_manh-5-6.png",
+          "width": 360,
+          "height": 376,
+          "hasTransparency": true,
+          "sha256": "44cef84bed0b84769120b8a8e1948bf9d00541e9299ce3f067268729a07ae21c"
+        },
+        {
+          "label": "Mảnh 6/6",
+          "path": "Puzzle/fd-079_tranh-ve-bi-xe-ghep-6-manh/07_manh-6-6.png",
+          "width": 339,
+          "height": 376,
+          "hasTransparency": true,
+          "sha256": "49a0abbc0b99659b12163407096a2f6db8405c8f527408ae6649cd4826bd85ec"
+        }
+      ]
+    },
+    {
+      "id": "fd-080",
+      "name": "Mạch máy cassette — Nối điện",
+      "category": "puzzle",
+      "tags": "cassette; máy ghi âm; nối mạch; sửa điện; dây nối",
+      "status": "Minigame đề xuất",
+      "chapter": "M7",
+      "description": "Mở phần đáy máy cassette, xoay các đoạn dây điện trên bảng mạch để nối nguồn đến đầu đọc băng và phát lời ghi âm.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-080_mach-may-cassette-noi-dien/01_artwork-chinh.png",
+          "width": 1024,
+          "height": 780,
+          "hasTransparency": true,
+          "sha256": "a30f8c6148e39122d58476f9a168ad937ddc13906375af5414c4ae4094570de3"
+        },
+        {
+          "label": "Dây thẳng",
+          "path": "Puzzle/fd-080_mach-may-cassette-noi-dien/02_day-thang.png",
+          "width": 624,
+          "height": 624,
+          "hasTransparency": true,
+          "sha256": "4c166442b445d4dc121d70b9794a4378b9730bd15685165b106c1b0b1876e54a"
+        },
+        {
+          "label": "Dây góc",
+          "path": "Puzzle/fd-080_mach-may-cassette-noi-dien/03_day-goc.png",
+          "width": 624,
+          "height": 624,
+          "hasTransparency": true,
+          "sha256": "8c40791d9008ec25b05cfa41564eb42fd99adc5d0a4024c02cc43a9a188a06ad"
+        },
+        {
+          "label": "Dây chữ T",
+          "path": "Puzzle/fd-080_mach-may-cassette-noi-dien/04_day-chu-t.png",
+          "width": 624,
+          "height": 624,
+          "hasTransparency": true,
+          "sha256": "453d3db8a955ace8a317da5cc199a41e84fd81176926c89c9ff97c7b58ee2dfd"
+        },
+        {
+          "label": "Đầu nối",
+          "path": "Puzzle/fd-080_mach-may-cassette-noi-dien/05_dau-noi.png",
+          "width": 624,
+          "height": 624,
+          "hasTransparency": true,
+          "sha256": "d90d01d4982471b71edcb0a10d6df0dee87f69c90b955e73ce52590fa54c869a"
+        }
+      ]
+    },
+    {
+      "id": "fd-081",
+      "name": "Sơ đồ hành lang — Ma che mắt",
+      "category": "puzzle",
+      "tags": "mê cung; sơ đồ; hành lang; vòng lặp",
+      "status": "Minigame đề xuất",
+      "chapter": "M4",
+      "description": "Đọc dấu mốc phòng và chọn lối trong hành lang lặp; sơ đồ mang nét bút đỏ của sinh viên.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-081_so-do-hanh-lang-ma-che-mat/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "570e969befeb03d4ae7cfa102c140080fbc48ab1b1e555b9e37b32911dff9e47"
+        }
+      ]
+    },
+    {
+      "id": "fd-082",
+      "name": "Gạch bông xoay hoa văn",
+      "category": "puzzle",
+      "tags": "gạch bông; xoay; nối hình; hoa văn",
+      "status": "Minigame đề xuất",
+      "chapter": "M4,M6",
+      "description": "Xoay chín viên gạch hoa cổ để ghép họa tiết, hiện dấu mốc giấu dưới nền nhà.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-082_gach-bong-xoay-hoa-van/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "bab0487e178a8e65dc2b0eec69fa1647da0d040904c9a7c6ccc1672b48e66b51"
+        }
+      ]
+    },
+    {
+      "id": "fd-083",
+      "name": "Bảng cúc áo trong hộp may",
+      "category": "puzzle",
+      "tags": "ghép 3; match three; cúc áo; đồ may",
+      "status": "Minigame đề xuất",
+      "chapter": "M5",
+      "description": "Đổi vị trí các cúc áo theo màu để mở hộp may có ngăn giấu đồ, một cơ chế Match-3 được kể bằng đạo cụ thật.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-083_bang-cuc-ao-trong-hop-may/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "f3b85b41de5022617dc9a7eda4edf45b5e172a1238e50c79557ac4441ec3c98c"
+        }
+      ]
+    },
+    {
+      "id": "fd-084",
+      "name": "Lịch khoanh ngày — Mã khóa",
+      "category": "puzzle",
+      "tags": "lịch giấy; nhập mã; ngày tháng; 2003",
+      "status": "Minigame đề xuất",
+      "chapter": "M5,M7",
+      "description": "Khoanh một ngày trên lịch thật năm 2003, đối chiếu giấy tờ để suy ra mật mã mở ngăn tủ.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-084_lich-khoanh-ngay-ma-khoa/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "abaa561153fa09d885da63dbad79ae42c7b892f41ff785770db63fff8c5e9be3"
+        }
+      ]
+    },
+    {
+      "id": "fd-085",
+      "name": "Bộ thẻ sự kiện — Ghép dòng thời gian",
+      "category": "puzzle",
+      "tags": "xếp timeline; hồ sơ; chứng cứ; thứ tự",
+      "status": "Minigame đề xuất",
+      "chapter": "M7",
+      "description": "Xếp giấy khám bệnh, thư và biên bản theo trình tự để xác định sự thật về ba cái chết.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-085_bo-the-su-kien-ghep-dong-thoi-gian/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "9db8445d961b58aa032bd2b3d7aea88aad5affdb6e1528b2966c8e33deb04794"
+        }
+      ]
+    },
+    {
+      "id": "fd-086",
+      "name": "Vở ô ly tô hình — Nonogram",
+      "category": "puzzle",
+      "tags": "nonogram; vở ô ly; tô ô; hình thêu",
+      "status": "Minigame đề xuất",
+      "chapter": "M5",
+      "description": "Tô theo số ở hàng và cột trong vở của bé để lộ hình vật cần tìm; có thể thay bằng mẫu thêu của mẹ.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-086_vo-o-ly-to-hinh-nonogram/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "fea5e5e8fb159905456b871a9c0bd3413ebdd603605beb645b9a2f9cfaa33015"
+        }
+      ]
+    },
+    {
+      "id": "fd-087",
+      "name": "Hộp ghép gỗ — Tangram",
+      "category": "puzzle",
+      "tags": "tangram; mảnh gỗ; ghép bóng; đồ chơi",
+      "status": "Minigame đề xuất",
+      "chapter": "M5",
+      "description": "Xoay sáu mảnh gỗ ghép thành hình con thỏ trên tranh của bé; mở chốt ngăn đồ chơi.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-087_hop-ghep-go-tangram/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "0c3372b26ada4171acce0b5117b8e79ae19cd7c972d89016be66c9aab4094cca"
+        }
+      ]
+    },
+    {
+      "id": "fd-088",
+      "name": "Mặt radio xoay tần số",
+      "category": "puzzle",
+      "tags": "radio cũ; vặn núm; tín hiệu; âm thanh",
+      "status": "Minigame đề xuất",
+      "chapter": "M3,M7",
+      "description": "Vặn núm radio đời cũ để dò tín hiệu và nghe một câu nói bị lẫn tiếng nhiễu; dùng khi nhóm quyết định có thêm radio.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-088_mat-radio-xoay-tan-so/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "7e01bcc27362ead371dd10e340f048cfc1c35ec9534fac585619cdfa690cc6b1"
+        }
+      ]
+    },
+    {
+      "id": "fd-089",
+      "name": "Khay phân loại lọ thuốc của bé",
+      "category": "puzzle",
+      "tags": "lọ thuốc; hồ sơ bệnh; sắp xếp; chứng cứ",
+      "status": "Minigame đề xuất",
+      "chapter": "M7",
+      "description": "So nhãn lọ thuốc với đơn và thời điểm dùng để xác định thuốc không khớp lời bà nội.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-089_khay-phan-loai-lo-thuoc-cua-be/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "92104e2c610fdb1a0640adfe2e417459dbbfda11630ddb2a49c88a965e820740"
+        }
+      ]
+    },
+    {
+      "id": "fd-090",
+      "name": "Đàn đồ chơi — Nhớ thứ tự âm",
+      "category": "puzzle",
+      "tags": "ghi nhớ; trình tự; đàn đồ chơi; tiếng ru",
+      "status": "Minigame đề xuất",
+      "chapter": "M5,M6",
+      "description": "Quan sát các phím đàn đồ chơi chuyển động theo chuỗi gợi ý, sau đó nhấn lại để mở hộp đồ chơi.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-090_dan-do-choi-nho-thu-tu-am/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "386e7bba14bb73263d9f5bf5b86dca580d663b2b1387bc5516e90d96b9853a5e"
+        }
+      ]
+    },
+    {
+      "id": "fd-091",
+      "name": "Hộp gỗ khóa bốn số",
+      "category": "puzzle",
+      "tags": "mật mã; hộp gỗ; khóa số",
+      "status": "Minigame đề xuất",
+      "chapter": "M5,M7",
+      "description": "Hộp bốn bánh số, mở bằng dãy ngày tháng tìm thấy từ lịch và thư, không phải ổ khóa số độc lập.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-091_hop-go-khoa-bon-so/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "b9584fe213134ff83c01d1ec34874ba6222fa230c18d1c1e5caaad66c7b8a539"
+        }
+      ]
+    },
+    {
+      "id": "fd-092",
+      "name": "Lá thư mã hóa bằng ký hiệu",
+      "category": "puzzle",
+      "tags": "giải mã; chữ; thư tay; ký hiệu",
+      "status": "Minigame đề xuất",
+      "chapter": "M7",
+      "description": "Đọc lá thư bằng bảng ký hiệu ghi riêng ở một tài liệu khác; được thiết kế không phụ thuộc chữ AI khó đọc.",
+      "origin": "Ảnh mới 2D",
+      "images": [
+        {
+          "label": "Artwork chính",
+          "path": "Puzzle/fd-092_la-thu-ma-hoa-bang-ky-hieu/01_artwork-chinh.png",
+          "width": 960,
+          "height": 720,
+          "hasTransparency": true,
+          "sha256": "1c1822ad8ba4e72db1b8ee5eb807ef81ceeafa50f30f3edf246e9416f3e50854"
+        }
+      ]
+    }
+  ]
+}

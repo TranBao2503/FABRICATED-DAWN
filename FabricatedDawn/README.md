@@ -2,7 +2,15 @@
 
 Được tạo mới bằng Unity **6000.6.6f1** ngày 03/11/2026. Dự án mẫu `../UnityProject` được giữ nguyên.
 
-Mở thư mục này bằng Unity Hub. Scene bắt đầu hiện tại: `Assets/FabricatedDawn/Scenes/ToolkitCaseFile.unity`.
+Mở thư mục này bằng Unity Hub. Scene bắt đầu hiện tại là `Assets/FabricatedDawn/Scenes/StoryDemo.unity`.
+
+## Phạm vi demo
+
+Demo gồm Prologue và đủ tám màn theo GDD, với Bad End khi thất bại và một kết thúc thường ở Màn 8. Phòng thờ cuối Màn 2 là checkpoint tiến độ.
+
+Hiện đã triển khai Prologue và luồng thử Màn 1–2. Màn 3–8 tiếp tục được phát triển. Hình nền, nhân vật và âm thanh thiếu asset đang dùng khối tạm hoặc phụ đề âm thanh.
+
+Trong Unity chọn **Tools > Fabricated Dawn > Demo > Chuẩn bị và mở demo 8 màn**, bấm Play rồi BẮT ĐẦU. TIẾP TỤC phục hồi checkpoint của bản nội dung hiện tại. Dữ liệu demo nằm trong `Assets/FabricatedDawn/Data/Demo/StoryDemo.asset`.
 
 Đã tích hợp gói UI **Horror GUI Kit – Case File UI Toolkit** có sẵn trên máy: menu chính, HUD, inventory, journal và pause được nối với dữ liệu toolkit. Xem [hướng dẫn tích hợp](Assets/FabricatedDawn/Integrations/HorrorCaseFile/README.md).
 

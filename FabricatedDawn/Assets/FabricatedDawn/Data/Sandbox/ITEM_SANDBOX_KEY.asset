@@ -18,4 +18,4 @@ MonoBehaviour:
   pastOnly: 0
   uses: 1
   purpose: "M\u1EDF t\u1EE7 g\u1ED7 trong c\u1EA3nh th\u1EED."
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: 86dba4b3f03a4a8882634ab7053e34c1, type: 3}

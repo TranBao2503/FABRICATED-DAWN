@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace FabricatedDawn
 {
@@ -8,6 +9,7 @@ namespace FabricatedDawn
         public bool checkpoint;
         public string message;
         public string clueId;
+        public Sprite examinedArtwork;
     }
 
     // UI, automated checks and future scene controllers share this interaction path.
@@ -19,7 +21,8 @@ namespace FabricatedDawn
         public DialogueDefinition ActiveDialogue { get; private set; }
         public int DialogueLine { get; private set; }
         public AdventureRoom CurrentRoom => Content.Room(Story.State.roomId);
-        public bool Completed => Story.State.solvedPuzzles.Contains(Content.completionPuzzleId);
+        public bool Completed => Story.State.ending == StoryEnding.Good ||
+            (!string.IsNullOrEmpty(Content.completionPuzzleId) && Story.State.solvedPuzzles.Contains(Content.completionPuzzleId));
         public string Objective
         {
             get
@@ -38,12 +41,19 @@ namespace FabricatedDawn
             if (content.Room(content.startRoomId) == null) throw new ArgumentException("Unknown starting room.");
             var initial = new StoryState { roomId = content.startRoomId };
             initial.unlockedRooms.Clear(); initial.unlockedRooms.Add(content.startRoomId);
+            foreach (var id in content.initiallyUnlockedRooms ?? Array.Empty<string>())
+            {
+                if (content.Room(id) == null) throw new ArgumentException("Unknown unlocked room: " + id);
+                if (!initial.unlockedRooms.Contains(id)) initial.unlockedRooms.Add(id);
+            }
             Story = new StorySession(initial);
+            foreach (var item in content.initialItems ?? Array.Empty<ItemDefinition>())
+                if (item != null) Story.Collect(item);
         }
 
         public bool SelectItem(string id)
         {
-            if (ActiveDialogue != null || !Story.State.inventory.Exists(x => x.id == id)) return false;
+            if (Story.State.ending != StoryEnding.None || ActiveDialogue != null || !Story.State.inventory.Exists(x => x.id == id)) return false;
             SelectedItemId = SelectedItemId == id ? null : id;
             return true;
         }
@@ -60,11 +70,20 @@ namespace FabricatedDawn
 
         public InteractionResult Interact(string id)
         {
+            if (Story.State.ending != StoryEnding.None) return Fail("Bản demo đã kết thúc.");
             if (ActiveDialogue != null) return Fail("Hãy kết thúc hội thoại trước.");
             var h = Array.Find(CurrentRoom.hotspots, x => x != null && x.id == id);
             if (h == null || !IsVisible(h)) return Fail("Không thể tương tác ở đây.");
             if (!string.IsNullOrEmpty(h.requiredPuzzle) && !Story.State.solvedPuzzles.Contains(h.requiredPuzzle))
                 return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Chưa đủ điều kiện." : h.lockedResponse);
+            foreach (var required in h.requiredEvents ?? Array.Empty<string>())
+                if (!Story.State.completedEvents.Contains(required))
+                    return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Hãy nói chuyện với các bạn trước." : h.lockedResponse);
+            foreach (var required in h.requiredPuzzles ?? Array.Empty<string>())
+                if (!Story.State.solvedPuzzles.Contains(required))
+                    return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Hãy hoàn thành việc đang làm trước." : h.lockedResponse);
+            if (!string.IsNullOrEmpty(h.requiredEvent) && !Story.State.completedEvents.Contains(h.requiredEvent))
+                return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Hãy nghe hết cuộc trò chuyện trước." : h.lockedResponse);
             switch (h.kind)
             {
                 case InteractionKind.Pickup:
@@ -90,6 +109,8 @@ namespace FabricatedDawn
                     if (Content.Room(h.destinationRoom) == null || !Story.TryTravel(h.destinationRoom, false))
                         return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Lối đi chưa mở." : h.lockedResponse);
                     SelectedItemId = null;
+                    if (CurrentRoom.chapter > 0) Story.State.chapter = CurrentRoom.chapter;
+                    Story.State.ending = CurrentRoom.ending;
                     break;
             }
             if (!string.IsNullOrEmpty(h.solvesPuzzle)) Story.SolvePuzzle(h.solvesPuzzle);
@@ -97,7 +118,7 @@ namespace FabricatedDawn
                 Story.State.unlockedRooms.Add(h.unlocksRoom);
             Story.CompleteEvent("interaction:" + h.id);
             return new InteractionResult { succeeded = true, checkpoint = h.checkpointAfter,
-                message = h.response, clueId = h.kind == InteractionKind.ReadClue ? h.clueId : null };
+                message = h.response, examinedArtwork = h.kind == InteractionKind.ReadClue ? h.artwork : null, clueId = h.kind == InteractionKind.ReadClue ? h.clueId : null };
         }
 
         public bool AdvanceDialogue()
@@ -124,6 +145,8 @@ namespace FabricatedDawn
         {
             if (Content.Room(state.roomId) == null || !state.unlockedRooms.Contains(state.roomId))
                 throw new ArgumentException("Save refers to an unknown or locked current room.");
+            if (Content.isStoryDemo && state.ending != Content.Room(state.roomId).ending)
+                throw new ArgumentException("Ending does not match the saved room.");
             foreach (var room in state.unlockedRooms)
                 if (Content.Room(room) == null) throw new ArgumentException("Unknown room in save: " + room);
             foreach (var entry in state.inventory)

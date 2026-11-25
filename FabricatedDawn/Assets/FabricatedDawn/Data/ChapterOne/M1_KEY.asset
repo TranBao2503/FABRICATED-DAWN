@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: M1_KEY
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: M1_KEY
+  displayName: "Ch\xECa kh\xF3a t\u1EE7"
+  origin: 0
+  pastOnly: 0
+  uses: 1
+  purpose: "Ch\xECa kh\xF3a t\u1EE7 qu\u1EA7n \xE1o. Ch\u1ECDn trong t\xFAi r\u1ED3i nh\u1EA5n v\xE0o t\u1EE7."
+  icon: {fileID: 21300000, guid: 86dba4b3f03a4a8882634ab7053e34c1, type: 3}

@@ -14,7 +14,12 @@ namespace FabricatedDawn
         public Rect bounds = new Rect(.1f, .1f, .15f, .15f);
         [Tooltip("Optional CSS class for placeholder presentation.")]
         public string visualClass;
+        public Sprite artwork;
+        public Rect artworkBounds;
         public string requiredPuzzle;
+        public string[] requiredPuzzles = Array.Empty<string>();
+        public string requiredEvent;
+        public string[] requiredEvents = Array.Empty<string>();
         public string visibleAfterPuzzle;
         public string hiddenAfterPuzzle;
         public string hiddenAfterEvent;
@@ -28,6 +33,7 @@ namespace FabricatedDawn
         [TextArea] public string response;
         [TextArea] public string lockedResponse;
         public bool checkpointAfter;
+        public bool sceneHotspot;
     }
 
     [Serializable]
@@ -36,7 +42,11 @@ namespace FabricatedDawn
         public string id;
         public string title;
         public string subtitle;
+        public int chapter;
+        public StoryEnding ending;
         [TextArea] public string description;
+        [TextArea] public string narration;
+        public bool isTitleCard;
         public Color placeholderColor = new Color(.22f, .28f, .24f);
         public Sprite presentBackground;
         public Sprite pastBackground;
@@ -64,6 +74,10 @@ namespace FabricatedDawn
     {
         public string contentId = "toolkit-sandbox-v1";
         public string startRoomId = "ROOM_01";
+        public bool isStoryDemo;
+        public int plannedChapterCount = 8;
+        public ItemDefinition[] initialItems = Array.Empty<ItemDefinition>();
+        public string[] initiallyUnlockedRooms = Array.Empty<string>();
         [TextArea] public string initialObjective;
         public AdventureObjective[] objectiveUpdates = Array.Empty<AdventureObjective>();
         [TextArea] public string completedObjective = "Hoàn tất cảnh thử. Bạn có thể quay lại hoặc tải checkpoint.";

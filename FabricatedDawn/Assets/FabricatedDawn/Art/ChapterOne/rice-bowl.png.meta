@@ -1,0 +1,704 @@
+fileFormatVersion: 2
+guid: 5fffdae4134814d4ebddde0ee3560dd3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2311360770991639037
+    second: rice-bowl_0
+  - first:
+      213: -4055002366655977956
+    second: rice-bowl_1
+  - first:
+      213: -976126458595986373
+    second: rice-bowl_2
+  - first:
+      213: 3086801806968255268
+    second: rice-bowl_3
+  - first:
+      213: -9096184632404244805
+    second: rice-bowl_4
+  - first:
+      213: -7062944957069316381
+    second: rice-bowl_5
+  - first:
+      213: 7696229850522537323
+    second: rice-bowl_6
+  - first:
+      213: 8014233382018139592
+    second: rice-bowl_7
+  - first:
+      213: -3103878487032055951
+    second: rice-bowl_8
+  - first:
+      213: -914246332619067289
+    second: rice-bowl_9
+  - first:
+      213: 5498261190375733794
+    second: rice-bowl_10
+  - first:
+      213: -4416292411729856314
+    second: rice-bowl_11
+  - first:
+      213: 7493981337757731745
+    second: rice-bowl_12
+  - first:
+      213: 3651614991329346925
+    second: rice-bowl_13
+  - first:
+      213: 3855273955706329386
+    second: rice-bowl_14
+  - first:
+      213: -1233102420869097561
+    second: rice-bowl_15
+  - first:
+      213: 373247455287461746
+    second: rice-bowl_16
+  - first:
+      213: -8389166493669609875
+    second: rice-bowl_17
+  - first:
+      213: 3770563944575972053
+    second: rice-bowl_18
+  - first:
+      213: 8988871673791438031
+    second: rice-bowl_19
+  - first:
+      213: -1806417940477500026
+    second: rice-bowl_20
+  - first:
+      213: 1893124738934803021
+    second: rice-bowl_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rice-bowl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1020
+        width: 208
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3063549ff956cefd0800000000000000
+      internalID: -2311360770991639037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1156
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c162a14f4dcb9b7c0800000000000000
+      internalID: -4055002366655977956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1164
+        width: 196
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34b68b582a1472f0800000000000000
+      internalID: -976126458595986373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 1241
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 423706c83e586da20800000000000000
+      internalID: 3086801806968255268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 1162
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb68d2e354cd3c180800000000000000
+      internalID: -9096184632404244805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_5
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1156
+        width: 246
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee2fbd8bf06bfd90800000000000000
+      internalID: -7062944957069316381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_6
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 1229
+        width: 25
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6d472ec5408eca60800000000000000
+      internalID: 7696229850522537323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_7
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1182
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5c44abcc6483f60800000000000000
+      internalID: 8014233382018139592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_8
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 1048
+        width: 132
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1773a7a06fecce4d0800000000000000
+      internalID: -3103878487032055951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_9
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 1108
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 760790bedc1ff43f0800000000000000
+      internalID: -914246332619067289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_10
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 1114
+        width: 17
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a79aeeb6fbd4c40800000000000000
+      internalID: 5498261190375733794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_11
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1108
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c8b696337d26b2c0800000000000000
+      internalID: -4416292411729856314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_12
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1109
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1abc4766258fff760800000000000000
+      internalID: 7493981337757731745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1237
+        height: 1103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d654daecc742da230800000000000000
+      internalID: 3651614991329346925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_14
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 723
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29d0b19c3fa08530800000000000000
+      internalID: 3855273955706329386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_15
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 548
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a75c68a1e323eee0800000000000000
+      internalID: -1233102420869097561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_16
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 554
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2774ab1459a0e2500800000000000000
+      internalID: 373247455287461746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_17
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 182
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ea63f8581b39b80800000000000000
+      internalID: -8389166493669609875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_18
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 85
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2b8572eebb35430800000000000000
+      internalID: 3770563944575972053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_19
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 87
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fccd8e78923eebc70800000000000000
+      internalID: 8988871673791438031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_20
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 49
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68522f534705ee6e0800000000000000
+      internalID: -1806417940477500026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rice-bowl_21
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 43
+        width: 21
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4a86bb7beab54a10800000000000000
+      internalID: 1893124738934803021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      rice-bowl_0: -2311360770991639037
+      rice-bowl_1: -4055002366655977956
+      rice-bowl_10: 5498261190375733794
+      rice-bowl_11: -4416292411729856314
+      rice-bowl_12: 7493981337757731745
+      rice-bowl_13: 3651614991329346925
+      rice-bowl_14: 3855273955706329386
+      rice-bowl_15: -1233102420869097561
+      rice-bowl_16: 373247455287461746
+      rice-bowl_17: -8389166493669609875
+      rice-bowl_18: 3770563944575972053
+      rice-bowl_19: 8988871673791438031
+      rice-bowl_2: -976126458595986373
+      rice-bowl_20: -1806417940477500026
+      rice-bowl_21: 1893124738934803021
+      rice-bowl_3: 3086801806968255268
+      rice-bowl_4: -9096184632404244805
+      rice-bowl_5: -7062944957069316381
+      rice-bowl_6: 7696229850522537323
+      rice-bowl_7: 8014233382018139592
+      rice-bowl_8: -3103878487032055951
+      rice-bowl_9: -914246332619067289
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,131 @@
+{
+  "tool": "built-in image_gen",
+  "style": "User supplied hand-painted 2D Hanoi 2000-2004; fine brushwork, paper texture, natural muted colors; no 3D or photography",
+  "references": [
+    "https://drive.google.com/drive/folders/1D5-xH6wwMffoILFc9nQRoahZ3U4PM0kC",
+    "Existing AssetVault PNG style"
+  ],
+  "layout": "Drive first image: floor1 living front, bedroom1 middle-left, stairs middle-right, kitchen rear-left, WC1 rear-right; floor2 bedrooms2/3 left, separate shrine front-right, WC2 rear-right.",
+  "night_variants": "Lighting-only imagegen edits preserving daytime architecture.",
+  "assets": [
+    {
+      "name": "bedroom",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-7e74a468-6243-4521-b22e-b6461ac336df.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "hall",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-570f9d8b-1e1b-4504-9f49-a40389c81faa.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "living",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-145c2012-2a26-43bb-9418-a9aeb118bfb1.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "kitchen",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-710db3a2-0d57-477f-90c6-7ea0daa00fa1.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "bathroom",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-80228dc6-0123-4613-879a-aeef5c1ef1c1.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "shrine",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-08db38ce-d798-47e8-8f7c-a2de55c2f7d9.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "alley",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-2d7f8b5a-c4cc-4a3b-8f46-0d0307e0c0db.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "yard",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-da21c9bc-9d23-49b8-9ded-6c6549701ea9.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "hall-night",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-0bfb222d-f476-4dac-a77c-4b344dd3e59c.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "bedroom-night",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-49de1bf5-fc79-4cc0-94dd-32e65b4a875b.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "living-night",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-32a928cb-1864-4971-b196-90f297b01d23.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "bathroom-night",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-9f879b71-4ace-462c-8838-6e13dc22196e.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    },
+    {
+      "name": "rice-bowl",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-de143657-8bac-44d1-91e8-c76a04085198.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA"
+    },
+    {
+      "name": "bia",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-1fa04b5c-7786-4b3d-857d-c909d3b43838.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "name": "bang",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-b6f5b000-d98d-4294-9e19-3ca6c2a68cb4.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "name": "bao",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-853cb44b-0211-48ba-9000-a07e56a76833.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    },
+    {
+      "name": "woman-reflection",
+      "source": "C:\\Users\\Admin\\.codex\\generated_images\\01a19c88-1fc1-7471-81e6-777d3b3bf819\\exec-04640a1d-2984-4659-8270-173fd9a7db16.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA"
+    }
+  ]
+}

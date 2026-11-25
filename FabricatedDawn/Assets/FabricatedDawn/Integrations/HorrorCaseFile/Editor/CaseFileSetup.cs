@@ -66,9 +66,9 @@ namespace FabricatedDawn.CaseFile.Editor
                 var old = adapter.GetComponent<AdventureUI>();
                 if (old != null && old.enabled) throw new Exception("Both UI controllers are enabled.");
             });
-            Check(report, "Case File scene is first in the build scene list", () => {
+            Check(report, "Case File scene remains enabled in the build scene list", () => {
                 var scenes = EditorBuildSettings.scenes;
-                if (scenes.Length == 0 || !scenes[0].enabled || scenes[0].path != ScenePath)
+                if (!Array.Exists(scenes, scene => scene.enabled && scene.path == ScenePath))
                     throw new Exception("Wrong startup scene.");
             });
             const string reportPath = "Assets/FabricatedDawn/Reports/casefile-ui-verification.json";

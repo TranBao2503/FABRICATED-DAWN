@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace FabricatedDawn.Editor
@@ -45,8 +46,11 @@ namespace FabricatedDawn.Editor
                 if (dialogue.lines == null || dialogue.lines.Length == 0 || Array.Exists(dialogue.lines, string.IsNullOrWhiteSpace))
                     errors.Add("Empty dialogue: " + dialogue.id);
             }
+            foreach (var initialItem in content.initialItems ?? Array.Empty<ItemDefinition>())
+                if (initialItem == null || !content.items.Contains(initialItem)) errors.Add("Unknown initial item.");
             if (content.Room(content.startRoomId) == null) errors.Add("Unknown start room.");
-            if (!puzzleIds.Contains(content.completionPuzzleId ?? "")) errors.Add("Completion puzzle is never solved.");
+            if (!(content.isStoryDemo && string.IsNullOrEmpty(content.completionPuzzleId)) &&
+                !puzzleIds.Contains(content.completionPuzzleId ?? "")) errors.Add("Completion puzzle is never solved.");
             foreach (var room in content.rooms)
             {
                 if (room?.hotspots == null) continue;
@@ -59,7 +63,7 @@ namespace FabricatedDawn.Editor
                     if (!Finite(h.bounds.x) || !Finite(h.bounds.y) || !Finite(h.bounds.width) || !Finite(h.bounds.height) ||
                         h.bounds.width <= 0 || h.bounds.height <= 0 || h.bounds.xMin < 0 || h.bounds.yMin < 0 ||
                         h.bounds.xMax > 1 || h.bounds.yMax > 1) errors.Add("Invalid hotspot bounds: " + h.id);
-                    foreach (var puzzle in new[] { h.requiredPuzzle, h.visibleAfterPuzzle, h.hiddenAfterPuzzle })
+                    foreach (var puzzle in new[] { h.requiredPuzzle, h.visibleAfterPuzzle, h.hiddenAfterPuzzle }.Concat(h.requiredPuzzles ?? Array.Empty<string>()))
                         if (!string.IsNullOrEmpty(puzzle) && !puzzleIds.Contains(puzzle)) errors.Add("Puzzle has no producer: " + h.id + " -> " + puzzle);
                     if ((h.kind == InteractionKind.Pickup || h.kind == InteractionKind.UseItem) &&
                         (h.item == null || !Array.Exists(content.items, x => x == h.item))) errors.Add("Unknown item: " + h.id);
