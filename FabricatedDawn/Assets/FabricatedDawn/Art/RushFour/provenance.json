@@ -1,0 +1,41 @@
+{
+  "date": "2026-11-27",
+  "tool": "OpenAI Imagegen",
+  "style": "Repaint EDIT TARGET (first image) in the EXACT restrained ink-and-matte-gouache style of STYLE GUIDE (second image): clear fine dark-brown drawn outlines, deliberate slightly irregular shapes, flat cream/sage/grey/brown color washes, large quiet simple surfaces, very sparse brush detail, no glossy highlights or 3D material rendering, no artificial golden light, no repeated grain texture. Preserve target camera and architecture, furniture, ALL door and window positions precisely so existing game hotspots align. Ordinary Hanoi house2004. No people, no UI, no labels, no blood or fog. One opaque16:9 complete background. Match guide palette/edge quality consistently.",
+  "assets": [
+    {
+      "name": "living"
+    },
+    {
+      "name": "hall"
+    },
+    {
+      "name": "bedroom"
+    },
+    {
+      "name": "kitchen"
+    },
+    {
+      "name": "bathroom"
+    },
+    {
+      "name": "shrine"
+    },
+    {
+      "name": "yard"
+    },
+    {
+      "name": "alley"
+    },
+    {
+      "name": "living-past"
+    },
+    {
+      "name": "hall-past"
+    },
+    {
+      "name": "hidden-room"
+    }
+  ],
+  "note": "Repainted with OpenAI Imagegen; provisional art awaiting team approval. Existing AssetVault objects retained. No character portraits generated for this version."
+}

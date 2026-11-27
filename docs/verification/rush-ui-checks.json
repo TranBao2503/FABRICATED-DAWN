@@ -1,0 +1,24 @@
+{
+    "unityVersion": "6000.6.6f1",
+    "passed": [
+        "UI phase 0",
+        "UI phase 1",
+        "UI phase 2",
+        "UI phase 3",
+        "UI phase 4",
+        "UI phase 5",
+        "UI phase 6",
+        "UI phase 7",
+        "UI phase 8",
+        "UI phase 9",
+        "UI phase 10",
+        "UI phase 11",
+        "UI phase 12",
+        "UI phase 13",
+        "UI phase 14",
+        "UI phase 15",
+        "UI phase 16",
+        "UI phase 17"
+    ],
+    "failed": []
+}

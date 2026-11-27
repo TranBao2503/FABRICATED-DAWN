@@ -1,39 +1,35 @@
-# Fabricated Dawn — plugin và chuẩn bị dự án
+# Fabricated Dawn
 
-Game do nhóm 1 lớp thiết kế game 65CNTT làm
+Game kinh dị giải đố point-and-click Việt Nam của nhóm 1, lớp thiết kế game 65CNTT.
 
-Đã tạo hai phần đi cùng nhau:
+## Chơi bản hiện tại — Màn 1–4
 
-- **Fabricated Dawn Assistant:** plugin Codex để đọc tài liệu và hỗ trợ phát triển Unity.
-- **Fabricated Dawn Toolkit:** gói UPM có công cụ Unity Editor, dữ liệu khởi tạo và prototype M4.
+1. Unity Hub → **Add project from disk** → chọn thư mục **`FabricatedDawn`** trong repo. Dùng Unity **6000.6.6f1**.
+2. Mở `Assets/FabricatedDawn/Scenes/RushDemo.unity`, nhấn **Play → Bắt đầu**.
+3. Khi cần dựng lại: **Tools → Fabricated Dawn → Demo Màn 1–4 → Chuẩn bị và mở**.
 
-Google Docs gốc chỉ được đọc, không bị sửa, thêm bình luận hay thay quyền chia sẻ.
+Mở đầu giới thiệu Nam và nhóm sinh viên Thủy Lợi thuê nhà ở Hà Nội năm 2004. Chơi liên tục tới hết Màn 4: sinh hoạt và điềm lạ → Vỗ Vai Ma → hỏi chuyện/đối chiếu chứng cứ → cầu thang lặp và cánh cửa đổi cả căn nhà. Phòng thờ là phòng riêng trên tầng 2. Nhân vật là người que tạm; chưa thêm âm thanh. Nền và thoại triển khai đang chờ nhóm duyệt.
 
-## Bắt đầu trong Unity
+**Bản demo đầy đủ vẫn dự kiến 8 màn** với Bad End và ending thường. Cuối Màn 4 hiện là mốc tạm dừng phát triển, chưa phải ending thường.
 
-1. Trong Unity Hub, thêm thư mục `UnityProject` của workspace này. Dùng Unity **6000.6.6f1** đã cài trên máy.
-2. Mở **Tools > Fabricated Dawn > Toolkit**.
-3. Chọn **Tạo / mở prototype M4**, nhấn Play để thử thao tác quan sát dấu mốc → mở khóa → mở cửa.
+Xem [cách chơi, phạm vi, nguồn art và kiểm tra](docs/DEMO_1_4.md). Các scene `ChapterOne`, `StoryDemo` cũ được giữ để tham khảo; scene hiện tại là **RushDemo**.
 
-Các asset 8 màn, 8 phòng và 13 vật phẩm đã được tạo trong `Assets/FabricatedDawn/Data`. Phần hình ảnh, hotspot nội dung chính thức, âm thanh và hội thoại vẫn cần đội game xây dựng.
+## Công cụ dự án
 
-## Dùng plugin Codex
+- **Fabricated Dawn Assistant**: plugin Codex đọc tài liệu và hỗ trợ phát triển Unity; [hướng dẫn](fabricated-dawn-assistant/README.md).
+- **Fabricated Dawn Toolkit**: UPM package trong `FabricatedDawn/Packages/com.4koq.fabricated-dawn`, có dữ liệu, inventory, tương tác, checkpoint và các công cụ Editor.
+- `UnityProject` là scaffold toolkit ban đầu; dùng **FabricatedDawn** để mở bản game hiện tại.
+- Google Docs gốc chỉ được đọc; không sửa, bình luận hay thay quyền chia sẻ.
 
-Mở link plugin được trả trong chat, thêm/chọn plugin để dùng hai skills. Đọc Google Docs cần Google Drive đã kết nối. Plugin có chỉ dẫn đọc nguồn, giữ nguyên tài liệu và phân biệt yêu cầu chính thức với đề xuất triển khai.
+## Tài liệu
 
-Các script Node đi kèm hỗ trợ kiểm tra dự án, cài gói vào dự án được chỉ định và gọi ba lệnh Unity batch có phạm vi cố định. Không có server MCP hay kết nối live với Unity Editor.
+- [Hướng dẫn demo 1–4](docs/DEMO_1_4.md)
+- [Kế hoạch dự án ban đầu](docs/PROJECT_PLAN.md)
+- [Bản đọc thiết kế](fabricated-dawn-assistant/skills/unity-workflow/references/project-brief.md)
+- [Hướng dẫn Unity Toolkit](FabricatedDawn/Packages/com.4koq.fabricated-dawn/README.md)
 
-## Tài liệu và gói cài
+## Kiểm tra
 
-- [Kế hoạch dự án](docs/PROJECT_PLAN.md)
-- [Bản đọc thiết kế và các điểm cần chốt](fabricated-dawn-assistant/skills/unity-workflow/references/project-brief.md)
-- [Hướng dẫn Unity Toolkit](UnityProject/Packages/com.4koq.fabricated-dawn/README.md)
-- [Plugin Codex](fabricated-dawn-assistant/README.md)
-- `dist/fabricated-dawn-assistant-0.1.0.zip`: gói plugin Codex.
-- `dist/com.4koq.fabricated-dawn-0.1.0.tgz`: gói Unity Package Manager, chọn **Install package from tarball** nếu cài vào dự án khác.
+**Tools → Fabricated Dawn → Demo Màn 1–4 → Kiểm tra mạch chơi** kiểm tra đường chơi đầy đủ, nhánh lỗi, checkpoint và giới hạn ending; chạy kèm bộ kiểm tra ChapterOne và StoryDemo cũ. Báo cáo JSON trong `FabricatedDawn/Assets/FabricatedDawn/Reports`.
 
-## Kiểm chứng
-
-Unity 6000.6.6f1 đã biên dịch, tạo dữ liệu/scene và chạy **16/16 kiểm tra hành vi**. Chạy lại scaffold không thay nội dung catalog đã có.
-
-Xem `UnityProject/Assets/FabricatedDawn/Reports/verification-report.json` và `content-report.json`. Thiếu background/icon và True Ending chưa duyệt là cảnh báo dự kiến. Đây là bộ khởi đầu, chưa phải tám màn chơi hoàn chỉnh. Chưa kiểm tra tương tác UI trong Play mode hoặc build phát hành.
+**Kiểm tra giao diện trong Play** chạy một tour UI trong Unity, kiểm tra vùng bấm và khung chữ; ảnh và báo cáo ở thư mục tạm `FabricatedDawn-RushUI`. Đây là kiểm tra bản chơi trong Editor, chưa phải xác nhận chất lượng bản build phát hành.

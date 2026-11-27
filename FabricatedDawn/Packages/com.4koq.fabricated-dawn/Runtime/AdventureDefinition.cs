@@ -16,6 +16,12 @@ namespace FabricatedDawn
         public string visualClass;
         public Sprite artwork;
         public Rect artworkBounds;
+        public bool stickFigure;
+        public string characterTag;
+        public string[] requiredClues = Array.Empty<string>();
+        public bool opensPastDoor;
+        public bool leadsOutside;
+        public ItemDefinition protectionItem;
         public string requiredPuzzle;
         public string[] requiredPuzzles = Array.Empty<string>();
         public string requiredEvent;
@@ -47,6 +53,10 @@ namespace FabricatedDawn
         [TextArea] public string description;
         [TextArea] public string narration;
         public bool isTitleCard;
+        public bool pastOnly;
+        public bool presentOnly;
+        public bool nightScene;
+        public bool introCard;
         public Color placeholderColor = new Color(.22f, .28f, .24f);
         public Sprite presentBackground;
         public Sprite pastBackground;
@@ -66,6 +76,8 @@ namespace FabricatedDawn
     {
         public string id;
         public string speaker;
+        public string clueOnComplete;
+        public string puzzleOnComplete;
         [TextArea(2, 5)] public string[] lines = Array.Empty<string>();
     }
 

@@ -48,6 +48,11 @@ namespace FabricatedDawn.Editor
             }
             foreach (var initialItem in content.initialItems ?? Array.Empty<ItemDefinition>())
                 if (initialItem == null || !content.items.Contains(initialItem)) errors.Add("Unknown initial item.");
+            foreach (var d in content.dialogues) {
+                if (d == null) continue;
+                if (!string.IsNullOrEmpty(d.puzzleOnComplete)) puzzleIds.Add(d.puzzleOnComplete);
+                if (!string.IsNullOrEmpty(d.clueOnComplete) && content.Clue(d.clueOnComplete) == null) errors.Add("Unknown dialogue clue: " + d.id);
+            }
             if (content.Room(content.startRoomId) == null) errors.Add("Unknown start room.");
             if (!(content.isStoryDemo && string.IsNullOrEmpty(content.completionPuzzleId)) &&
                 !puzzleIds.Contains(content.completionPuzzleId ?? "")) errors.Add("Completion puzzle is never solved.");
@@ -58,6 +63,11 @@ namespace FabricatedDawn.Editor
                 {
                     if (h == null) continue;
                     Id(h.id, ids, errors);
+                    foreach (var clueId in h.requiredClues ?? Array.Empty<string>())
+                        if (content.Clue(clueId) == null) errors.Add("Unknown required clue: " + h.id);
+                    if (h.opensPastDoor && (room.chapter != 4 || h.kind != InteractionKind.Travel || content.Room(h.destinationRoom)?.pastOnly != true))
+                        errors.Add("Invalid past door: " + h.id);
+                    if (h.protectionItem != null && !content.items.Contains(h.protectionItem)) errors.Add("Unknown protection item: " + h.id);
                     if (string.IsNullOrWhiteSpace(h.label) || string.IsNullOrWhiteSpace(h.response)) errors.Add("Missing label/feedback: " + h.id);
                     if (!Enum.IsDefined(typeof(InteractionKind), h.kind)) errors.Add("Unknown interaction kind: " + h.id);
                     if (!Finite(h.bounds.x) || !Finite(h.bounds.y) || !Finite(h.bounds.width) || !Finite(h.bounds.height) ||

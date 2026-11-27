@@ -135,13 +135,14 @@ namespace FabricatedDawn
             return true;
         }
 
-        public bool OpenPastDoor()
+        public bool OpenPastDoor(string entryRoomId = "ROOM_01")
         {
-            if (State.chapter != 4 || State.world != WorldPhase.Present ||
+            if (string.IsNullOrWhiteSpace(entryRoomId) || !State.unlockedRooms.Contains(entryRoomId) ||
+                State.chapter != 4 || State.world != WorldPhase.Present ||
                 !State.solvedPuzzles.Contains("M4_LOOP") ||
                 !State.solvedPuzzles.Contains("M4_SIDE_DOOR")) return false;
             State.world = WorldPhase.PastEnclosed;
-            State.roomId = "ROOM_01";
+            State.roomId = entryRoomId;
             CompleteEvent("M4_DOOR_OPENED");
             return true;
         }

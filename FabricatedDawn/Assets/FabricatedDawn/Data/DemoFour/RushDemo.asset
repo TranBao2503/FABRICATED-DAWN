@@ -1,0 +1,5752 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40bac395c83864d4da9f8adfe51dcc60, type: 3}
+  m_Name: RushDemo
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.AdventureDefinition
+  contentId: fabricated-dawn-rush-four-v1
+  startRoomId: RUSH_INTRO
+  isStoryDemo: 1
+  plannedChapterCount: 8
+  initialItems:
+  - {fileID: 11400000, guid: 47570f2c060d48f44bc2edd20d1c8ba0, type: 2}
+  initiallyUnlockedRooms:
+  - M1_BEDROOM
+  - M1_HALL
+  - M1_LIVING
+  - M1_KITCHEN
+  - M1_WC1
+  - M1_WC2
+  - M1_SHRINE
+  - M1_YARD
+  - M1_ALLEY
+  - M1_BED_NIGHT
+  - M1_HALL_NIGHT
+  - M1_WC_NIGHT
+  - M1_HALL_RETURN
+  - M1_LATER
+  - M1_READY
+  - DEMO_LIVING
+  - DEMO_CHASE_STAIRS
+  - DEMO_CHASE_HALL
+  - DEMO_BAD
+  - DEMO_M2_SHRINE
+  - RUSH_INTRO
+  - M3_HOME
+  - M3_PHONE
+  - M3_STREET
+  - M3_SHOP
+  - M3_BOARD
+  - M3_PACK_ROOM
+  - M4_LOOP_A
+  - M4_LOOP_B
+  - M4_SIDE
+  - M4_PAST_ENTRY
+  - M4_PAST_HALL
+  - M4_HIDDEN
+  - M4_MILESTONE
+  initialObjective: "H\xE0 N\u1ED9i, 2004 \xB7 Nh\u1EEFng ng\xE0y \u1EDF tr\u1ECD"
+  objectiveUpdates:
+  - afterPuzzle: RUSH_INTRO_DONE
+    text: "D\u1ECDn \u0111\u1ED3: t\xECm ch\xECa tr\xEAn b\xE0n, ch\u1ECDn ch\xECa r\u1ED3i m\u1EDF t\u1EE7."
+  - afterPuzzle: M1_CABINET
+    text: "\u0110\u1ECDc l\u1EDDi nh\u1EAFn trong t\u1EE7 r\u1ED3i xu\u1ED1ng ph\xF2ng kh\xE1ch g\u1EB7p c\xE1c b\u1EA1n."
+  - afterPuzzle: M1_NOTE
+    text: "Xu\u1ED1ng ph\xF2ng kh\xE1ch: n\xF3i chuy\u1EC7n v\u1EDBi Bia, B\u0103ng, B\u1EA3o v\xE0 xem m\xE2m c\u01A1m."
+  - afterPuzzle: M1_BOWL
+    text: "\u0110i quanh nh\xE0: r\u1EEDa m\u1EB7t \u1EDF WC 2, xem k\u1EF9 g\u01B0\u01A1ng v\xE0 gh\xE9 ph\xF2ng th\u1EDD ri\xEAng t\u1EA7ng 2."
+  - afterPuzzle: M1_ROUTE
+    text: "Xem g\u01B0\u01A1ng \u1EDF WC 2 v\xE0 n\xF3i chuy\u1EC7n \u0111\u1EE7 ba ng\u01B0\u1EDDi b\u1EA1n. Xong th\xEC v\u1EC1 ph\xF2ng ng\u1EE7 ngh\u1EC9."
+  - afterPuzzle: M1_NIGHT
+    text: "N\u1EEDa \u0111\xEAm: ra h\xE0nh lang, quan s\xE1t b\xF3ng \u0111\u1ECF r\u1ED3i \u0111i v\u1EC7 sinh."
+  - afterPuzzle: M1_NIGHT_WC
+    text: "Tr\u1EDF l\u1EA1i h\xE0nh lang. Qu\u1EA3 b\xF3ng \u0111\xE3 n\u1EB1m tr\u01B0\u1EDBc c\u1EEDa ph\xF2ng ng\u1EE7?"
+  - afterPuzzle: M1_BALLOON
+    text: "V\u1EC1 ph\xF2ng ng\u1EE7. Nh\u1EEFng ng\xE0y \u1EDF tr\u1ECD v\u1EABn ti\u1EBFp t\u1EE5c\u2026"
+  - afterPuzzle: M1_READY
+    text: "M\u1ED9t t\u1ED1i kh\xE1c: nghe c\xE1c b\u1EA1n b\xE0n chuy\u1EC7n l\u1EA1. Checkpoint \u0111\u01B0\u1EE3c l\u01B0u tr\u01B0\u1EDBc V\u1ED7 Vai Ma."
+  - afterPuzzle: DEMO_GAME_START
+    text: "M\xE0n 2: \u0111i theo l\u01B0\u1EE3t qua b\u1ED1n g\xF3c ph\xF2ng."
+  - afterPuzzle: DEMO_CORNER_4
+    text: "C\xF3 ng\u01B0\u1EDDi \u1EDF g\xF3c tr\u1ED1ng. Ch\u1EA1y ra c\u1EA7u thang!"
+  - afterPuzzle: DEMO_M2_COMPLETE
+    text: "\u0110\xE3 t\u1EDBi ph\xF2ng th\u1EDD. N\xF3i chuy\u1EC7n v\u1EDBi b\xE1c qu\u1EA3n l\xFD, \u0111\u1EE3i tr\u1EDDi s\xE1ng."
+  - afterPuzzle: M3_BEGIN
+    text: "T\xECm gi\u1EA5y thu\xEA v\xE0 \u1EA3nh gia \u0111\xECnh; g\u1ECDi v\u1EC1 nh\xE0, h\u1ECFi b\xE0 cho thu\xEA v\xE0 ng\u01B0\u1EDDi h\xE0ng x\xF3m."
+  - afterPuzzle: M3_EVIDENCE
+    text: "\u0110\u1ED1i chi\u1EBFu gi\u1EA5y thu\xEA, \u1EA3nh, l\u1EDDi ng\u01B0\u1EDDi nh\xE0 v\xE0 l\u1EDDi h\xE0ng x\xF3m \u1EDF b\xE0n ph\xF2ng kh\xE1ch."
+  - afterPuzzle: M3_COMPARE
+    text: "L\u1EA5y ch\xECa c\u1EEDa ph\u1EE5 trong ng\u0103n t\u1EE7. Gh\xE9 h\xE0ng t\u1EA1p h\xF3a, h\u1ECFi ng\u01B0\u1EDDi bi\u1EBFt vi\u1EC7c th\u1EDD c\xFAng r\u1ED3i nh\u1EADn v\u1EADt tr\u1EA5n."
+  - afterPuzzle: M3_PACK
+    text: "\u0110\xE3 gom h\xE0nh l\xFD. Th\u1EED xu\u1ED1ng c\u1EA7u thang \u0111\u1EC3 r\u1EDDi c\u0103n nh\xE0."
+  - afterPuzzle: M4_BEGIN
+    text: "C\u1EA7u thang \u0111\u01B0a nh\xF3m tr\u1EDF l\u1EA1i. Th\u1EED l\u1ED1i \u0111i, ghi l\u1EA1i th\u1EE9 kh\xF4ng \u0111\u1ED5i qua m\u1ED7i l\u01B0\u1EE3t."
+  - afterPuzzle: M4_MARK_B
+    text: "\u0110\u1ED1i chi\u1EBFu \xF4 g\u1EA1ch d\u01B0\u1EDBi c\u1EEDa tho\xE1ng v\u1EDBi s\u01A1 \u0111\u1ED3 s\u1EEDa nh\xE0. Ch\u1ECDn l\u1ED1i d\u1EABn v\u1EC1 ph\xEDa b\u1EBFp."
+  - afterPuzzle: M4_LOOP
+    text: "\u0110\xE3 t\xECm \u0111\u01B0\u1EE3c c\u1EEDa ph\u1EE5. Ch\u1ECDn ch\xECa trong t\xFAi r\u1ED3i m\u1EDF ch\u1ED1t theo s\u01A1 \u0111\u1ED3."
+  - afterPuzzle: M4_SIDE_DOOR
+    text: "C\u1EEDa \u0111\xE3 m\u1EDF kh\xF3a. B\u01B0\u1EDBc qua c\u1EEDa ph\u1EE5 \u0111\u1EC3 t\xECm l\u1ED1i ra."
+  - afterPuzzle: M4_CHANGED
+    text: "C\u0103n nh\xE0 \u0111\xE3 \u0111\u1ED5i kh\xE1c. Ki\u1EC3m tra c\u1EEDa ra, c\u1EEDa s\u1ED5 v\xE0 c\u0103n ph\xF2ng v\u1EEBa xu\u1EA5t hi\u1EC7n."
+  - afterPuzzle: M4_WINDOW
+    text: "T\xECm c\u0103n ph\xF2ng gi\u1ED1ng trong \u1EA3nh gia \u0111\xECnh v\xE0 \u0111\u1ED1i chi\u1EBFu \u0111\u1ED3 v\u1EADt b\xEAn trong."
+  completedObjective: "M\xE0n 4 ho\xE0n t\u1EA5t. C\u1EA3 nh\xF3m b\u1ECB gi\u1EEF l\u1EA1i trong c\u0103n nh\xE0 c\u0169; c\xE2u chuy\u1EC7n v\u1EABn c\xF2n ti\u1EBFp."
+  completionPuzzleId: M4_COMPLETE
+  items:
+  - {fileID: 11400000, guid: d633d815f8b7b8c4cb34419ca4a599ab, type: 2}
+  - {fileID: 11400000, guid: 47570f2c060d48f44bc2edd20d1c8ba0, type: 2}
+  - {fileID: 11400000, guid: 4e1c310acedce8744b87e34002f65f84, type: 2}
+  - {fileID: 11400000, guid: adb842b2a86fb4441abbf79d81342d71, type: 2}
+  - {fileID: 11400000, guid: 620708b9c160a7c41b78a2004eeeed86, type: 2}
+  - {fileID: 11400000, guid: 992a394e77ec2bc4296600a019f5c19c, type: 2}
+  - {fileID: 11400000, guid: b7e973f0fed6f484dbe2829334f267ce, type: 2}
+  rooms:
+  - id: M1_BEDROOM
+    title: "Ph\xF2ng ng\u1EE7 2 \xB7 ph\xF2ng c\u1EE7a nh\xF3m"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    pastBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    hotspots:
+    - id: M1_KEY_PICK
+      label: "Ch\xECa kh\xF3a tr\xEAn b\xE0n"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.735
+        y: 0.475
+        width: 0.065
+        height: 0.07
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 86dba4b3f03a4a8882634ab7053e34c1, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: d633d815f8b7b8c4cb34419ca4a599ab, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nh\u1EB7t \u0111\u01B0\u1EE3c ch\xECa kh\xF3a. M\u1EDF T\xFAi \u0111\u1ED3 ho\u1EB7c ch\u1ECDn ch\xECa \u1EDF thanh d\u01B0\u1EDBi r\u1ED3i nh\u1EA5n v\xE0o t\u1EE7."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_CABINET_USE
+      label: "T\u1EE7 qu\u1EA7n \xE1o \xB7 d\xF9ng ch\xECa kh\xF3a"
+      kind: 2
+      bounds:
+        serializedVersion: 2
+        x: 0.46
+        y: 0.19
+        width: 0.18
+        height: 0.55
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: M1_CABINET
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: d633d815f8b7b8c4cb34419ca4a599ab, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_CABINET
+      unlocksRoom: 
+      response: "Kh\xF3a b\u1EADt m\u1EDF. C\xF3 l\u1EDDi nh\u1EAFn b\xEAn trong t\u1EE7."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_NOTE_READ
+      label: "L\u1EDDi nh\u1EAFn trong t\u1EE7"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.515
+        y: 0.38
+        width: 0.1
+        height: 0.14
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 978da5661c164da68e22d0b2cbb9f3d6, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M1_CABINET
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_NOTE_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_NOTE
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BED_OUT
+      label: "Ra h\xE0nh lang \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.88
+        y: 0.32
+        width: 0.1
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M1_NOTE
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "D\u1ECDn \u0111\u1ED3 v\xE0 \u0111\u1ECDc l\u1EDDi nh\u1EAFn trong t\u1EE7 tr\u01B0\u1EDBc \u0111\xE3."
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_SLEEP
+      label: "Ngh\u1EC9 t\u1EDBi khuya"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.67
+        width: 0.21
+        height: 0.075
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M1_BOWL
+      - M1_HAND
+      - M1_ROUTE
+      requiredEvent: 
+      requiredEvents:
+      - dialogue:M1_BIA_TALK
+      - dialogue:M1_BANG_TALK
+      - dialogue:M1_BAO_TALK
+      visibleAfterPuzzle: M1_ROUTE
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_BED_NIGHT
+      solvesPuzzle: M1_NIGHT
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "Tr\u01B0\u1EDBc khi ngh\u1EC9: g\u1EB7p \u0111\u1EE7 ba b\u1EA1n, xem m\xE2m c\u01A1m, r\u1EEDa m\u1EB7t v\xE0 xem k\u1EF9 g\u01B0\u01A1ng \u1EDF WC 2, gh\xE9 ph\xF2ng th\u1EDD."
+      checkpointAfter: 1
+      sceneHotspot: 1
+    - id: M1_PACK
+      label: "S\u1EAFp l\u1EA1i gi\xE1o tr\xECnh"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.16
+        y: 0.54
+        width: 0.12
+        height: 0.16
+      visualClass: 
+      artwork: {fileID: 21300000, guid: b3f607a61dc8497196ba48ae7a5d58c0, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam x\u1EBFp gi\xE1o tr\xECnh l\xEAn \u0111\u1EA7u gi\u01B0\u1EDDng, c\u1EA5t qu\u1EA7n \xE1o v\xE0o t\u1EE7. B\xEAn ngo\xE0i, ti\u1EBFng qu\u1EA1t \u0111\u1EC1u \u0111\u1EC1u."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_HALL
+    title: "H\xE0nh lang t\u1EA7ng 2"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: M1_HALL_BED
+      label: "\u2190 Ph\xF2ng ng\u1EE7 2"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.015
+        y: 0.35
+        width: 0.11
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_BEDROOM
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_HALL_SHRINE
+      label: "Ph\xF2ng th\u1EDD ri\xEAng \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.9
+        y: 0.31
+        width: 0.095
+        height: 0.42
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_SHRINE
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_HALL_WC
+      label: WC 2
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.755
+        y: 0.27
+        width: 0.09
+        height: 0.39
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_WC2
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_HALL_DOWN
+      label: "\u2193 Xu\u1ED1ng t\u1EA7ng 1"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.68
+        y: 0.72
+        width: 0.2
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_LIVING
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BED3
+      label: "Ph\xF2ng ng\u1EE7 3"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.235
+        y: 0.23
+        width: 0.17
+        height: 0.45
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ph\xF2ng ng\u1EE7 ph\xEDa sau \u0111ang \u0111\xF3ng. L\u1ED1i gi\u1EEFa nh\xE0 v\u1EABn \u0111\u1EE7 tho\xE1ng \u0111\u1EC3 \u0111i l\u1EA1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_SOUND
+      label: "L\u1EAFng nghe"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.47
+        y: 0.24
+        width: 0.16
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "M\u1ED9t ti\u1EBFng ho khan, r\u1ED3i ti\u1EBFng d\xE9p l\xEA. Nam ng\u1EA9ng l\xEAn nh\u01B0ng kh\xF4ng th\u1EA5y ai b\u01B0\u1EDBc ra."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_LIVING
+    title: "Ph\xF2ng kh\xE1ch \xB7 b\u1EEFa c\u01A1m b\u1ED1n ng\u01B0\u1EDDi"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: M1_MEAL
+      label: "M\xE2m c\u01A1m"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.39
+        y: 0.69
+        width: 0.2
+        height: 0.16
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\u1ED1n b\u1ED9 b\xE1t \u0111\u0169a \u0111\u01B0\u1EE3c b\xE0y cho b\u1ED1n ng\u01B0\u1EDDi. C\xF3 th\u1EE9 g\xEC nh\u1ECF h\u01A1n n\u1EB1m c\u1EA1nh ch\xFAng?"
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_LIVING_UP
+      label: "\u2191 C\u1EA7u thang l\xEAn t\u1EA7ng 2"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.74
+        y: 0.3
+        width: 0.18
+        height: 0.38
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_LIVING_KITCHEN
+      label: "B\u1EBFp + \u0103n \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.53
+        y: 0.25
+        width: 0.11
+        height: 0.32
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_KITCHEN
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_LIVING_STREET
+      label: "\u2190 Ra ng\xF5"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.015
+        y: 0.69
+        width: 0.12
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_ALLEY
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BED1
+      label: "Ph\xF2ng ng\u1EE7 1"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.275
+        y: 0.255
+        width: 0.115
+        height: 0.36
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ph\xF2ng ng\u1EE7 t\u1EA7ng 1 n\u1EB1m b\xEAn tr\xE1i l\u1ED1i \u0111i. C\u1EEDa \u0111ang \u0111\xF3ng, kh\xF4ng c\u1EA7n v\xE0o l\xFAc n\xE0y."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BIA
+      label: "N\xF3i chuy\u1EC7n v\u1EDBi Bia"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.245
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.22
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: Bia
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_BIA_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BANG
+      label: "N\xF3i chuy\u1EC7n v\u1EDBi B\u0103ng"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.44500002
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.42000002
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "B\u0103ng"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_BANG_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BAO
+      label: "N\xF3i chuy\u1EC7n v\u1EDBi B\u1EA3o"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.645
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.62
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "B\u1EA3o"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_BAO_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_RICE_0
+      label: "B\xE1t c\u01A1m c\u1EE7a nh\xF3m"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.405
+        y: 0.72
+        width: 0.05
+        height: 0.065
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 5fffdae4134814d4ebddde0ee3560dd3, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\xE1t c\u01A1m b\xECnh th\u01B0\u1EDDng. B\u1ED1n ng\u01B0\u1EDDi, b\u1ED1n chi\u1EBFc b\xE1t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_RICE_1
+      label: "B\xE1t c\u01A1m c\u1EE7a nh\xF3m"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.47
+        y: 0.72
+        width: 0.05
+        height: 0.065
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 5fffdae4134814d4ebddde0ee3560dd3, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\xE1t c\u01A1m b\xECnh th\u01B0\u1EDDng. B\u1ED1n ng\u01B0\u1EDDi, b\u1ED1n chi\u1EBFc b\xE1t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_RICE_2
+      label: "B\xE1t c\u01A1m c\u1EE7a nh\xF3m"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.405
+        y: 0.78400004
+        width: 0.05
+        height: 0.065
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 5fffdae4134814d4ebddde0ee3560dd3, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\xE1t c\u01A1m b\xECnh th\u01B0\u1EDDng. B\u1ED1n ng\u01B0\u1EDDi, b\u1ED1n chi\u1EBFc b\xE1t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_RICE_3
+      label: "B\xE1t c\u01A1m c\u1EE7a nh\xF3m"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.47
+        y: 0.78400004
+        width: 0.05
+        height: 0.065
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 5fffdae4134814d4ebddde0ee3560dd3, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "B\xE1t c\u01A1m b\xECnh th\u01B0\u1EDDng. B\u1ED1n ng\u01B0\u1EDDi, b\u1ED1n chi\u1EBFc b\xE1t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_BOWL_LOOK
+      label: "Chi\u1EBFc b\xE1t nh\u1ECF th\u1EE9 n\u0103m \xB7 xem hoa v\u0103n"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.525
+        y: 0.735
+        width: 0.055
+        height: 0.07
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 23e631446d334897b1d645727f018eb5, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: M1_BOWL
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_BOWL_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_BOWL
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M1_KITCHEN
+    title: "B\u1EBFp v\xE0 ch\u1ED7 \u0103n \xB7 t\u1EA7ng 1"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: da44ae8748e528c408974c623bbb721c, type: 3}
+    pastBackground: {fileID: 21300000, guid: da44ae8748e528c408974c623bbb721c, type: 3}
+    hotspots:
+    - id: M1_COOK
+      label: "Ph\u1EE5 chu\u1EA9n b\u1ECB b\u1EEFa \u0103n"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.19
+        y: 0.4
+        width: 0.2
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam ki\u1EC3m tra b\u1EBFp, \u0111\u1ED5 n\u01B0\u1EDBc v\xE0o \u1EA5m. Ng\xE0y mai t\u1EDBi l\u01B0\u1EE3t m\xECnh n\u1EA5u. B\u1EBFp nh\xE0 d\xE2n v\u1EABn d\xF9ng b\xECnh th\u01B0\u1EDDng."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_KITCHEN_BACK
+      label: "\u2190 Ph\xF2ng kh\xE1ch"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.01
+        y: 0.32
+        width: 0.1
+        height: 0.35
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_LIVING
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_KITCHEN_YARD
+      label: "C\u1EEDa ph\u1EE5 \xB7 s\xE2n sau"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.49
+        y: 0.23
+        width: 0.2
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_YARD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_KITCHEN_WC
+      label: WC 1
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.81
+        y: 0.27
+        width: 0.12
+        height: 0.43
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_WC1
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_WC1
+    title: "Nh\xE0 v\u1EC7 sinh 1 \xB7 t\u1EA7ng 1"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    hotspots:
+    - id: M1_WC1_TAP
+      label: "V\xF2i n\u01B0\u1EDBc"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.43
+        y: 0.49
+        width: 0.18
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "V\xF2i n\u01B0\u1EDBc v\u1EABn ho\u1EA1t \u0111\u1ED9ng b\xECnh th\u01B0\u1EDDng."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_WC1_BACK
+      label: "\u2190 V\u1EC1 b\u1EBFp"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.01
+        y: 0.36
+        width: 0.13
+        height: 0.35
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_KITCHEN
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_WC2
+    title: "Nh\xE0 v\u1EC7 sinh 2 \xB7 t\u1EA7ng 2"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    hotspots:
+    - id: M1_WASH
+      label: "R\u1EEDa m\u1EB7t"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.43
+        y: 0.49
+        width: 0.18
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: M1_WASHED
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_WASHED
+      unlocksRoom: 
+      response: "Nam c\xFAi xu\u1ED1ng r\u1EEDa m\u1EB7t, r\u1ED3i ng\u1EA9ng nh\xECn v\xE0o g\u01B0\u01A1ng. C\xF3 b\xF3ng ai ph\xEDa sau?"
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_MIRROR
+      label: "B\xF3ng ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF trong g\u01B0\u01A1ng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.46
+        y: 0.18
+        width: 0.13
+        height: 0.27
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.46
+        y: 0.18
+        width: 0.13
+        height: 0.27
+      stickFigure: 1
+      characterTag: '?'
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M1_WASHED
+      hiddenAfterPuzzle: M1_TURNED
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_MIRROR_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_MIRROR
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_TURN
+      label: "Quay l\u1EA1i nh\xECn ph\xEDa sau"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.68
+        y: 0.39
+        width: 0.2
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M1_MIRROR
+      hiddenAfterPuzzle: M1_TURNED
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_TURNED
+      unlocksRoom: 
+      response: "Ph\xEDa sau tr\u1ED1ng kh\xF4ng. Khi Nam quay v\u1EC1 g\u01B0\u01A1ng, s\xE1t ch\xE2n g\u01B0\u01A1ng hi\u1EC7n m\u1ED9t d\u1EA5u tay nh\u1ECF."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_HAND
+      label: "D\u1EA5u b\xE0n tay nh\u1ECF d\u01B0\u1EDBi g\u01B0\u01A1ng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.54
+        y: 0.39
+        width: 0.055
+        height: 0.07
+      visualClass: 
+      artwork: {fileID: 21300000, guid: a3a6199f2e26460aafd7c2c3803618f5, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M1_TURNED
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_HAND_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_HAND
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_WC2_BACK
+      label: "\u2190 Ra h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.01
+        y: 0.36
+        width: 0.13
+        height: 0.35
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_SHRINE
+    title: "Ph\xF2ng th\u1EDD ri\xEAng \xB7 t\u1EA7ng 2"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: b4415c6b5fd06e040b0fd52791e33412, type: 3}
+    pastBackground: {fileID: 21300000, guid: b4415c6b5fd06e040b0fd52791e33412, type: 3}
+    hotspots:
+    - id: M1_SHRINE_SIGN
+      label: "K\xFD hi\u1EC7u d\xF2ng h\u1ECD \xB7 xem k\u1EF9"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.48
+        y: 0.37
+        width: 0.065
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 1cb180b3b2bb42ba8ca3cda55da7691d, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_ROUTE_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_ROUTE
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_SHRINE_SILENCE
+      label: "L\u1EAFng nghe trong ph\xF2ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.22
+        y: 0.58
+        width: 0.21
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "C\u0103n ph\xF2ng y\xEAn t\u0129nh \u0111\u1EBFn l\u1EA1. Ti\u1EBFng qu\u1EA1t v\xE0 ti\u1EBFng ng\u01B0\u1EDDi b\xEAn ngo\xE0i d\u01B0\u1EDDng nh\u01B0 xa h\u1EB3n."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_SHRINE_BACK
+      label: "Ra h\xE0nh lang \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.87
+        y: 0.29
+        width: 0.12
+        height: 0.43
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_YARD
+    title: "S\xE2n sau \xB7 sau c\u1EEDa ph\u1EE5"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 941f5cb6a5bb1a74792e518b6dda2b39, type: 3}
+    pastBackground: {fileID: 21300000, guid: 941f5cb6a5bb1a74792e518b6dda2b39, type: 3}
+    hotspots:
+    - id: M1_LAUNDRY
+      label: "Ph\u01A1i \xE1o sau nh\xE0"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.25
+        y: 0.35
+        width: 0.28
+        height: 0.25
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam gi\u0169 \xE1o r\u1ED3i m\u1EAFc l\xEAn d\xE2y. Gi\xF3 l\xF9a qua ch\u1EADu c\xE2y v\xE0 m\xE1i t\xF4n. \u0110\xE2y v\u1EABn ch\u1EC9 l\xE0 m\u1ED9t ng\xE0y \u1EDF tr\u1ECD b\xECnh th\u01B0\u1EDDng."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_YARD_BACK
+      label: "\u2190 C\u1EEDa ph\u1EE5 v\u1EC1 b\u1EBFp"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.79
+        y: 0.39
+        width: 0.18
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_KITCHEN
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_ALLEY
+    title: "H\xE0ng t\u1EA1p h\xF3a \u0111\u1EA7u ng\xF5"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    hotspots:
+    - id: M1_DOG
+      label: "Ti\u1EBFng ch\xF3 s\u1EE7a \u0111\u1EA7u ng\xF5"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.48
+        y: 0.42
+        width: 0.15
+        height: 0.24
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_DOG_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_DOG
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_SHOP
+      label: "Mua \xEDt m\xEC v\xE0 \u0111\u1ED3 d\xF9ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.25
+        y: 0.35
+        width: 0.17
+        height: 0.25
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam v\xE0 c\xE1c b\u1EA1n mua th\xEAm m\u1EA5y g\xF3i m\xEC, x\xE0 ph\xF2ng. [Ph\u1EE5 \u0111\u1EC1: ch\xF3 s\u1EE7a ph\xEDa \u0111\u1EA7u ng\xF5.] Kh\xF4ng ai hi\u1EC3u v\xEC sao n\xF3 s\u1EE7a."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_ALLEY_BACK
+      label: "V\u1EC1 nh\xE0 \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.84
+        y: 0.37
+        width: 0.15
+        height: 0.3
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_LIVING
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_BED_NIGHT
+    title: "Ph\xF2ng ng\u1EE7 2 \xB7 n\u1EEDa \u0111\xEAm"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    pastBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    hotspots:
+    - id: M1_NIGHT_OUT
+      label: "Ra ngo\xE0i \u0111i v\u1EC7 sinh \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.88
+        y: 0.32
+        width: 0.1
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL_NIGHT
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_HALL_NIGHT
+    title: "H\xE0nh lang t\u1EA7ng 2 \xB7 \u0111\xEAm"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: M1_FLOAT
+      label: "B\xF3ng \u0111\u1ECF l\u01A1 l\u1EEDng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.39
+        y: 0.28
+        width: 0.13
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 21300000, guid: bd5d511eebbd411d94ec5ed67e05a903, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_FLOAT
+      unlocksRoom: 
+      response: "Qu\u1EA3 b\xF3ng l\u01A1 l\u1EEDng. S\u1EE3i d\xE2y c\u0103ng th\u1EB3ng xu\u1ED1ng d\u01B0\u1EDBi nh\u01B0 c\xF3 m\u1ED9t b\xE0n tay \u0111ang gi\u1EEF."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_NIGHT_TO_WC
+      label: WC 2
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.755
+        y: 0.27
+        width: 0.09
+        height: 0.39
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M1_FLOAT
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_WC_NIGHT
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "C\xF3 th\u1EE9 g\xEC m\xE0u \u0111\u1ECF ngay gi\u1EEFa h\xE0nh lang. Nh\xECn k\u1EF9 m\u1ED9t ch\xFAt\u2026"
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_NIGHT_NOISE
+      label: "L\u1EAFng nghe"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.55
+        y: 0.19
+        width: 0.18
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ti\u1EBFng d\xE9p l\xEA, ti\u1EBFng ch\xE2n nh\u1ECF v\xE0 ba ti\u1EBFng g\xF5 t\u1EE7. M\u1ECDi th\u1EE9 l\u1EA1i im b\u1EB7t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_WC_NIGHT
+    title: "WC 2 \xB7 n\u1EEDa \u0111\xEAm"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5061a84462447d0419c260b8e2260a1d, type: 3}
+    hotspots:
+    - id: M1_NIGHT_WASH
+      label: "D\xF9ng WC r\u1ED3i r\u1EEDa tay"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.43
+        y: 0.49
+        width: 0.18
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_NIGHT_WC
+      unlocksRoom: 
+      response: "N\u01B0\u1EDBc ch\u1EA3y nh\u1ECF gi\u1ECDt. Trong g\u01B0\u01A1ng l\xFAc n\xE0y kh\xF4ng c\xF3 ai kh\xE1c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_NIGHT_RETURN
+      label: "\u2190 Ra h\xE0nh lang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.01
+        y: 0.36
+        width: 0.13
+        height: 0.35
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M1_NIGHT_WC
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_HALL_RETURN
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M1_HALL_RETURN
+    title: "Tr\u01B0\u1EDBc c\u1EEDa ph\xF2ng ng\u1EE7 \xB7 \u0111\xEAm"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: M1_BALLOON_RETURN
+      label: "B\xF3ng \u0111\u1ECF n\u1EB1m tr\u01B0\u1EDBc c\u1EEDa ph\xF2ng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.1
+        y: 0.67
+        width: 0.12
+        height: 0.16
+      visualClass: 
+      artwork: {fileID: 21300000, guid: bd5d511eebbd411d94ec5ed67e05a903, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: M1_BALLOON
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M1_BALLOON_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M1_BALLOON
+      unlocksRoom: 
+      response: "\u0110\xE3 xem k\u1EF9 v\xE0 ghi l\u1EA1i trong s\u1ED5 manh m\u1ED1i."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_RETURN_BED
+      label: "\u2190 V\xE0o ph\xF2ng ng\u1EE7"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.015
+        y: 0.35
+        width: 0.11
+        height: 0.4
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M1_BALLOON
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_LATER
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M1_LATER
+    title: "Nh\u1EEFng ng\xE0y sau \u0111\xF3"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: "QUA V\xC0I NG\xC0Y\n\nV\u1EABn nh\u1EEFng bu\u1ED5i h\u1ECDc, b\u1EEFa c\u01A1m v\xE0 chuy\u1EC7n v\u1EB7t.\nNh\u1EEFng \u0111i\u1EC1u l\u1EA1 trong nh\xE0 ch\u01B0a c\xF3 l\u1EDDi gi\u1EA3i."
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    pastBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    hotspots:
+    - id: M1_NEXT_EVENING
+      label: "M\u1ED9t t\u1ED1i kh\xE1c \xB7 xu\u1ED1ng g\u1EB7p c\xE1c b\u1EA1n \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.31
+        y: 0.66
+        width: 0.38
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_READY
+      solvesPuzzle: M1_READY
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M1_READY
+    title: "Ph\xF2ng kh\xE1ch \xB7 m\u1ED9t t\u1ED1i kh\xE1c"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.23, g: 0.24, b: 0.21, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: M1_END_GROUP
+      label: "Ng\u1ED3i c\xF9ng c\xE1c b\u1EA1n \xB7 nh\u1EAFc chuy\u1EC7n l\u1EA1"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.245
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.22
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: Bia
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_END_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_TO_M2
+      label: "B\u1EAFt \u0111\u1EA7u M\xE0n 2 \xB7 V\u1ED7 Vai Ma \u2192"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.81
+        y: 0.66
+        width: 0.17
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:M1_END_TALK
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_LIVING
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "M\xE0n 2 \xB7 Ng\u01B0\u1EDDi th\u1EE9 n\u0103m. M\u1ED9t tr\xF2 \u0111\xF9a trong c\u0103n ph\xF2ng \u0111\xF3ng c\u1EEDa."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_END_BANG
+      label: "B\u0103ng \xB7 nghe chuy\u1EC7n l\u1EA1"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.44500002
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.42000002
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "B\u0103ng"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_END_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M1_END_BAO
+      label: "B\u1EA3o \xB7 nghe chuy\u1EC7n l\u1EA1"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.645
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.62
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "B\u1EA3o"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M1_END_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c tr\xF2 chuy\u1EC7n v\u1EABn ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: DEMO_LIVING
+    title: "Ph\xF2ng kh\xE1ch \xB7 V\u1ED7 Vai Ma"
+    subtitle: "M\xC0N 2 \xB7 NG\u01AF\u1EDCI TH\u1EE8 N\u0102M"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.29, g: 0.25, b: 0.2, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: DEMO_GAME_BEGIN
+      label: "C\xE1c b\u1EA1n\nCh\u01A1i V\u1ED7 Vai Ma"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.05
+        y: 0.27
+        width: 0.2
+        height: 0.4
+      visualClass: friend
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: DEMO_GAME_START
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: DEMO_GAME_DIALOGUE
+      destinationRoom: 
+      solvesPuzzle: DEMO_GAME_START
+      unlocksRoom: 
+      response: "\u0110\xE8n t\u1EAFt. B\u1ED1n ng\u01B0\u1EDDi \u0111\u1EE9ng v\xE0o b\u1ED1n g\xF3c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: DEMO_CORNER_HOTSPOT_1
+      label: "\u0110i t\u1EDBi g\xF3c c\u1EE7a Bia"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      visualClass: friend
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      stickFigure: 1
+      characterTag: Bia
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:DEMO_GAME_DIALOGUE
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_GAME_START
+      hiddenAfterPuzzle: DEMO_CORNER_1
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_1
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: DEMO_CORNER_HOTSPOT_2
+      label: "\u0110i t\u1EDBi g\xF3c c\u1EE7a B\u0103ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      visualClass: friend
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      stickFigure: 1
+      characterTag: "B\u0103ng"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:DEMO_GAME_DIALOGUE
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_CORNER_1
+      hiddenAfterPuzzle: DEMO_CORNER_2
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_2
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: DEMO_CORNER_HOTSPOT_3
+      label: "\u0110i t\u1EDBi g\xF3c c\u1EE7a B\u1EA3o"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.52
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      visualClass: friend
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.52
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      stickFigure: 1
+      characterTag: "B\u1EA3o"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:DEMO_GAME_DIALOGUE
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_CORNER_2
+      hiddenAfterPuzzle: DEMO_CORNER_3
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_3
+      unlocksRoom: 
+      response: "Ng\u01B0\u1EDDi \u0111\u01B0\u1EE3c v\u1ED7 vai ti\u1EBFp t\u1EE5c l\u01B0\u1EE3t k\u1EBF ti\u1EBFp."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: DEMO_CORNER_HOTSPOT_4
+      label: "G\xF3c tr\u1ED1ng \xB7 \u0111\u01B0a tay v\u1EC1 ph\xEDa tr\u01B0\u1EDBc"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.74
+        y: 0.32
+        width: 0.17
+        height: 0.35
+      visualClass: friend
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: '?'
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:DEMO_GAME_DIALOGUE
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_CORNER_3
+      hiddenAfterPuzzle: DEMO_CORNER_4
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: DEMO_CORNER_4
+      unlocksRoom: 
+      response: "M\u1ED9t b\u1EDD vai l\u1EA1nh ng\u1EAFt. Nam b\u1EADt \u0111\xE8n: v\u1EABn ch\u1EC9 c\xF3 b\u1ED1n ng\u01B0\u1EDDi. C\xE1nh c\u1EEDa ngo\xE0i ph\xF2ng kh\xE1ch ch\u1EA7m ch\u1EADm m\u1EDF."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: DEMO_RUN
+      label: "C\xF3 ng\u01B0\u1EDDi th\u1EE9 n\u0103m!\nCh\u1EA1y ra c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: DEMO_CORNER_4
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_CORNER_4
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_CHASE_STAIRS
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: RUSH_STRANGER
+      label: "B\xF3ng ng\u01B0\u1EDDi ngo\xE0i ng\u01B0\u1EE1ng c\u1EEDa"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.79499996
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.77
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: '?'
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: DEMO_CORNER_4
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "D\xE1ng ng\u01B0\u1EDDi \u0111\u1EE9ng im ngo\xE0i c\u1EEDa. Kh\xF4ng ai trong nh\xF3m bi\u1EBFt b\xE0 ta l\xE0 ai."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: DEMO_CHASE_STAIRS
+    title: "C\u1EA7u thang trong b\xF3ng t\u1ED1i"
+    subtitle: "M\xC0N 2 \xB7 NG\u01AF\u1EDCI TH\u1EE8 N\u0102M"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.13, g: 0.12, b: 0.14, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: DEMO_ESCAPE_UP
+      label: "L\xEAn t\u1EA7ng 2\nT\xECm ph\xF2ng th\u1EDD"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_CHASE_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: DEMO_ESCAPE_DOWN
+      label: "Xu\u1ED1ng t\u1EA7ng 1\nCh\u1EA1y ra ng\xF5"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 11400000, guid: 47570f2c060d48f44bc2edd20d1c8ba0, type: 2}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: DEMO_ESCAPE_HIDE
+      label: "N\u1EA5p d\u01B0\u1EDBi c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.73
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 11400000, guid: 47570f2c060d48f44bc2edd20d1c8ba0, type: 2}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+      sceneHotspot: 0
+  - id: DEMO_CHASE_HALL
+    title: "H\xE0nh lang t\u1EA7ng 2"
+    subtitle: "M\xC0N 2 \xB7 NG\u01AF\u1EDCI TH\u1EE8 N\u0102M"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.12, g: 0.16, b: 0.17, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: DEMO_ESCAPE_SHRINE
+      label: "Ch\u1EA1y h\u1EBFt h\xE0nh lang\nV\xE0o ph\xF2ng th\u1EDD"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.7
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_M2_SHRINE
+      solvesPuzzle: DEMO_M2_COMPLETE
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 1
+      sceneHotspot: 0
+    - id: DEMO_ESCAPE_BED
+      label: "V\u1EC1 ph\xF2ng ng\u1EE7\nKh\xF3a c\u1EEDa l\u1EA1i"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.28
+        width: 0.2
+        height: 0.4
+      visualClass: door
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 11400000, guid: 47570f2c060d48f44bc2edd20d1c8ba0, type: 2}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: DEMO_BAD
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi khu v\u1EF1c ti\u1EBFp theo."
+      lockedResponse: "H\xE3y kh\xE1m ph\xE1 v\xE0 ho\xE0n th\xE0nh vi\u1EC7c \u0111ang l\xE0m tr\u01B0\u1EDBc."
+      checkpointAfter: 0
+      sceneHotspot: 0
+  - id: DEMO_BAD
+    title: "Kh\xF4ng k\u1ECBp t\u1EDBi n\u01A1i tr\xFA \u1EA9n"
+    subtitle: "M\xC0N 2 \xB7 NG\u01AF\u1EDCI TH\u1EE8 N\u0102M"
+    chapter: 2
+    ending: 1
+    description: "Nam ch\u1ECDn sai \u0111\u01B0\u1EDDng. Ti\u1EBFng d\xE9p d\u1EEBng ngay sau l\u01B0ng. Khi ngo\u1EA3nh l\u1EA1i, ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF \u0111\xE3 \u1EDF s\xE1t b\xEAn.\n\n\u0110\xEAm \u0111\u1EA7u ti\xEAn kh\xE9p l\u1EA1i t\u1EA1i \u0111\xE2y. Th\u1EED l\u1EA1i t\u1EEB checkpoint v\xE0 nh\u1EDB \u0111\u01B0\u1EDDng t\u1EDBi ph\xF2ng th\u1EDD."
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.12, g: 0.02, b: 0.02, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots: []
+  - id: DEMO_M2_SHRINE
+    title: "Ph\xF2ng th\u1EDD \xB7 qua c\u01A1n ho\u1EA3ng s\u1EE3"
+    subtitle: "M\xC0N 2 \xB7 NG\u01AF\u1EDCI TH\u1EE8 N\u0102M"
+    chapter: 2
+    ending: 0
+    description: 
+    narration: "B\xF3ng ng\u01B0\u1EDDi \u0111\xE0n b\xE0 d\u1EEBng ngo\xE0i ng\u01B0\u1EE1ng c\u1EEDa.\nM\u1ED9t l\xE1t sau, \u0111\xE8n trong nh\xE0 s\xE1ng tr\u1EDF l\u1EA1i."
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.24, g: 0.18, b: 0.12, a: 1}
+    presentBackground: {fileID: 21300000, guid: b4415c6b5fd06e040b0fd52791e33412, type: 3}
+    pastBackground: {fileID: 21300000, guid: b4415c6b5fd06e040b0fd52791e33412, type: 3}
+    hotspots:
+    - id: RUSH_MANAGER
+      label: "H\u1ECFi b\xE1c qu\u1EA3n l\xFD"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.265
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.24
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "B\xE1c qu\u1EA3n l\xFD"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: RUSH_MANAGER_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: RUSH_TO_M3
+      label: "\u0110\u1EE3i tr\u1EDDi s\xE1ng \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.77
+        y: 0.62
+        width: 0.2
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:RUSH_MANAGER_TALK
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_HOME
+      solvesPuzzle: M3_BEGIN
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: RUSH_INTRO
+    title: "H\xE0 N\u1ED9i \xB7 n\u0103m 2004"
+    subtitle: "M\xC0N 1 \xB7 NH\u1EEENG NG\xC0Y \u1EDE TR\u1ECC"
+    chapter: 1
+    ending: 0
+    description: 
+    narration: "H\xC0 N\u1ED8I, N\u0102M 2004\n\nT\xF4i l\xE0 Tr\u1EA7n V\u0103n Nam, sinh vi\xEAn \u0110\u1EA1i h\u1ECDc Th\u1EE7y L\u1EE3i. T\xF4i c\xF9ng Bia, B\u0103ng v\xE0 B\u1EA3o thu\xEA chung m\u1ED9t c\u0103n nh\xE0 \u0111\u1EC3 ti\u1EC7n \u0111i h\u1ECDc.\n\nNh\xE0 v\u1ED1n c\u1EE7a h\u1ECD h\xE0ng b\xEAn n\u1ED9i. B\xE0 cho thu\xEA r\u1EBB, nh\u1EDD ch\xFAng t\xF4i tr\xF4ng nom v\xE0 gi\u1EEF y\xEAn t\u0129nh \u1EDF ph\xF2ng th\u1EDD tr\xEAn g\xE1c.\n\n\u1EDE \u0111\u01B0\u1EE3c m\u1ED9t th\u1EDDi gian, nh\u1EEFng chuy\u1EC7n l\u1EA1 b\u1EAFt \u0111\u1EA7u."
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 1
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: RUSH_INTRO_NEXT
+      label: "B\u01B0\u1EDBc v\xE0o nh\u1EEFng ng\xE0y \u1EDF tr\u1ECD \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.33
+        y: 0.75
+        width: 0.34
+        height: 0.085
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M1_BEDROOM
+      solvesPuzzle: RUSH_INTRO_DONE
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M3_HOME
+    title: "Ph\xF2ng kh\xE1ch \xB7 s\xE1ng h\xF4m sau"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: M3_READ_LEASE
+      label: "Xem gi\u1EA5y thu\xEA nh\xE0"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.19
+        y: 0.61
+        width: 0.13
+        height: 0.14
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 978da5661c164da68e22d0b2cbb9f3d6, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M3_LEASE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_READ_PHOTO
+      label: "Xem \u1EA3nh gia \u0111\xECnh"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.42
+        y: 0.5
+        width: 0.12
+        height: 0.17
+      visualClass: 
+      artwork: {fileID: 21300000, guid: a47b9475852b47ef9039dcf117fd378d, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M3_PHOTO
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_HOME_PHONE
+      label: "G\u1ECDi \u0111i\u1EC7n v\u1EC1 nh\xE0 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.02
+        y: 0.28
+        width: 0.18
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_PHONE
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_HOME_STREET
+      label: "Ra \u0111\u1EA7u ng\xF5 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.02
+        y: 0.67
+        width: 0.18
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_STREET
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_HOME_BOARD
+      label: "\u0110\u1ED1i chi\u1EBFu l\u1EDDi k\u1EC3 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.44
+        y: 0.65
+        width: 0.22
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_BOARD
+      solvesPuzzle: M3_EVIDENCE
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_HOME_PACK
+      label: "L\xEAn g\xE1c gom h\xE0nh l\xFD \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.77
+        y: 0.43
+        width: 0.2
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_PACK_ROOM
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M3_PHONE
+    title: "\u0110i\u1EC7n tho\u1EA1i b\xE0n \xB7 h\u1ECFi chuy\u1EC7n nh\xE0"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    pastBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    hotspots:
+    - id: M3_CALL_FAMILY
+      label: "G\u1ECDi ng\u01B0\u1EDDi nh\xE0"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.12
+        y: 0.42
+        width: 0.24
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M3_FAMILY_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_CALL_GRANDMA
+      label: "G\u1ECDi b\xE0 cho thu\xEA"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.38
+        y: 0.42
+        width: 0.24
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M3_GRANDMA_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_PHONE_BACK
+      label: "Xu\u1ED1ng ph\xF2ng kh\xE1ch \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.78
+        y: 0.56
+        width: 0.19
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_HOME
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M3_STREET
+    title: "\u0110\u1EA7u ng\xF5 \xB7 h\u1ECFi ng\u01B0\u1EDDi t\u1EEBng bi\u1EBFt nh\xE0"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    hotspots:
+    - id: M3_ASK_NEIGHBOR
+      label: "H\u1ECFi ng\u01B0\u1EDDi h\xE0ng x\xF3m"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.22500001
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.2
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "H\xE0ng x\xF3m"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M3_NEIGHBOR_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_STREET_SHOP
+      label: "Gh\xE9 h\xE0ng t\u1EA1p h\xF3a \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.31
+        y: 0.3
+        width: 0.18
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_SHOP
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_STREET_HOME
+      label: "Tr\u1EDF v\u1EC1 nh\xE0 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.82
+        y: 0.55
+        width: 0.16
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_HOME
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M3_SHOP
+    title: "H\xE0ng \u0111\u1EA7u ng\xF5 \xB7 mua \xEDt \u0111\u1ED3 mang theo"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    pastBackground: {fileID: 21300000, guid: 5375b582ea6978c4bbe2449802419c77, type: 3}
+    hotspots:
+    - id: M3_ASK_ELDER
+      label: "H\u1ECFi chuy\u1EC7n l\u1ED1i \u0111i c\u0169"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.20500001
+        y: 0.27
+        width: 0.14
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0.18
+        y: 0.26
+        width: 0.19
+        height: 0.47
+      stickFigure: 1
+      characterTag: "Ng\u01B0\u1EDDi l\u1EDBn tu\u1ED5i"
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M3_ELDER_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_TAKE_WARD
+      label: "Nh\u1EADn v\u1EADt tr\u1EA5n"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.4
+        y: 0.57
+        width: 0.11
+        height: 0.15
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M3_ELDER
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: adb842b2a86fb4441abbf79d81342d71, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 c\u1EA5t v\u1EADt tr\u1EA5n nh\u1ECF v\xE0o t\xFAi."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_BUY_INCENSE
+      label: "Mua b\xF3 nhang"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.57
+        y: 0.56
+        width: 0.11
+        height: 0.15
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 620708b9c160a7c41b78a2004eeeed86, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 c\u1EA5t b\xF3 nhang v\xE0o t\xFAi."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_BUY_MATCHES
+      label: "Mua di\xEAm"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.7
+        y: 0.56
+        width: 0.11
+        height: 0.15
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 992a394e77ec2bc4296600a019f5c19c, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 c\u1EA5t bao di\xEAm v\xE0o t\xFAi."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_BUY_BATTERIES
+      label: Mua pin
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.82
+        y: 0.56
+        width: 0.11
+        height: 0.15
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: b7e973f0fed6f484dbe2829334f267ce, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 c\u1EA5t \u0111\xF4i pin v\xE0o t\xFAi."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_SHOP_BACK
+      label: "V\u1EC1 \u0111\u1EA7u ng\xF5 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.81
+        y: 0.31
+        width: 0.17
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_STREET
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M3_BOARD
+    title: "\u0110\u1ED1i chi\u1EBFu \xB7 nh\u1EEFng th\xF4ng tin kh\xF4ng kh\u1EDBp"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    pastBackground: {fileID: 21300000, guid: 2b888d01a2d311a4d9934920d307e926, type: 3}
+    hotspots:
+    - id: M3_FACT_CRIME
+      label: "C\u0103n nh\xE0 t\u1EEBng c\xF3 \xE1n m\u1EA1ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.34
+        width: 0.38
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_LEASE
+      - M3_PHOTO
+      - M3_FAMILY
+      - M3_GRANDMA
+      - M3_NEIGHBOR
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M3_FACT_CRIME
+      unlocksRoom: 
+      response: "L\u1EDDi h\xE0ng x\xF3m kh\u1EDBp v\u1EDBi nh\u1EEFng ng\u01B0\u1EDDi trong \u1EA3nh."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_FACT_HIDDEN
+      label: "B\xE0 cho thu\xEA \u0111\xE3 gi\u1EA5u chuy\u1EC7n"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.52
+        y: 0.34
+        width: 0.38
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_LEASE
+      - M3_PHOTO
+      - M3_FAMILY
+      - M3_GRANDMA
+      - M3_NEIGHBOR
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M3_FACT_HIDDEN
+      unlocksRoom: 
+      response: "B\xE0 bi\u1EBFt gia \u0111\xECnh c\u0169, nh\u01B0ng \u0111\xE3 kh\xF4ng n\xF3i chuy\u1EC7n x\u1EA3y ra t\u1EA1i nh\xE0."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_FACT_KIN
+      label: "Nam c\xF3 quan h\u1EC7 ph\xEDa ng\u01B0\u1EDDi ch\u1ED3ng"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.08
+        y: 0.47
+        width: 0.38
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_LEASE
+      - M3_PHOTO
+      - M3_FAMILY
+      - M3_GRANDMA
+      - M3_NEIGHBOR
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M3_FACT_KIN
+      unlocksRoom: 
+      response: "T\xEAn tr\xEAn gi\u1EA5y, \u1EA3nh v\xE0 d\u1EA5u d\xF2ng h\u1ECD c\xF9ng kh\u1EDBp v\u1EDBi l\u1EDDi ng\u01B0\u1EDDi nh\xE0."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_COMPARE
+      label: "Ch\u1ED1t nh\u1EEFng \u0111i\u1EC1u \u0111\xE3 c\xF3 ch\u1EE9ng c\u1EE9"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.52
+        y: 0.6
+        width: 0.38
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M3_FACT_CRIME
+      - M3_FACT_HIDDEN
+      - M3_FACT_KIN
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M3_COMPARE
+      unlocksRoom: 
+      response: "Ba \u0111i\u1EC1u \u0111\xE3 kh\u1EDBp. Ch\u01B0a th\u1EC3 k\u1EBFt lu\u1EADn v\xEC sao bi k\u1ECBch x\u1EA3y ra."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 0
+    - id: M3_WRONG_FACT
+      label: "\u0110\xE3 bi\u1EBFt nguy\xEAn nh\xE2n c\xE1i ch\u1EBFt c\u1EE7a b\xE9?"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.52
+        y: 0.47
+        width: 0.38
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Ch\u01B0a \u0111\u1EE7 ch\u1EE9ng c\u1EE9. L\u1EDDi k\u1EC3 ngo\xE0i ng\xF5 ch\u01B0a n\xF3i r\xF5 \u0111i\u1EC1u \u1EA5y."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_BOARD_BACK
+      label: "R\u1EDDi b\xE0n \u0111\u1ED1i chi\u1EBFu \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.03
+        y: 0.68
+        width: 0.25
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_HOME
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M3_PACK_ROOM
+    title: "Ph\xF2ng ng\u1EE7 \xB7 thu x\u1EBFp h\xE0nh l\xFD"
+    subtitle: "M\xC0N 3 \xB7 CHUY\u1EC6N NH\xC0 CH\u1EE6 C\u0168"
+    chapter: 3
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    pastBackground: {fileID: 21300000, guid: 3e8e19fae00f57b45a02eeecc9a41824, type: 3}
+    hotspots:
+    - id: M3_TAKE_SIDEKEY
+      label: "L\u1EA5y ch\xECa c\u1EEDa ph\u1EE5"
+      kind: 1
+      bounds:
+        serializedVersion: 2
+        x: 0.47
+        y: 0.47
+        width: 0.11
+        height: 0.15
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M3_COMPARE
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 4e1c310acedce8744b87e34002f65f84, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 c\u1EA5t ch\xECa c\u1EEDa ph\u1EE5 v\xE0o t\xFAi."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M3_PACK_GROUP
+      label: "Gom \u0111\u1ED3, c\xF9ng nhau chuy\u1EC3n tr\u1ECD"
+      kind: 4
+      bounds:
+        serializedVersion: 2
+        x: 0.1
+        y: 0.42
+        width: 0.24
+        height: 0.12
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_RENOVATION
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M3_COMPARE
+      requiredEvent: 
+      requiredEvents:
+      - pickup:RUSH_SIDEKEY
+      - pickup:RUSH_WARD
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: M3_PACK_TALK
+      destinationRoom: 
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "Cu\u1ED9c chuy\u1EC7n tr\xF2 ti\u1EBFp t\u1EE5c."
+      lockedResponse: "Ch\u01B0a thu x\u1EBFp \u0111\u1EE7. H\xE3y \u0111\u1ED1i chi\u1EBFu l\u1EDDi k\u1EC3, l\u1EA5y ch\xECa c\u1EEDa ph\u1EE5 v\xE0 nh\u1EADn v\u1EADt tr\u1EA5n \u1EDF h\xE0ng \u0111\u1EA7u ng\xF5."
+      checkpointAfter: 0
+      sceneHotspot: 0
+    - id: M3_LEAVE
+      label: "Xu\u1ED1ng c\u1EA7u thang r\u1EDDi nh\xE0 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.77
+        y: 0.58
+        width: 0.2
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: dialogue:M3_PACK_TALK
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_A
+      solvesPuzzle: M4_BEGIN
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+    - id: M3_PACK_BACK
+      label: "Quay xu\u1ED1ng ph\xF2ng kh\xE1ch \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.03
+        y: 0.68
+        width: 0.25
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M3_HOME
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M4_LOOP_A
+    title: "Chi\u1EBFu ngh\u1EC9 \xB7 ph\xF2ng 203"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: M4_MARK_A
+      label: "Nh\xECn \xF4 g\u1EA1ch d\u01B0\u1EDBi c\u1EEDa tho\xE1ng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.51
+        y: 0.65
+        width: 0.12
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M4_FIXED_A
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_MARK_A
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_STAIRS_A
+      label: "Th\u1EED xu\u1ED1ng c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.78
+        y: 0.5
+        width: 0.18
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_B
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110i h\u1EBFt l\u1ED1i, c\u1EA3 nh\xF3m l\u1EA1i \u0111\u1EE9ng tr\u01B0\u1EDBc chi\u1EBFu ngh\u1EC9 c\u0169. M\u1ED9t ti\u1EBFng ho khan; b\xF3ng \u0111\xE0n \xF4ng v\u1EEBa khu\u1EA5t \u1EDF cu\u1ED1i d\xE3y. Nam kh\xF4ng k\u1ECBp nh\xECn m\u1EB7t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_WRONG_A
+      label: "Ph\xF2ng 203 \xB7 th\u1EED \u0111i l\u1ED1i n\xE0y"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.26
+        y: 0.26
+        width: 0.17
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_B
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110i h\u1EBFt l\u1ED1i, c\u1EA3 nh\xF3m l\u1EA1i \u0111\u1EE9ng tr\u01B0\u1EDBc chi\u1EBFu ngh\u1EC9 c\u0169. M\u1ED9t ti\u1EBFng ho khan; b\xF3ng \u0111\xE0n \xF4ng v\u1EEBa khu\u1EA5t \u1EDF cu\u1ED1i d\xE3y. Nam kh\xF4ng k\u1ECBp nh\xECn m\u1EB7t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_ROUTE_A
+      label: "Theo d\u1EA5u g\u1EA1ch, t\xECm l\u1ED1i v\u1EC1 b\u1EBFp \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.03
+        y: 0.49
+        width: 0.31
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_RENOVATION
+      - M1_ROUTE_CLUE
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M4_MARK_A
+      - M4_MARK_B
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_SIDE
+      solvesPuzzle: M4_LOOP
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: "\u0110\u1EEBng v\u1ED9i theo bi\u1EC3n ph\xF2ng. C\u1EA7n quan s\xE1t d\u1EA5u m\u1ED1c \u1EDF hai l\u01B0\u1EE3t v\xE0 \u0111\u1ED1i chi\u1EBFu s\u01A1 \u0111\u1ED3 s\u1EEDa nh\xE0."
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M4_LOOP_B
+    title: "Chi\u1EBFu ngh\u1EC9 \xB7 ph\xF2ng 302"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    pastBackground: {fileID: 21300000, guid: 70bc305fafe02ce429a9532a40d67907, type: 3}
+    hotspots:
+    - id: M4_MARK_B
+      label: "Nh\xECn \xF4 g\u1EA1ch d\u01B0\u1EDBi c\u1EEDa tho\xE1ng"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.51
+        y: 0.65
+        width: 0.12
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M4_FIXED_B
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_MARK_B
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_STAIRS_B
+      label: "Th\u1EED xu\u1ED1ng c\u1EA7u thang"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.78
+        y: 0.5
+        width: 0.18
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_A
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110i h\u1EBFt l\u1ED1i, c\u1EA3 nh\xF3m l\u1EA1i \u0111\u1EE9ng tr\u01B0\u1EDBc chi\u1EBFu ngh\u1EC9 c\u0169. M\u1ED9t ti\u1EBFng ho khan; b\xF3ng \u0111\xE0n \xF4ng v\u1EEBa khu\u1EA5t \u1EDF cu\u1ED1i d\xE3y. Nam kh\xF4ng k\u1ECBp nh\xECn m\u1EB7t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_WRONG_B
+      label: "Ph\xF2ng 302 \xB7 th\u1EED \u0111i l\u1ED1i n\xE0y"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.26
+        y: 0.26
+        width: 0.17
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_A
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110i h\u1EBFt l\u1ED1i, c\u1EA3 nh\xF3m l\u1EA1i \u0111\u1EE9ng tr\u01B0\u1EDBc chi\u1EBFu ngh\u1EC9 c\u0169. M\u1ED9t ti\u1EBFng ho khan; b\xF3ng \u0111\xE0n \xF4ng v\u1EEBa khu\u1EA5t \u1EDF cu\u1ED1i d\xE3y. Nam kh\xF4ng k\u1ECBp nh\xECn m\u1EB7t."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_ROUTE_B
+      label: "Theo d\u1EA5u g\u1EA1ch, t\xECm l\u1ED1i v\u1EC1 b\u1EBFp \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.03
+        y: 0.49
+        width: 0.31
+        height: 0.11
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_RENOVATION
+      - M1_ROUTE_CLUE
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M4_MARK_A
+      - M4_MARK_B
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_SIDE
+      solvesPuzzle: M4_LOOP
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: "\u0110\u1EEBng v\u1ED9i theo bi\u1EC3n ph\xF2ng. C\u1EA7n quan s\xE1t d\u1EA5u m\u1ED1c \u1EDF hai l\u01B0\u1EE3t v\xE0 \u0111\u1ED1i chi\u1EBFu s\u01A1 \u0111\u1ED3 s\u1EEDa nh\xE0."
+      checkpointAfter: 1
+      sceneHotspot: 1
+  - id: M4_SIDE
+    title: "C\u1EEDa ph\u1EE5 sau b\u1EBFp"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 0
+    presentOnly: 1
+    nightScene: 1
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: da44ae8748e528c408974c623bbb721c, type: 3}
+    pastBackground: {fileID: 21300000, guid: da44ae8748e528c408974c623bbb721c, type: 3}
+    hotspots:
+    - id: M4_UNLOCK
+      label: "D\xF9ng ch\xECa m\u1EDF ch\u1ED1t m\u1ED9t v\u1EA1ch"
+      kind: 2
+      bounds:
+        serializedVersion: 2
+        x: 0.51
+        y: 0.37
+        width: 0.16
+        height: 0.22
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues:
+      - M3_RENOVATION
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M4_LOOP
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: M4_SIDE_DOOR
+      hiddenAfterEvent: 
+      item: {fileID: 11400000, guid: 4e1c310acedce8744b87e34002f65f84, type: 2}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_SIDE_DOOR
+      unlocksRoom: 
+      response: "Ch\u1ED1t v\u1EEBa kh\xEDt d\u1EA5u tr\xEAn ch\xECa. C\u1EEDa ph\u1EE5 \u0111\xE3 m\u1EDF kh\xF3a."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 0
+    - id: M4_OPEN_DOOR
+      label: "M\u1EDF c\u1EEDa ph\u1EE5, b\u01B0\u1EDBc ra ngo\xE0i \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.49
+        y: 0.25
+        width: 0.22
+        height: 0.39
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 1
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: M4_SIDE_DOOR
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M4_SIDE_DOOR
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_PAST_ENTRY
+      solvesPuzzle: M4_CHANGED
+      unlocksRoom: 
+      response: "C\u1EEDa m\u1EDF. Ch\u1EC9 m\u1ED9t b\u01B0\u1EDBc ch\xE2n, c\u1EA3 nh\xF3m \u0111\xE3 tr\u1EDF l\u1EA1i l\u1ED1i v\xE0o \u2014 nh\u01B0ng to\xE0n b\u1ED9 c\u0103n nh\xE0 l\xE0 m\u1ED9t h\xECnh d\u1EA1ng kh\xE1c."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 1
+    - id: M4_SIDE_BACK
+      label: "Quay v\u1EC1 chi\u1EBFu ngh\u1EC9 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.02
+        y: 0.53
+        width: 0.2
+        height: 0.1
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_LOOP_A
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M4_PAST_ENTRY
+    title: "L\u1ED1i v\xE0o \xB7 c\u0103n nh\xE0 n\u0103m x\u01B0a"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 1
+    presentOnly: 0
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 0a6a9c55379b738449a5cfa4f3d9c243, type: 3}
+    pastBackground: {fileID: 21300000, guid: 0a6a9c55379b738449a5cfa4f3d9c243, type: 3}
+    hotspots:
+    - id: M4_CHECK_EXIT
+      label: "Ki\u1EC3m tra c\xE1nh c\u1EEDa v\u1EEBa \u0111i qua"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.02
+        y: 0.53
+        width: 0.2
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M4_EXIT_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_EXIT
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_CHECK_WINDOW
+      label: "Nh\xECn ra c\u1EEDa s\u1ED5"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.06
+        y: 0.26
+        width: 0.15
+        height: 0.23
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M4_WINDOW_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_WINDOW
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_PAST_UP
+      label: "L\xEAn chi\u1EBFu ngh\u1EC9 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.78
+        y: 0.38
+        width: 0.18
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_PAST_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M4_PAST_HALL
+    title: "H\xE0nh lang c\u0169 \xB7 m\u1ED9t c\u1EEDa ph\xF2ng v\u1EEBa hi\u1EC7n ra"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 1
+    presentOnly: 0
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 9ff45d889fc89e14ca3e3b7c0f62bd26, type: 3}
+    pastBackground: {fileID: 21300000, guid: 9ff45d889fc89e14ca3e3b7c0f62bd26, type: 3}
+    hotspots:
+    - id: M4_TO_HIDDEN
+      label: "C\u1EEDa ph\xF2ng trong \u1EA3nh \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.145
+        y: 0.25
+        width: 0.09
+        height: 0.44
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_HIDDEN
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_PAST_DOWN
+      label: "Xu\u1ED1ng l\u1ED1i v\xE0o \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.78
+        y: 0.56
+        width: 0.18
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_PAST_ENTRY
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M4_HIDDEN
+    title: "C\u0103n ph\xF2ng b\u1ECB s\u1EEDa m\u1EA5t"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: 
+    isTitleCard: 0
+    pastOnly: 1
+    presentOnly: 0
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 799dfcaa45d559548bb9c083da3f6cb1, type: 3}
+    pastBackground: {fileID: 21300000, guid: 799dfcaa45d559548bb9c083da3f6cb1, type: 3}
+    hotspots:
+    - id: M4_MATCH_OBJECT
+      label: "\u0110\u1ED1i chi\u1EBFu th\u1ECF v\u1EA3i v\u1EDBi \u1EA3nh"
+      kind: 3
+      bounds:
+        serializedVersion: 2
+        x: 0.53
+        y: 0.52
+        width: 0.14
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 21300000, guid: 2c1188c621ab4b108b4b05567172214f, type: 3}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: M4_OBJECT_CLUE
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_OBJECT
+      unlocksRoom: 
+      response: "Nam ghi l\u1EA1i \u0111i\u1EC1u v\u1EEBa th\u1EA5y v\xE0o s\u1ED5."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_CONFIRM
+      label: "C\u0103n nh\xE0 \u0111\xE3 kh\xE9p k\xEDn quanh ch\xFAng ta"
+      kind: 0
+      bounds:
+        serializedVersion: 2
+        x: 0.12
+        y: 0.31
+        width: 0.36
+        height: 0.13
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles:
+      - M4_EXIT
+      - M4_WINDOW
+      - M4_OBJECT
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: 
+      solvesPuzzle: M4_COMPLETE
+      unlocksRoom: 
+      response: "C\u1EEDa ra kh\xF4ng c\xF2n, b\xEAn ngo\xE0i \u0111\xE3 \u0111\u1ED5i, c\u0103n ph\xF2ng trong \u1EA3nh l\u1EA1i hi\u1EC7n ra. Kh\xF4ng ph\u1EA3i ch\u1EC9 \u0111i l\u1EA1c. C\u1EA3 nh\xF3m \u0111ang b\u1ECB gi\u1EEF trong m\u1ED9t phi\xEAn b\u1EA3n kh\xE1c c\u1EE7a c\u0103n nh\xE0."
+      lockedResponse: 
+      checkpointAfter: 1
+      sceneHotspot: 0
+    - id: M4_HIDDEN_BACK
+      label: "Ra h\xE0nh lang c\u0169 \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.84
+        y: 0.48
+        width: 0.14
+        height: 0.18
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: 
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_PAST_HALL
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+    - id: M4_REST
+      label: "C\u1EA3 nh\xF3m ng\u1ED3i l\u1EA1i t\xEDnh \u0111\u01B0\u1EDDng \u203A"
+      kind: 5
+      bounds:
+        serializedVersion: 2
+        x: 0.3
+        y: 0.68
+        width: 0.36
+        height: 0.09
+      visualClass: 
+      artwork: {fileID: 0}
+      artworkBounds:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      stickFigure: 0
+      characterTag: 
+      requiredClues: []
+      opensPastDoor: 0
+      leadsOutside: 0
+      protectionItem: {fileID: 0}
+      requiredPuzzle: 
+      requiredPuzzles: []
+      requiredEvent: 
+      requiredEvents: []
+      visibleAfterPuzzle: M4_COMPLETE
+      hiddenAfterPuzzle: 
+      hiddenAfterEvent: 
+      item: {fileID: 0}
+      consumeItem: 0
+      clueId: 
+      dialogueId: 
+      destinationRoom: M4_MILESTONE
+      solvesPuzzle: 
+      unlocksRoom: 
+      response: "\u0110\xE3 t\u1EDBi l\u1ED1i ti\u1EBFp theo."
+      lockedResponse: 
+      checkpointAfter: 0
+      sceneHotspot: 1
+  - id: M4_MILESTONE
+    title: "Cu\u1ED1i M\xE0n 4 \xB7 ph\xEDa sau c\xE1nh c\u1EEDa"
+    subtitle: "M\xC0N 4 \xB7 C\xC1NH C\u1EECA TR\u1EDE V\u1EC0"
+    chapter: 4
+    ending: 0
+    description: 
+    narration: "C\u0102N NH\xC0 KH\xD4NG C\xD2N L\u1ED0I RA\n\nB\u1ED1n ng\u01B0\u1EDDi hi\u1EC3u r\u1EB1ng mu\u1ED1n tho\xE1t, h\u1ECD ph\u1EA3i l\u1EA7n l\u1EA1i chuy\u1EC7n c\u0169 ngay trong nh\u1EEFng c\u0103n ph\xF2ng n\xE0y.\n\nM\xE0n 4 ho\xE0n t\u1EA5t \xB7 c\xE2u chuy\u1EC7n c\xF2n ti\u1EBFp."
+    isTitleCard: 0
+    pastOnly: 1
+    presentOnly: 0
+    nightScene: 0
+    introCard: 0
+    placeholderColor: {r: 0.22, g: 0.28, b: 0.24, a: 1}
+    presentBackground: {fileID: 21300000, guid: 0a6a9c55379b738449a5cfa4f3d9c243, type: 3}
+    pastBackground: {fileID: 21300000, guid: 0a6a9c55379b738449a5cfa4f3d9c243, type: 3}
+    hotspots: []
+  clues:
+  - id: M1_NOTE_CLUE
+    title: "L\u1EDDi nh\u1EAFn trong t\u1EE7"
+    body: "Nam, x\u1EBFp \u0111\u1ED3 xong th\xEC xu\u1ED1ng \u0103n nh\xE9. Bia \u1EDF ph\xF2ng kh\xE1ch, B\u0103ng lo b\u1EEFa c\u01A1m, B\u1EA3o v\u1EEBa ra h\xE0ng \u0111\u1EA7u ng\xF5.\n\nB\xE0 d\u1EB7n tr\xF4ng nom c\u0103n nh\xE0, \u0111\u1EEBng \u0111\u1EC3 \u0111\u1ED3 ch\u1EAFn c\u1EEDa ph\xF2ng th\u1EDD tr\xEAn g\xE1c. \u2014 Bia"
+  - id: M1_BOWL_CLUE
+    title: "B\xE1t c\u01A1m th\u1EE9 n\u0103m"
+    body: "B\u1ED1n ng\u01B0\u1EDDi, nh\u01B0ng tr\xEAn m\xE2m c\xF3 th\xEAm m\u1ED9t chi\u1EBFc b\xE1t nh\u1ECF m\u1EBB mi\u1EC7ng. Nam nh\xECn k\u1EF9 hoa v\u0103n tr\xEAn th\xE0nh b\xE1t.\n\nV\u1EEBa quay \u0111i h\u1ECFi c\xE1c b\u1EA1n r\u1ED3i nh\xECn l\u1EA1i, chi\u1EBFc b\xE1t \u0111\xE3 kh\xF4ng c\xF2n \u1EDF ch\u1ED7 c\u0169. Ch\u01B0a ai gi\u1EA3i th\xEDch \u0111\u01B0\u1EE3c."
+  - id: M1_MIRROR_CLUE
+    title: "B\xF3ng ph\xEDa sau trong g\u01B0\u01A1ng"
+    body: "Sau khi r\u1EEDa m\u1EB7t, Nam ng\u1EA9ng l\xEAn th\u1EA5y b\xF3ng m\u1ED9t ng\u01B0\u1EDDi ph\u1EE5 n\u1EEF sau l\u01B0ng. Nam ch\u01B0a nh\u1EADn ra \u0111\xF3 l\xE0 ai."
+  - id: M1_HAND_CLUE
+    title: "D\u1EA5u b\xE0n tay nh\u1ECF"
+    body: "Nam quay l\u1EA1i: kh\xF4ng c\xF3 ai. Khi nh\xECn v\u1EC1 g\u01B0\u01A1ng l\u1EA7n n\u1EEFa, s\xE1t m\xE9p d\u01B0\u1EDBi c\xF3 m\u1ED9t d\u1EA5u b\xE0n tay nh\u1ECF. B\u1EC1 m\u1EB7t g\u01B0\u01A1ng v\u1EABn l\u1EA1nh."
+  - id: M1_ROUTE_CLUE
+    title: "\u0110\u01B0\u1EDDng \u0111\u1EBFn ph\xF2ng th\u1EDD"
+    body: "T\u1EA7ng 1: ph\xF2ng kh\xE1ch ph\xEDa tr\u01B0\u1EDBc; ph\xF2ng ng\u1EE7 1 b\xEAn tr\xE1i; c\u1EA7u thang b\xEAn ph\u1EA3i; b\u1EBFp v\xE0 WC 1 ph\xEDa sau, c\u1EEDa ph\u1EE5 ra s\xE2n sau.\n\nT\u1EA7ng 2: h\xE0nh lang gi\u1EEFa nh\xE0; ph\xF2ng ng\u1EE7 2 ph\xEDa tr\u01B0\u1EDBc b\xEAn tr\xE1i; PH\xD2NG TH\u1EDC RI\xCANG ph\xEDa tr\u01B0\u1EDBc b\xEAn ph\u1EA3i; ph\xF2ng ng\u1EE7 3 ph\xEDa sau b\xEAn tr\xE1i; WC 2 ph\xEDa sau b\xEAn ph\u1EA3i.\n\nPh\xF2ng th\u1EDD y\xEAn t\u0129nh kh\xE1c th\u01B0\u1EDDng. K\xFD hi\u1EC7u d\xF2ng h\u1ECD tr\xEAn \u0111\u1ED3 th\u1EDD gi\u1ED1ng v\u1EADt Nam mang b\xEAn m\xECnh. Ch\u01B0a bi\u1EBFt \xFD ngh\u0129a hay t\xE1c d\u1EE5ng."
+  - id: M1_DOG_CLUE
+    title: "Ch\xF3 s\u1EE7a \u0111\u1EA7u ng\xF5"
+    body: "L\xFAc c\u1EA3 nh\xF3m \u0111i qua \u0111\u1EA7u ng\xF5, con ch\xF3 b\u1ED7ng s\u1EE7a. Kh\xF4ng r\xF5 n\xF3 nh\xECn g\xEC; Nam kh\xF4ng quy ti\u1EBFng s\u1EE7a cho m\u1ED9t ng\u01B0\u1EDDi c\u1EE5 th\u1EC3."
+  - id: M1_BALLOON_CLUE
+    title: "Qu\u1EA3 b\xF3ng \u0111\u1ECF"
+    body: "Gi\u1EEFa \u0111\xEAm \u0111i v\u1EC7 sinh, Nam th\u1EA5y m\u1ED9t qu\u1EA3 b\xF3ng \u0111\u1ECF l\u01A1 l\u1EEDng ngo\xE0i h\xE0nh lang, s\u1EE3i d\xE2y c\u0103ng nh\u01B0 c\xF3 ai gi\u1EEF.\n\nL\xFAc quay v\u1EC1, qu\u1EA3 b\xF3ng n\u1EB1m tr\u01B0\u1EDBc ph\xF2ng ng\u1EE7. C\u1EA3nh n\xE0y ch\u1EC9 x\u1EA3y ra m\u1ED9t l\u1EA7n. Kh\xF4ng th\u1EA5y ng\u01B0\u1EDDi c\u1EA7m b\xF3ng."
+  - id: M3_LEASE
+    title: "Gi\u1EA5y thu\xEA nh\xE0"
+    body: "Gi\u1EA5y thu\xEA c\xF3 t\xEAn ng\u01B0\u1EDDi b\xE0 \u0111\u1EE9ng ra cho thu\xEA. B\xE0 n\xF3i c\u0103n nh\xE0 l\xE2u nay ch\u1EC9 \u0111\u1EC3 tr\u1ED1ng; tr\xEAn gi\u1EA5y v\u1EABn c\xF2n t\xEAn m\u1ED9t ng\u01B0\u1EDDi \u0111\xE0n \xF4ng c\xF9ng h\u1ECD b\xEAn n\u1ED9i c\u1EE7a Nam."
+  - id: M3_PHOTO
+    title: "\u1EA2nh gia \u0111\xECnh ch\u1EE7 c\u0169"
+    body: "Trong \u1EA3nh c\xF3 m\u1ED9t ng\u01B0\u1EDDi \u0111\xE0n \xF4ng, v\u1EE3 v\xE0 con g\xE1i. H\u1ECD \u0111\u1EE9ng tr\u01B0\u1EDBc t\u1EE7 g\u1ED7, c\u1EA1nh th\u1ECF v\u1EA3i v\xE0 qu\u1EA3 b\xF3ng \u0111\u1ECF. Sau l\u01B0ng h\u1ECD c\xF2n m\u1ED9t c\u1EEDa ph\xF2ng nh\u1ECF, nay kh\xF4ng th\u1EA5y tr\xEAn h\xE0nh lang."
+  - id: M3_FAMILY
+    title: "L\u1EDDi ng\u01B0\u1EDDi nh\xE0"
+    body: "Ng\u01B0\u1EDDi \u0111\xE0n \xF4ng trong \u1EA3nh thu\u1ED9c h\u1ECD b\xEAn n\u1ED9i c\u1EE7a Nam. K\xFD hi\u1EC7u tr\xEAn v\u1EADt h\u1ED9 th\xE2n l\xE0 d\u1EA5u d\xF2ng h\u1ECD. \u0110\xE2y kh\xF4ng ph\u1EA3i vi\u1EC7c ch\u1EC9 t\xECnh c\u1EDD tr\xF9ng t\xEAn."
+  - id: M3_GRANDMA
+    title: "L\u1EDDi b\xE0 cho thu\xEA"
+    body: "B\xE0 nh\u1EADn con trai \u0111\xE3 m\u1EA5t, nh\u01B0ng n\xE9 chuy\u1EC7n con d\xE2u. L\u1EDDi b\xE0 kh\xF4ng kh\u1EDBp v\u1EDBi vi\u1EC7c b\xE0 t\u1EEBng b\u1EA3o nh\xE0 kh\xF4ng c\xF3 chuy\u1EC7n g\xEC \u0111\xE1ng ng\u1EA1i."
+  - id: M3_NEIGHBOR
+    title: "L\u1EDDi ng\u01B0\u1EDDi h\xE0ng x\xF3m"
+    body: "H\xE0ng x\xF3m k\u1EC3 b\xE9 g\xE1i m\u1EA5t tr\u01B0\u1EDBc; v\u1EC1 sau ng\u01B0\u1EDDi v\u1EE3 gi\u1EBFt ch\u1ED3ng r\u1ED3i t\u1EF1 s\xE1t. \u0110\xE2y m\u1EDBi l\xE0 l\u1EDDi k\u1EC3 c\u1EA7n \u0111\u1ED1i chi\u1EBFu, ch\u01B0a gi\u1EA3i th\xEDch nguy\xEAn nh\xE2n hay to\xE0n b\u1ED9 chuy\u1EC7n trong nh\xE0."
+  - id: M3_RENOVATION
+    title: "S\u01A1 \u0111\u1ED3 s\u1EEDa nh\xE0"
+    body: "C\u1EA7u thang \u1EDF b\xEAn ph\u1EA3i, b\u1EBFp v\xE0 c\u1EEDa ph\u1EE5 ph\xEDa sau. D\u01B0\u1EDBi c\u1EEDa tho\xE1ng \u1EDF chi\u1EBFu ngh\u1EC9 c\xF3 m\u1ED9t \xF4 g\u1EA1ch b\xF4ng khuy\u1EBFt c\xE1nh. \xD4 g\u1EA1ch n\xE0y ch\u01B0a thay d\xF9 c\xE1c ph\xF2ng t\u1EEBng s\u1EEDa l\u1EA1i. M\u1ED9t ph\xF2ng nh\u1ECF c\u1EA1nh ph\xF2ng ng\u1EE7 sau nh\xE0 \u0111\xE3 b\u1ECB b\u1ECBt c\u1EEDa. Ch\u1ED1t c\u1EEDa ph\u1EE5 \u1EE9ng v\u1EDBi d\u1EA5u m\u1ED9t v\u1EA1ch tr\xEAn ch\xECa."
+  - id: M4_FIXED_A
+    title: "D\u1EA5u m\u1ED1c \u1EDF chi\u1EBFu ngh\u1EC9"
+    body: "L\u01B0\u1EE3t th\u1EE9 nh\u1EA5t: d\u01B0\u1EDBi c\u1EEDa tho\xE1ng v\u1EABn l\xE0 \xF4 g\u1EA1ch b\xF4ng khuy\u1EBFt c\xE1nh. Bi\u1EC3n ph\xF2ng v\xE0 h\u01B0\u1EDBng c\u1EA7u thang tr\xF4ng kh\xF4ng gi\u1ED1ng l\xFAc s\xE1ng."
+  - id: M4_FIXED_B
+    title: "D\u1EA5u m\u1ED1c v\u1EABn c\xF2n nguy\xEAn"
+    body: "L\u01B0\u1EE3t k\u1EBF ti\u1EBFp: bi\u1EC3n ph\xF2ng \u0111\xE3 \u0111\u1ED5i, nh\u01B0ng \xF4 g\u1EA1ch khuy\u1EBFt c\xE1nh \u1EDF nguy\xEAn ch\u1ED7. S\u01A1 \u0111\u1ED3 s\u1EEDa nh\xE0 ch\u1EC9 \u0111\u01B0\u1EDDng t\u1EEB \u0111\xE2y v\u1EC1 ph\xEDa b\u1EBFp v\xE0 c\u1EEDa ph\u1EE5."
+  - id: M4_EXIT_CLUE
+    title: "C\u1EEDa sau kh\xF4ng d\u1EABn ra ng\xF5"
+    body: "C\xE1nh c\u1EEDa v\u1EEBa m\u1EDF \u0111\xE3 \u0111\u01B0a c\u1EA3 nh\xF3m tr\u1EDF v\u1EC1 l\u1ED1i v\xE0o. Ph\xEDa sau ch\u1EC9 c\xF2n m\u1ED9t b\u1EE9c t\u01B0\u1EDDng k\xEDn. C\u0103n nh\xE0 v\xE0 \u0111\u1ED3 \u0111\u1EA1c \u0111\u1EC1u \u0111\xE3 \u0111\u1ED5i c\xF9ng m\u1ED9t l\xFAc."
+  - id: M4_WINDOW_CLUE
+    title: "B\xEAn ngo\xE0i c\u1EEDa s\u1ED5"
+    body: "Ngo\xE0i c\u1EEDa s\u1ED5 kh\xF4ng c\xF2n l\xE0 ng\xF5 quen thu\u1ED9c. Nh\u1EEFng kho\u1EA3ng t\u1ED1i kh\xF4ng n\u1ED1i \u0111\u01B0\u1EE3c v\u1EDBi \u0111\u01B0\u1EDDng ph\u1ED1. Kh\xF4ng th\u1EC3 b\u01B0\u1EDBc ra theo l\u1ED1i n\xE0y."
+  - id: M4_OBJECT_CLUE
+    title: "C\u0103n ph\xF2ng trong \u1EA3nh"
+    body: "C\u1EEDa ph\xF2ng t\u1EEBng b\u1ECB s\u1EEDa m\u1EA5t nay \u0111\xE3 xu\u1EA5t hi\u1EC7n. T\u1EE7 g\u1ED7, th\u1ECF v\u1EA3i v\xE0 ch\u1ED7 \u0111\u1EB7t \u0111\u1ED3 \u0111\u1EC1u gi\u1ED1ng \u1EA3nh gia \u0111\xECnh t\xECm \u0111\u01B0\u1EE3c l\xFAc s\xE1ng."
+  dialogues:
+  - id: M1_BIA_TALK
+    speaker: Bia
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "C\u1EADu x\u1EBFp n\u1ED1t s\xE1ch v\u1EDF \u0111i. L\xE1t xu\u1ED1ng \u0103n c\u01A1m, \u0111\u1EEBng \u0111\u1EC3 m\u1ECDi ng\u01B0\u1EDDi \u0111\u1EE3i."
+    - "B\xE0 cho thu\xEA r\u1EBB c\u0169ng l\xE0 gi\xFAp b\u1ECDn m\xECnh. Nh\u1EDB tr\xF4ng c\u1EEDa n\u1EBBo cho c\u1EA9n th\u1EADn."
+  - id: M1_BANG_TALK
+    speaker: "B\u0103ng"
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "H\xF4m nay t\u1EDB n\u1EA5u, mai \u0111\u1EBFn l\u01B0\u1EE3t c\u1EADu \u0111\u1EA5y. B\u1EBFp \u1EDF sau nh\xE0, c\u1EA1nh l\u1ED1i c\u1EA7u thang."
+    - "T\u1EDB l\u1EA5y b\u1ED1n c\xE1i b\xE1t r\u1ED3i. \u0102n xong th\xEC ph\u1EE5 nhau r\u1EEDa cho nhanh."
+  - id: M1_BAO_TALK
+    speaker: "B\u1EA3o"
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "T\u1EDB v\u1EEBa gh\xE9 h\xE0ng \u0111\u1EA7u ng\xF5. Thi\u1EBFu g\xEC th\xEC l\xE1t ra mua, \u0111\u1EEBng \u0111\u1EC3 \u0111\u1EBFn t\u1ED1i."
+    - "Nh\xE0 v\u1EABn chia ph\xF2ng nh\u01B0 h\u1ED3i ch\u1EE7 c\u0169 \u1EDF. Ph\xF2ng th\u1EDD tr\xEAn g\xE1c l\xE0 m\u1ED9t ph\xF2ng ri\xEAng, c\u1EADu nh\u1EDB nh\xE9."
+  - id: M1_END_TALK
+    speaker: "Bia \xB7 B\u0103ng \xB7 B\u1EA3o \xB7 Nam"
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "B\u0103ng: H\xF4m tr\u01B0\u1EDBc ai b\xE0y th\xEAm c\xE1i b\xE1t nh\u1ECF th\u1EBF? T\u1EDB nh\u1EDB m\xECnh ch\u1EC9 l\u1EA5y b\u1ED1n c\xE1i."
+    - "Nam: T\u1EDB c\xF2n g\u1EB7p m\u1ED9t qu\u1EA3 b\xF3ng \u0111\u1ECF ngo\xE0i h\xE0nh lang. L\xFAc tr\u1EDF v\u1EC1, n\xF3 \u0111\xE3 n\u1EB1m tr\u01B0\u1EDBc c\u1EEDa ph\xF2ng."
+    - "B\u1EA3o: Ch\u1EAFc c\xF3 \u0111\u1EE9a tr\xEAu th\xF4i. Hay b\u1ED1n \u0111\u1EE9a th\u1EED V\u1ED7 Vai Ma m\u1ED9t l\u01B0\u1EE3t cho bi\u1EBFt?"
+    - "Bia: Ch\u01A1i m\u1ED9t l\xE1t th\xF4i \u0111\u1EA5y. D\u1ECDn ph\xF2ng kh\xE1ch cho r\u1ED9ng \u0111\xE3."
+  - id: DEMO_GAME_DIALOGUE
+    speaker: Bia
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "M\u1ED7i \u0111\u1EE9a \u0111\u1EE9ng m\u1ED9t g\xF3c. T\u1EAFt \u0111\xE8n r\u1ED3i ng\u01B0\u1EDDi \u0111\u1EA7u \u0111i d\u1ECDc t\u01B0\u1EDDng, v\u1ED7 vai ng\u01B0\u1EDDi k\u1EBF b\xEAn."
+    - "Ai \u0111\u01B0\u1EE3c v\u1ED7 vai th\xEC \u0111i ti\u1EBFp. T\u1EDBi g\xF3c tr\u1ED1ng ph\u1EA3i d\u1EEBng l\u1EA1i. Ch\u1EC9 c\xF3 b\u1ED1n \u0111\u1EE9a m\xECnh th\xF4i."
+  - id: RUSH_MANAGER_TALK
+    speaker: "B\xE1c qu\u1EA3n l\xFD"
+    clueOnComplete: 
+    puzzleOnComplete: 
+    lines:
+    - "B\xE1c nghe c\xE1c ch\xE1u g\u1ECDi n\xEAn l\xEAn xem. D\xE2y \u0111i\u1EC7n nh\xE0 n\xE0y ch\u1EADp ch\u1EDDn, b\xE1c v\u1EEBa n\u1ED1i l\u1EA1i r\u1ED3i."
+    - "\u0110\xEAm h\xF4m \u0111\u1EEBng t\u1EE5 t\u1EADp l\xE0m \u1EA7m n\u1EEFa. C\xF3 vi\u1EC7c g\xEC th\xEC s\xE1ng mai h\xE3y h\u1ECFi."
+  - id: M3_FAMILY_TALK
+    speaker: "Ng\u01B0\u1EDDi nh\xE0 \xB7 qua \u0111i\u1EC7n tho\u1EA1i"
+    clueOnComplete: M3_FAMILY
+    puzzleOnComplete: 
+    lines:
+    - "Ng\u01B0\u1EDDi trong \u1EA3nh l\xE0 ng\u01B0\u1EDDi b\xEAn h\u1ECD n\u1ED9i nh\xE0 m\xECnh. D\u1EA5u tr\xEAn v\u1EADt con \u0111eo c\u0169ng l\xE0 d\u1EA5u d\xF2ng h\u1ECD \u1EA5y."
+    - "Con h\u1ECFi cho r\xF5 r\u1ED3i h\xE3y t\xEDnh. N\u1EBFu th\u1EA5y kh\xF4ng y\xEAn th\xEC d\u1ECDn \u0111i, \u0111\u1EEBng v\xEC ti\u1EBFc ch\u1ED7 tr\u1ECD r\u1EBB m\xE0 c\u1ED1 \u1EDF."
+  - id: M3_GRANDMA_TALK
+    speaker: "B\xE0 cho thu\xEA \xB7 qua \u0111i\u1EC7n tho\u1EA1i"
+    clueOnComplete: M3_GRANDMA
+    puzzleOnComplete: 
+    lines:
+    - "Con trai b\xE0 m\u1EA5t \u0111\xE3 l\xE2u r\u1ED3i. C\xF2n chuy\u1EC7n con d\xE2u, b\xE0 kh\xF4ng mu\u1ED1n nh\u1EAFc n\u1EEFa."
+    - "C\xE1c ch\xE1u c\u1EE9 lo vi\u1EC7c h\u1ECDc \u0111i. Nh\xE0 c\u1EEDa c\xF3 g\xEC th\xEC b\xE1o b\xE0."
+  - id: M3_NEIGHBOR_TALK
+    speaker: "Ng\u01B0\u1EDDi h\xE0ng x\xF3m"
+    clueOnComplete: M3_NEIGHBOR
+    puzzleOnComplete: 
+    lines:
+    - "B\xE1c \u1EDF \u0111\xE2y t\u1EEB tr\u01B0\u1EDBc. Nh\xE0 \u1EA5y c\xF3 \u0111\u1EE9a b\xE9 g\xE1i m\u1EA5t, r\u1ED3i l\u1EA1i x\u1EA3y ra chuy\u1EC7n v\u1EE3 ch\u1ED3ng n\xF3."
+    - "Ng\u01B0\u1EDDi v\u1EE3 gi\u1EBFt ch\u1ED3ng r\u1ED3i t\u1EF1 v\u1EABn. B\xE1c ch\u1EC9 bi\u1EBFt chuy\u1EC7n x\u1EA3y ra nh\u01B0 th\u1EBF, c\xF2n \u0111\u1EA7u \u0111u\xF4i th\xEC kh\xF4ng d\xE1m n\xF3i b\u1EEBa."
+  - id: M3_ELDER_TALK
+    speaker: "Ng\u01B0\u1EDDi bi\u1EBFt vi\u1EC7c th\u1EDD c\xFAng"
+    clueOnComplete: M3_RENOVATION
+    puzzleOnComplete: M3_ELDER
+    lines:
+    - "Nh\xE0 \u0111\xE3 s\u1EEDa l\u1ED1i \u0111i, nh\u01B0ng \xF4 g\u1EA1ch d\u01B0\u1EDBi c\u1EEDa tho\xE1ng \u1EDF chi\u1EBFu ngh\u1EC9 v\u1EABn c\xF2n. L\xFAc b\u1ED1i r\u1ED1i, nh\xECn th\u1EE9 quen thu\u1ED9c \u1EA5y m\xE0 \u0111\u1ECBnh \u0111\u01B0\u1EDDng."
+    - "C\u1EEDa ph\u1EE5 \u1EDF ph\xEDa b\u1EBFp c\xF3 ch\u1ED1t m\u1ED9t v\u1EA1ch. C\xE1c ch\xE1u c\u1EA7m v\u1EADt n\xE0y, gi\u1EEF b\xEAn m\xECnh. Ta ch\u1EC9 bi\u1EBFt ch\u1EEBng \u1EA5y, kh\xF4ng d\xE1m nh\u1EADn \u0111\xE3 hi\u1EC3u h\u1EBFt chuy\u1EC7n nh\xE0 ng\u01B0\u1EDDi ta."
+  - id: M3_PACK_TALK
+    speaker: "C\u1EA3 nh\xF3m"
+    clueOnComplete: 
+    puzzleOnComplete: M3_PACK
+    lines:
+    - "Nam: Gi\u1EA5y t\u1EDD v\xE0 l\u1EDDi k\u1EC3 \u0111\u1EC1u ch\u1EC9 v\u1EC1 c\u0103n nh\xE0 n\xE0y. B\xE0 \u0111\xE3 gi\u1EA5u chuy\u1EC7n, c\xF2n gia \u0111\xECnh c\u0169 l\u1EA1i c\xF3 quan h\u1EC7 v\u1EDBi nh\xE0 t\u1EDB."
+    - "Bia: V\u1EADy d\u1ECDn \u0111i. C\u1EE9 thu x\u1EBFp \u0111\u1ED3, xu\u1ED1ng d\u01B0\u1EDBi r\u1ED3i t\xEDnh ch\u1ED7 kh\xE1c."
+    - "B\u0103ng: S\xE1ch v\u1EDF v\u1EDBi qu\u1EA7n \xE1o g\xF3i xong r\u1ED3i. \u0110i c\xF9ng nhau, \u0111\u1EEBng \u0111\u1EC3 ai \u1EDF l\u1EA1i m\u1ED9t m\xECnh."

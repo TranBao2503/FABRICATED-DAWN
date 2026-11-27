@@ -81,3 +81,28 @@
 .fd-scene-travel { background-color: rgba(0, 0, 0, 0); border-color: rgba(0, 0, 0, 0); }
 .fd-scene-travel:hover { background-color: rgba(202, 183, 142, .08); border-color: rgba(233, 216, 174, .55); }
 .fd-exit-label { position: absolute; left: 0; right: 0; bottom: 0; color: #eee4d3; background-color: rgba(12, 12, 10, .75); padding: 8px; font-size: 23px; -unity-text-align: middle-center; white-space: normal; }
+
+/* Quiet stage lighting is a game layer, so the same layout survives day/night. */
+.fd-night-shade { position: absolute; left: 0; right: 0; top: 0; bottom: 0; background-color: rgba(11, 19, 31, .48); }
+.fd-intro-scene { background-color: #23241f; }
+.fd-intro-scene .fd-room-narration { left: 20%; right: 20%; top: 20%; font-size: 36px; color: #f6ecd6; background-color: rgba(16, 19, 17, .90); padding: 38px; border-left-width: 3px; border-left-color: #c3ad7d; }
+.fd-quick-scroll { flex-grow: 1; flex-shrink: 1; min-width: 0; max-height: 120px; }
+.fd-quick-scroll .unity-scroll-view__content-container { flex-direction: row; }
+.fd-rush .fd-card { background-color: #ded1b4; border-color: #6d5c40; border-radius: 16px; }
+.fd-rush .fd-card .fd-dialogue-title { color: #342b20; }
+.fd-rush .fd-card .fd-dialogue-body { color: #2e291f; font-size: 32px; }
+.fd-rush .fd-card .fd-nav-button { background-color: #3c4438; color: #f8ecd2; border-color: #6a7058; }
+.fd-rush .fd-talk-overlay { background-color: rgba(7, 12, 13, .20); justify-content: flex-end; padding-bottom: 54px; }
+.fd-rush .fd-talk-card { width: 1500px; max-height: 400px; padding: 30px 42px; border-top-left-radius: 12px; border-top-right-radius: 48px; border-bottom-left-radius: 34px; border-bottom-right-radius: 12px; border-width: 2px; border-left-width: 8px; }
+.fd-rush .fd-talk-card .fd-dialogue-title { align-self: flex-start; color: #f5ead0; background-color: #3c4438; font-size: 30px; padding: 6px 22px; margin-bottom: 18px; border-radius: 8px; }
+.fd-rush .fd-talk-card .fd-dialogue-body { font-size: 36px; margin-bottom: 16px; }
+.fd-rush .fd-talk-card .fd-nav-button { align-self: flex-end; min-width: 310px; min-height: 56px; font-size: 28px; margin-left: 0; padding: 8px 18px; border-radius: 14px; }
+.fd-talk-progress { position: absolute; top: 40px; right: 50px; font-size: 23px; color: #645744; }
+.fd-rush .fd-scene-label { font-size: 26px; color: #fcf1d9; }
+.fd-rush .s01-version { color: #e6d8b9; font-size: 24px; }
+.fd-rush .s01-fig { color: #dfd2b6; font-size: 24px; }
+
+.fd-rush .fd-door-transition { background-color: #131b1c; }
+.fd-rush .fd-door-transition .fd-card { background-color: #131b1c; border-width: 0; width: 1360px; }
+.fd-rush .fd-door-transition .fd-dialogue-title { color: #d9c8a2; }
+.fd-rush .fd-door-transition .fd-dialogue-body { color: #f1e6cd; font-size: 38px; }

@@ -28,7 +28,7 @@
         "Night checkpoint retains balloon phase; return cannot replay first encounter",
         "Painted backgrounds and inventory resolve",
         "Friends can be met in any order; unfinished dialogue cannot count as meeting",
-        "Character click areas stay separate from M2 handoff button",
+        "Character portraits are disabled and dialogue buttons do not cover M2 handoff",
         "M2 handoff preserves Bad End and shrine checkpoint without normal ending"
     ],
     "failed": []

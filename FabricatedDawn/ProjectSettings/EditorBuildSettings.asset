@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/FabricatedDawn/Scenes/RushDemo.unity
+    guid: d9aa0923d3b87a545be54dd98280fb5d
+  - enabled: 1
     path: Assets/FabricatedDawn/Scenes/ChapterOne.unity
     guid: 34de2730528812e46bfec7853f69f42b
   - enabled: 1

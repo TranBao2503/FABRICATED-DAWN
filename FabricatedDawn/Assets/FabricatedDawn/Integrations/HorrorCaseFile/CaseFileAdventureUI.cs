@@ -61,6 +61,7 @@ namespace FabricatedDawn.CaseFile
             if (screen == null) throw new InvalidOperationException("Case File template has no screen root.");
             screen.AddToClassList("fd-ui");
             if (overrides != null) screen.styleSheets.Add(overrides);
+            if (content.contentId.StartsWith("fabricated-dawn-rush-four")) screen.AddToClassList("fd-rush");
             // Film grain is a visual option, not part of the game state or clue system.
             Hide("grain");
             switch (page)
@@ -121,7 +122,13 @@ namespace FabricatedDawn.CaseFile
             for (int i = 0; i < lines.Count; i++) lines[i].text = i % 2 == 0 ? "FABRICATED" : "DAWN";
             SetClass("s01-header__code", "FABRICATED DAWN / 4KOQ");
             SetClass("s01-header__date", content.isStoryDemo ? "Demo cốt truyện · Hà Nội 2004" : "Bản thử hệ thống");
-            SetClass("s01-fig", "Hình minh họa đi kèm gói UI · chưa phải bối cảnh chính thức");
+            if (content.contentId.StartsWith("fabricated-dawn-rush-four")) {
+                var preview = screen.Q<VisualElement>("key-art");
+                var picture = content.Room("M1_LIVING")?.presentBackground;
+                if (preview != null && picture != null) preview.style.backgroundImage = new StyleBackground(picture);
+                HideClass("s01-keyart__hatch"); HideClass("s01-keyart__vignette");
+            }
+            SetClass("s01-fig", content.contentId.StartsWith("fabricated-dawn-rush-four") ? "Nhà trọ · Hà Nội, 2004" : "Hình minh họa đi kèm gói UI · chưa phải bối cảnh chính thức");
             SetClass("s01-version", content.isStoryDemo ? content.contentId.StartsWith("fabricated-dawn-chapter-one") ? "MÀN 1 · NHỮNG NGÀY Ở TRỌ / DEMO 8 MÀN" : "PROLOGUE / DEMO 8 MÀN / ĐANG PHÁT TRIỂN" : "TOOLKIT 0.2 / CASE FILE UI");
             HideClass("s01-menu-item__meta"); HideClass("s01-hints");
             Menu(1, "TIẾP TỤC", () => { if (Load()) Show(CaseFileScreen.Hud); });
@@ -134,6 +141,11 @@ namespace FabricatedDawn.CaseFile
             Menu(2, "BẮT ĐẦU", () => { session = new AdventureSession(content); Show(CaseFileScreen.Hud); });
             Menu(3, "HƯỚNG DẪN", () => Message("Cách chơi", content.isStoryDemo ? "Khám phá nhà, nhặt đồ và đọc manh mối. Học đường tới phòng thờ trước khi chơi Vỗ Vai Ma.\n\nTrong đoạn thoát thân, chọn sai đường dẫn tới BAD END. Tới phòng thờ là mốc hoàn thành Màn 2. Demo dự kiến đi hết tám màn, kết thúc thường ở Màn 8.\n\nTAB: túi đồ. ESC: tạm dừng. Có thể tải checkpoint để thử lại. Màn 1: quan sát đồ vật, chọn chìa trong túi để mở tủ. Các tiếng động có phụ đề; một số hình và âm thanh đang được bổ sung." : "Nhấn đồ vật để tương tác. Chọn vật phẩm trong túi rồi nhấn mục tiêu.\n\nTAB: túi đồ. ESC: tạm dừng. Checkpoint lưu toàn bộ tiến độ.\n\nĐây là cảnh thử toolkit, chưa phải Màn 1 chính thức."));
             Menu(4, "VỀ BẢN THỬ", () => Message("Fabricated Dawn", "Giao diện sử dụng Horror GUI Kit – Case File UI Toolkit.\n\nInventory, manh mối, tương tác và checkpoint được nối với hệ thống của Fabricated Dawn. Màn 1 được dựng theo mục 5.2 của tài liệu. Hội thoại triển khai và hình sinh bổ sung đang chờ nhóm duyệt."));
+            if (content.contentId.StartsWith("fabricated-dawn-rush-four")) {
+                SetClass("s01-version", "BẢN CHƠI MÀN 1–4 · NHÂN VẬT TẠM · KHÔNG ÂM THANH");
+                Menu(4, "VỀ BẢN THỬ", () => Message("Fabricated Dawn", "Hà Nội, năm 2004. Bốn người bạn thuê chung một căn nhà để tiện đi học. Những điều lạ dần len vào cuộc sống thường ngày.\n\nBản chơi hiện tại kết thúc ở cuối Màn 4. Câu chuyện dự kiến kéo dài tám màn; hình và thoại vẫn đang được hoàn thiện."));
+                Menu(3, "CÁCH CHƠI", () => Message("Cách chơi", "Nhấn đồ vật và nhân vật để quan sát hoặc nói chuyện. Chọn vật trong túi rồi nhấn nơi cần dùng.\n\nSổ giữ các lời kể và dấu vết. Khi đối chiếu, chọn những điều đã có chứng cứ. Màn 4: tìm dấu mốc không đổi, đừng chỉ tin số phòng.\n\nTab: túi đồ. Esc: tạm dừng. Bản này chơi liên tục đến hết Màn 4; phần sau tiếp tục được phát triển."));
+            }
             Hide("menu-item-05");
         }
 
@@ -149,12 +161,18 @@ namespace FabricatedDawn.CaseFile
             stage.style.backgroundColor = session.CurrentRoom.placeholderColor;
             var background = session.Story.State.world == WorldPhase.Present ? session.CurrentRoom.presentBackground : session.CurrentRoom.pastBackground;
             if (background != null) stage.style.backgroundImage = new StyleBackground(background);
+            if (session.CurrentRoom.nightScene) {
+                var shade = new VisualElement { pickingMode = PickingMode.Ignore };
+                shade.AddToClassList("fd-night-shade"); stage.Add(shade);
+            }
             var floor = new VisualElement(); floor.AddToClassList("fd-floor"); stage.Add(floor);
             foreach (var actor in session.CurrentRoom.hotspots)
             {
-                if (!session.IsVisible(actor) || actor.artwork == null || actor.artworkBounds.width <= 0) continue;
-                var image = new VisualElement { pickingMode = PickingMode.Ignore };
-                image.AddToClassList("fd-scene-image"); image.style.backgroundImage = new StyleBackground(actor.artwork);
+                if (!session.IsVisible(actor) || (actor.artwork == null && !actor.stickFigure) || actor.artworkBounds.width <= 0) continue;
+                VisualElement image = actor.stickFigure ? new StickFigureElement(actor.characterTag) : new VisualElement();
+                image.pickingMode = PickingMode.Ignore;
+                image.AddToClassList("fd-scene-image");
+                if (!actor.stickFigure) image.style.backgroundImage = new StyleBackground(actor.artwork);
                 image.style.left = Length.Percent(actor.artworkBounds.x * 100); image.style.top = Length.Percent(actor.artworkBounds.y * 100);
                 image.style.width = Length.Percent(actor.artworkBounds.width * 100); image.style.height = Length.Percent(actor.artworkBounds.height * 100);
                 stage.Add(image);
@@ -207,10 +225,26 @@ namespace FabricatedDawn.CaseFile
                 narration.EnableInClassList("fd-title-card", session.CurrentRoom.isTitleCard);
             }
             floor.style.display = session.CurrentRoom.isTitleCard || background != null ? DisplayStyle.None : DisplayStyle.Flex;
+            if (session.CurrentRoom.introCard) {
+                stage.AddToClassList("fd-intro-scene");
+                return;
+            }
             Navigation();
             var tray = new VisualElement { pickingMode = PickingMode.Ignore }; tray.AddToClassList("fd-quick-tray"); screen.Add(tray);
             Text(tray, session.SelectedItemId == null ? "VẬT PHẨM" : "ĐANG CHỌN: " + content.Item(session.SelectedItemId)?.displayName, "fd-caption");
-            var row = new VisualElement { pickingMode = PickingMode.Ignore }; row.AddToClassList("fd-row"); tray.Add(row);
+            var quickScroll = new ScrollView(ScrollViewMode.Horizontal);
+            quickScroll.AddToClassList("fd-quick-scroll");
+            quickScroll.verticalScrollerVisibility = ScrollerVisibility.Hidden;
+            quickScroll.horizontalScrollerVisibility = ScrollerVisibility.Auto;
+            quickScroll.pickingMode = PickingMode.Ignore;
+            quickScroll.contentContainer.pickingMode = PickingMode.Ignore;
+            quickScroll.contentViewport.pickingMode = PickingMode.Ignore;
+            // Empty scroll-view containers must let scene clicks through. Item
+            // buttons are added afterward and keep their normal picking mode.
+            quickScroll.Query<VisualElement>().ForEach(element => element.pickingMode = PickingMode.Ignore);
+            quickScroll.horizontalScroller.Query<VisualElement>().ForEach(element => element.pickingMode = PickingMode.Position);
+            tray.Add(quickScroll);
+            var row = new VisualElement { pickingMode = PickingMode.Ignore }; row.AddToClassList("fd-row"); quickScroll.Add(row);
             foreach (var entry in session.Story.State.inventory)
             {
                 var local = entry; var definition = content.Item(entry.id);
@@ -235,6 +269,13 @@ namespace FabricatedDawn.CaseFile
             Show(CaseFileScreen.Hud);
             if (result.checkpoint) Save(false);
             if (session.ActiveDialogue != null) Dialogue();
+            else if (result.succeeded && id == "M4_OPEN_DOOR")
+            {
+                var card = Card("Một bước qua cửa");
+                overlay.AddToClassList("fd-door-transition");
+                Text(card, "Cả nhóm bước ra.\n\nNhưng dưới chân lại là nền gạch trước cửa nhà.\n\nChỉ trong một thoáng, mọi căn phòng và đồ đạc đã đổi. Phía sau lưng, lối ra khép lại.", "fd-dialogue-body");
+                Button(card, "Nhìn lại căn nhà ›", CloseOverlay, "fd-nav-button");
+            }
             else if (!string.IsNullOrEmpty(result.clueId))
             {
                 var clue = content.Clue(result.clueId); Message(clue.title, clue.body, result.examinedArtwork);
@@ -386,9 +427,11 @@ namespace FabricatedDawn.CaseFile
         {
             var dialogue = session.ActiveDialogue;
             var card = Card(dialogue.speaker);
+            overlay.AddToClassList("fd-talk-overlay"); card.AddToClassList("fd-talk-card");
+            Text(card, (session.DialogueLine + 1) + " / " + dialogue.lines.Length, "fd-talk-progress");
             Text(card, dialogue.lines[session.DialogueLine], "fd-dialogue-body");
-            Button(card, session.DialogueLine + 1 == dialogue.lines.Length ? "Kết thúc" : "Tiếp tục", () =>
-            { session.AdvanceDialogue(); CloseOverlay(); if (session.ActiveDialogue != null) Dialogue(); else Show(CaseFileScreen.Hud); }, "fd-nav-button");
+            Button(card, session.DialogueLine + 1 == dialogue.lines.Length ? "Khép lại câu chuyện" : "Nói tiếp ›", () =>
+            { session.AdvanceDialogue(); CloseOverlay(); if (session.ActiveDialogue != null) Dialogue(); else { Show(CaseFileScreen.Hud); Save(false); } }, "fd-nav-button");
         }
 
         private void Message(string title, string body, Sprite artwork = null)

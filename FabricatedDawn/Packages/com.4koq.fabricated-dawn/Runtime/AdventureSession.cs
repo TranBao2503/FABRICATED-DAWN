@@ -84,6 +84,8 @@ namespace FabricatedDawn
                     return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Hãy hoàn thành việc đang làm trước." : h.lockedResponse);
             if (!string.IsNullOrEmpty(h.requiredEvent) && !Story.State.completedEvents.Contains(h.requiredEvent))
                 return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Hãy nghe hết cuộc trò chuyện trước." : h.lockedResponse);
+            foreach (var clue in h.requiredClues ?? Array.Empty<string>())
+                if (!Story.State.clues.Contains(clue)) return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Cần đối chiếu thêm lời kể và giấy tờ." : h.lockedResponse);
             switch (h.kind)
             {
                 case InteractionKind.Pickup:
@@ -106,8 +108,22 @@ namespace FabricatedDawn
                     ActiveDialogue = dialogue; DialogueLine = 0;
                     break;
                 case InteractionKind.Travel:
-                    if (Content.Room(h.destinationRoom) == null || !Story.TryTravel(h.destinationRoom, false))
-                        return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Lối đi chưa mở." : h.lockedResponse);
+                    var destination = Content.Room(h.destinationRoom);
+                    if (destination == null) return Fail("Lối đi chưa mở.");
+                    if (h.protectionItem != null && destination.ending == StoryEnding.Bad &&
+                        Story.State.inventory.Exists(i => i.id == h.protectionItem.id) && Story.TryProtection())
+                    {
+                        Story.RecordChoice("rescue:" + h.id); SelectedItemId = null;
+                        return new InteractionResult { succeeded = true, checkpoint = true,
+                            message = "Vật hộ thân bỗng nóng rực. Nam lùi lại kịp. Ánh sáng trên vật đã tắt — phải chọn lại đường." };
+                    }
+                    if (h.opensPastDoor)
+                    {
+                        if (!destination.pastOnly || !Story.OpenPastDoor(h.destinationRoom)) return Fail("Cửa còn bị giữ. Phải tìm đúng lối và mở khóa trước.");
+                    }
+                    else if ((destination.pastOnly && Story.State.world != WorldPhase.PastEnclosed) ||
+                        (destination.presentOnly && Story.State.world != WorldPhase.Present) || !Story.TryTravel(h.destinationRoom, h.leadsOutside))
+                        return Fail(string.IsNullOrEmpty(h.lockedResponse) ? "Không thể ra ngoài theo lối này." : h.lockedResponse);
                     SelectedItemId = null;
                     if (CurrentRoom.chapter > 0) Story.State.chapter = CurrentRoom.chapter;
                     Story.State.ending = CurrentRoom.ending;
@@ -128,6 +144,8 @@ namespace FabricatedDawn
             if (DialogueLine >= ActiveDialogue.lines.Length)
             {
                 Story.CompleteEvent("dialogue:" + ActiveDialogue.id);
+                if (!string.IsNullOrEmpty(ActiveDialogue.clueOnComplete)) Story.RecordClue(ActiveDialogue.clueOnComplete);
+                if (!string.IsNullOrEmpty(ActiveDialogue.puzzleOnComplete)) Story.SolvePuzzle(ActiveDialogue.puzzleOnComplete);
                 ActiveDialogue = null; DialogueLine = 0;
             }
             return true;
@@ -145,6 +163,9 @@ namespace FabricatedDawn
         {
             if (Content.Room(state.roomId) == null || !state.unlockedRooms.Contains(state.roomId))
                 throw new ArgumentException("Save refers to an unknown or locked current room.");
+            if ((Content.Room(state.roomId).pastOnly && state.world != WorldPhase.PastEnclosed) ||
+                (Content.Room(state.roomId).presentOnly && state.world != WorldPhase.Present))
+                throw new ArgumentException("Save world does not match the saved room.");
             if (Content.isStoryDemo && state.ending != Content.Room(state.roomId).ending)
                 throw new ArgumentException("Ending does not match the saved room.");
             foreach (var room in state.unlockedRooms)

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ecf328d27a35c41bdf6629e42c8f2c, type: 3}
+  m_Name: RUSH_INCENSE
+  m_EditorClassIdentifier: FabricatedDawn.Runtime::FabricatedDawn.ItemDefinition
+  id: RUSH_INCENSE
+  displayName: "B\xF3 nhang"
+  origin: 0
+  pastOnly: 0
+  uses: 1
+  purpose: "Mua \u1EDF h\xE0ng \u0111\u1EA7u ng\xF5 \u0111\u1EC3 d\xF9ng khi c\u1EA7n th\u1EAFp h\u01B0\u01A1ng."
+  icon: {fileID: 21300000, guid: 68e1cf5596394dbab78857458549e148, type: 3}
